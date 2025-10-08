@@ -50,7 +50,7 @@ export default function LogoWall({
   body = 'A curated network of streaming, podcast, and radio partners. Mix reach with relevance, then measure impact end-to-end.',
   cta = { label: 'Browse all partners', href: '/partners' },
   items = defaultLogos,
-}: LogoWallProps): JSX.Element {
+}: LogoWallProps) {
   const renderLogo = (item: LogoItem, index: number, isTablet = false) => (
     <div
       key={`${item.name}-${index}`}
@@ -70,9 +70,9 @@ export default function LogoWall({
   return (
     <section aria-labelledby="logo-cloud-heading" className="pt-8 pb-16 md:pt-12 md:pb-24">
       <div className="max-w-[1280px] mx-auto px-6 md:px-8">
-        <div className="flex flex-col xl:flex-row gap-8 md:gap-12 items-center">
+        <div className="flex flex-col lg:flex-row gap-8 md:gap-12 items-center">
             {/* Gallery viewport */}
-            <div className="w-full xl:w-[600px] h-[600px] overflow-hidden relative">
+            <div className="w-full lg:w-[600px] h-[600px] overflow-hidden relative">
               {/* Desktop: 3 columns (≥993px) */}
               <div className="hidden xl:flex gap-4 justify-center h-full">
                 {[0, 1, 2].map((i) => (
