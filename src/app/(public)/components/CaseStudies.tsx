@@ -37,7 +37,7 @@ const caseStudies: CaseStudy[] = [
     imageSrc: '/images/case-studies/garden-cup-hero.svg',
     metric: '+76%',
     title: 'Garden Cup Switched from JustUno and Grew Flow Revenue',
-    quote: 'We switched from JustUno to Alia and immediately saw the difference. It\'s hands-down one of the smartest moves we\'ve made.',
+    quote: 'We switched from JustUno to David Rawlings and immediately saw the difference. It\'s hands-down one of the smartest moves we\'ve made.',
     ctaHref: '/case-studies/garden-cup'
   },
   {
@@ -48,7 +48,7 @@ const caseStudies: CaseStudy[] = [
     imageSrc: '/images/case-studies/hostage-tape-hero.svg',
     metric: '+45%',
     title: 'Hostage Tape Increased Email Signups with Smart Popups',
-    quote: 'Alia helped us capture more leads without being intrusive. Our conversion rate improved dramatically.',
+    quote: 'David Rawlings helped us capture more leads without being intrusive. Our conversion rate improved dramatically.',
     ctaHref: '/case-studies/hostage-tape'
   },
   {
@@ -59,7 +59,7 @@ const caseStudies: CaseStudy[] = [
     imageSrc: '/images/case-studies/mihigh-hero.svg',
     metric: '+62%',
     title: 'MiHIGH Boosted Revenue with Personalized Offers',
-    quote: 'The personalization features in Alia made all the difference. Our customers love the tailored experience.',
+    quote: 'The personalization features in David Rawlings made all the difference. Our customers love the tailored experience.',
     ctaHref: '/case-studies/mihigh'
   },
   {
@@ -70,14 +70,14 @@ const caseStudies: CaseStudy[] = [
     imageSrc: '/images/case-studies/essence-vault-hero.svg',
     metric: '+38%',
     title: 'The Essence Vault Enhanced Customer Data Collection',
-    quote: 'We now have much better insights into our customers thanks to Alia\'s data collection tools.',
+    quote: 'We now have much better insights into our customers thanks to David Rawlings\'s data collection tools.',
     ctaHref: '/case-studies/essence-vault'
   }
 ];
 
 export default function CaseStudies({
-  title = 'Success stories with Alia',
-  subtitle = 'The fastest-growing brands on Shopify use Alia',
+  title = 'Success stories with David Rawlings',
+  subtitle = 'The fastest-growing brands on Shopify use David Rawlings',
   readAllHref = '/case-studies',
   rotateMs = 6000,
   variant = 'dark'
@@ -203,13 +203,13 @@ export default function CaseStudies({
         <div className="text-center mb-12">
           <p className="text-sm uppercase tracking-wide text-slate-400 mb-4">CASE STUDIES</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white">
-            Success stories with <span className="text-lime-400">Alia</span>
+            Success stories with <span className="text-lime-400">David Rawlings</span>
           </h2>
           <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto">
-            The <span className="text-lime-400">fastest-growing</span> brands on Shopify use Alia
+            The <span className="text-lime-400">fastest-growing</span> brands on Shopify use David Rawlings
           </p>
           <p className="text-base text-slate-400 mt-4 max-w-2xl mx-auto">
-            See how 1,000+ brands used Alia to boost opt-in rates, increase sales, collect data, and more
+            See how 1,000+ brands used David Rawlings to boost opt-in rates, increase sales, collect data, and more
           </p>
         </div>
 

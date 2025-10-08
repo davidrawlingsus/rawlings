@@ -33,7 +33,7 @@ export default function ImpactChart() {
       <div className="max-w-[1280px] mx-auto px-6 md:px-8">
         {/* Full-width headline section */}
         <motion.div
-          className="mb-16 md:mb-20"
+          className="mb-4 md:mb-20"
           initial="hidden"
           whileInView="visible"
           viewport={{ amount: 0.3, once: true }}
@@ -46,9 +46,9 @@ export default function ImpactChart() {
         </motion.div>
 
         {/* Two-column content */}
-        <div className="md:grid md:grid-cols-2 md:gap-12 lg:gap-16 items-end">
+        <div className="flex flex-col md:grid md:grid-cols-2 md:gap-12 lg:gap-16 md:items-end">
           {/* Left Column - Stat Card */}
-          <div className="pb-8 md:pb-0">
+          <div className="order-2 md:order-1 pb-8 md:pb-0">
             <motion.div
               variants={variants.fadeUp}
               initial="hidden"
@@ -77,14 +77,14 @@ export default function ImpactChart() {
           </div>
 
           {/* Right Column - SVG Bar Chart */}
-          <div className="relative mt-12 md:mt-0 flex flex-col items-center justify-end">
+          <div className="order-1 md:order-2 relative mb-8 md:mb-0 md:mt-0 flex flex-col items-center justify-end">
             <motion.div 
               variants={variants.fadeUp}
               initial="hidden"
               whileInView="visible"
               viewport={{ amount: 0.3, once: true }}
             >
-              <svg viewBox="0 0 614 287" className="w-full h-auto" role="img" aria-labelledby="chart-title" aria-describedby="chart-desc" style={{ minHeight: '300px' }}>
+              <svg viewBox="0 0 614 287" className="w-full h-auto" role="img" aria-labelledby="chart-title" aria-describedby="chart-desc">
                 <title id="chart-title">Net New Subscribers Growth Chart</title>
                 <desc id="chart-desc">A bar chart showing growth in net new subscribers over time, with highlighted bars representing improved performance</desc>
                 

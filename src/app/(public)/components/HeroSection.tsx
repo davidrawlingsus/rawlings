@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function HeroSection() {
   return (
-    <section id="hero" className="py-24 md:py-32">
+    <section id="hero" className="pt-12 pb-8 md:py-32">
       <div className="max-w-[1280px] mx-auto px-6 md:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           {/* Left Column - Text */}
@@ -48,7 +48,7 @@ export default function HeroSection() {
                 }
               }}
             >
-              I help companies turn raw data into better decisions, sharper messaging, and measurable growth. From GA4 audits to A/B testing frameworks, every project drives toward one thing — higher conversion.
+              I help companies turn raw data into better decisions, sharper messaging, and measurable growth.
             </motion.p>
             
             <motion.div 
