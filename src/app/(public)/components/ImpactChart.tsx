@@ -8,20 +8,20 @@ const variants: { fadeUp: Variants } = {
     visible: { 
       opacity: 1, 
       y: 0, 
-      transition: { duration: 0.4, ease: "easeOut" } 
+      transition: { duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] as const } 
     },
   },
 }
 
 // Function to create bar animation variants with proper delay based on x position
-const createBarVariants = (xPosition: number) => ({
+const createBarVariants = (xPosition: number): Variants => ({
   hidden: { scaleY: 0, opacity: 0 },
   visible: { 
     scaleY: 1, 
     opacity: 1, 
     transition: { 
       duration: 0.4, 
-      ease: "easeOut",
+      ease: [0.25, 0.46, 0.45, 0.94] as const, // easeOut cubic-bezier
       delay: xPosition * 0.05 // 0.05s delay per 24px increment (approximate)
     } 
   },
