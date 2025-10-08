@@ -38,4 +38,4 @@ npm run dev
 Each section lives in `/components/` with a clear purpose:
 - Hero, LogoCloud, ValueProps, Proof, Process, About, FAQ, CTA Band, Contact, Footer
 
-See `rules.md` for detailed development guidelines and principles.
+See `rules.md` for detailed development guidelines and principles.# Build trigger
