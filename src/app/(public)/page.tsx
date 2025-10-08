@@ -3,6 +3,7 @@ import HeroSection from './components/HeroSection'
 import LogoWall from './components/LogoWall'
 import ImpactChart from './components/ImpactChart'
 import Process from './components/Process'
+import CaseStudies from './components/CaseStudies'
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <LogoWall />
       <ImpactChart />
       <Process />
+      <CaseStudies />
     </main>
   )
 }
