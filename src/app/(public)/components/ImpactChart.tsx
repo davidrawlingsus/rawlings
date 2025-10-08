@@ -1,7 +1,6 @@
 'use client'
 
 import { motion, Variants } from 'framer-motion'
-import Image from 'next/image'
 
 const variants: { fadeUp: Variants } = {
   fadeUp: {
@@ -60,7 +59,7 @@ export default function ImpactChart() {
               <p className="text-6xl font-bold text-white">+214%</p>
               <p className="text-xl font-semibold mt-2 text-white">Improvement in conversion rate after analytics-led redesign</p>
               <p className="text-neutral-300 mt-4">
-                "Clear data storytelling unlocked real growth."
+                &ldquo;Clear data storytelling unlocked real growth.&rdquo;
               </p>
 
               <div className="flex items-center gap-4 mt-6">
