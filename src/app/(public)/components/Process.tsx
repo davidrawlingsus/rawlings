@@ -62,9 +62,22 @@ const STEPS = [
   },
 ] as const;
 
-const fade = (delay = 0) => ({
-  initial: { opacity: 0, y: 12 },
-  animate: { opacity: 1, y: 0, transition: { duration: 0.25, delay } },
+const createFadeVariants = (delay = 0) => ({
+  initial: { opacity: 0, y: 20 },
+  animate: { 
+    opacity: 1, 
+    y: 0, 
+    transition: { duration: 0.4, delay, ease: "easeOut" } 
+  },
+});
+
+const createArrowVariants = (delay = 0) => ({
+  initial: { opacity: 0, scale: 0.8 },
+  animate: { 
+    opacity: 1, 
+    scale: 1, 
+    transition: { duration: 0.3, delay, ease: "easeOut" } 
+  },
 });
 
 function ArrowRight() {
@@ -113,7 +126,10 @@ export default function Process() {
           {STEPS.map((step, i) => (
             <React.Fragment key={step.id}>
               <motion.article
-                {...(reduce ? {} : fade(i * 0.05))}
+                variants={reduce ? undefined : createFadeVariants(i * 0.1)}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ amount: 0.3, once: true }}
                 aria-labelledby={`step-${step.id}-title`}
                 className="rounded-2xl border border-neutral-200 p-6"
               >
@@ -131,9 +147,16 @@ export default function Process() {
                 </ul>
               </motion.article>
               {i < STEPS.length - 1 && (
-                <div className="flex justify-center my-6" aria-hidden>
+                <motion.div 
+                  className="flex justify-center my-6" 
+                  aria-hidden
+                  variants={reduce ? undefined : createArrowVariants(i * 0.1 + 0.05)}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{ amount: 0.3, once: true }}
+                >
                   <ArrowDown />
-                </div>
+                </motion.div>
               )}
             </React.Fragment>
           ))}
@@ -145,7 +168,10 @@ export default function Process() {
           {STEPS.slice(0, 3).map((step, i) => (
             <motion.article
               key={step.id}
-              {...(reduce ? {} : fade(i * 0.05))}
+              variants={reduce ? undefined : createFadeVariants(i * 0.1)}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ amount: 0.3, once: true }}
               aria-labelledby={`step-${step.id}-title-desktop`}
               className="relative rounded-2xl border border-neutral-200 p-6 bg-white"
             >
@@ -164,22 +190,30 @@ export default function Process() {
 
               {/* Right arrows between 01→02 and 02→03 */}
               {i < 2 && (
-                <div
+                <motion.div
                   aria-hidden
                   className="absolute -right-5 top-1/2 -translate-y-1/2"
+                  variants={reduce ? undefined : createArrowVariants(i * 0.1 + 0.05)}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{ amount: 0.3, once: true }}
                 >
                   <ArrowRight />
-                </div>
+                </motion.div>
               )}
 
               {/* Down arrow from 03 to 04 */}
               {step.id === '03' && (
-                <div
+                <motion.div
                   aria-hidden
                   className="absolute left-1/2 -bottom-8 -translate-x-1/2"
+                  variants={reduce ? undefined : createArrowVariants(0.25)}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{ amount: 0.3, once: true }}
                 >
                   <ArrowDown />
-                </div>
+                </motion.div>
               )}
             </motion.article>
           ))}
@@ -188,7 +222,10 @@ export default function Process() {
           {[...STEPS].slice(3).reverse().map((step, i) => (
             <motion.article
               key={step.id}
-              {...(reduce ? {} : fade(0.15 + i * 0.05))}
+              variants={reduce ? undefined : createFadeVariants(0.3 + i * 0.1)}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ amount: 0.3, once: true }}
               aria-labelledby={`step-${step.id}-title-desktop-2`}
               className="relative rounded-2xl border border-neutral-200 p-6 bg-white"
             >
@@ -207,12 +244,16 @@ export default function Process() {
 
               {/* Left arrows between 06←05 and 05←04 */}
               {i < 2 && (
-                <div
+                <motion.div
                   aria-hidden
                   className="absolute -left-5 top-1/2 -translate-y-1/2"
+                  variants={reduce ? undefined : createArrowVariants(0.35 + i * 0.1)}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{ amount: 0.3, once: true }}
                 >
                   <ArrowLeft />
-                </div>
+                </motion.div>
               )}
             </motion.article>
           ))}
@@ -220,7 +261,10 @@ export default function Process() {
 
         {/* CTA band */}
         <motion.div
-          {...(reduce ? {} : fade(0.3))}
+          variants={reduce ? undefined : createFadeVariants(0.6)}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ amount: 0.3, once: true }}
           className="mt-14 flex flex-col md:flex-row items-center justify-between gap-4 rounded-2xl border border-neutral-200 p-6"
         >
           <p className="text-lg text-neutral-900">Ready To Build Your Personal Brand?</p>

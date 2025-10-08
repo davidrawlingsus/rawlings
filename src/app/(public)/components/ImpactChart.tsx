@@ -5,14 +5,28 @@ import Image from 'next/image'
 
 const variants: { fadeUp: Variants } = {
   fadeUp: {
-    hidden: { opacity: 0, y: 12 },
+    hidden: { opacity: 0, y: 20 },
     visible: { 
       opacity: 1, 
       y: 0, 
-      transition: { duration: 0.24 } 
+      transition: { duration: 0.4, ease: "easeOut" } 
     },
   },
 }
+
+// Function to create bar animation variants with proper delay based on x position
+const createBarVariants = (xPosition: number) => ({
+  hidden: { scaleY: 0, opacity: 0 },
+  visible: { 
+    scaleY: 1, 
+    opacity: 1, 
+    transition: { 
+      duration: 0.4, 
+      ease: "easeOut",
+      delay: xPosition * 0.05 // 0.05s delay per 24px increment (approximate)
+    } 
+  },
+})
 
 export default function ImpactChart() {
   return (
@@ -83,9 +97,10 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#F9FAF2" 
                   fillOpacity="0.7"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 0.05, duration: 0.4 }}
+                  variants={createBarVariants(0)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
@@ -96,9 +111,10 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#F9FAF2" 
                   fillOpacity="0.7"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 0.1, duration: 0.4 }}
+                  variants={createBarVariants(1)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
@@ -109,9 +125,10 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#F9FAF2" 
                   fillOpacity="0.7"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 0.15, duration: 0.4 }}
+                  variants={createBarVariants(2)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
@@ -122,35 +139,38 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#F9FAF2" 
                   fillOpacity="0.7"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 0.2, duration: 0.4 }}
+                  variants={createBarVariants(3)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
-                  x="96" 
-                  y="221.794" 
-                  width="17.25" 
-                  height="65" 
-                  rx="3" 
-                  fill="#F9FAF2" 
+                  x="96"
+                  y="221.794"
+                  width="17.25"
+                  height="65"
+                  rx="3"
+                  fill="#F9FAF2"
                   fillOpacity="0.7"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 0.25, duration: 0.4 }}
+                  variants={createBarVariants(4)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
-                  x="120" 
-                  y="230.794" 
-                  width="17.25" 
-                  height="56" 
-                  rx="3" 
-                  fill="#F9FAF2" 
+                  x="120"
+                  y="230.794"
+                  width="17.25"
+                  height="56"
+                  rx="3"
+                  fill="#F9FAF2"
                   fillOpacity="0.7"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 0.3, duration: 0.4 }}
+                  variants={createBarVariants(5)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
@@ -161,9 +181,10 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#F9FAF2" 
                   fillOpacity="0.7"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 0.35, duration: 0.4 }}
+                  variants={createBarVariants(6)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
@@ -174,9 +195,10 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#F9FAF2" 
                   fillOpacity="0.7"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 0.4, duration: 0.4 }}
+                  variants={createBarVariants(7)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
@@ -187,9 +209,10 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#F9FAF2" 
                   fillOpacity="0.7"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 0.45, duration: 0.4 }}
+                  variants={createBarVariants(8)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
@@ -200,9 +223,10 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#F9FAF2" 
                   fillOpacity="0.7"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 0.5, duration: 0.4 }}
+                  variants={createBarVariants(9)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
@@ -213,9 +237,10 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#F9FAF2" 
                   fillOpacity="0.7"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 0.55, duration: 0.4 }}
+                  variants={createBarVariants(10)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
@@ -226,9 +251,10 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#F9FAF2" 
                   fillOpacity="0.7"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 0.6, duration: 0.4 }}
+                  variants={createBarVariants(11)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
@@ -239,9 +265,10 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#F9FAF2" 
                   fillOpacity="0.7"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 0.65, duration: 0.4 }}
+                  variants={createBarVariants(12)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
@@ -252,9 +279,10 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#F9FAF2" 
                   fillOpacity="0.7"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 0.7, duration: 0.4 }}
+                  variants={createBarVariants(13)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
@@ -265,9 +293,10 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#F9FAF2" 
                   fillOpacity="0.7"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 0.75, duration: 0.4 }}
+                  variants={createBarVariants(14)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
@@ -278,9 +307,10 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#F9FAF2" 
                   fillOpacity="0.7"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 0.8, duration: 0.4 }}
+                  variants={createBarVariants(15)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
@@ -291,9 +321,10 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#F9FAF2" 
                   fillOpacity="0.7"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 0.85, duration: 0.4 }}
+                  variants={createBarVariants(16)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
@@ -304,9 +335,10 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#F9FAF2" 
                   fillOpacity="0.7"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 0.9, duration: 0.4 }}
+                  variants={createBarVariants(17)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 
@@ -319,9 +351,10 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#E8FF86" 
                   fillOpacity="0.8"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 0.95, duration: 0.4 }}
+                  variants={createBarVariants(18)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
@@ -332,9 +365,10 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#E8FF86" 
                   fillOpacity="0.8"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 1.0, duration: 0.4 }}
+                  variants={createBarVariants(19)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
@@ -345,9 +379,10 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#E8FF86" 
                   fillOpacity="0.8"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 1.05, duration: 0.4 }}
+                  variants={createBarVariants(20)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
@@ -358,9 +393,10 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#E8FF86" 
                   fillOpacity="0.8"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 1.1, duration: 0.4 }}
+                  variants={createBarVariants(21)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
@@ -371,9 +407,10 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#E8FF86" 
                   fillOpacity="0.8"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 1.15, duration: 0.4 }}
+                  variants={createBarVariants(22)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
@@ -384,9 +421,10 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#E8FF86" 
                   fillOpacity="0.8"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 1.2, duration: 0.4 }}
+                  variants={createBarVariants(22)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
@@ -397,9 +435,10 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#E8FF86" 
                   fillOpacity="0.8"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 1.25, duration: 0.4 }}
+                  variants={createBarVariants(23)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
@@ -410,9 +449,10 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#E8FF86" 
                   fillOpacity="0.8"
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{ delay: 1.3, duration: 0.4 }}
+                  variants={createBarVariants(24)}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
               </svg>
@@ -428,3 +468,4 @@ export default function ImpactChart() {
     </section>
   )
 }
+
