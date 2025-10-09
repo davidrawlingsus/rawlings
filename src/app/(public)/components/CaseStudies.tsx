@@ -203,10 +203,10 @@ export default function CaseStudies({
         <div className="text-center mb-12">
           <p className="text-sm uppercase tracking-wide text-slate-400 mb-4">CASE STUDIES</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white">
-            Success stories with <span className="text-lime-400">David Rawlings</span>
+            Success stories with <span className="text-[#B9F040]">David Rawlings</span>
           </h2>
           <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto">
-            The <span className="text-lime-400">fastest-growing</span> brands on Shopify use David Rawlings
+            The <span className="text-[#B9F040]">fastest-growing</span> brands on Shopify use David Rawlings
           </p>
           <p className="text-base text-slate-400 mt-4 max-w-2xl mx-auto">
             See how 1,000+ brands used David Rawlings to boost opt-in rates, increase sales, collect data, and more
@@ -229,10 +229,10 @@ export default function CaseStudies({
                     relative p-4 rounded-xl border shadow-sm transition-all duration-200
                     bg-slate-800 border-slate-700 hover:bg-slate-750
                     ${index === activeIndex 
-                      ? 'ring-2 ring-lime-400 ring-offset-2 ring-offset-slate-900' 
+                      ? 'ring-2 ring-[#B9F040] ring-offset-2 ring-offset-slate-900' 
                       : ''
                     }
-                    focus:outline-none focus:ring-2 focus:ring-lime-400 focus:ring-offset-2 focus:ring-offset-slate-900
+                    focus:outline-none focus:ring-2 focus:ring-[#B9F040] focus:ring-offset-2 focus:ring-offset-slate-900
                   `}
                 >
                   <div className="flex items-center justify-center h-16">
@@ -311,7 +311,7 @@ export default function CaseStudies({
 
                   {/* Content */}
                   <div className="p-6 md:p-8">
-                    <div className="text-5xl md:text-6xl font-semibold text-lime-400 mb-4">
+                    <div className="text-5xl md:text-6xl font-semibold text-[#B9F040] mb-4">
                       {currentCaseStudy.metric}
                     </div>
                     <h3 className="text-xl md:text-2xl font-semibold text-slate-900 mb-4">
@@ -340,10 +340,10 @@ export default function CaseStudies({
                   className={`
                     w-2 h-2 rounded-full transition-all duration-200
                     ${index === activeIndex 
-                      ? 'bg-lime-400 w-6' 
+                      ? 'bg-[#B9F040] w-6' 
                       : 'bg-slate-300 hover:bg-slate-400'
                     }
-                    focus:outline-none focus:ring-2 focus:ring-lime-400 focus:ring-offset-2 focus:ring-offset-slate-900
+                    focus:outline-none focus:ring-2 focus:ring-[#B9F040] focus:ring-offset-2 focus:ring-offset-slate-900
                   `}
                 />
               ))}
@@ -366,10 +366,10 @@ export default function CaseStudies({
                   relative p-4 rounded-xl border shadow-sm transition-all duration-200
                   bg-slate-800 border-slate-700 hover:bg-slate-750
                   ${index === activeIndex 
-                    ? 'ring-2 ring-lime-400 ring-offset-2 ring-offset-slate-900' 
+                    ? 'ring-2 ring-[#B9F040] ring-offset-2 ring-offset-slate-900' 
                     : ''
                   }
-                  focus:outline-none focus:ring-2 focus:ring-lime-400 focus:ring-offset-2 focus:ring-offset-slate-900
+                  focus:outline-none focus:ring-2 focus:ring-[#B9F040] focus:ring-offset-2 focus:ring-offset-slate-900
                 `}
               >
                 <div className="flex items-center justify-center h-16">
@@ -449,7 +449,7 @@ export default function CaseStudies({
 
                   {/* Content */}
                   <div className="p-6">
-                    <div className="text-4xl font-semibold text-lime-400 mb-4">
+                    <div className="text-4xl font-semibold text-[#B9F040] mb-4">
                       {currentCaseStudy.metric}
                     </div>
                     <h3 className="text-lg font-semibold text-slate-900 mb-4">
@@ -478,10 +478,10 @@ export default function CaseStudies({
                   className={`
                     w-2 h-2 rounded-full transition-all duration-200
                     ${index === activeIndex 
-                      ? 'bg-lime-400 w-6' 
+                      ? 'bg-[#B9F040] w-6' 
                       : 'bg-slate-300 hover:bg-slate-400'
                     }
-                    focus:outline-none focus:ring-2 focus:ring-lime-400 focus:ring-offset-2 focus:ring-offset-slate-900
+                    focus:outline-none focus:ring-2 focus:ring-[#B9F040] focus:ring-offset-2 focus:ring-offset-slate-900
                   `}
                 />
               ))}

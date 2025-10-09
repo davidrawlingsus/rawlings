@@ -15,34 +15,37 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <span className="text-white font-bold text-xl">David Rawlings</span>
+          <span className="font-bold text-2xl font-[family-name:var(--font-lato)]">
+            <span className="text-white">market</span>
+            <span className="text-[#B9F040]">ably</span>
+          </span>
         </div>
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center space-x-8">
           {/* Navigation Links */}
           <div className="flex items-center space-x-8">
-            <div className="flex items-center space-x-1 text-white hover:text-[#DFFF00] cursor-pointer transition-colors">
+            <div className="flex items-center space-x-1 text-white hover:text-[#B9F040] cursor-pointer transition-colors">
               <span>Product</span>
               <ChevronDown className="w-4 h-4" />
             </div>
-            <span className="text-white hover:text-[#DFFF00] cursor-pointer transition-colors">
+            <span className="text-white hover:text-[#B9F040] cursor-pointer transition-colors">
               Templates
             </span>
-            <span className="text-white hover:text-[#DFFF00] cursor-pointer transition-colors">
+            <span className="text-white hover:text-[#B9F040] cursor-pointer transition-colors">
               Success Stories
             </span>
-            <span className="text-white hover:text-[#DFFF00] cursor-pointer transition-colors">
+            <span className="text-white hover:text-[#B9F040] cursor-pointer transition-colors">
               Pricing
             </span>
-            <span className="text-white hover:text-[#DFFF00] cursor-pointer transition-colors">
+            <span className="text-white hover:text-[#B9F040] cursor-pointer transition-colors">
               Agency
             </span>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex items-center space-x-4 ml-8">
-            <button className="bg-[#DFFF00] text-black px-6 py-2 rounded-lg font-semibold text-sm uppercase flex items-center space-x-2 hover:bg-[#c4e600] transition-colors">
+            <button className="bg-[#B9F040] text-black px-6 py-2 rounded-lg font-semibold text-sm uppercase flex items-center space-x-2 hover:bg-[#a0d636] transition-colors">
               <span>BOOK A DEMO</span>
               <ArrowRight className="w-4 h-4" />
             </button>
@@ -56,7 +59,7 @@ export default function Header() {
         <div className="lg:hidden">
           <button
             onClick={toggleMobileMenu}
-            className="text-[#DFFF00] hover:text-white transition-colors"
+            className="text-[#B9F040] hover:text-white transition-colors"
             aria-label="Toggle mobile menu"
           >
             <Menu className="w-6 h-6" />
@@ -68,26 +71,26 @@ export default function Header() {
       {isMobileMenuOpen && (
         <div className="lg:hidden mt-4 pb-4">
           <div className="flex flex-col space-y-4">
-            <div className="flex items-center space-x-1 text-white hover:text-[#DFFF00] cursor-pointer transition-colors">
+            <div className="flex items-center space-x-1 text-white hover:text-[#B9F040] cursor-pointer transition-colors">
               <span>Product</span>
               <ChevronDown className="w-4 h-4" />
             </div>
-            <span className="text-white hover:text-[#DFFF00] cursor-pointer transition-colors">
+            <span className="text-white hover:text-[#B9F040] cursor-pointer transition-colors">
               Templates
             </span>
-            <span className="text-white hover:text-[#DFFF00] cursor-pointer transition-colors">
+            <span className="text-white hover:text-[#B9F040] cursor-pointer transition-colors">
               Success Stories
             </span>
-            <span className="text-white hover:text-[#DFFF00] cursor-pointer transition-colors">
+            <span className="text-white hover:text-[#B9F040] cursor-pointer transition-colors">
               Pricing
             </span>
-            <span className="text-white hover:text-[#DFFF00] cursor-pointer transition-colors">
+            <span className="text-white hover:text-[#B9F040] cursor-pointer transition-colors">
               Agency
             </span>
             
             {/* Mobile CTA Buttons */}
             <div className="flex flex-col space-y-3 pt-4">
-              <button className="bg-[#DFFF00] text-black px-6 py-3 rounded-lg font-semibold text-sm uppercase flex items-center justify-center space-x-2 hover:bg-[#c4e600] transition-colors">
+              <button className="bg-[#B9F040] text-black px-6 py-3 rounded-lg font-semibold text-sm uppercase flex items-center justify-center space-x-2 hover:bg-[#a0d636] transition-colors">
                 <span>BOOK A DEMO</span>
                 <ArrowRight className="w-4 h-4" />
               </button>

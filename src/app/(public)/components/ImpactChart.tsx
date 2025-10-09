@@ -41,7 +41,7 @@ export default function ImpactChart() {
         >
           <p className="text-sm uppercase tracking-widest text-neutral-300 mb-4">Why work with David Rawlings?</p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
-            Our <span className="text-[#E8FF86] relative after:absolute after:inset-0 after:blur-xl after:bg-lime-200/50 after:-z-10" aria-label="impact with glow effect">impact</span> speaks for itself
+            Our <span className="text-[#B9F040] relative after:absolute after:inset-0 after:blur-xl after:bg-lime-200/50 after:-z-10" aria-label="impact with glow effect">impact</span> speaks for itself
           </h2>
         </motion.div>
 
@@ -69,7 +69,7 @@ export default function ImpactChart() {
                 <div>
                   <p className="font-semibold text-white">Client Name</p>
                   <p className="text-sm text-neutral-300">
-                    Role at <span className="text-[#E8FF86] font-medium">Company Name</span>
+                    Role at <span className="text-[#B9F040] font-medium">Company Name</span>
                   </p>
                 </div>
               </div>
@@ -348,7 +348,7 @@ export default function ImpactChart() {
                   width="17.25" 
                   height="184" 
                   rx="3" 
-                  fill="#E8FF86" 
+                  fill="#B9F040" 
                   fillOpacity="0.8"
                   variants={createBarVariants(18)}
                   initial="hidden"
@@ -362,7 +362,7 @@ export default function ImpactChart() {
                   width="17.25" 
                   height="223" 
                   rx="3" 
-                  fill="#E8FF86" 
+                  fill="#B9F040" 
                   fillOpacity="0.8"
                   variants={createBarVariants(19)}
                   initial="hidden"
@@ -376,7 +376,7 @@ export default function ImpactChart() {
                   width="17.25" 
                   height="258" 
                   rx="3" 
-                  fill="#E8FF86" 
+                  fill="#B9F040" 
                   fillOpacity="0.8"
                   variants={createBarVariants(20)}
                   initial="hidden"
@@ -390,7 +390,7 @@ export default function ImpactChart() {
                   width="17.25" 
                   height="264" 
                   rx="3" 
-                  fill="#E8FF86" 
+                  fill="#B9F040" 
                   fillOpacity="0.8"
                   variants={createBarVariants(21)}
                   initial="hidden"
@@ -404,7 +404,7 @@ export default function ImpactChart() {
                   width="17.25" 
                   height="270" 
                   rx="3" 
-                  fill="#E8FF86" 
+                  fill="#B9F040" 
                   fillOpacity="0.8"
                   variants={createBarVariants(22)}
                   initial="hidden"
@@ -418,7 +418,7 @@ export default function ImpactChart() {
                   width="17.25" 
                   height="274" 
                   rx="3" 
-                  fill="#E8FF86" 
+                  fill="#B9F040" 
                   fillOpacity="0.8"
                   variants={createBarVariants(22)}
                   initial="hidden"
@@ -432,7 +432,7 @@ export default function ImpactChart() {
                   width="17.25" 
                   height="287" 
                   rx="3" 
-                  fill="#E8FF86" 
+                  fill="#B9F040" 
                   fillOpacity="0.8"
                   variants={createBarVariants(23)}
                   initial="hidden"
@@ -446,7 +446,7 @@ export default function ImpactChart() {
                   width="17.25" 
                   height="292" 
                   rx="3" 
-                  fill="#E8FF86" 
+                  fill="#B9F040" 
                   fillOpacity="0.8"
                   variants={createBarVariants(24)}
                   initial="hidden"
@@ -458,7 +458,7 @@ export default function ImpactChart() {
             </motion.div>
 
             <div className="mt-6 text-sm flex items-center gap-2 text-white">
-              <span className="inline-block w-2 h-2 rounded-full bg-[#E8FF86]"></span>
+              <span className="inline-block w-2 h-2 rounded-full bg-[#B9F040]"></span>
               Net New Subscribers
             </div>
           </div>
