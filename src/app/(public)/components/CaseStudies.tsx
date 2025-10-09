@@ -450,7 +450,7 @@ export default function CaseStudies({
                       {currentCaseStudy.title}
                     </h3>
                     <blockquote className="text-base text-slate-600 mb-6 italic">
-                      "{currentCaseStudy.quote}"
+                      &ldquo;{currentCaseStudy.quote}&rdquo;
                     </blockquote>
                     <Button asChild variant="outline" className="w-full border-slate-300 text-slate-700 hover:bg-slate-50">
                       <Link href={currentCaseStudy.ctaHref}>
