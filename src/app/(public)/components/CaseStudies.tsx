@@ -20,11 +20,8 @@ type CaseStudy = {
 };
 
 interface CaseStudiesProps {
-  title?: string;
-  subtitle?: string;
   readAllHref?: string;
   rotateMs?: number;
-  variant?: 'light' | 'dark';
 }
 
 // Static case study data
@@ -76,11 +73,8 @@ const caseStudies: CaseStudy[] = [
 ];
 
 export default function CaseStudies({
-  title = 'Success stories with David Rawlings',
-  subtitle = 'The fastest-growing brands on Shopify use David Rawlings',
   readAllHref = '/case-studies',
   rotateMs = 6000,
-  variant = 'dark'
 }: CaseStudiesProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
@@ -318,7 +312,7 @@ export default function CaseStudies({
                       {currentCaseStudy.title}
                     </h3>
                     <blockquote className="text-base md:text-lg text-slate-600 mb-6 italic">
-                      "{currentCaseStudy.quote}"
+                      &ldquo;{currentCaseStudy.quote}&rdquo;
                     </blockquote>
                     <Button asChild variant="outline" className="border-slate-300 text-slate-700 hover:bg-slate-50">
                       <Link href={currentCaseStudy.ctaHref}>
