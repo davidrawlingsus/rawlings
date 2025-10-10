@@ -43,7 +43,7 @@ const LogoCloud: React.FC<LogoCloudProps> = ({ logos, speedMs = 40000, className
   };
 
   return (
-    <section className={["relative bg-neutral-50 py-6", className].filter(Boolean).join(" ")}>
+    <div className={["relative", className].filter(Boolean).join(" ")}>
       {/* Global keyframes + animation class */}
       <style jsx global>{`
         @keyframes logo-scroll-up {
@@ -61,7 +61,7 @@ const LogoCloud: React.FC<LogoCloudProps> = ({ logos, speedMs = 40000, className
       `}</style>
 
       <div
-        className="mx-auto max-w-[1100px] overflow-hidden h-[520px] sm:h-[440px] rounded-2xl"
+        className="overflow-hidden h-[600px] rounded-2xl bg-neutral-50"
         style={maskStyle}
         aria-label="Client logo showcase"
       >
@@ -69,10 +69,12 @@ const LogoCloud: React.FC<LogoCloudProps> = ({ logos, speedMs = 40000, className
         <div className="group h-full">
           <div
             className={[
-              // Grid with dense packing
-              "grid grid-flow-row-dense gap-3 sm:gap-3.5",
-              // 6 sub-columns on md+ (3 visual columns), 4 sub-columns on mobile (2 visual columns)
-              "grid-cols-[repeat(4,minmax(0,1fr))] md:grid-cols-[repeat(6,minmax(0,1fr))]",
+              // Grid with dense packing for lattice effect
+              "grid gap-2.5 auto-rows-min",
+              // 4 sub-columns on mobile (2 visual), 6 sub-columns on desktop (3 visual)
+              "grid-cols-4 lg:grid-cols-6",
+              // Dense packing lets items fill gaps
+              "grid-flow-dense",
               // Animate upward by -50% because we duplicated the list once
               "animate-logo-scroll-up",
               // Pause on hover
@@ -82,27 +84,30 @@ const LogoCloud: React.FC<LogoCloudProps> = ({ logos, speedMs = 40000, className
           >
             {looped.map((logo, idx) => {
               const isSquare = logo.shape === "square";
-              // span 2 sub-columns for square; 4 for rect
-              const colSpanClass = isSquare ? "col-span-2" : "col-span-4";
-              const ratioClass = isSquare ? "aspect-[1/1]" : "aspect-[2/1]";
+              // Squares: 2 sub-cols (1 visual column)
+              // Rectangles: 4 sub-cols on mobile (full width), 3 sub-cols on desktop (1.5 visual columns)
+              const colSpanClass = isSquare 
+                ? "col-span-2" 
+                : "col-span-4 lg:col-span-3";
+              const ratioClass = isSquare ? "aspect-square" : "aspect-[3/2]";
               return (
                 <figure
                   key={`${logo.src}-${idx}`}
                   className={[
                     colSpanClass,
-                    "rounded-2xl bg-white p-4 sm:p-4.5 shadow-sm",
-                    "grid place-items-center",
+                    "rounded-xl bg-white p-3 shadow-sm",
+                    "flex items-center justify-center",
                   ].join(" ")}
                 >
-                  <div className={["w-full", ratioClass, "grid place-items-center"].join(" ")}>
+                  <div className={["w-full", ratioClass, "flex items-center justify-center"].join(" ")}>
                     <img
                       src={logo.src}
                       alt={logo.alt}
                       loading="lazy"
                       className={[
-                        "max-w-full max-h-full object-contain",
-                        "opacity-90 grayscale contrast-105 transition",
-                        "group-hover:opacity-100 group-hover:grayscale-0 group-hover:contrast-110 group-hover:scale-[1.02]",
+                        "w-full h-full object-contain",
+                        "opacity-85 grayscale contrast-105 transition duration-300",
+                        "group-hover:opacity-100 group-hover:grayscale-0 group-hover:contrast-100",
                       ].join(" ")}
                     />
                   </div>
@@ -112,7 +117,7 @@ const LogoCloud: React.FC<LogoCloudProps> = ({ logos, speedMs = 40000, className
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

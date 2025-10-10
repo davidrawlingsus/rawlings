@@ -20,29 +20,29 @@ interface LogoWallProps {
   items?: LogoItem[];
 }
 
-// Real logo data from public/images/
+// Production client logos
 const defaultLogos: LogoItem[] = [
-  { src: '/images/imgi_13_spotify-logo-dark.png', name: 'Spotify', alt: 'Spotify logo' },
-  { src: '/images/imgi_10_soundcloud-logo.svg', name: 'SoundCloud', alt: 'SoundCloud logo' },
-  { src: '/images/imgi_8_1280px-TuneIn_Logo_2018.svg.png', name: 'TuneIn', alt: 'TuneIn logo' },
-  { src: '/images/imgi_5_206-2063674_pandora-radio-logo-transparent-pandora-music-company-transparent.png', name: 'Pandora', alt: 'Pandora logo' },
-  { src: '/images/imgi_11_Logo_Univision.png', name: 'Univision', alt: 'Univision logo' },
-  { src: '/images/imgi_12_barstool_logo.png', name: 'Barstool Sports', alt: 'Barstool Sports logo' },
-  { src: '/images/imgi_40_stingray-vector-logo.png', name: 'Stingray', alt: 'Stingray logo' },
-  { src: '/images/imgi_42_Consumable - thumbnail_logo_rgb_rev_v.png', name: 'Consumable', alt: 'Consumable logo' },
-  { src: '/images/imgi_44_vsin-logo.webp', name: 'VSIN', alt: 'VSIN logo' },
-  { src: '/images/imgi_46_Barstool-Sports-Logo.png', name: 'Barstool Sports', alt: 'Barstool Sports logo' },
-  { src: '/images/imgi_49_own-logo.png', name: 'OWN', alt: 'OWN logo' },
-  { src: '/images/imgi_51_audacy_logo_stacked_color_rgb.png', name: 'Audacy', alt: 'Audacy logo' },
-  { src: '/images/imgi_52_2560px-The_Logo_of_The_Washington_Post_Newspaper.svg.png', name: 'Washington Post', alt: 'Washington Post logo' },
-  { src: '/images/imgi_56_CoxMediaGroup Logo.png', name: 'Cox Media Group', alt: 'Cox Media Group logo' },
-  { src: '/images/imgi_57_Entravision Logo Color.png', name: 'Entravision', alt: 'Entravision logo' },
-  { src: '/images/imgi_59_bonneville-logo.png', name: 'Bonneville', alt: 'Bonneville logo' },
-  { src: '/images/imgi_63_Simplecast_trans_logo.png', name: 'Simplecast', alt: 'Simplecast logo' },
-  { src: '/images/imgi_65_inline_audiomack_logo_orange.png', name: 'Audiomack', alt: 'Audiomack logo' },
-  { src: '/images/imgi_67_logo_idobi_radio_dark.png', name: 'Idobi Radio', alt: 'Idobi Radio logo' },
-  { src: '/images/imgi_69_Podcastone_logo.png', name: 'PodcastOne', alt: 'PodcastOne logo' },
-  { src: '/images/imgi_7_NBC_logo.svg.png', name: 'NBC', alt: 'NBC logo' },
+  { src: '/images/barbour_logo_rectangle.png', name: 'Barbour', alt: 'Barbour logo' },
+  { src: '/images/Bupa_logo_square.png', name: 'Bupa', alt: 'Bupa logo' },
+  { src: '/images/conde_nast_logo_square.png', name: 'Condé Nast', alt: 'Condé Nast logo' },
+  { src: '/images/durex_logo_square.png', name: 'Durex', alt: 'Durex logo' },
+  { src: '/images/fitness_first_logo_square.png', name: 'Fitness First', alt: 'Fitness First logo' },
+  { src: '/images/hotjar_logo_square.png', name: 'Hotjar', alt: 'Hotjar logo' },
+  { src: '/images/katkin_logo_square.png', name: 'KatKin', alt: 'KatKin logo' },
+  { src: '/images/lloyds_bank_logo_square.png', name: 'Lloyds Bank', alt: 'Lloyds Bank logo' },
+  { src: '/images/mindful_chef_logo_square.png', name: 'Mindful Chef', alt: 'Mindful Chef logo' },
+  { src: '/images/monica_vinader_logo_square.png', name: 'Monica Vinader', alt: 'Monica Vinader logo' },
+  { src: '/images/mous_logo_square.png', name: 'Mous', alt: 'Mous logo' },
+  { src: '/images/o2_logo_square.png', name: 'O2', alt: 'O2 logo' },
+  { src: '/images/orlebar_brown_logo_square.png', name: 'Orlebar Brown', alt: 'Orlebar Brown logo' },
+  { src: '/images/sally_beauty_logo_square.png', name: 'Sally Beauty', alt: 'Sally Beauty logo' },
+  { src: '/images/best_western_square.png', name: 'Best Western', alt: 'Best Western logo' },
+  { src: '/images/choice_hotels_logo_square.png', name: 'Choice Hotels', alt: 'Choice Hotels logo' },
+  { src: '/images/crazy_egg_logo_square.png', name: 'Crazy Egg', alt: 'Crazy Egg logo' },
+  { src: '/images/elvie_logo_square.png', name: 'Elvie', alt: 'Elvie logo' },
+  { src: '/images/liforme_logo_square.png', name: 'Liforme', alt: 'Liforme logo' },
+  { src: '/images/the_whisky_exchange_logo_square.png', name: 'The Whisky Exchange', alt: 'The Whisky Exchange logo' },
+  { src: '/images/wattbike_logo_rectangle.png', name: 'Wattbike', alt: 'Wattbike logo' },
 ];
 
 export default function LogoWall({
