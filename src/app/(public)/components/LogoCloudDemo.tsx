@@ -59,7 +59,7 @@ const clientLogos: LogoItem[] = [
 
 export default function LogoCloudDemo() {
   return (
-    <section aria-labelledby="logo-cloud-heading" className="relative pt-4 pb-16 md:pt-24 md:pb-24">
+    <section aria-labelledby="logo-cloud-heading" className="relative pt-4 pb-16 md:pt-8 md:pb-24">
       <div className="max-w-[1280px] mx-auto px-6 md:px-8">
         <div className="flex flex-col lg:flex-row gap-8 md:gap-12 items-center">
           {/* Logo Cloud - Left Side */}

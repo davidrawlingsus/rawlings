@@ -90,12 +90,12 @@ export default function HeroSection() {
           >
             {/* Image Container with Mobile Peek Behavior and Desktop Overlap */}
             <div className="relative -mt-10 sm:mt-0 overflow-visible">
-              <div className="relative z-10 object-contain md:max-w-[550px] w-[70vw] translate-y-6 sm:translate-y-0 md:translate-y-12">
+              <div className="relative z-10 object-contain md:max-w-[420px] w-[70vw] translate-y-6 sm:translate-y-0 md:translate-y-8">
                 <Image
                   src="/images/hero-v2.webp"
                   alt="Smiling person representing friendly, modern analytics brand"
-                  width={550}
-                  height={650}
+                  width={420}
+                  height={500}
                   className="object-contain"
                   priority
                 />
