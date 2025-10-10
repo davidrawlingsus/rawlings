@@ -46,9 +46,9 @@ export default function ImpactChart() {
         </motion.div>
 
         {/* Two-column content */}
-        <div className="flex flex-col md:grid md:grid-cols-2 md:gap-12 lg:gap-16 md:items-end">
+        <div className="flex flex-col md:grid md:grid-cols-2 md:gap-12 lg:gap-16 md:items-end md:px-8">
           {/* Left Column - Stat Card */}
-          <div className="order-2 md:order-1 pb-8 md:pb-0">
+          <div className="order-2 md:order-1 pb-8 md:pb-0 md:pr-8">
             <motion.div
               variants={variants.fadeUp}
               initial="hidden"
@@ -77,12 +77,13 @@ export default function ImpactChart() {
           </div>
 
           {/* Right Column - SVG Bar Chart */}
-          <div className="order-1 md:order-2 relative mb-8 md:mb-0 md:mt-0 flex flex-col items-center justify-end">
+          <div className="order-1 md:order-2 relative mb-8 md:mb-0 md:mt-0 md:mb-16 flex flex-col items-center justify-end md:pl-8">
             <motion.div 
               variants={variants.fadeUp}
               initial="hidden"
               whileInView="visible"
               viewport={{ amount: 0.3, once: true }}
+              className="md:scale-[1.8] md:origin-bottom"
             >
               <svg viewBox="0 0 614 287" className="w-full h-auto" role="img" aria-labelledby="chart-title" aria-describedby="chart-desc">
                 <title id="chart-title">Net New Subscribers Growth Chart</title>
@@ -457,10 +458,16 @@ export default function ImpactChart() {
               </svg>
             </motion.div>
 
-            <div className="mt-6 text-sm flex items-center gap-2 text-white">
+            <motion.div 
+              className="mt-6 text-sm flex items-center gap-2 text-white md:scale-[1.8] md:origin-bottom md:mt-12"
+              variants={variants.fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.3, once: true }}
+            >
               <span className="inline-block w-2 h-2 rounded-full bg-[#B9F040]"></span>
               Net New Subscribers
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
