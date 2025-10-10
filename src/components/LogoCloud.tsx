@@ -104,11 +104,7 @@ const LogoCloud: React.FC<LogoCloudProps> = ({ logos, speedMs = 40000, className
                       src={logo.src}
                       alt={logo.alt}
                       loading="lazy"
-                      className={[
-                        "w-full h-full object-contain",
-                        "opacity-85 grayscale contrast-105 transition duration-300",
-                        "group-hover:opacity-100 group-hover:grayscale-0 group-hover:contrast-100",
-                      ].join(" ")}
+                      className="w-full h-full object-contain"
                     />
                   </div>
                 </figure>
