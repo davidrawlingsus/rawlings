@@ -216,12 +216,12 @@
 
   /* Chart bar animations - Safari iOS compatible */
   svg .chart-bar {
-    opacity: 0 !important;
+    opacity: 0;
   }
   
   /* Only animate when chart is visible (triggered by Intersection Observer) */
   svg.chart-visible .chart-bar {
-    animation: chart-bar-fade-in 0.4s ease-out forwards;
+    animation: chart-bar-fade-in 0.4s ease-out forwards !important;
   }
   
   /* Staggered animation delays for each bar */

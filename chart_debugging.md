@@ -126,6 +126,34 @@ The bar chart in the Impact section (`ImpactChart.tsx`) is not visible at all in
 - `!important` flag ensures opacity: 0 takes precedence
 - Proper cleanup prevents memory leaks
 
+**Result:** ❌ FAILED - Chart disappeared completely
+
+**Issue Found:** 
+- CSS with `!important` on `opacity: 0` prevented animation from working
+- The `!important` flag blocked the animation from setting opacity to 1
+- Animation was running but couldn't override the base opacity rule
+
+**Commit:** `8bd245f`
+
+### Attempt #7: Fix CSS specificity issue
+**Date:** Current
+**Approach:**
+- Removed `!important` from base `opacity: 0` rule
+- Added `!important` to the animation property instead
+- This allows animation to override opacity while preventing other styles from interfering
+
+**Implementation:**
+```css
+svg .chart-bar { opacity: 0; }  /* No !important */
+svg.chart-visible .chart-bar { animation: chart-bar-fade-in 0.4s ease-out forwards !important; }
+```
+
+**Why this works:**
+- Base opacity stays at 0 until class is added
+- Animation can now override opacity (no !important blocking it)
+- `!important` on animation property ensures it runs when triggered
+- Proper CSS specificity without preventing animation
+
 **Testing:** Ready for Safari iOS testing
 
 **Commit:** Pending
