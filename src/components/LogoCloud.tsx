@@ -44,14 +44,17 @@ const LogoCloud: React.FC<LogoCloudProps> = ({ logos, speedMs = 40000, className
 
   return (
     <section className={["relative bg-neutral-50 py-6", className].filter(Boolean).join(" ")}>
-      {/* Global keyframes + reduced motion guard */}
+      {/* Global keyframes + animation class */}
       <style jsx global>{`
         @keyframes logo-scroll-up {
           from { transform: translateY(0); }
           to   { transform: translateY(-50%); }
         }
+        .animate-logo-scroll-up {
+          animation: logo-scroll-up 45s linear infinite;
+        }
         @media (prefers-reduced-motion: reduce) {
-          .motion-safe\\:animate-logo-scroll-up {
+          .animate-logo-scroll-up {
             animation: none !important;
           }
         }
@@ -71,7 +74,7 @@ const LogoCloud: React.FC<LogoCloudProps> = ({ logos, speedMs = 40000, className
               // 6 sub-columns on md+ (3 visual columns), 4 sub-columns on mobile (2 visual columns)
               "grid-cols-[repeat(4,minmax(0,1fr))] md:grid-cols-[repeat(6,minmax(0,1fr))]",
               // Animate upward by -50% because we duplicated the list once
-              "motion-safe:animate-logo-scroll-up",
+              "animate-logo-scroll-up",
               // Pause on hover
               "group-hover:[animation-play-state:paused]",
             ].join(" ")}
