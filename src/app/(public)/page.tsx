@@ -5,9 +5,6 @@ import ImpactChart from './components/ImpactChart'
 import Process from './components/Process'
 import CaseStudies from './components/CaseStudies'
 
-// Force dynamic rendering (database queries at runtime)
-export const dynamic = 'force-dynamic'
-
 export default function HomePage() {
   return (
     <main className="min-h-screen">

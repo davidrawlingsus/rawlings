@@ -63,18 +63,3 @@ model ContactSubmission {
   
   @@index([status, createdAt])
 }
-
-// Client logos for logo cloud display
-model Logo {
-  id        String   @id @default(cuid())
-  name      String   @unique // Company name
-  imageUrl  String   // Path to logo image
-  shape     String   // "square" or "rect"
-  alt       String   // Alt text for accessibility
-  order     Int      @default(0)
-  published Boolean  @default(true)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  @@index([published, order])
-}
