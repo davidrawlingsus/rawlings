@@ -70,9 +70,9 @@ const LogoCloud: React.FC<LogoCloudProps> = ({ logos, speedMs = 40000, className
           <div
             className={[
               // Grid with dense packing for lattice effect
-              "grid gap-2.5 auto-rows-min",
-              // 4 sub-columns on mobile (2 visual), 6 sub-columns on desktop (3 visual)
-              "grid-cols-4 lg:grid-cols-6",
+              "grid gap-2 auto-rows-min",
+              // 6 sub-columns on mobile (3 visual), 10 sub-columns on desktop (5 visual)
+              "grid-cols-6 lg:grid-cols-10",
               // Dense packing lets items fill gaps
               "grid-flow-dense",
               // Animate upward by -50% because we duplicated the list once
@@ -85,17 +85,17 @@ const LogoCloud: React.FC<LogoCloudProps> = ({ logos, speedMs = 40000, className
             {looped.map((logo, idx) => {
               const isSquare = logo.shape === "square";
               // Squares: 2 sub-cols (1 visual column)
-              // Rectangles: 4 sub-cols on mobile (full width), 3 sub-cols on desktop (1.5 visual columns)
+              // Rectangles: 4 sub-cols on mobile (2 visual), 4 sub-cols on desktop (2 visual columns)
               const colSpanClass = isSquare 
                 ? "col-span-2" 
-                : "col-span-4 lg:col-span-3";
-              const ratioClass = isSquare ? "aspect-square" : "aspect-[3/2]";
+                : "col-span-4";
+              const ratioClass = isSquare ? "aspect-square" : "aspect-[5/2]";
               return (
                 <figure
                   key={`${logo.src}-${idx}`}
                   className={[
                     colSpanClass,
-                    "rounded-xl bg-white p-3 shadow-sm",
+                    "rounded-lg bg-white p-2 shadow-sm",
                     "flex items-center justify-center",
                   ].join(" ")}
                 >
