@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { ChevronDown, Menu, ArrowRight } from 'lucide-react'
+import { Menu, ArrowRight } from 'lucide-react'
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -25,21 +25,20 @@ export default function Header() {
         <div className="hidden lg:flex items-center space-x-8">
           {/* Navigation Links */}
           <div className="flex items-center space-x-8">
-            <div className="flex items-center space-x-1 text-white hover:text-[#B9F040] cursor-pointer transition-colors">
-              <span>Product</span>
-              <ChevronDown className="w-4 h-4" />
-            </div>
             <span className="text-white hover:text-[#B9F040] cursor-pointer transition-colors">
-              Templates
+              Clients
             </span>
             <span className="text-white hover:text-[#B9F040] cursor-pointer transition-colors">
-              Success Stories
+              Results
+            </span>
+            <span className="text-white hover:text-[#B9F040] cursor-pointer transition-colors">
+              Process
+            </span>
+            <span className="text-white hover:text-[#B9F040] cursor-pointer transition-colors">
+              People
             </span>
             <span className="text-white hover:text-[#B9F040] cursor-pointer transition-colors">
               Pricing
-            </span>
-            <span className="text-white hover:text-[#B9F040] cursor-pointer transition-colors">
-              Agency
             </span>
           </div>
 
@@ -71,21 +70,20 @@ export default function Header() {
       {isMobileMenuOpen && (
         <div className="lg:hidden mt-4 pb-4">
           <div className="flex flex-col space-y-4">
-            <div className="flex items-center space-x-1 text-white hover:text-[#B9F040] cursor-pointer transition-colors">
-              <span>Product</span>
-              <ChevronDown className="w-4 h-4" />
-            </div>
             <span className="text-white hover:text-[#B9F040] cursor-pointer transition-colors">
-              Templates
+              Clients
             </span>
             <span className="text-white hover:text-[#B9F040] cursor-pointer transition-colors">
-              Success Stories
+              Results
+            </span>
+            <span className="text-white hover:text-[#B9F040] cursor-pointer transition-colors">
+              Process
+            </span>
+            <span className="text-white hover:text-[#B9F040] cursor-pointer transition-colors">
+              People
             </span>
             <span className="text-white hover:text-[#B9F040] cursor-pointer transition-colors">
               Pricing
-            </span>
-            <span className="text-white hover:text-[#B9F040] cursor-pointer transition-colors">
-              Agency
             </span>
             
             {/* Mobile CTA Buttons */}
