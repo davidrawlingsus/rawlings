@@ -2,7 +2,7 @@
 
 import { motion, Variants } from 'framer-motion'
 import Image from 'next/image'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 const variants: { fadeUp: Variants } = {
   fadeUp: {
@@ -17,42 +17,31 @@ const variants: { fadeUp: Variants } = {
 
 export default function ImpactChart() {
   const svgRef = useRef<SVGSVGElement>(null)
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
     const svg = svgRef.current
     if (!svg) return
 
-    let observer: IntersectionObserver | null = null
-    
-    // Small delay to ensure page is fully loaded before observing
-    const timeoutId = setTimeout(() => {
-      observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              // Add class to trigger animation
-              svg.classList.add('chart-visible')
-              if (observer) {
-                observer.unobserve(entry.target)
-              }
-            }
-          })
-        },
-        { 
-          threshold: 0.3,
-          rootMargin: '0px' // No margin to ensure it's truly in viewport
-        }
-      )
-
-      observer.observe(svg)
-    }, 100) // 100ms delay to prevent immediate triggering on page load
-
-    return () => {
-      clearTimeout(timeoutId)
-      if (observer) {
-        observer.disconnect()
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            console.log('Chart is visible, triggering animation')
+            setIsVisible(true)
+            observer.unobserve(entry.target)
+          }
+        })
+      },
+      { 
+        threshold: 0.3,
+        rootMargin: '0px'
       }
-    }
+    )
+
+    observer.observe(svg)
+
+    return () => observer.disconnect()
   }, [])
 
   return (
@@ -118,7 +107,7 @@ export default function ImpactChart() {
               viewport={{ amount: 0.3, once: true }}
               className="md:scale-[1.8] md:origin-bottom md:mb-8"
             >
-              <svg ref={svgRef} viewBox="0 0 614 287" className="w-full h-auto" role="img" aria-labelledby="chart-title" aria-describedby="chart-desc">
+              <svg ref={svgRef} viewBox="0 0 614 287" className={`w-full h-auto ${isVisible ? 'chart-visible' : ''}`} role="img" aria-labelledby="chart-title" aria-describedby="chart-desc">
                 <title id="chart-title">Growth Rate Chart</title>
                 <desc id="chart-desc">A bar chart showing growth rate over time, with highlighted bars representing improved performance</desc>
                 

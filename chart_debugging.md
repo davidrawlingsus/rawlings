@@ -154,7 +154,41 @@ svg.chart-visible .chart-bar { animation: chart-bar-fade-in 0.4s ease-out forwar
 - `!important` on animation property ensures it runs when triggered
 - Proper CSS specificity without preventing animation
 
-**Testing:** Ready for Safari iOS testing
+**Result:** ⚠️ PARTIAL SUCCESS - Chart is visible but no animation
+
+**Issue Found:**
+- Bars are now visible (opacity issue fixed)
+- But animation doesn't trigger at all - neither on page load nor when entering viewport
+- Intersection Observer may not be adding the class, or CSS animation isn't applying
+- Need to verify if class is being added and if CSS is matching
+
+**Commit:** `574139f`
+
+### Attempt #8: Use React state instead of direct DOM manipulation
+**Date:** Current
+**Approach:**
+- Switch from `svg.classList.add()` to React state management
+- Use `useState` to control visibility
+- Apply class via React's `className` prop binding
+- Added console.log to verify Intersection Observer is working
+- Removed timeout delay (may have been causing issues)
+
+**Implementation:**
+```tsx
+const [isVisible, setIsVisible] = useState(false)
+// In observer callback:
+setIsVisible(true)
+// In JSX:
+className={`w-full h-auto ${isVisible ? 'chart-visible' : ''}`}
+```
+
+**Why this should work:**
+- React state changes trigger proper re-renders
+- className binding is more reliable than direct DOM manipulation
+- Simpler code without setTimeout complexity
+- Console log will help verify if observer fires on Safari iOS
+
+**Testing:** Ready for Safari iOS testing (check console for "Chart is visible" message)
 
 **Commit:** Pending
 
