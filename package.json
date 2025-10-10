@@ -12,13 +12,16 @@
     "db:migrate": "prisma migrate dev",
     "db:studio": "prisma studio",
     "db:generate": "prisma generate",
-    "db:seed": "tsx prisma/seed.ts"
+    "db:seed": "tsx prisma/seed.ts",
+    "upload:logos": "tsx scripts/upload-logos-simple.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.17.0",
     "@radix-ui/react-slot": "^1.2.3",
+    "@vercel/blob": "^2.0.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "dotenv": "^17.2.3",
     "framer-motion": "^12.23.22",
     "lucide-react": "^0.545.0",
     "next": "15.5.4",
