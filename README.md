@@ -38,4 +38,14 @@ npm run dev
 Each section lives in `/components/` with a clear purpose:
 - Hero, LogoCloud, ValueProps, Proof, Process, About, FAQ, CTA Band, Contact, Footer
 
-See `rules.md` for detailed development guidelines and principles.# Build trigger
+See `rules.md` for detailed development guidelines and principles.
+
+## Typing Headline Configuration
+
+The hero headline uses a custom typing animation component (`TypingHeadline.tsx`) with no external dependencies. To customize phrases, speeds, or hold durations, pass a `config` prop:
+
+```tsx
+<TypingHeadline config={{ phrases: ['your', 'custom', 'phrases'], typingSpeed: { short: 60, long: 75 } }} />
+```
+
+**Config options:** `phrases` (string[]), `typingSpeed.short/long` (ms/char), `deletingSpeed` (ms/char), `holdDuration.default/last` (ms), `settleDelay` (ms). Respects `prefers-reduced-motion` with a static fallback ("marketing").

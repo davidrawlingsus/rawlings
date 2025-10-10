@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import TypingHeadline from './TypingHeadline'
 
 export default function HeroSection() {
   return (
@@ -34,7 +35,7 @@ export default function HeroSection() {
                 }
               }}
             >
-              Go Beyond Analytics — Build Brands That Convert
+              <TypingHeadline />
             </motion.h1>
             
             <motion.p 
