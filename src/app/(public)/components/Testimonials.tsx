@@ -19,7 +19,7 @@ const testimonials: Testimonial[] = [
     name: 'Jim Warren',
     title: '',
     company: 'Katkin & Mous',
-    imageSrc: '/images/katkin_logo_square.png',
+    imageSrc: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/katkin_logo_square.png',
   },
   {
     id: '2',
@@ -27,7 +27,7 @@ const testimonials: Testimonial[] = [
     name: 'Anna Cusden',
     title: '',
     company: 'Look Fabulous Forever',
-    imageSrc: '/images/look_fabulous_forever_logo_square.png',
+    imageSrc: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/look_fabulous_forever_logo_square.png',
   },
   {
     id: '3',
@@ -35,7 +35,7 @@ const testimonials: Testimonial[] = [
     name: 'Elliott Fox',
     title: '',
     company: 'Wattbike',
-    imageSrc: '/images/wattbike_logo_rectangle.png',
+    imageSrc: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/wattbike_logo_rectangle.png',
   },
   {
     id: '4',
@@ -43,7 +43,7 @@ const testimonials: Testimonial[] = [
     name: 'Duncan Bradley',
     title: '',
     company: 'Wattbike',
-    imageSrc: '/images/wattbike_logo_rectangle.png',
+    imageSrc: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/wattbike_logo_rectangle.png',
   },
   {
     id: '5',
@@ -51,7 +51,7 @@ const testimonials: Testimonial[] = [
     name: 'Richard Kessell',
     title: '',
     company: 'Mous',
-    imageSrc: '/images/mous_logo_square.png',
+    imageSrc: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/mous_logo_square.png',
   },
   {
     id: '6',
@@ -59,7 +59,7 @@ const testimonials: Testimonial[] = [
     name: 'Johannes Paul',
     title: '',
     company: 'Omlet',
-    imageSrc: '/images/omlet_logo_square.png',
+    imageSrc: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/omlet_logo_square.png',
   },
   {
     id: '7',
@@ -67,7 +67,7 @@ const testimonials: Testimonial[] = [
     name: 'Kimberly MacAulay',
     title: '',
     company: 'Fresh Tracks Canada',
-    imageSrc: '/images/fresh_tracks_canada.png',
+    imageSrc: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/fresh_tracks_canada.png',
   },
   {
     id: '8',
@@ -75,7 +75,7 @@ const testimonials: Testimonial[] = [
     name: 'John Parker',
     title: '',
     company: 'Fresh Tracks Canada',
-    imageSrc: '/images/fresh_tracks_canada.png',
+    imageSrc: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/fresh_tracks_canada.png',
   },
   {
     id: '9',
@@ -83,7 +83,7 @@ const testimonials: Testimonial[] = [
     name: 'David Darmanin',
     title: '',
     company: 'Hotjar',
-    imageSrc: '/images/hotjar_logo_square.png',
+    imageSrc: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/hotjar_logo_square.png',
   },
   {
     id: '10',
@@ -91,7 +91,7 @@ const testimonials: Testimonial[] = [
     name: "Brett O'Farrell",
     title: '',
     company: 'KatKin',
-    imageSrc: '/images/katkin_logo_square.png',
+    imageSrc: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/katkin_logo_square.png',
   },
   {
     id: '11',
@@ -99,7 +99,7 @@ const testimonials: Testimonial[] = [
     name: 'Leon Hughes',
     title: '',
     company: 'Piper Private Equity',
-    imageSrc: '/images/piper_logo_rectangle.png',
+    imageSrc: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/piper_logo_rectangle.png',
   },
 ]
 

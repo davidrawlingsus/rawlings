@@ -66,7 +66,7 @@ export default function ImpactChart() {
               <div className="flex items-center gap-4 mt-6">
                 <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
                   <Image
-                    src="/images/mark_morley_avatar.jpeg"
+                    src="https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/mark_morley_avatar.jpeg"
                     alt="Mark Morley"
                     width={48}
                     height={48}
