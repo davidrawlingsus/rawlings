@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function HeroSection() {
   return (
-    <section id="hero" className="pt-12 pb-8 md:py-32">
+    <section id="hero" className="relative pt-12 pb-8 md:pt-32 md:pb-0 overflow-visible">
       <div className="max-w-[1280px] mx-auto px-6 md:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           {/* Left Column - Text */}
@@ -88,14 +88,14 @@ export default function HeroSection() {
             }}
             viewport={{ amount: 0.3, once: true }}
           >
-            {/* Image Container with Mobile Peek Behavior */}
+            {/* Image Container with Mobile Peek Behavior and Desktop Overlap */}
             <div className="relative -mt-10 sm:mt-0 overflow-visible">
-              <div className="relative z-10 object-contain md:max-w-[420px] w-[70vw] translate-y-6 sm:translate-y-0">
+              <div className="relative z-10 object-contain md:max-w-[550px] w-[70vw] translate-y-6 sm:translate-y-0 md:translate-y-12">
                 <Image
                   src="/images/hero-v2.webp"
                   alt="Smiling person representing friendly, modern analytics brand"
-                  width={420}
-                  height={500}
+                  width={550}
+                  height={650}
                   className="object-contain"
                   priority
                 />
