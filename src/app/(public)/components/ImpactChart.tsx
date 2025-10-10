@@ -15,6 +15,38 @@ const variants: { fadeUp: Variants } = {
   },
 }
 
+// Bar data for the chart
+const barData = [
+  // Baseline bars (gray)
+  { x: 0, y: 209.794, height: 77, fill: '#F9FAF2', opacity: 0.7 },
+  { x: 24, y: 206.794, height: 80, fill: '#F9FAF2', opacity: 0.7 },
+  { x: 48, y: 159.794, height: 127, fill: '#F9FAF2', opacity: 0.7 },
+  { x: 72, y: 211.794, height: 75, fill: '#F9FAF2', opacity: 0.7 },
+  { x: 96, y: 221.794, height: 65, fill: '#F9FAF2', opacity: 0.7 },
+  { x: 120, y: 230.794, height: 56, fill: '#F9FAF2', opacity: 0.7 },
+  { x: 144, y: 221.794, height: 65, fill: '#F9FAF2', opacity: 0.7 },
+  { x: 168, y: 211.794, height: 75, fill: '#F9FAF2', opacity: 0.7 },
+  { x: 192, y: 230.794, height: 56, fill: '#F9FAF2', opacity: 0.7 },
+  { x: 216, y: 159.794, height: 127, fill: '#F9FAF2', opacity: 0.7 },
+  { x: 240, y: 145.794, height: 141, fill: '#F9FAF2', opacity: 0.7 },
+  { x: 264, y: 130.794, height: 156, fill: '#F9FAF2', opacity: 0.7 },
+  { x: 288, y: 181.794, height: 105, fill: '#F9FAF2', opacity: 0.7 },
+  { x: 312, y: 195.794, height: 91, fill: '#F9FAF2', opacity: 0.7 },
+  { x: 336, y: 181.794, height: 105, fill: '#F9FAF2', opacity: 0.7 },
+  { x: 360, y: 170.794, height: 116, fill: '#F9FAF2', opacity: 0.7 },
+  { x: 384, y: 175.794, height: 111, fill: '#F9FAF2', opacity: 0.7 },
+  { x: 408, y: 170.794, height: 116, fill: '#F9FAF2', opacity: 0.7 },
+  // Highlight bars (green)
+  { x: 432, y: 102.794, height: 184, fill: '#B9F040', opacity: 0.8 },
+  { x: 456, y: 63.7941, height: 223, fill: '#B9F040', opacity: 0.8 },
+  { x: 480, y: 28.7941, height: 258, fill: '#B9F040', opacity: 0.8 },
+  { x: 504, y: 23, height: 264, fill: '#B9F040', opacity: 0.8 },
+  { x: 528, y: 17, height: 270, fill: '#B9F040', opacity: 0.8 },
+  { x: 552, y: 13, height: 274, fill: '#B9F040', opacity: 0.8 },
+  { x: 576, y: 0, height: 287, fill: '#B9F040', opacity: 0.8 },
+  { x: 600, y: 0, height: 287, fill: '#B9F040', opacity: 0.8 },
+]
+
 export default function ImpactChart() {
   const svgRef = useRef<SVGSVGElement>(null)
   const [isVisible, setIsVisible] = useState(false)
@@ -27,7 +59,6 @@ export default function ImpactChart() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            console.log('Chart is visible, triggering animation')
             setIsVisible(true)
             observer.unobserve(entry.target)
           }
@@ -107,39 +138,27 @@ export default function ImpactChart() {
               viewport={{ amount: 0.3, once: true }}
               className="md:scale-[1.8] md:origin-bottom md:mb-8"
             >
-              <svg ref={svgRef} viewBox="0 0 614 287" className={`w-full h-auto ${isVisible ? 'chart-visible' : ''}`} role="img" aria-labelledby="chart-title" aria-describedby="chart-desc">
+              <svg ref={svgRef} viewBox="0 0 614 287" className="w-full h-auto" role="img" aria-labelledby="chart-title" aria-describedby="chart-desc">
                 <title id="chart-title">Growth Rate Chart</title>
                 <desc id="chart-desc">A bar chart showing growth rate over time, with highlighted bars representing improved performance</desc>
                 
-                {/* Baseline bars - Using CSS animation for Safari iOS compatibility */}
-                <rect className="chart-bar" y="209.794" width="17.25" height="77" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
-                <rect className="chart-bar" x="24" y="206.794" width="17.25" height="80" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
-                <rect className="chart-bar" x="48" y="159.794" width="17.25" height="127" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
-                <rect className="chart-bar" x="72" y="211.794" width="17.25" height="75" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
-                <rect className="chart-bar" x="96" y="221.794" width="17.25" height="65" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
-                <rect className="chart-bar" x="120" y="230.794" width="17.25" height="56" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
-                <rect className="chart-bar" x="144" y="221.794" width="17.25" height="65" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
-                <rect className="chart-bar" x="168" y="211.794" width="17.25" height="75" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
-                <rect className="chart-bar" x="192" y="230.794" width="17.25" height="56" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
-                <rect className="chart-bar" x="216" y="159.794" width="17.25" height="127" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
-                <rect className="chart-bar" x="240" y="145.794" width="17.25" height="141" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
-                <rect className="chart-bar" x="264" y="130.794" width="17.25" height="156" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
-                <rect className="chart-bar" x="288" y="181.794" width="17.25" height="105" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
-                <rect className="chart-bar" x="312" y="195.794" width="17.25" height="91" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
-                <rect className="chart-bar" x="336" y="181.794" width="17.25" height="105" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
-                <rect className="chart-bar" x="360" y="170.794" width="17.25" height="116" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
-                <rect className="chart-bar" x="384" y="175.794" width="17.25" height="111" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
-                <rect className="chart-bar" x="408" y="170.794" width="17.25" height="116" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
-                
-                {/* Highlight bars */}
-                <rect className="chart-bar" x="432" y="102.794" width="17.25" height="184" rx="3" fill="#B9F040" fillOpacity="0.8" />
-                <rect className="chart-bar" x="456" y="63.7941" width="17.25" height="223" rx="3" fill="#B9F040" fillOpacity="0.8" />
-                <rect className="chart-bar" x="480" y="28.7941" width="17.25" height="258" rx="3" fill="#B9F040" fillOpacity="0.8" />
-                <rect className="chart-bar" x="504" y="23" width="17.25" height="264" rx="3" fill="#B9F040" fillOpacity="0.8" />
-                <rect className="chart-bar" x="528" y="17" width="17.25" height="270" rx="3" fill="#B9F040" fillOpacity="0.8" />
-                <rect className="chart-bar" x="552" y="13" width="17.25" height="274" rx="3" fill="#B9F040" fillOpacity="0.8" />
-                <rect className="chart-bar" x="576" y="0" width="17.25" height="287" rx="3" fill="#B9F040" fillOpacity="0.8" />
-                <rect className="chart-bar" x="600" y="0" width="17.25" height="287" rx="3" fill="#B9F040" fillOpacity="0.8" />
+                {/* Bars with inline styles controlled by React state */}
+                {barData.map((bar, index) => (
+                  <rect
+                    key={index}
+                    x={bar.x}
+                    y={bar.y}
+                    width="17.25"
+                    height={bar.height}
+                    rx="3"
+                    fill={bar.fill}
+                    fillOpacity={bar.opacity}
+                    style={{
+                      opacity: isVisible ? 1 : 0,
+                      transition: `opacity 0.4s ease-out ${index * 0.05}s`
+                    }}
+                  />
+                ))}
               </svg>
             </motion.div>
 

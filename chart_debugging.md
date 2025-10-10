@@ -188,7 +188,65 @@ className={`w-full h-auto ${isVisible ? 'chart-visible' : ''}`}
 - Simpler code without setTimeout complexity
 - Console log will help verify if observer fires on Safari iOS
 
-**Testing:** Ready for Safari iOS testing (check console for "Chart is visible" message)
+**Result:** ❌ FAILED - Bars visible but no animation at all
+
+**Issue Found:**
+- Bars are fully visible (opacity: 1)
+- No fade-in animation on page load or when entering viewport
+- CSS animations may not be working on Safari iOS at all
+- Need completely different approach
+
+**Commit:** `e8c0f8e`
+
+### Attempt #9: Use inline styles with React state (simplest approach)
+**Date:** Current
+**Approach:**
+- Abandon CSS animations entirely (they're not working on Safari iOS)
+- Use inline `style` prop with `opacity` controlled by React state
+- Use CSS `transition` property for smooth fade (more reliable than keyframes)
+- Generate bars with staggered opacity changes via React
+
+**Implementation:**
+- Each bar gets inline style with opacity and transition
+- When isVisible = true, set opacity to 1 with delay
+- Use setTimeout for staggered delays (simpler than CSS nth-child)
+
+**Why this should work:**
+- Inline styles are most reliable cross-browser
+- CSS transitions work better than animations on Safari iOS
+- React controls everything explicitly
+- No complex CSS selectors or specificity issues
+
+**Implementation Details:**
+```tsx
+// Bar data array
+const barData = [
+  { x: 0, y: 209.794, height: 77, fill: '#F9FAF2', opacity: 0.7 },
+  // ... 25 more bars
+]
+
+// Map over bars with inline styles
+{barData.map((bar, index) => (
+  <rect
+    key={index}
+    style={{
+      opacity: isVisible ? 1 : 0,
+      transition: `opacity 0.4s ease-out ${index * 0.05}s`
+    }}
+    // ... other props
+  />
+))}
+```
+
+**Why this should finally work:**
+- Inline styles are the most reliable across all browsers
+- CSS `transition` (not animation) for opacity changes
+- Direct opacity control via React state
+- Staggered delays via inline style calculation
+- No CSS classes, selectors, or specificity issues
+- Removed all unused CSS animation code
+
+**Testing:** Ready for Safari iOS testing
 
 **Commit:** Pending
 
