@@ -193,9 +193,9 @@ export default function TypingHeadline({
       `}</style>
       
       <span className="typing-headline-wrapper">
-        <span className="typing-prefix">What if your customers</span>
+        <span className="typing-prefix">What if your customers </span>
         <br className="mobile-break" />
-        <span className="typing-prefix">created your</span>
+        <span className="typing-prefix">created your </span>
         <br className="mobile-break" />
         <span 
           className={`typing-word ${isComplete ? 'settle-in' : ''}`}

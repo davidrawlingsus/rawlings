@@ -14,12 +14,11 @@ export default function Header() {
     <nav className="bg-[#1A2B3C] px-4 lg:px-8 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-end gap-1.5">
+        <div className="flex items-center">
           <span className="font-bold text-3xl font-[family-name:var(--font-lato)]">
-            <span className="text-white">market</span>
-            <span className="text-[#B9F040]">ably</span>
+            <span className="text-white">david</span>
+            <span className="text-[#B9F040]">rawlings</span>
           </span>
-          <span className="text-white/70 text-sm font-normal">by David Rawlings</span>
         </div>
 
         {/* Desktop Navigation */}
