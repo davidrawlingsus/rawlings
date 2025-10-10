@@ -459,7 +459,7 @@ export default function ImpactChart() {
             </motion.div>
 
             <motion.div 
-              className="mt-6 text-sm flex items-center gap-2 text-white md:scale-[1.8] md:origin-bottom md:mt-8"
+              className="mt-4 text-sm flex items-center gap-2 text-white md:scale-[1.8] md:origin-bottom md:mt-5"
               variants={variants.fadeUp}
               initial="hidden"
               whileInView="visible"
