@@ -1,4 +1,5 @@
 import React, { useMemo } from "react";
+import Image from "next/image";
 
 /**
  * Props:
@@ -100,12 +101,13 @@ const LogoCloud: React.FC<LogoCloudProps> = ({ logos, speedMs = 40000, className
                     "flex items-center justify-center",
                   ].join(" ")}
                 >
-                  <div className={["w-full", ratioClass, "flex items-center justify-center"].join(" ")}>
-                    <img
+                  <div className={["w-full", ratioClass, "relative flex items-center justify-center"].join(" ")}>
+                    <Image
                       src={logo.src}
                       alt={logo.alt}
-                      loading="lazy"
-                      className="w-full h-full object-contain"
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 768px) 33vw, 20vw"
                     />
                   </div>
                 </figure>

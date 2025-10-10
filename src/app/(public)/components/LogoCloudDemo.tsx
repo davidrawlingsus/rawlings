@@ -76,7 +76,7 @@ export default function LogoCloudDemo() {
               Trusted by Leading Brands Worldwide
             </h2>
             <p className="text-lg mb-8 text-gray-700 leading-relaxed">
-              We've partnered with dozens of brands across ecommerce, travel, finance, and lifestyle sectors to optimize their conversion rates and drive measurable revenue growth.
+              We&apos;ve partnered with dozens of brands across ecommerce, travel, finance, and lifestyle sectors to optimize their conversion rates and drive measurable revenue growth.
             </p>
             <Link
               href="/case-studies"
