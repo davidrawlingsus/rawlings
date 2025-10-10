@@ -77,13 +77,13 @@ export default function ImpactChart() {
           </div>
 
           {/* Right Column - SVG Bar Chart */}
-          <div className="order-1 md:order-2 relative mb-8 md:mb-0 md:mt-0 md:mb-16 flex flex-col items-center justify-end md:pl-8">
+          <div className="order-1 md:order-2 relative mb-8 md:mb-0 flex flex-col items-center justify-end md:pl-8">
             <motion.div 
               variants={variants.fadeUp}
               initial="hidden"
               whileInView="visible"
               viewport={{ amount: 0.3, once: true }}
-              className="md:scale-[1.8] md:origin-bottom"
+              className="md:scale-[1.8] md:origin-bottom md:mb-8"
             >
               <svg viewBox="0 0 614 287" className="w-full h-auto" role="img" aria-labelledby="chart-title" aria-describedby="chart-desc">
                 <title id="chart-title">Net New Subscribers Growth Chart</title>
@@ -459,7 +459,7 @@ export default function ImpactChart() {
             </motion.div>
 
             <motion.div 
-              className="mt-6 text-sm flex items-center gap-2 text-white md:scale-[1.8] md:origin-bottom md:mt-12"
+              className="mt-6 text-sm flex items-center gap-2 text-white md:scale-[1.8] md:origin-bottom md:mt-8"
               variants={variants.fadeUp}
               initial="hidden"
               whileInView="visible"
