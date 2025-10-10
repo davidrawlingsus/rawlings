@@ -96,21 +96,16 @@ export default function ImpactChart() {
                 <title id="chart-title">Growth Rate Chart</title>
                 <desc id="chart-desc">A bar chart showing growth rate over time, with highlighted bars representing improved performance</desc>
                 
-                {/* Baseline bars */}
-                <motion.rect 
+                {/* Baseline bars - TESTING: removed animation to check if bars render on Safari iOS */}
+                <rect 
                   y="209.794" 
                   width="17.25" 
                   height="77" 
                   rx="3" 
                   fill="#F9FAF2" 
                   fillOpacity="0.7"
-                  variants={createBarVariants(0)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
                 />
-                <motion.rect 
+                <rect 
                   x="24" 
                   y="206.794" 
                   width="17.25" 
@@ -118,13 +113,8 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#F9FAF2" 
                   fillOpacity="0.7"
-                  variants={createBarVariants(1)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
                 />
-                <motion.rect 
+                <rect 
                   x="48" 
                   y="159.794" 
                   width="17.25" 
@@ -132,11 +122,6 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#F9FAF2" 
                   fillOpacity="0.7"
-                  variants={createBarVariants(2)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
                   x="72" 
@@ -364,7 +349,7 @@ export default function ImpactChart() {
                   viewport={{ amount: 0.3, once: true }}
                   style={{ transformOrigin: "bottom" }}
                 />
-                <motion.rect 
+                <rect 
                   x="456" 
                   y="63.7941" 
                   width="17.25" 
@@ -372,13 +357,8 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#B9F040" 
                   fillOpacity="0.8"
-                  variants={createBarVariants(19)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
                 />
-                <motion.rect 
+                <rect 
                   x="480" 
                   y="28.7941" 
                   width="17.25" 
@@ -386,11 +366,6 @@ export default function ImpactChart() {
                   rx="3" 
                   fill="#B9F040" 
                   fillOpacity="0.8"
-                  variants={createBarVariants(20)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
                 />
                 <motion.rect 
                   x="504" 
