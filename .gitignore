@@ -44,3 +44,5 @@ next-env.d.ts
 public/images/*
 !public/images/hero-v2.webp
 node_modules/
+
+/src/generated/prisma

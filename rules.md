@@ -12,6 +12,7 @@
 * **Animations:** Framer Motion (respect `prefers-reduced-motion`)
 * **Images:** `next/image` for all visuals (including screenshots)
 * **Content:** Static / hardcoded in components or MDX — no CMS yet
+* **Database:** PostgreSQL (Railway) + Prisma ORM
 * **Deployment:** Railway (static + SSR build)
 * **Analytics:** Plausible (optional but preferred)
 
@@ -26,11 +27,15 @@ No other libraries or frameworks unless explicitly justified in comments.
   /(public)              # single-page site
     page.mdx             # main page content (if using MDX)
     components/          # each section as its own .tsx file
-  /api                   # (optional) form endpoint later
+  /api                   # API routes for forms and data
 /content
   /assets/screens/       # screenshots referenced by sections
 /lib
   utils.ts               # small helpers only
+  prisma.ts              # Prisma client singleton
+/prisma
+  schema.prisma          # database schema
+  migrations/            # database migrations
 /styles
   globals.css            # Tailwind + tokens
 ```
@@ -124,10 +129,11 @@ If animation is used, wrap only the necessary elements in Framer Motion.
 
 ## **9. Scope Boundaries (for now)**
 
-* ❌ No database, auth, uploads, or APIs yet.
-* ❌ No dynamic routing.
-* ✅ Everything lives in a single static Next page.
-* ✅ Easy to bolt backend rules later.
+* ✅ Database enabled (PostgreSQL + Prisma) for content storage and future backend needs.
+* ❌ No auth or uploads yet.
+* ❌ No dynamic routing for now.
+* ✅ One-pager remains primary focus; database supports content management and prepares for backend expansion.
+* ✅ API routes can be added as needed for forms and data fetching.
 
 ---
 
