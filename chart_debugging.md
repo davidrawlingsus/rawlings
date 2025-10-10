@@ -97,6 +97,35 @@ The bar chart in the Impact section (`ImpactChart.tsx`) is not visible at all in
 - Clean separation: JS handles viewport detection, CSS handles animation
 - No Framer Motion dependency for the bars
 
+**Result:** ⚠️ PARTIAL SUCCESS - Animation was triggering immediately on page load
+
+**Issue Found:** 
+- Intersection Observer was firing immediately if chart was in viewport on page load
+- CSS selectors weren't specific enough, causing fallback behavior
+- Need to prevent immediate trigger and ensure bars stay hidden until scroll
+
+**Commit:** `0f6b311`
+
+### Attempt #6: Fix immediate animation trigger
+**Date:** Current
+**Approach:**
+- Made CSS selectors more specific: `svg .chart-bar` and `svg.chart-visible .chart-bar`
+- Added `!important` to ensure bars stay invisible until animation triggers
+- Added 100ms delay before setting up Intersection Observer
+- Added `rootMargin: '0px'` to ensure accurate viewport detection
+- Fixed cleanup function to properly disconnect observer
+
+**Implementation:**
+- Updated CSS to use `svg` prefix for higher specificity
+- Added timeout wrapper around observer setup
+- Proper cleanup of both timeout and observer
+
+**Why this works:**
+- More specific CSS prevents any default animations from running
+- Small delay ensures page is fully loaded before observing
+- `!important` flag ensures opacity: 0 takes precedence
+- Proper cleanup prevents memory leaks
+
 **Testing:** Ready for Safari iOS testing
 
 **Commit:** Pending

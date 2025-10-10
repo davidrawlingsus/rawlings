@@ -22,21 +22,37 @@ export default function ImpactChart() {
     const svg = svgRef.current
     if (!svg) return
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            svg.classList.add('chart-visible')
-            observer.unobserve(entry.target)
-          }
-        })
-      },
-      { threshold: 0.3 }
-    )
+    let observer: IntersectionObserver | null = null
+    
+    // Small delay to ensure page is fully loaded before observing
+    const timeoutId = setTimeout(() => {
+      observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // Add class to trigger animation
+              svg.classList.add('chart-visible')
+              if (observer) {
+                observer.unobserve(entry.target)
+              }
+            }
+          })
+        },
+        { 
+          threshold: 0.3,
+          rootMargin: '0px' // No margin to ensure it's truly in viewport
+        }
+      )
 
-    observer.observe(svg)
+      observer.observe(svg)
+    }, 100) // 100ms delay to prevent immediate triggering on page load
 
-    return () => observer.disconnect()
+    return () => {
+      clearTimeout(timeoutId)
+      if (observer) {
+        observer.disconnect()
+      }
+    }
   }, [])
 
   return (
