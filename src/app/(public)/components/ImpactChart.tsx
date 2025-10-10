@@ -2,6 +2,7 @@
 
 import { motion, Variants } from 'framer-motion'
 import Image from 'next/image'
+import { useEffect, useRef } from 'react'
 
 const variants: { fadeUp: Variants } = {
   fadeUp: {
@@ -15,6 +16,29 @@ const variants: { fadeUp: Variants } = {
 }
 
 export default function ImpactChart() {
+  const svgRef = useRef<SVGSVGElement>(null)
+
+  useEffect(() => {
+    const svg = svgRef.current
+    if (!svg) return
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            svg.classList.add('chart-visible')
+            observer.unobserve(entry.target)
+          }
+        })
+      },
+      { threshold: 0.3 }
+    )
+
+    observer.observe(svg)
+
+    return () => observer.disconnect()
+  }, [])
+
   return (
     <section id="impact" className="bg-[#1A2B3C] py-16 md:py-24 lg:py-32">
       <div className="max-w-[1280px] mx-auto px-6 md:px-8">
@@ -78,7 +102,7 @@ export default function ImpactChart() {
               viewport={{ amount: 0.3, once: true }}
               className="md:scale-[1.8] md:origin-bottom md:mb-8"
             >
-              <svg viewBox="0 0 614 287" className="w-full h-auto" role="img" aria-labelledby="chart-title" aria-describedby="chart-desc">
+              <svg ref={svgRef} viewBox="0 0 614 287" className="w-full h-auto" role="img" aria-labelledby="chart-title" aria-describedby="chart-desc">
                 <title id="chart-title">Growth Rate Chart</title>
                 <desc id="chart-desc">A bar chart showing growth rate over time, with highlighted bars representing improved performance</desc>
                 

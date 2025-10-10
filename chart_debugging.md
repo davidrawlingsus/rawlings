@@ -71,6 +71,32 @@ The bar chart in the Impact section (`ImpactChart.tsx`) is not visible at all in
 - Avoids viewport intersection observer issues
 - No transform-origin complications
 
+**Result:** ⚠️ PARTIAL SUCCESS - Bars are visible but animation doesn't trigger
+
+**Issue Found:** CSS animations run immediately on page load, but the chart section is below the fold. By the time user scrolls to it, the animation has already completed. Need to trigger animation when chart comes into viewport.
+
+**Commit:** `6f06c9d`
+
+### Attempt #5: Add Intersection Observer to trigger CSS animation
+**Date:** Current
+**Approach:**
+- Keep the plain SVG bars with CSS animation (from Attempt #4)
+- Add Intersection Observer API to detect when SVG enters viewport
+- Trigger animation by adding `.chart-visible` class when in view
+- CSS only animates bars when `.chart-visible` class is present
+
+**Implementation:**
+- Added `useEffect` with IntersectionObserver in `ImpactChart.tsx`
+- Observer watches SVG element and adds class when 30% visible
+- Updated CSS to only apply animation to `.chart-visible .chart-bar`
+- Bars start invisible (opacity: 0) and fade in when triggered
+
+**Why this works:**
+- Intersection Observer API is well-supported on Safari iOS
+- CSS animations are reliable, just need proper trigger
+- Clean separation: JS handles viewport detection, CSS handles animation
+- No Framer Motion dependency for the bars
+
 **Testing:** Ready for Safari iOS testing
 
 **Commit:** Pending
