@@ -14,20 +14,6 @@ const variants: { fadeUp: Variants } = {
   },
 }
 
-// Function to create bar animation variants with proper delay based on x position
-const createBarVariants = (xPosition: number): Variants => ({
-  hidden: { scaleY: 0, opacity: 0 },
-  visible: { 
-    scaleY: 1, 
-    opacity: 1, 
-    transition: { 
-      duration: 0.4, 
-      ease: [0.25, 0.46, 0.45, 0.94] as const, // easeOut cubic-bezier
-      delay: xPosition * 0.05 // 0.05s delay per 24px increment (approximate)
-    } 
-  },
-})
-
 export default function ImpactChart() {
   return (
     <section id="impact" className="bg-[#1A2B3C] py-16 md:py-24 lg:py-32">
@@ -96,347 +82,35 @@ export default function ImpactChart() {
                 <title id="chart-title">Growth Rate Chart</title>
                 <desc id="chart-desc">A bar chart showing growth rate over time, with highlighted bars representing improved performance</desc>
                 
-                {/* Baseline bars - TESTING: removed animation to check if bars render on Safari iOS */}
-                <rect 
-                  y="209.794" 
-                  width="17.25" 
-                  height="77" 
-                  rx="3" 
-                  fill="#F9FAF2" 
-                  fillOpacity="0.7"
-                />
-                <rect 
-                  x="24" 
-                  y="206.794" 
-                  width="17.25" 
-                  height="80" 
-                  rx="3" 
-                  fill="#F9FAF2" 
-                  fillOpacity="0.7"
-                />
-                <rect 
-                  x="48" 
-                  y="159.794" 
-                  width="17.25" 
-                  height="127" 
-                  rx="3" 
-                  fill="#F9FAF2" 
-                  fillOpacity="0.7"
-                />
-                <motion.rect 
-                  x="72" 
-                  y="211.794" 
-                  width="17.25" 
-                  height="75" 
-                  rx="3" 
-                  fill="#F9FAF2" 
-                  fillOpacity="0.7"
-                  variants={createBarVariants(3)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
-                />
-                <motion.rect 
-                  x="96"
-                  y="221.794"
-                  width="17.25"
-                  height="65"
-                  rx="3"
-                  fill="#F9FAF2"
-                  fillOpacity="0.7"
-                  variants={createBarVariants(4)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
-                />
-                <motion.rect 
-                  x="120"
-                  y="230.794"
-                  width="17.25"
-                  height="56"
-                  rx="3"
-                  fill="#F9FAF2"
-                  fillOpacity="0.7"
-                  variants={createBarVariants(5)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
-                />
-                <motion.rect 
-                  x="144" 
-                  y="221.794" 
-                  width="17.25" 
-                  height="65" 
-                  rx="3" 
-                  fill="#F9FAF2" 
-                  fillOpacity="0.7"
-                  variants={createBarVariants(6)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
-                />
-                <motion.rect 
-                  x="168" 
-                  y="211.794" 
-                  width="17.25" 
-                  height="75" 
-                  rx="3" 
-                  fill="#F9FAF2" 
-                  fillOpacity="0.7"
-                  variants={createBarVariants(7)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
-                />
-                <motion.rect 
-                  x="192" 
-                  y="230.794" 
-                  width="17.25" 
-                  height="56" 
-                  rx="3" 
-                  fill="#F9FAF2" 
-                  fillOpacity="0.7"
-                  variants={createBarVariants(8)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
-                />
-                <motion.rect 
-                  x="216" 
-                  y="159.794" 
-                  width="17.25" 
-                  height="127" 
-                  rx="3" 
-                  fill="#F9FAF2" 
-                  fillOpacity="0.7"
-                  variants={createBarVariants(9)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
-                />
-                <motion.rect 
-                  x="240" 
-                  y="145.794" 
-                  width="17.25" 
-                  height="141" 
-                  rx="3" 
-                  fill="#F9FAF2" 
-                  fillOpacity="0.7"
-                  variants={createBarVariants(10)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
-                />
-                <motion.rect 
-                  x="264" 
-                  y="130.794" 
-                  width="17.25" 
-                  height="156" 
-                  rx="3" 
-                  fill="#F9FAF2" 
-                  fillOpacity="0.7"
-                  variants={createBarVariants(11)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
-                />
-                <motion.rect 
-                  x="288" 
-                  y="181.794" 
-                  width="17.25" 
-                  height="105" 
-                  rx="3" 
-                  fill="#F9FAF2" 
-                  fillOpacity="0.7"
-                  variants={createBarVariants(12)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
-                />
-                <motion.rect 
-                  x="312" 
-                  y="195.794" 
-                  width="17.25" 
-                  height="91" 
-                  rx="3" 
-                  fill="#F9FAF2" 
-                  fillOpacity="0.7"
-                  variants={createBarVariants(13)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
-                />
-                <motion.rect 
-                  x="336" 
-                  y="181.794" 
-                  width="17.25" 
-                  height="105" 
-                  rx="3" 
-                  fill="#F9FAF2" 
-                  fillOpacity="0.7"
-                  variants={createBarVariants(14)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
-                />
-                <motion.rect 
-                  x="360" 
-                  y="170.794" 
-                  width="17.25" 
-                  height="116" 
-                  rx="3" 
-                  fill="#F9FAF2" 
-                  fillOpacity="0.7"
-                  variants={createBarVariants(15)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
-                />
-                <motion.rect 
-                  x="384" 
-                  y="175.794" 
-                  width="17.25" 
-                  height="111" 
-                  rx="3" 
-                  fill="#F9FAF2" 
-                  fillOpacity="0.7"
-                  variants={createBarVariants(16)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
-                />
-                <motion.rect 
-                  x="408" 
-                  y="170.794" 
-                  width="17.25" 
-                  height="116" 
-                  rx="3" 
-                  fill="#F9FAF2" 
-                  fillOpacity="0.7"
-                  variants={createBarVariants(17)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
-                />
+                {/* Baseline bars - Using CSS animation for Safari iOS compatibility */}
+                <rect className="chart-bar" y="209.794" width="17.25" height="77" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
+                <rect className="chart-bar" x="24" y="206.794" width="17.25" height="80" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
+                <rect className="chart-bar" x="48" y="159.794" width="17.25" height="127" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
+                <rect className="chart-bar" x="72" y="211.794" width="17.25" height="75" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
+                <rect className="chart-bar" x="96" y="221.794" width="17.25" height="65" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
+                <rect className="chart-bar" x="120" y="230.794" width="17.25" height="56" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
+                <rect className="chart-bar" x="144" y="221.794" width="17.25" height="65" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
+                <rect className="chart-bar" x="168" y="211.794" width="17.25" height="75" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
+                <rect className="chart-bar" x="192" y="230.794" width="17.25" height="56" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
+                <rect className="chart-bar" x="216" y="159.794" width="17.25" height="127" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
+                <rect className="chart-bar" x="240" y="145.794" width="17.25" height="141" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
+                <rect className="chart-bar" x="264" y="130.794" width="17.25" height="156" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
+                <rect className="chart-bar" x="288" y="181.794" width="17.25" height="105" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
+                <rect className="chart-bar" x="312" y="195.794" width="17.25" height="91" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
+                <rect className="chart-bar" x="336" y="181.794" width="17.25" height="105" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
+                <rect className="chart-bar" x="360" y="170.794" width="17.25" height="116" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
+                <rect className="chart-bar" x="384" y="175.794" width="17.25" height="111" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
+                <rect className="chart-bar" x="408" y="170.794" width="17.25" height="116" rx="3" fill="#F9FAF2" fillOpacity="0.7" />
                 
                 {/* Highlight bars */}
-                <motion.rect 
-                  x="432" 
-                  y="102.794" 
-                  width="17.25" 
-                  height="184" 
-                  rx="3" 
-                  fill="#B9F040" 
-                  fillOpacity="0.8"
-                  variants={createBarVariants(18)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
-                />
-                <rect 
-                  x="456" 
-                  y="63.7941" 
-                  width="17.25" 
-                  height="223" 
-                  rx="3" 
-                  fill="#B9F040" 
-                  fillOpacity="0.8"
-                />
-                <rect 
-                  x="480" 
-                  y="28.7941" 
-                  width="17.25" 
-                  height="258" 
-                  rx="3" 
-                  fill="#B9F040" 
-                  fillOpacity="0.8"
-                />
-                <motion.rect 
-                  x="504" 
-                  y="23" 
-                  width="17.25" 
-                  height="264" 
-                  rx="3" 
-                  fill="#B9F040" 
-                  fillOpacity="0.8"
-                  variants={createBarVariants(21)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
-                />
-                <motion.rect 
-                  x="528" 
-                  y="17" 
-                  width="17.25" 
-                  height="270" 
-                  rx="3" 
-                  fill="#B9F040" 
-                  fillOpacity="0.8"
-                  variants={createBarVariants(22)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
-                />
-                <motion.rect 
-                  x="552" 
-                  y="13" 
-                  width="17.25" 
-                  height="274" 
-                  rx="3" 
-                  fill="#B9F040" 
-                  fillOpacity="0.8"
-                  variants={createBarVariants(22)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
-                />
-                <motion.rect 
-                  x="576" 
-                  y="0" 
-                  width="17.25" 
-                  height="287" 
-                  rx="3" 
-                  fill="#B9F040" 
-                  fillOpacity="0.8"
-                  variants={createBarVariants(23)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
-                />
-                <motion.rect 
-                  x="600" 
-                  y="-5" 
-                  width="17.25" 
-                  height="292" 
-                  rx="3" 
-                  fill="#B9F040" 
-                  fillOpacity="0.8"
-                  variants={createBarVariants(24)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ amount: 0.3, once: true }}
-                  style={{ transformOrigin: "bottom" }}
-                />
+                <rect className="chart-bar" x="432" y="102.794" width="17.25" height="184" rx="3" fill="#B9F040" fillOpacity="0.8" />
+                <rect className="chart-bar" x="456" y="63.7941" width="17.25" height="223" rx="3" fill="#B9F040" fillOpacity="0.8" />
+                <rect className="chart-bar" x="480" y="28.7941" width="17.25" height="258" rx="3" fill="#B9F040" fillOpacity="0.8" />
+                <rect className="chart-bar" x="504" y="23" width="17.25" height="264" rx="3" fill="#B9F040" fillOpacity="0.8" />
+                <rect className="chart-bar" x="528" y="17" width="17.25" height="270" rx="3" fill="#B9F040" fillOpacity="0.8" />
+                <rect className="chart-bar" x="552" y="13" width="17.25" height="274" rx="3" fill="#B9F040" fillOpacity="0.8" />
+                <rect className="chart-bar" x="576" y="0" width="17.25" height="287" rx="3" fill="#B9F040" fillOpacity="0.8" />
+                <rect className="chart-bar" x="600" y="0" width="17.25" height="287" rx="3" fill="#B9F040" fillOpacity="0.8" />
               </svg>
             </motion.div>
 
@@ -456,4 +130,3 @@ export default function ImpactChart() {
     </section>
   )
 }
-
