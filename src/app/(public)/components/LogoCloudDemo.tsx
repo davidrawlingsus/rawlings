@@ -64,7 +64,7 @@ export default function LogoCloudDemo() {
         <div className="flex flex-col lg:flex-row gap-8 md:gap-12 items-center">
           {/* Logo Cloud - Left Side */}
           <div className="w-full lg:w-[600px]">
-            <LogoCloud logos={clientLogos} speedMs={45000} />
+            <LogoCloud logos={clientLogos} speedMs={67500} />
           </div>
 
           {/* Content - Right Side */}
@@ -73,10 +73,12 @@ export default function LogoCloudDemo() {
               id="logo-cloud-heading"
               className="text-[28px] md:text-3xl font-bold mb-5 text-black"
             >
-              Trusted by Leading Brands Worldwide
+              Results You Can Measure. Experience You Can Trust.
             </h2>
             <p className="text-lg mb-8 text-gray-700 leading-relaxed">
-              We&apos;ve partnered with dozens of brands across ecommerce, travel, finance, and lifestyle sectors to optimize their conversion rates and drive measurable revenue growth.
+              49 clients. Hundreds of conversion wins. Millions in new revenue.
+              <br />
+              The experience behind those results is baked into every framework and experiment I design.
             </p>
             <Link
               href="/case-studies"

@@ -54,7 +54,9 @@ const LogoCloud: React.FC<LogoCloudProps> = ({ logos, speedMs = 40000, className
           100% { transform: translateY(-33.333%); }
         }
         .animate-logo-scroll-up {
-          animation: logo-scroll-up 45s linear infinite;
+          animation-name: logo-scroll-up;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
           will-change: transform;
         }
         @media (prefers-reduced-motion: reduce) {
@@ -69,8 +71,7 @@ const LogoCloud: React.FC<LogoCloudProps> = ({ logos, speedMs = 40000, className
         style={maskStyle}
         aria-label="Client logo showcase"
       >
-        {/* group class lets us pause the animation on hover */}
-        <div className="group h-full">
+        <div className="h-full">
           <div
             className={[
               // Grid with dense packing for lattice effect
@@ -81,8 +82,6 @@ const LogoCloud: React.FC<LogoCloudProps> = ({ logos, speedMs = 40000, className
               "grid-flow-dense",
               // Animate upward by -33.333% (we tripled the list for seamless loop)
               "animate-logo-scroll-up",
-              // Pause on hover
-              "group-hover:[animation-play-state:paused]",
             ].join(" ")}
             style={trackStyle}
           >

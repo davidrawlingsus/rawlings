@@ -41,7 +41,7 @@ export default function ImpactChart() {
         >
           <p className="text-sm uppercase tracking-widest text-neutral-300 mb-4">Why work with David Rawlings?</p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
-            Our <span className="text-[#B9F040] relative after:absolute after:inset-0 after:blur-xl after:bg-lime-200/50 after:-z-10" aria-label="impact with glow effect">impact</span> speaks for itself
+            The <span className="text-[#B9F040] relative after:absolute after:inset-0 after:blur-xl after:bg-lime-200/50 after:-z-10" aria-label="results with glow effect">results</span> speak for themselves
           </h2>
         </motion.div>
 

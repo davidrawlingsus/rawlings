@@ -7,57 +7,69 @@ import * as React from 'react';
 
 const STEPS = [
   {
-    id: '01', title: 'Onboarding',
+    id: '01', 
+    title: 'Funnel Audit',
+    description: 'Ensure every insight starts with truth.',
     items: [
-      'Meet and Greet Questionnaire',
-      'Welcome Packet with Scope of Work',
-      '90 Minute Creative Clarity Call',
-      'Design Contract',
+      'Check tracking and analytics setup',
+      'Find gaps or errors in your funnel data',
+      'Confirm key conversions are being recorded',
+      'Give you a clear picture of what\'s working (and what\'s not)',
     ],
   },
   {
-    id: '02', title: 'Brand Strategy',
+    id: '02', 
+    title: 'Build Listening Systems',
+    description: 'Build the infrastructure that hears your customers at scale.',
     items: [
-      'Mission, Vision & Values',
-      'Messaging, Brand Tone, & Voice',
-      'Competitive Analysis & Positioning',
-      'Audience Avatars & Archetypes',
+      'Add surveys and feedback prompts where they matter most',
+      'Connect reviews, forms, and chat data',
+      'Bring all feedback into one place',
+      'Start collecting insight you can actually use',
     ],
   },
   {
-    id: '03', title: 'Visual Identity',
+    id: '03', 
+    title: 'AI Analysis',
+    description: 'Turn words into structured insight.',
     items: [
-      'Visual Identity System',
-      'Style Guide/Brand Guidelines',
-      'Packaged Deliverables',
-      'Client Feedback & Revisions',
+      'Group comments by theme and topic',
+      'Spot the words that drive or block sales',
+      'Highlight trends and customer language',
+      'Summarise everything fast with AI',
     ],
   },
   {
-    id: '04', title: 'Web Design',
+    id: '04', 
+    title: 'Triage',
+    description: 'Decide what to fix, test, or scale first.',
     items: [
-      'Content Wireframing',
-      'UI/UX Design',
-      'Prototyping',
-      'Client Feedback & Revisions',
+      'Sort findings by impact and effort',
+      'Turn insight into clear next steps',
+      'Choose what to test or fix right away',
+      'Build a focused plan for improvement',
     ],
   },
   {
-    id: '05', title: 'Web Development',
+    id: '05', 
+    title: 'Tests',
+    description: 'Prove what persuades.',
     items: [
-      'WordPress Development',
-      'Mobile and Tablet Responsive',
-      'Testing and QA',
-      'SEO Prep',
+      'Design quick, meaningful A/B tests',
+      'Test new messages, layouts, or offers',
+      'Track results and learn from every outcome',
+      'Keep what wins, ditch what doesn\'t',
     ],
   },
   {
-    id: '06', title: 'Launch',
+    id: '06', 
+    title: 'Growth',
+    description: 'Systematize and scale what works.',
     items: [
-      'Site Migration',
-      'Site Management Tutorial',
-      'Promo Graphics Announcing Launch',
-      'Project Offboarding',
+      'Roll proven ideas across your site and channels',
+      'Automate what you can',
+      'Keep measuring and refining',
+      'Turn testing into a steady growth engine',
     ],
   },
 ] as const;
@@ -82,24 +94,45 @@ const createArrowVariants = (delay = 0) => ({
 
 function ArrowRight() {
   return (
-    <svg aria-hidden="true" viewBox="0 0 48 24" className="w-8 h-4 text-neutral-300">
-      <path d="M0 12h40M32 4l8 8-8 8" stroke="currentColor" strokeWidth="2" fill="none" />
+    <svg aria-hidden="true" viewBox="0 0 48 32" className="w-12 h-8 text-black">
+      <path 
+        d="M2 16 Q24 14 44 16 M36 8 Q40 12 44 16 Q40 20 36 24" 
+        stroke="currentColor" 
+        strokeWidth="3.5" 
+        fill="none" 
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
 
 function ArrowLeft() {
   return (
-    <svg aria-hidden="true" viewBox="0 0 48 24" className="w-8 h-4 text-neutral-300">
-      <path d="M48 12H8M16 4L8 12l8 8" stroke="currentColor" strokeWidth="2" fill="none" />
+    <svg aria-hidden="true" viewBox="0 0 48 32" className="w-12 h-8 text-black">
+      <path 
+        d="M46 16 Q24 14 4 16 M12 8 Q8 12 4 16 Q8 20 12 24" 
+        stroke="currentColor" 
+        strokeWidth="3.5" 
+        fill="none" 
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
 
 function ArrowDown() {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 48" className="w-4 h-8 text-neutral-300">
-      <path d="M12 0v40M4 32l8 8 8-8" stroke="currentColor" strokeWidth="2" fill="none" />
+    <svg aria-hidden="true" viewBox="0 0 32 60" className="w-8 h-16 text-black">
+      <path 
+        d="M16 2 Q14 30 16 56 M8 48 Q12 52 16 56 Q20 52 24 48" 
+        stroke="currentColor" 
+        strokeWidth="3.5" 
+        fill="none" 
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
@@ -117,7 +150,7 @@ export default function Process() {
             className="shrink-0"
           />
           <h2 id="process-title" className="text-3xl font-medium tracking-tight text-neutral-900">
-            Our Signature Process
+            The Process
           </h2>
         </div>
 
@@ -134,9 +167,10 @@ export default function Process() {
                 className="rounded-2xl border border-neutral-200 p-6"
               >
                 <div className="text-neutral-500 text-sm font-medium">{step.id}.</div>
-                <h3 id={`step-${step.id}-title`} className="mt-1 text-xl text-neutral-900">
+                <h3 id={`step-${step.id}-title`} className="mt-1 text-xl font-semibold text-neutral-900">
                   {step.title}
                 </h3>
+                <p className="mt-2 text-neutral-600">{step.description}</p>
                 <ul className="mt-4 space-y-2 text-neutral-700">
                   {step.items.map((t) => (
                     <li key={t} className="flex gap-2">
@@ -148,7 +182,7 @@ export default function Process() {
               </motion.article>
               {i < STEPS.length - 1 && (
                 <motion.div 
-                  className="flex justify-center my-6" 
+                  className="flex justify-center my-8" 
                   aria-hidden
                   variants={reduce ? undefined : createArrowVariants(i * 0.1 + 0.05)}
                   initial="initial"
@@ -176,9 +210,10 @@ export default function Process() {
               className="relative rounded-2xl border border-neutral-200 p-6 bg-white"
             >
               <div className="text-neutral-500 text-sm font-medium">{step.id}.</div>
-              <h3 id={`step-${step.id}-title-desktop`} className="mt-1 text-xl text-neutral-900">
+              <h3 id={`step-${step.id}-title-desktop`} className="mt-1 text-xl font-semibold text-neutral-900">
                 {step.title}
               </h3>
+              <p className="mt-2 text-neutral-600">{step.description}</p>
               <ul className="mt-4 space-y-2 text-neutral-700">
                 {step.items.map((t) => (
                   <li key={t} className="flex gap-2">
@@ -192,7 +227,7 @@ export default function Process() {
               {i < 2 && (
                 <motion.div
                   aria-hidden
-                  className="absolute -right-5 top-1/2 -translate-y-1/2"
+                  className="absolute -right-10 top-1/2 -translate-y-1/2 z-10"
                   variants={reduce ? undefined : createArrowVariants(i * 0.1 + 0.05)}
                   initial="initial"
                   whileInView="animate"
@@ -206,7 +241,7 @@ export default function Process() {
               {step.id === '03' && (
                 <motion.div
                   aria-hidden
-                  className="absolute left-1/2 -bottom-8 -translate-x-1/2"
+                  className="absolute left-1/2 -bottom-12 -translate-x-1/2 z-10"
                   variants={reduce ? undefined : createArrowVariants(0.25)}
                   initial="initial"
                   whileInView="animate"
@@ -230,9 +265,10 @@ export default function Process() {
               className="relative rounded-2xl border border-neutral-200 p-6 bg-white"
             >
               <div className="text-neutral-500 text-sm font-medium">{step.id}.</div>
-              <h3 id={`step-${step.id}-title-desktop-2`} className="mt-1 text-xl text-neutral-900">
+              <h3 id={`step-${step.id}-title-desktop-2`} className="mt-1 text-xl font-semibold text-neutral-900">
                 {step.title}
               </h3>
+              <p className="mt-2 text-neutral-600">{step.description}</p>
               <ul className="mt-4 space-y-2 text-neutral-700">
                 {step.items.map((t) => (
                   <li key={t} className="flex gap-2">
@@ -243,10 +279,10 @@ export default function Process() {
               </ul>
 
               {/* Left arrows between 06←05 and 05←04 */}
-              {i < 2 && (
+              {i > 0 && (
                 <motion.div
                   aria-hidden
-                  className="absolute -left-5 top-1/2 -translate-y-1/2"
+                  className="absolute -left-10 top-1/2 -translate-y-1/2 z-10"
                   variants={reduce ? undefined : createArrowVariants(0.35 + i * 0.1)}
                   initial="initial"
                   whileInView="animate"
@@ -267,10 +303,15 @@ export default function Process() {
           viewport={{ amount: 0.3, once: true }}
           className="mt-14 flex flex-col md:flex-row items-center justify-between gap-4 rounded-2xl border border-neutral-200 p-6"
         >
-          <p className="text-lg text-neutral-900">Ready To Build Your Personal Brand?</p>
-          <Button asChild>
-            <a href="#contact" aria-label="Book a discovery call">Book A Discovery Call</a>
-          </Button>
+          <p className="text-lg text-neutral-900">Ready to turn feedback into growth?</p>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <Button asChild>
+              <a href="#contact" aria-label="Get started free">Get started free</a>
+            </Button>
+            <Button asChild variant="outline">
+              <a href="#contact" aria-label="Book a strategy call">Book a strategy call</a>
+            </Button>
+          </div>
         </motion.div>
       </div>
     </section>

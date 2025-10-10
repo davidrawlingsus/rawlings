@@ -28,7 +28,7 @@ const defaultConfig: TypingHeadlineConfig = {
     'pricing pages?',
     'value propositions?',
     'new product ideas?',
-    'your next breakthrough?'
+    'next breakthrough?'
   ],
   typingSpeed: { short: 60, long: 75 },
   deletingSpeed: 45,
@@ -137,11 +137,26 @@ export default function TypingHeadline({
   return (
     <>
       <style jsx>{`
+        .mobile-break {
+          display: block;
+        }
+        
+        @media (min-width: 768px) {
+          .mobile-break {
+            display: none;
+          }
+        }
+        
         .typing-word {
           position: relative;
           display: inline-block;
-          min-width: ${longestPhrase.length * 0.6}em;
-          text-align: left;
+          min-width: auto;
+        }
+        
+        @media (min-width: 768px) {
+          .typing-word {
+            min-width: ${longestPhrase.length * 0.6}em;
+          }
         }
         
         .typing-caret {
@@ -177,8 +192,11 @@ export default function TypingHeadline({
         }
       `}</style>
       
-      <span>
-        {prefix}
+      <span className="typing-headline-wrapper">
+        <span className="typing-prefix">What if your customers</span>
+        <br className="mobile-break" />
+        <span className="typing-prefix">created your</span>
+        <br className="mobile-break" />
         <span 
           className={`typing-word ${isComplete ? 'settle-in' : ''}`}
           aria-live="polite"

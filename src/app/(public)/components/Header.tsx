@@ -14,11 +14,12 @@ export default function Header() {
     <nav className="bg-[#1A2B3C] px-4 lg:px-8 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center">
+        <div className="flex items-end gap-1.5">
           <span className="font-bold text-3xl font-[family-name:var(--font-lato)]">
             <span className="text-white">market</span>
             <span className="text-[#B9F040]">ably</span>
           </span>
+          <span className="text-white/70 text-sm font-normal">by David Rawlings</span>
         </div>
 
         {/* Desktop Navigation */}
@@ -46,11 +47,11 @@ export default function Header() {
           {/* CTA Buttons */}
           <div className="flex items-center space-x-4 ml-8">
             <button className="bg-[#B9F040] text-black px-6 py-2 rounded-lg font-semibold text-sm uppercase flex items-center space-x-2 hover:bg-[#a0d636] transition-colors">
-              <span>BOOK A DEMO</span>
+              <span>GET STARTED FREE</span>
               <ArrowRight className="w-4 h-4" />
             </button>
             <button className="bg-white text-black px-6 py-2 rounded-lg font-semibold text-sm uppercase hover:bg-gray-100 transition-colors">
-              INSTALL ON SHOPIFY
+              BOOK A STRATEGY CALL
             </button>
           </div>
         </div>
@@ -91,11 +92,11 @@ export default function Header() {
             {/* Mobile CTA Buttons */}
             <div className="flex flex-col space-y-3 pt-4">
               <button className="bg-[#B9F040] text-black px-6 py-3 rounded-lg font-semibold text-sm uppercase flex items-center justify-center space-x-2 hover:bg-[#a0d636] transition-colors">
-                <span>BOOK A DEMO</span>
+                <span>GET STARTED FREE</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
               <button className="bg-white text-black px-6 py-3 rounded-lg font-semibold text-sm uppercase hover:bg-gray-100 transition-colors">
-                INSTALL ON SHOPIFY
+                BOOK A STRATEGY CALL
               </button>
             </div>
           </div>

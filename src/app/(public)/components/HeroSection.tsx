@@ -11,7 +11,7 @@ export default function HeroSection() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           {/* Left Column - Text */}
           <motion.div 
-            className="max-w-[600px] flex flex-col gap-6 md:gap-8 text-center md:text-left"
+            className="w-full max-w-[600px] flex flex-col gap-6 md:gap-8 text-center md:text-left"
             initial="hidden"
             whileInView="visible"
             viewport={{ amount: 0.3, once: true }}
@@ -49,11 +49,11 @@ export default function HeroSection() {
                 }
               }}
             >
-              I help companies turn raw data into better decisions, sharper messaging, and measurable growth.
+              I combine voice-of-customer research, conversion science, and AI to help brands listen at scale - turning feedback into decisions, tests, and messaging that drive measurable growth.
             </motion.p>
             
             <motion.div 
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { 
@@ -64,16 +64,16 @@ export default function HeroSection() {
               }}
             >
               <button 
-                className="h-12 px-6 rounded-full font-semibold bg-[#1A2B3C] text-white hover:bg-[#2A3B4C] transition-colors"
+                className="h-12 px-6 rounded-full font-semibold bg-[#1A2B3C] text-white hover:bg-[#2A3B4C] transition-colors whitespace-nowrap"
+                aria-label="Get started free"
+              >
+                Get started free
+              </button>
+              <button 
+                className="h-12 px-6 rounded-full font-semibold border-2 border-[#1A2B3C] text-[#1A2B3C] hover:bg-[#1A2B3C] hover:text-white transition-colors whitespace-nowrap"
                 aria-label="Book a strategy call"
               >
                 Book a strategy call
-              </button>
-              <button 
-                className="h-12 px-6 rounded-full font-semibold border-2 border-[#1A2B3C] text-[#1A2B3C] hover:bg-[#1A2B3C] hover:text-white transition-colors"
-                aria-label="View case studies"
-              >
-                View case studies
               </button>
             </motion.div>
           </motion.div>
