@@ -69,24 +69,17 @@ export default function LogoCloudDemo() {
 
           {/* Content - Right Side */}
           <div className="flex-1 p-6 md:p-10">
-            <h2
-              id="logo-cloud-heading"
-              className="text-[28px] md:text-3xl font-bold mb-5 text-black"
-            >
-              Results You Can Measure. Experience You Can Trust.
-            </h2>
-            <p className="text-lg mb-8 text-gray-700 leading-relaxed">
-              49 clients. Hundreds of conversion wins. Millions in new revenue.
+            <p id="logo-cloud-heading" className="text-2xl md:text-3xl mb-8 text-gray-700 leading-relaxed">
+              49 clients.
               <br />
-              The experience behind those results is baked into every framework and experiment I design.
+              Hundreds of conversion wins.
+              <br />
+              Millions in new revenue.
+              <br />
+              All from one simple idea...
+              <br />
+              <span className="font-bold text-[#1A2B3C]">Your customer knows how to grow your business.</span>
             </p>
-            <Link
-              href="/case-studies"
-              className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"
-            >
-              View case studies
-              <ArrowRight className="w-4 h-4" />
-            </Link>
           </div>
         </div>
       </div>

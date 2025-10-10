@@ -52,7 +52,7 @@ const STEPS = [
   },
   {
     id: '05', 
-    title: 'Tests',
+    title: 'Test',
     description: 'Prove what persuades.',
     items: [
       'Design quick, meaningful A/B tests',
@@ -63,7 +63,7 @@ const STEPS = [
   },
   {
     id: '06', 
-    title: 'Growth',
+    title: 'Grow',
     description: 'Systematize and scale what works.',
     items: [
       'Roll proven ideas across your site and channels',
@@ -297,16 +297,13 @@ export default function Process() {
           initial="initial"
           whileInView="animate"
           viewport={{ amount: 0.3, once: true }}
-          className="mt-14 flex flex-col md:flex-row items-center justify-between gap-4 rounded-2xl border border-neutral-200 p-6"
+          className="mt-14 hidden md:flex flex-col md:flex-row items-center justify-between gap-4 rounded-2xl bg-[#1A2B3C] border border-[#1A2B3C] p-6"
         >
-          <p className="text-lg text-[#1A2B3C]">Ready to turn feedback into growth?</p>
+          <p className="text-lg text-white">Ready to turn feedback into growth?</p>
           <div className="flex flex-col sm:flex-row gap-3">
-            <Button asChild>
-              <a href="#contact" aria-label="Get started free">Get started free</a>
-            </Button>
-            <Button asChild variant="outline">
-              <a href="#contact" aria-label="Book a strategy call">Book a strategy call</a>
-            </Button>
+            <a href="#contact" className="bg-[#B9F040] text-black px-6 py-3 rounded-lg font-semibold text-sm hover:bg-[#a0d636] transition-colors inline-flex items-center justify-center">
+              Book a strategy call
+            </a>
           </div>
         </motion.div>
       </div>
