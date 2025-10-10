@@ -58,7 +58,7 @@ export default function ImpactChart() {
               className="bg-[#2A3B4C] border border-neutral-600 shadow-sm rounded-xl p-8 md:p-10 max-w-lg"
             >
               <p className="text-6xl font-bold text-white">+214%</p>
-              <p className="text-xl font-semibold mt-2 text-white">Improvement in conversion rate after analytics-led redesign</p>
+              <p className="text-xl font-semibold mt-2 text-white">Improvement in ab test profitability with customer-led strategy</p>
               <p className="text-neutral-300 mt-4">
                 &ldquo;Clear data storytelling unlocked real growth.&rdquo;
               </p>
@@ -93,8 +93,8 @@ export default function ImpactChart() {
               className="md:scale-[1.8] md:origin-bottom md:mb-8"
             >
               <svg viewBox="0 0 614 287" className="w-full h-auto" role="img" aria-labelledby="chart-title" aria-describedby="chart-desc">
-                <title id="chart-title">Net New Subscribers Growth Chart</title>
-                <desc id="chart-desc">A bar chart showing growth in net new subscribers over time, with highlighted bars representing improved performance</desc>
+                <title id="chart-title">Growth Rate Chart</title>
+                <desc id="chart-desc">A bar chart showing growth rate over time, with highlighted bars representing improved performance</desc>
                 
                 {/* Baseline bars */}
                 <motion.rect 
@@ -473,7 +473,7 @@ export default function ImpactChart() {
               viewport={{ amount: 0.3, once: true }}
             >
               <span className="inline-block w-2 h-2 rounded-full bg-[#B9F040]"></span>
-              Net New Subscribers
+              Growth Rate
             </motion.div>
           </div>
         </div>
