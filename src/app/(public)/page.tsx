@@ -1,6 +1,6 @@
 import Header from './components/Header'
 import HeroSection from './components/HeroSection'
-import LogoWall from './components/LogoWall'
+import LogoCloudDemo from './components/LogoCloudDemo'
 import ImpactChart from './components/ImpactChart'
 import Process from './components/Process'
 import CaseStudies from './components/CaseStudies'
@@ -10,7 +10,7 @@ export default function HomePage() {
     <main className="min-h-screen">
       <Header />
       <HeroSection />
-      <LogoWall />
+      <LogoCloudDemo />
       <ImpactChart />
       <Process />
       <CaseStudies />
