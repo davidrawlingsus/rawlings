@@ -86,7 +86,7 @@ export default function ImpactChart() {
           viewport={{ amount: 0.3, once: true }}
           variants={variants.fadeUp}
         >
-          <p className="text-sm uppercase tracking-widest text-neutral-300 mb-4">Why work with David Rawlings?</p>
+          <p className="text-sm uppercase tracking-widest text-neutral-300 mb-4">Why work with David?</p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
             <span className="text-[#B9F040] relative after:absolute after:inset-0 after:blur-xl after:bg-lime-200/50 after:-z-10" aria-label="results with glow effect">Results</span> that speak for themselves
           </h2>
