@@ -103,11 +103,7 @@ export default function ImpactChart() {
               viewport={{ amount: 0.3, once: true }}
               className="bg-[#2A3B4C] border border-neutral-600 shadow-sm rounded-xl p-8 md:p-10 max-w-lg"
             >
-              <p className="text-6xl font-bold text-white">+214%</p>
-              <p className="text-xl font-semibold mt-2 text-white">Improvement in ab test profitability with customer-led strategy</p>
-              <p className="text-neutral-300 mt-4">
-                &ldquo;Clear data storytelling unlocked real growth.&rdquo;
-              </p>
+              <p className="text-xl font-semibold text-white">214% improvement in ab test profitability with David's strategy</p>
 
               <div className="flex items-center gap-4 mt-6">
                 <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">

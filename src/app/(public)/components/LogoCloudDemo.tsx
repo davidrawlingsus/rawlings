@@ -67,7 +67,7 @@ export default function LogoCloudDemo() {
 
           {/* Content - Right Side */}
           <div className="flex-1 p-6 md:p-10">
-            <p id="logo-cloud-heading" className="text-2xl md:text-3xl mb-8 text-gray-700 leading-relaxed">
+            <p id="logo-cloud-heading" className="text-xl md:text-2xl mb-8 text-gray-700 leading-relaxed">
               49 clients.
               <br />
               Hundreds of conversion wins.
@@ -76,7 +76,23 @@ export default function LogoCloudDemo() {
               <br />
               All from one simple idea...
               <br />
-              <span className="font-bold text-[#1A2B3C]">Your customer knows how to grow your business.</span>
+              <span className="font-bold text-[#1A2B3C]">
+                Conversion is not a mystery.
+                <br />
+                It's as mechanical as aerodynamics.
+                <br />
+                <br />
+                <span 
+                  className="relative inline px-1"
+                  style={{
+                    background: 'linear-gradient(104deg, rgba(190, 242, 100, 0) 0.9%, rgba(190, 242, 100, 0.8) 2.4%, rgba(190, 242, 100, 0.5) 5.8%, rgba(190, 242, 100, 0.4) 93%, rgba(190, 242, 100, 0.7) 96%, rgba(190, 242, 100, 0) 98%), linear-gradient(183deg, rgba(190, 242, 100, 0) 0%, rgba(190, 242, 100, 0.3) 7.9%, rgba(190, 242, 100, 0) 15%)',
+                    boxDecorationBreak: 'clone',
+                    WebkitBoxDecorationBreak: 'clone'
+                  }}
+                >
+                  And only your customers know ALL the inputs.
+                </span>
+              </span>
             </p>
           </div>
         </div>

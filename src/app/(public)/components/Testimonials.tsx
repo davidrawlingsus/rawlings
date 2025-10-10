@@ -200,7 +200,7 @@ export default function Testimonials() {
         <div className="flex w-full items-center justify-center gap-6">
           <button
             onClick={handlePrevious}
-            className="rounded-full p-5 bg-[#B9F040]/10 hover:bg-[#B9F040]/20 text-[#B9F040] transition-colors focus:outline-none focus:ring-2 focus:ring-[#B9F040] focus:ring-offset-2"
+            className="rounded-full p-5 bg-primary/10 hover:bg-primary/20 text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
             aria-label="Previous testimonial"
           >
             <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -222,8 +222,8 @@ export default function Testimonials() {
                 onClick={() => handleDotClick(index)}
                 className={`inline-block h-[2px] w-3 transition-all duration-200 ${
                   index === currentIndex
-                    ? 'bg-[#B9F040] opacity-100 w-8'
-                    : 'bg-[#B9F040]/30 opacity-30'
+                    ? 'bg-primary opacity-100 w-8'
+                    : 'bg-primary/30 opacity-30'
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />
@@ -232,7 +232,7 @@ export default function Testimonials() {
 
           <button
             onClick={handleNext}
-            className="rounded-full p-5 bg-[#B9F040]/10 hover:bg-[#B9F040]/20 text-[#B9F040] transition-colors focus:outline-none focus:ring-2 focus:ring-[#B9F040] focus:ring-offset-2"
+            className="rounded-full p-5 bg-primary/10 hover:bg-primary/20 text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
             aria-label="Next testimonial"
           >
             <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
