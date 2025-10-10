@@ -25,8 +25,8 @@ interface LogoCloudProps {
 }
 
 const LogoCloud: React.FC<LogoCloudProps> = ({ logos, speedMs = 40000, className }) => {
-  // Duplicate once to enable a seamless scroll loop:
-  const looped = useMemo(() => [...logos, ...logos], [logos]);
+  // Duplicate twice for extra-smooth seamless loop:
+  const looped = useMemo(() => [...logos, ...logos, ...logos], [logos]);
 
   // Inline style for the fade mask (Tailwind doesn't set mask-image natively).
   const maskStyle: React.CSSProperties = {
@@ -47,11 +47,12 @@ const LogoCloud: React.FC<LogoCloudProps> = ({ logos, speedMs = 40000, className
       {/* Global keyframes + animation class */}
       <style jsx global>{`
         @keyframes logo-scroll-up {
-          from { transform: translateY(0); }
-          to   { transform: translateY(-50%); }
+          0% { transform: translateY(0); }
+          100% { transform: translateY(-33.333%); }
         }
         .animate-logo-scroll-up {
           animation: logo-scroll-up 45s linear infinite;
+          will-change: transform;
         }
         @media (prefers-reduced-motion: reduce) {
           .animate-logo-scroll-up {
@@ -75,7 +76,7 @@ const LogoCloud: React.FC<LogoCloudProps> = ({ logos, speedMs = 40000, className
               "grid-cols-6 lg:grid-cols-10",
               // Dense packing lets items fill gaps
               "grid-flow-dense",
-              // Animate upward by -50% because we duplicated the list once
+              // Animate upward by -33.333% (we tripled the list for seamless loop)
               "animate-logo-scroll-up",
               // Pause on hover
               "group-hover:[animation-play-state:paused]",
