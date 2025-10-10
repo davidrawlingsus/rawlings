@@ -18,6 +18,18 @@ npm install
 npm run dev
 ```
 
+### Environment Variables
+
+Create a `.env.local` file in the root directory with the following variables:
+
+```env
+DATABASE_URL="your-database-url"
+RESEND_API_KEY="your-resend-api-key"
+```
+
+- `DATABASE_URL`: PostgreSQL database connection string
+- `RESEND_API_KEY`: API key from [Resend](https://resend.com) for sending contact form emails (get yours at https://resend.com/api-keys)
+
 ## Project Structure
 
 ```

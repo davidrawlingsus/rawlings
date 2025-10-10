@@ -42,15 +42,11 @@ export default function Header() {
             </span>
           </div>
 
-          {/* CTA Buttons */}
-          <div className="flex items-center space-x-4 ml-8">
-            <button className="bg-[#B9F040] text-black px-6 py-2 rounded-lg font-semibold text-sm uppercase flex items-center space-x-2 hover:bg-[#a0d636] transition-colors">
-              <span>GET STARTED FREE</span>
-              <ArrowRight className="w-4 h-4" />
-            </button>
-            <button className="bg-white text-black px-6 py-2 rounded-lg font-semibold text-sm uppercase hover:bg-gray-100 transition-colors">
+          {/* CTA Button */}
+          <div className="flex items-center ml-8">
+            <a href="#contact" className="bg-[#B9F040] text-black px-6 py-2 rounded-lg font-semibold text-sm uppercase hover:bg-[#a0d636] transition-colors">
               BOOK A STRATEGY CALL
-            </button>
+            </a>
           </div>
         </div>
 
@@ -86,15 +82,11 @@ export default function Header() {
               Pricing
             </span>
             
-            {/* Mobile CTA Buttons */}
-            <div className="flex flex-col space-y-3 pt-4">
-              <button className="bg-[#B9F040] text-black px-6 py-3 rounded-lg font-semibold text-sm uppercase flex items-center justify-center space-x-2 hover:bg-[#a0d636] transition-colors">
-                <span>GET STARTED FREE</span>
-                <ArrowRight className="w-4 h-4" />
-              </button>
-              <button className="bg-white text-black px-6 py-3 rounded-lg font-semibold text-sm uppercase hover:bg-gray-100 transition-colors">
+            {/* Mobile CTA Button */}
+            <div className="pt-4">
+              <a href="#contact" className="bg-[#B9F040] text-black px-6 py-3 rounded-lg font-semibold text-sm uppercase hover:bg-[#a0d636] transition-colors block text-center">
                 BOOK A STRATEGY CALL
-              </button>
+              </a>
             </div>
           </div>
         </div>

@@ -3,7 +3,8 @@ import HeroSection from './components/HeroSection'
 import LogoCloudDemo from './components/LogoCloudDemo'
 import ImpactChart from './components/ImpactChart'
 import Process from './components/Process'
-import CaseStudies from './components/CaseStudies'
+import Testimonials from './components/Testimonials'
+import ContactForm from './components/ContactForm'
 
 export default function HomePage() {
   return (
@@ -12,8 +13,9 @@ export default function HomePage() {
       <HeroSection />
       <LogoCloudDemo />
       <ImpactChart />
+      <Testimonials />
       <Process />
-      <CaseStudies />
+      <ContactForm />
     </main>
   )
 }

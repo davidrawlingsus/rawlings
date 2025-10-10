@@ -94,7 +94,7 @@ const createArrowVariants = (delay = 0) => ({
 
 function ArrowRight() {
   return (
-    <svg aria-hidden="true" viewBox="0 0 48 32" className="w-12 h-8 text-black">
+    <svg aria-hidden="true" viewBox="0 0 48 32" className="w-12 h-8 text-[#B9F040]">
       <path 
         d="M2 16 Q24 14 44 16 M36 8 Q40 12 44 16 Q40 20 36 24" 
         stroke="currentColor" 
@@ -109,7 +109,7 @@ function ArrowRight() {
 
 function ArrowLeft() {
   return (
-    <svg aria-hidden="true" viewBox="0 0 48 32" className="w-12 h-8 text-black">
+    <svg aria-hidden="true" viewBox="0 0 48 32" className="w-12 h-8 text-[#B9F040]">
       <path 
         d="M46 16 Q24 14 4 16 M12 8 Q8 12 4 16 Q8 20 12 24" 
         stroke="currentColor" 
@@ -124,7 +124,7 @@ function ArrowLeft() {
 
 function ArrowDown() {
   return (
-    <svg aria-hidden="true" viewBox="0 0 32 60" className="w-8 h-16 text-black">
+    <svg aria-hidden="true" viewBox="0 0 32 60" className="w-8 h-16 text-[#B9F040]">
       <path 
         d="M16 2 Q14 30 16 56 M8 48 Q12 52 16 56 Q20 52 24 48" 
         stroke="currentColor" 
@@ -142,15 +142,11 @@ export default function Process() {
 
   return (
     <section id="process" aria-labelledby="process-title" className="bg-white">
-      <div className="mx-auto max-w-[1280px] px-6 md:px-8 py-16 md:py-24">
+      <div className="mx-auto max-w-[1280px] px-6 md:px-8 pt-8 pb-16 md:pt-16 md:pb-24">
         {/* Header */}
-        <div className="flex items-center gap-4 mb-10">
-          <Image
-            src="/logo.svg" alt="Brand mark" width={48} height={48}
-            className="shrink-0"
-          />
-          <h2 id="process-title" className="text-3xl font-medium tracking-tight text-neutral-900">
-            The Process
+        <div className="mb-10 text-center">
+          <h2 id="process-title" className="text-4xl md:text-5xl font-bold tracking-tight text-[#1A2B3C]">
+            The process that gets results
           </h2>
         </div>
 
@@ -164,17 +160,17 @@ export default function Process() {
                 whileInView="animate"
                 viewport={{ amount: 0.3, once: true }}
                 aria-labelledby={`step-${step.id}-title`}
-                className="rounded-2xl border border-neutral-200 p-6"
+                className="rounded-2xl border border-neutral-200 p-6 hover:border-[#B9F040]/30 transition-colors"
               >
-                <div className="text-neutral-500 text-sm font-medium">{step.id}.</div>
-                <h3 id={`step-${step.id}-title`} className="mt-1 text-xl font-semibold text-neutral-900">
+                <div className="text-[#B9F040] text-sm font-bold">{step.id}.</div>
+                <h3 id={`step-${step.id}-title`} className="mt-1 text-xl font-semibold text-[#1A2B3C]">
                   {step.title}
                 </h3>
                 <p className="mt-2 text-neutral-600">{step.description}</p>
                 <ul className="mt-4 space-y-2 text-neutral-700">
                   {step.items.map((t) => (
                     <li key={t} className="flex gap-2">
-                      <span aria-hidden className="text-neutral-400">+</span>
+                      <span aria-hidden className="text-[#B9F040]">+</span>
                       <span>{t}</span>
                     </li>
                   ))}
@@ -182,7 +178,7 @@ export default function Process() {
               </motion.article>
               {i < STEPS.length - 1 && (
                 <motion.div 
-                  className="flex justify-center my-8" 
+                  className="flex justify-center my-2" 
                   aria-hidden
                   variants={reduce ? undefined : createArrowVariants(i * 0.1 + 0.05)}
                   initial="initial"
@@ -207,17 +203,17 @@ export default function Process() {
               whileInView="animate"
               viewport={{ amount: 0.3, once: true }}
               aria-labelledby={`step-${step.id}-title-desktop`}
-              className="relative rounded-2xl border border-neutral-200 p-6 bg-white"
+              className="relative rounded-2xl border border-neutral-200 p-6 bg-white hover:border-[#B9F040]/30 transition-colors"
             >
-              <div className="text-neutral-500 text-sm font-medium">{step.id}.</div>
-              <h3 id={`step-${step.id}-title-desktop`} className="mt-1 text-xl font-semibold text-neutral-900">
+              <div className="text-[#B9F040] text-sm font-bold">{step.id}.</div>
+              <h3 id={`step-${step.id}-title-desktop`} className="mt-1 text-xl font-semibold text-[#1A2B3C]">
                 {step.title}
               </h3>
               <p className="mt-2 text-neutral-600">{step.description}</p>
               <ul className="mt-4 space-y-2 text-neutral-700">
                 {step.items.map((t) => (
                   <li key={t} className="flex gap-2">
-                    <span aria-hidden className="text-neutral-400">+</span>
+                    <span aria-hidden className="text-[#B9F040]">+</span>
                     <span>{t}</span>
                   </li>
                 ))}
@@ -262,17 +258,17 @@ export default function Process() {
               whileInView="animate"
               viewport={{ amount: 0.3, once: true }}
               aria-labelledby={`step-${step.id}-title-desktop-2`}
-              className="relative rounded-2xl border border-neutral-200 p-6 bg-white"
+              className="relative rounded-2xl border border-neutral-200 p-6 bg-white hover:border-[#B9F040]/30 transition-colors"
             >
-              <div className="text-neutral-500 text-sm font-medium">{step.id}.</div>
-              <h3 id={`step-${step.id}-title-desktop-2`} className="mt-1 text-xl font-semibold text-neutral-900">
+              <div className="text-[#B9F040] text-sm font-bold">{step.id}.</div>
+              <h3 id={`step-${step.id}-title-desktop-2`} className="mt-1 text-xl font-semibold text-[#1A2B3C]">
                 {step.title}
               </h3>
               <p className="mt-2 text-neutral-600">{step.description}</p>
               <ul className="mt-4 space-y-2 text-neutral-700">
                 {step.items.map((t) => (
                   <li key={t} className="flex gap-2">
-                    <span aria-hidden className="text-neutral-400">+</span>
+                    <span aria-hidden className="text-[#B9F040]">+</span>
                     <span>{t}</span>
                   </li>
                 ))}
@@ -303,7 +299,7 @@ export default function Process() {
           viewport={{ amount: 0.3, once: true }}
           className="mt-14 flex flex-col md:flex-row items-center justify-between gap-4 rounded-2xl border border-neutral-200 p-6"
         >
-          <p className="text-lg text-neutral-900">Ready to turn feedback into growth?</p>
+          <p className="text-lg text-[#1A2B3C]">Ready to turn feedback into growth?</p>
           <div className="flex flex-col sm:flex-row gap-3">
             <Button asChild>
               <a href="#contact" aria-label="Get started free">Get started free</a>

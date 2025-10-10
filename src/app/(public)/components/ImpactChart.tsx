@@ -1,6 +1,7 @@
 'use client'
 
 import { motion, Variants } from 'framer-motion'
+import Image from 'next/image'
 
 const variants: { fadeUp: Variants } = {
   fadeUp: {
@@ -41,7 +42,7 @@ export default function ImpactChart() {
         >
           <p className="text-sm uppercase tracking-widest text-neutral-300 mb-4">Why work with David Rawlings?</p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
-            The <span className="text-[#B9F040] relative after:absolute after:inset-0 after:blur-xl after:bg-lime-200/50 after:-z-10" aria-label="results with glow effect">results</span> speak for themselves
+            <span className="text-[#B9F040] relative after:absolute after:inset-0 after:blur-xl after:bg-lime-200/50 after:-z-10" aria-label="results with glow effect">Results</span> that speak for themselves
           </h2>
         </motion.div>
 
@@ -63,13 +64,19 @@ export default function ImpactChart() {
               </p>
 
               <div className="flex items-center gap-4 mt-6">
-                <div className="w-12 h-12 bg-neutral-600 rounded-full flex items-center justify-center">
-                  <span className="text-neutral-300 font-semibold text-sm">CN</span>
+                <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
+                  <Image
+                    src="/images/mark_morley_avatar.jpeg"
+                    alt="Mark Morley"
+                    width={48}
+                    height={48}
+                    className="object-cover w-full h-full"
+                  />
                 </div>
                 <div>
-                  <p className="font-semibold text-white">Client Name</p>
+                  <p className="font-semibold text-white">Mark Morley</p>
                   <p className="text-sm text-neutral-300">
-                    Role at <span className="text-[#B9F040] font-medium">Company Name</span>
+                    Co-Founder at <span className="text-[#B9F040] font-medium">Prep Kitchen</span>
                   </p>
                 </div>
               </div>

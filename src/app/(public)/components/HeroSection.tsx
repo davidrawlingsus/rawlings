@@ -63,18 +63,13 @@ export default function HeroSection() {
                 }
               }}
             >
-              <button 
-                className="h-12 px-6 rounded-full font-semibold bg-[#1A2B3C] text-white hover:bg-[#2A3B4C] transition-colors whitespace-nowrap"
-                aria-label="Get started free"
-              >
-                Get started free
-              </button>
-              <button 
-                className="h-12 px-6 rounded-full font-semibold border-2 border-[#1A2B3C] text-[#1A2B3C] hover:bg-[#1A2B3C] hover:text-white transition-colors whitespace-nowrap"
+              <a 
+                href="#contact"
+                className="h-12 px-6 rounded-full font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors whitespace-nowrap flex items-center justify-center"
                 aria-label="Book a strategy call"
               >
                 Book a strategy call
-              </button>
+              </a>
             </motion.div>
           </motion.div>
 
