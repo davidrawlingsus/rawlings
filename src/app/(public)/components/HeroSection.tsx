@@ -10,7 +10,7 @@ export default function HeroSection() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           {/* Left Column - Text */}
           <motion.div 
-            className="max-w-[600px] flex flex-col gap-6 md:gap-8"
+            className="max-w-[600px] flex flex-col gap-6 md:gap-8 text-center md:text-left"
             initial="hidden"
             whileInView="visible"
             viewport={{ amount: 0.3, once: true }}
