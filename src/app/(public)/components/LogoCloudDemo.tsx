@@ -1,8 +1,6 @@
 'use client';
 
 import LogoCloud, { LogoItem } from '@/components/LogoCloud';
-import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
 
 // Client logos hosted on Vercel Blob Storage
 const clientLogos: LogoItem[] = [

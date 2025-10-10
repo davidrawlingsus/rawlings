@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Menu, ArrowRight } from 'lucide-react'
+import { Menu } from 'lucide-react'
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)

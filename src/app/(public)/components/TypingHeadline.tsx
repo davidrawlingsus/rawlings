@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState, useRef, useMemo } from 'react'
+import { useEffect, useState, useMemo } from 'react'
 
 interface TypingHeadlineConfig {
   phrases: string[]
@@ -12,7 +12,6 @@ interface TypingHeadlineConfig {
 }
 
 interface TypingHeadlineProps {
-  prefix?: string
   config?: Partial<TypingHeadlineConfig>
 }
 
@@ -38,7 +37,6 @@ const defaultConfig: TypingHeadlineConfig = {
 }
 
 export default function TypingHeadline({ 
-  prefix = 'What if your customers created your ',
   config: userConfig 
 }: TypingHeadlineProps) {
   const config = useMemo(() => ({ ...defaultConfig, ...userConfig }), [userConfig])

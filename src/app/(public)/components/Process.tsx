@@ -1,8 +1,6 @@
 'use client';
 
 import { motion, useReducedMotion } from 'framer-motion';
-import Image from 'next/image';
-import { Button } from '@/components/ui/button';
 import * as React from 'react';
 
 const STEPS = [

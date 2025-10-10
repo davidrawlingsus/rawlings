@@ -114,7 +114,7 @@ export default function ContactForm() {
             </div>
             <h2 className="text-4xl font-bold mb-4 text-white">Thank you!</h2>
             <p className="text-lg text-neutral-300">
-              We've received your information and will be in touch shortly to schedule your strategy call.
+              We&apos;ve received your information and will be in touch shortly to schedule your strategy call.
             </p>
           </div>
         </div>
@@ -241,7 +241,7 @@ export default function ContactForm() {
                   {steps[1].title}
                 </h2>
                 <p className="text-foreground/70 mb-8">
-                  We'd love to know who we're talking to
+                  We&apos;d love to know who we&apos;re talking to
                 </p>
                 
                 <div>
@@ -275,7 +275,7 @@ export default function ContactForm() {
                   {steps[2].title}
                 </h2>
                 <p className="text-foreground/70 mb-8">
-                  Almost done! We'll use this to schedule your strategy call
+                  Almost done! We&apos;ll use this to schedule your strategy call
                 </p>
                 
                 <div className="space-y-6">

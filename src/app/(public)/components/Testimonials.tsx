@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
 import Image from 'next/image'
 
 interface Testimonial {
@@ -147,7 +147,7 @@ export default function Testimonials() {
             msOverflowStyle: 'none',
           }}
         >
-          {testimonials.map((testimonial, index) => (
+          {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
               className="group relative h-[280px] w-[309px] md:h-[320px] md:w-[525px] flex-none shrink-0 snap-start overflow-hidden rounded-md bg-gradient-to-br from-primary/5 to-accent/5 border border-border px-6 py-8 md:p-10 transition-all duration-300 hover:scale-[0.98] hover:shadow-xl cursor-pointer"
@@ -160,7 +160,7 @@ export default function Testimonials() {
                 <div className="space-y-8">
                   {/* Quote */}
                   <p className="w-full whitespace-pre-line text-xl md:text-2xl lg:text-3xl leading-[140%] tracking-tight text-foreground">
-                    "{testimonial.quote}"
+                    &ldquo;{testimonial.quote}&rdquo;
                   </p>
 
                   {/* Author Info */}
