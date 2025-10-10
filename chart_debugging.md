@@ -49,15 +49,34 @@ The bar chart in the Impact section (`ImpactChart.tsx`) is not visible at all in
 
 **Reverted:** Yes
 
+## Current Test in Progress
+
+### Attempt #3: Plain SVG bars without animation
+**Date:** Current
+**Approach:**
+- Converted 5 bars to plain SVG `<rect>` elements (no Framer Motion)
+- 3 gray baseline bars + 2 green highlight bars
+- All other bars remain animated for comparison
+- This tests if the issue is rendering vs animation-specific
+
+**Testing:** Please check on Safari iOS if you can see these 5 static bars:
+- Gray bar at x=0
+- Gray bar at x=24
+- Gray bar at x=48
+- Green bar at x=456
+- Green bar at x=480
+
+**Commit:** `ba90836`
+
 ## Next Steps to Investigate
 
-1. **Check if bars are rendering at all** (opacity issue vs missing entirely)
-2. **Test without Framer Motion** - Use plain SVG to see if it renders
+1. **Check if bars are rendering at all** (opacity issue vs missing entirely) - IN PROGRESS
+2. **Test without Framer Motion** - Use plain SVG to see if it renders - IN PROGRESS
 3. **Check viewport intersection observer** - `whileInView` may not trigger on iOS
 4. **Verify SVG viewBox scaling** - Container scaling with `md:scale-[1.8]` on mobile
 5. **Test with CSS animations** instead of Framer Motion
 6. **Check for JavaScript errors** in Safari iOS console
-7. **Simplify animation** - Remove animation entirely to see if bars appear
+7. **Simplify animation** - Remove animation entirely to see if bars appear - IN PROGRESS
 8. **Check initial state** - Bars may be stuck in "hidden" state
 
 ## Resources
