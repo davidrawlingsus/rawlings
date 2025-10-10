@@ -4,20 +4,39 @@ import { ArrowRight } from 'lucide-react';
 import { prisma } from '@/lib/prisma';
 
 async function getLogos(): Promise<LogoItem[]> {
-  const logos = await prisma.logo.findMany({
-    where: { published: true },
-    orderBy: { order: 'asc' },
-  });
+  try {
+    const logos = await prisma.logo.findMany({
+      where: { published: true },
+      orderBy: { order: 'asc' },
+    });
 
-  return logos.map(logo => ({
-    src: logo.imageUrl,
-    alt: logo.alt,
-    shape: logo.shape as 'square' | 'rect',
-  }));
+    return logos.map(logo => ({
+      src: logo.imageUrl,
+      alt: logo.alt,
+      shape: logo.shape as 'square' | 'rect',
+    }));
+  } catch (error) {
+    console.error('Error fetching logos from database:', error);
+    // Fallback to empty array if database fails
+    return [];
+  }
 }
 
 export default async function LogoCloudDemo() {
   const clientLogos = await getLogos();
+  
+  // If no logos from database, show message
+  if (clientLogos.length === 0) {
+    return (
+      <section aria-labelledby="logo-cloud-heading" className="relative pt-4 pb-16 md:pt-[125px] md:pb-24">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-8">
+          <div className="text-center py-12">
+            <p className="text-gray-600">Logo cloud is loading...</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
   return (
     <section aria-labelledby="logo-cloud-heading" className="relative pt-4 pb-16 md:pt-[125px] md:pb-24">
       <div className="max-w-[1280px] mx-auto px-6 md:px-8">
