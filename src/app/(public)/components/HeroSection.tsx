@@ -70,13 +70,16 @@ export default function HeroSection() {
               >
                 Book a strategy call
               </a>
-              <a 
-                href="#challenge"
-                className="h-12 px-6 rounded-full font-semibold border-2 border-neutral-300 text-neutral-700 hover:border-neutral-400 hover:text-neutral-900 transition-colors whitespace-nowrap flex items-center justify-center"
-                aria-label="Take the Landing Page Challenge"
-              >
-                Take the Landing Page Challenge
-              </a>
+              <div className="flex flex-col items-center gap-2">
+                <a 
+                  href="#challenge"
+                  className="h-12 px-6 rounded-full font-semibold border-2 border-neutral-300 text-neutral-700 hover:border-neutral-400 hover:text-neutral-900 transition-colors whitespace-nowrap flex items-center justify-center"
+                  aria-label="Take the Landing Page Challenge"
+                >
+                  Take the Landing Page Challenge
+                </a>
+                <p className="text-sm text-neutral-600 underline">Get +20% CvR, or pay nothing</p>
+              </div>
             </motion.div>
           </motion.div>
 
