@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import { Menu } from 'lucide-react'
 
 export default function Header() {
@@ -15,10 +16,10 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <a href="/" className="font-bold text-3xl font-[family-name:var(--font-lato)] hover:opacity-80 transition-opacity">
+          <Link href="/" className="font-bold text-3xl font-[family-name:var(--font-lato)] hover:opacity-80 transition-opacity">
             <span className="text-white">market</span>
             <span className="text-[#B9F040]">ably</span>
-          </a>
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
