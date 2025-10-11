@@ -42,8 +42,11 @@ export default function Header() {
             </span>
           </div>
 
-          {/* CTA Button */}
-          <div className="flex items-center ml-8">
+          {/* CTA Buttons */}
+          <div className="flex items-center gap-4 ml-8">
+            <a href="#challenge" className="border-2 border-white text-white px-6 py-2 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors">
+              LANDING PAGE CHALLENGE
+            </a>
             <a href="#contact" className="bg-[#B9F040] text-black px-6 py-2 rounded-lg font-semibold text-sm uppercase hover:bg-[#a0d636] transition-colors">
               BOOK A STRATEGY CALL
             </a>
@@ -82,8 +85,11 @@ export default function Header() {
               Pricing
             </span>
             
-            {/* Mobile CTA Button */}
-            <div className="pt-4">
+            {/* Mobile CTA Buttons */}
+            <div className="pt-4 flex flex-col gap-3">
+              <a href="#challenge" className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors block text-center">
+                LANDING PAGE CHALLENGE
+              </a>
               <a href="#contact" className="bg-[#B9F040] text-black px-6 py-3 rounded-lg font-semibold text-sm uppercase hover:bg-[#a0d636] transition-colors block text-center">
                 BOOK A STRATEGY CALL
               </a>
