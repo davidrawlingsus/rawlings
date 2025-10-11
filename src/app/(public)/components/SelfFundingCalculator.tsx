@@ -60,8 +60,8 @@ export default function SelfFundingCalculator() {
           Could your first win pay for everything?
         </h2>
         <p className="mt-4 text-lg md:text-xl text-neutral-300">
-          We guarantee a 20% lift with our first winning test. This makes you ROI positive 
-          on our entire program, without risking a penny. Use the calculator below to see the math:
+          We guarantee a 20% lift with our first winning test. If your landing page qualifies, this will make you ROI positive 
+          on our entire program, without risking a penny.
         </p>
         
         <div className="mt-8 grid lg:grid-cols-2 gap-8">
