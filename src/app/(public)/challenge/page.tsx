@@ -113,22 +113,23 @@ export default function ChallengePage() {
             that pays for everything, then builds a compounding growth engine that makes your business unstoppable.
           </p>
           
-          <Card className="border-2 mb-8 max-w-4xl">
-            <CardHeader>
-              <CardTitle className="text-xl">1. Pay a one-off, fully-refundable deposit</CardTitle>
-            </CardHeader>
-            <CardContent className="text-sm text-neutral-700 space-y-3">
-              <p className="font-medium text-base text-neutral-900">
-                This secures your onboarding slot - nothing else is payable until we&apos;ve proven a 20%+ lift.
-              </p>
-              <p>
-                <strong>Guarantee:</strong> If the first test doesn&apos;t increase your conversion rate by at least 20%, your deposit is refunded in full. 
-                If it does (and it usually does), that single lift funds the entire program.
-              </p>
-            </CardContent>
-          </Card>
-          
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          {/* Mobile - Stacked */}
+          <div className="md:hidden space-y-4 mb-8">
+            <Card className="border-2">
+              <CardHeader>
+                <CardTitle className="text-xl">1. Pay a one-off, fully-refundable deposit</CardTitle>
+              </CardHeader>
+              <CardContent className="text-sm text-neutral-700 space-y-3">
+                <p className="font-medium text-base text-neutral-900">
+                  This secures your onboarding slot - nothing else is payable until we&apos;ve proven a 20%+ lift.
+                </p>
+                <p>
+                  <strong>Guarantee:</strong> If the first test doesn&apos;t increase your conversion rate by at least 20%, your deposit is refunded in full. 
+                  If it does (and it usually does), that single lift funds the entire program.
+                </p>
+              </CardContent>
+            </Card>
+
             <Card className="border-2">
               <CardHeader>
                 <CardTitle className="text-xl">2. Free Winning Test</CardTitle>
@@ -149,7 +150,7 @@ export default function ChallengePage() {
                 </p>
               </CardContent>
             </Card>
-            
+
             <Card className="border-2">
               <CardHeader>
                 <CardTitle className="text-xl">3. Full-Funnel Testing</CardTitle>
@@ -169,7 +170,7 @@ export default function ChallengePage() {
                 </p>
               </CardContent>
             </Card>
-            
+
             <Card className="border-2">
               <CardHeader>
                 <CardTitle className="text-xl">4. Growth Engine</CardTitle>
@@ -188,6 +189,126 @@ export default function ChallengePage() {
                   test cadence that drives compounding growth long after our engagement ends.
                 </p>
               </CardContent>
+            </Card>
+          </div>
+          
+          {/* Desktop - 2x2 Grid with Arrows */}
+          <div className="hidden md:grid grid-cols-2 gap-8 mb-8">
+            {/* Row 1: Card 1 → Card 2 */}
+            <Card className="border-2 relative">
+              <CardHeader>
+                <CardTitle className="text-xl">1. Pay a one-off, fully-refundable deposit</CardTitle>
+              </CardHeader>
+              <CardContent className="text-sm text-neutral-700 space-y-3">
+                <p className="font-medium text-base text-neutral-900">
+                  This secures your onboarding slot - nothing else is payable until we&apos;ve proven a 20%+ lift.
+                </p>
+                <p>
+                  <strong>Guarantee:</strong> If the first test doesn&apos;t increase your conversion rate by at least 20%, your deposit is refunded in full. 
+                  If it does (and it usually does), that single lift funds the entire program.
+                </p>
+              </CardContent>
+              {/* Arrow right to Card 2 */}
+              <div className="absolute -right-10 top-1/2 -translate-y-1/2 z-10">
+                <svg aria-hidden="true" viewBox="0 0 48 32" className="w-12 h-8 text-[#B9F040]">
+                  <path 
+                    d="M2 16 Q24 14 44 16 M36 8 Q40 12 44 16 Q40 20 36 24" 
+                    stroke="currentColor" 
+                    strokeWidth="3.5" 
+                    fill="none" 
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+            </Card>
+
+            <Card className="border-2 relative">
+              <CardHeader>
+                <CardTitle className="text-xl">2. Free Winning Test</CardTitle>
+                <p className="text-sm text-neutral-600 mt-2">Month 1 - Proof Sprint</p>
+              </CardHeader>
+              <CardContent className="text-sm text-neutral-700 space-y-3">
+                <p className="font-medium text-base text-neutral-900">
+                  A free A/B test that pays for everything - forever.
+                </p>
+                <p>
+                  We run voice-of-customer research and launch one high-impact test on your 
+                  highest-leverage page (landing page, PDP, or checkout).
+                </p>
+                <p>
+                  <strong>The result:</strong> In most cases, this single lift generates enough 
+                  recurring monthly revenue to cover our $7.5-10k fee indefinitely. Everything 
+                  from here is pure upside.
+                </p>
+              </CardContent>
+              {/* Arrow down to Card 3 */}
+              <div className="absolute left-1/2 -bottom-12 -translate-x-1/2 z-10">
+                <svg aria-hidden="true" viewBox="0 0 32 60" className="w-8 h-16 text-[#B9F040]">
+                  <path 
+                    d="M16 2 Q14 30 16 56 M8 48 Q12 52 16 56 Q20 52 24 48" 
+                    stroke="currentColor" 
+                    strokeWidth="3.5" 
+                    fill="none" 
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+            </Card>
+
+            {/* Row 2: Card 4 ← Card 3 (reverse order) */}
+            <Card className="border-2 relative">
+              <CardHeader>
+                <CardTitle className="text-xl">4. Growth Engine</CardTitle>
+                <p className="text-sm text-neutral-600 mt-2">Months 5-6 - Independence</p>
+              </CardHeader>
+              <CardContent className="text-sm text-neutral-700 space-y-3">
+                <p className="font-medium text-base text-neutral-900">
+                  Bigger, faster, more profitable testing - forever.
+                </p>
+                <p>
+                  We equip and empower your team to run intelligent, high-impact tests independently. 
+                  You get a complete testing playbook, documented processes, and ongoing support.
+                </p>
+                <p>
+                  <strong>The result:</strong> Your business and stakeholders can now run a continuous 
+                  test cadence that drives compounding growth long after our engagement ends.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 relative">
+              <CardHeader>
+                <CardTitle className="text-xl">3. Full-Funnel Testing</CardTitle>
+                <p className="text-sm text-neutral-600 mt-2">Months 2-4 - Compounding Wins</p>
+              </CardHeader>
+              <CardContent className="text-sm text-neutral-700 space-y-3">
+                <p className="font-medium text-base text-neutral-900">
+                  Implementation of feedback systems and full-funnel optimization.
+                </p>
+                <p>
+                  Deploy 2-4 tests per month across your entire funnel: landing pages, product pages, 
+                  checkout flows, email sequences, and retention touchpoints.
+                </p>
+                <p>
+                  <strong>The result:</strong> Every test is informed by real customer feedback and 
+                  conversion science. Insights compound - each win makes the next test smarter and faster.
+                </p>
+              </CardContent>
+              {/* Arrow left to Card 4 */}
+              <div className="absolute -left-10 top-1/2 -translate-y-1/2 z-10">
+                <svg aria-hidden="true" viewBox="0 0 48 32" className="w-12 h-8 text-[#B9F040]">
+                  <path 
+                    d="M46 16 Q24 14 4 16 M12 8 Q8 12 4 16 Q8 20 12 24" 
+                    stroke="currentColor" 
+                    strokeWidth="3.5" 
+                    fill="none" 
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
             </Card>
           </div>
           
