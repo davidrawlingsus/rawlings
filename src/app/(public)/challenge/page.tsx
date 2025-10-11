@@ -411,18 +411,18 @@ export default function ChallengePage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="px-6 md:px-8 py-16 md:py-24 border-b border-neutral-200">
+      <section className="px-6 md:px-8 py-16 md:py-24 bg-[#1A2B3C]">
         <div className="mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-12">
+          <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-white">
             Frequently asked questions
           </h2>
           
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-semibold mb-3">
+              <h3 className="text-xl font-semibold mb-3 text-white">
                 How do I know it will pay for itself?
               </h3>
-              <p className="text-neutral-700">
+              <p className="text-neutral-300">
                 Use the calculator above. If a 10% lift in conversion would generate more profit than our 
                 monthly fee, you&apos;re a strong fit. In practice, our median lift is 15-25%, and our largest 
                 single test produced a +116% improvement.
@@ -430,20 +430,20 @@ export default function ChallengePage() {
             </div>
             
             <div>
-              <h3 className="text-xl font-semibold mb-3">
+              <h3 className="text-xl font-semibold mb-3 text-white">
                 What&apos;s the guarantee?
               </h3>
-              <p className="text-neutral-700">
+              <p className="text-neutral-300">
                 One primary metric; ≥20% relative lift or you owe $0. The first winning test is included free with 
                 the 6-month program to demonstrate impact before you commit to ongoing work.
               </p>
             </div>
             
             <div>
-              <h3 className="text-xl font-semibold mb-3">
+              <h3 className="text-xl font-semibold mb-3 text-white">
                 What are the traffic requirements?
               </h3>
-              <p className="text-neutral-700">
+              <p className="text-neutral-300">
                 ~10k relevant sessions in 14 days (or equivalent lead volume). If you&apos;re lower traffic, 
                 we can switch the primary metric to qualified-lead rate, booking rate, or another high-value 
                 action, and extend test duration to reach statistical significance.
@@ -451,30 +451,30 @@ export default function ChallengePage() {
             </div>
             
             <div>
-              <h3 className="text-xl font-semibold mb-3">
+              <h3 className="text-xl font-semibold mb-3 text-white">
                 Who handles deployment?
               </h3>
-              <p className="text-neutral-700">
+              <p className="text-neutral-300">
                 We can ship production-ready code and deploy directly, or if you prefer your devs handle it, 
                 we hand off clean specs and implementation guidance. Either way works.
               </p>
             </div>
             
             <div>
-              <h3 className="text-xl font-semibold mb-3">
+              <h3 className="text-xl font-semibold mb-3 text-white">
                 How is data handled?
               </h3>
-              <p className="text-neutral-700">
+              <p className="text-neutral-300">
                 NDA + DPA standard; we collect minimal fields (survey responses, session replays for analysis); 
                 data is purged within 30 days unless otherwise agreed. Your customer data never leaves your control.
               </p>
             </div>
             
             <div>
-              <h3 className="text-xl font-semibold mb-3">
+              <h3 className="text-xl font-semibold mb-3 text-white">
                 What happens after the 6-month program?
               </h3>
-              <p className="text-neutral-700">
+              <p className="text-neutral-300">
                 You can continue month-to-month with our ongoing support, run tests independently with your 
                 new playbook, or do both. Many clients keep us for high-leverage tests while their team handles 
                 lower-priority experiments.

@@ -52,14 +52,14 @@ export default function SelfFundingCalculator() {
 
   return (
     <section 
-      className="px-6 md:px-8 py-16 md:py-24 border-b border-neutral-200" 
+      className="px-6 md:px-8 py-16 md:py-24 bg-[#1A2B3C]" 
       id="calculator"
     >
       <div className="mx-auto max-w-screen-xl">
-        <h2 className="text-3xl md:text-4xl font-semibold">
+        <h2 className="text-3xl md:text-4xl font-semibold text-white">
           Could your first win pay for everything?
         </h2>
-        <p className="mt-3 text-lg text-neutral-700 max-w-3xl">
+        <p className="mt-3 text-lg text-neutral-300 max-w-3xl">
           We guarantee a 20% lift with our first winning test. In most cases, this makes you squarely ROI positive 
           on our entire program, without risking a penny. Use the calculator below to see the math:
         </p>
@@ -206,7 +206,7 @@ export default function SelfFundingCalculator() {
           </Card>
         </div>
         
-        <p className="mt-4 text-xs text-neutral-500 max-w-4xl">
+        <p className="mt-4 text-xs text-neutral-400 max-w-4xl">
           <strong>Your math:</strong> {formatNumber(visitors)} visitors × {cv.toFixed(2)}% CVR × {formatCurrency(aov)} AOV = {formatCurrency(result.baselineRev)}/mo baseline revenue. 
           A {lift}% lift adds {formatCurrency(result.liftRev)} revenue; at {margin}% margin that&apos;s {formatCurrency(result.liftProfit)} profit 
           {result.paysForItself ? `- comfortably above a $${fee.toLocaleString()}/mo fee` : `- you&apos;d need a ${result.breakevenLift.toFixed(1)}% lift to cover a $${fee.toLocaleString()}/mo fee`}.
