@@ -184,7 +184,7 @@ export default function SelfFundingCalculator() {
                   {/* Your Math */}
                   <p className="text-sm text-neutral-600 text-center">
                     <strong>Your math:</strong> {formatNumber(visitors)} visitors × {cv.toFixed(2)}% CVR × {formatCurrency(aov)} AOV = {formatCurrency(result.baselineRev)}/mo baseline revenue. 
-                    A {lift}% lift adds {formatCurrency(result.liftRev)} revenue; at {margin}% margin that&apos;s {formatCurrency(result.liftProfit)} profit 
+                    A {lift}% lift adds {formatCurrency(result.liftRev)} revenue; at {margin}% margin that&apos;s {formatCurrency(result.liftProfit)} <strong>monthly</strong> profit 
                     {result.paysForItself ? `- comfortably above our fee` : `- you&apos;d need a ${result.breakevenLift.toFixed(1)}% lift to cover our fee`}.
                   </p>
                   
