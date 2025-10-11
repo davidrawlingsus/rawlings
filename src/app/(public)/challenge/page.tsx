@@ -416,6 +416,8 @@ export default function ChallengePage() {
         headline="Tell us about your control" 
         step0Title="Your landing page URL"
         step0Description=""
+        showStep0Title={false}
+        websiteUrlLabel="Landing Page URL"
       />
 
       <Footer />

@@ -15,12 +15,16 @@ interface ContactFormProps {
   headline?: string
   step0Title?: string
   step0Description?: string
+  showStep0Title?: boolean
+  websiteUrlLabel?: string
 }
 
 export default function ContactForm({ 
   headline = "Want your business to be next?",
   step0Title = "Tell us about your site",
-  step0Description = "This helps us understand your testing capacity"
+  step0Description = "This helps us understand your testing capacity",
+  showStep0Title = true,
+  websiteUrlLabel = "Website URL"
 }: ContactFormProps) {
   const [currentStep, setCurrentStep] = useState(0)
   const [formData, setFormData] = useState<FormData>({
@@ -180,9 +184,11 @@ export default function ContactForm({
             >
               {/* Step 1: Website URL & Traffic */}
               <div className="w-full flex-shrink-0 p-12">
-                <h2 className="text-3xl font-bold mb-3 text-foreground">
-                  {steps[0].title}
-                </h2>
+                {showStep0Title && (
+                  <h2 className="text-3xl font-bold mb-3 text-foreground">
+                    {steps[0].title}
+                  </h2>
+                )}
                 {step0Description && (
                   <p className="text-foreground/70 mb-8">
                     {step0Description}
@@ -195,7 +201,7 @@ export default function ContactForm({
                       htmlFor="websiteUrl"
                       className="block text-sm font-medium mb-3 text-foreground"
                     >
-                      Website URL
+                      {websiteUrlLabel}
                     </label>
                     <input
                       id="websiteUrl"
