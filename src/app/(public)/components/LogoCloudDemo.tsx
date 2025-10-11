@@ -81,7 +81,7 @@ export default function LogoCloudDemo() {
                 <br />
                 The principles never change...
                 <br />
-                But the variables do.
+                But the variables <span className="underline">do</span>.
                 <br />
                 <br />
                 <span 
