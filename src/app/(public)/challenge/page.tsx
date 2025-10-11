@@ -55,7 +55,7 @@ export default function ChallengePage() {
                 }
               }}
             >
-              The first winning test is free. Our goal is to make you more monthly revenue than our monthly fee, so you&apos;re in immediate positive ROI.
+              The first winning test is free. Our goal is to immediately make you more monthly revenue than our monthly fee, so you&apos;re in positive ROI from day 1.
             </motion.p>
             
             <motion.div 
