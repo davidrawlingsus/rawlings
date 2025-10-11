@@ -29,7 +29,7 @@ export default function PricingTableSelfFunding() {
             </ul>
             <div className="p-5 mt-auto">
               <Button asChild size="lg" className="w-full bg-black text-white hover:bg-black/90">
-                <a href="#contact">Get your free win</a>
+                <a href="#contact">Start Here</a>
               </Button>
               <p className="mt-2 text-xs">
                 In most cases, the month-one win generates more monthly revenue than our fee.
@@ -142,11 +142,6 @@ function TierCard({
           <li key={b}>• {b}</li>
         ))}
       </ul>
-      <div className="p-5 mt-auto">
-        <Button variant="secondary" className="w-full" asChild>
-          <a href="#contact">Join the program</a>
-        </Button>
-      </div>
     </div>
   );
 }
