@@ -15,10 +15,10 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <span className="font-bold text-3xl font-[family-name:var(--font-lato)]">
+          <a href="/" className="font-bold text-3xl font-[family-name:var(--font-lato)] hover:opacity-80 transition-opacity">
             <span className="text-white">market</span>
             <span className="text-[#B9F040]">ably</span>
-          </span>
+          </a>
         </div>
 
         {/* Desktop Navigation */}
