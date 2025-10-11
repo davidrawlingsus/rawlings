@@ -55,8 +55,7 @@ export default function ChallengePage() {
                 }
               }}
             >
-              The first winning test is free - and in most cases, it makes you more monthly revenue than our fee costs. 
-              We&apos;re the only consultancy that pays for itself - forever - starting with its first recommendation.
+              The first winning test is free. Our goal is to make you more monthly revenue than our monthly fee, so you&apos;re in immediate positive ROI.
             </motion.p>
             
             <motion.div 
