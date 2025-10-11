@@ -212,11 +212,6 @@ export default function ChallengePage() {
               <p className="text-neutral-700 mb-2">
                 <strong>Investment:</strong> $7.5k-$10k/month for the 6-month Growth Partnership.
               </p>
-              <p className="text-sm text-neutral-600">
-                After six months, you have three options: continue with ongoing support, run tests independently 
-                with your new playbook, or do both (most clients keep us for high-leverage tests while their 
-                team handles lower-priority experiments).
-              </p>
             </div>
           </div>
         </div>
