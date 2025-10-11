@@ -122,9 +122,6 @@ export default function ChallengePage() {
                 This secures your onboarding slot - nothing else is payable until we&apos;ve proven a 20%+ lift.
               </p>
               <p>
-                We only invest our time with teams ready to act on data-driven recommendations. Your deposit ensures we&apos;re aligned.
-              </p>
-              <p>
                 <strong>Guarantee:</strong> If the first test doesn&apos;t increase your conversion rate by at least 20%, your deposit is refunded in full. 
                 If it does (and it usually does), that single lift funds the entire program.
               </p>
