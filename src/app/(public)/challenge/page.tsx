@@ -350,57 +350,73 @@ export default function ChallengePage() {
             {/* Left Column - Program Card */}
             <div className="lg:col-span-2">
               <div className="rounded-2xl border-2 border-neutral-900 bg-white shadow-sm">
+                {/* Header */}
                 <div className="p-6 border-b border-neutral-200 flex items-center justify-between flex-wrap gap-2">
                   <h3 className="text-2xl font-semibold">6-Month Self-Funding Growth Program</h3>
                   <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1.5 rounded-md">
-                    Includes free winning a/b test (Month 1)
+                    Includes free winning A/B test (Month 1)
                   </span>
                 </div>
-                <div className="p-6 space-y-4 text-sm text-neutral-700">
+
+                {/* Body */}
+                <div className="p-6 space-y-5 text-sm text-neutral-700">
                   <p className="text-base">
-                    <strong>Month 1 - Free Challenge test</strong> to prove the model and pay for the program.
+                    <strong>Month 1 — Free Challenge test</strong> to prove the model <em>and</em> pay for the program.
                   </p>
                   <p className="text-base">
-                    <strong>Months 2-6 -</strong> Ongoing VOC analysis, prioritized test pipeline, builds, and strategy sessions.
+                    <strong>Months 2–6 —</strong> Ongoing voice-of-customer analysis, prioritized test pipeline, page builds, and strategy sessions.
                   </p>
-                  <div className="pt-2 border-t border-neutral-200">
-                    <p className="text-2xl font-bold text-neutral-900">$7,500 - $10,000 / month</p>
+
+                  {/* Price + ROI note */}
+                  <div className="pt-3 border-t border-neutral-200">
+                    <p className="text-2xl font-bold text-neutral-900">$7,500–$10,000 / month</p>
                     <p className="text-xs text-neutral-500 mt-2">
-                      💡 Most month-one wins more than cover this fee - the program effectively pays for itself.
-                    </p>
-                  </div>
-                  <div className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 space-y-2">
-                    <p className="text-xs text-neutral-700">
-                      <strong>Payment structure:</strong> Refundable deposit, then monthly fees only begin 
-                      after your first winning test covers our cost. Not a penny more due until we&apos;ve paid for ourselves.
-                    </p>
-                    <p className="text-xs text-neutral-600">
-                      <strong>Optional success bonus:</strong> +10% of incremental profit if a single test 
-                      exceeds +35% lift (capped at $15k).
+                      💡 In most cases, the month-one win generates more monthly revenue than our fee — the program effectively pays for itself.
                     </p>
                   </div>
 
-                  <section className="mt-10 text-sm text-neutral-700">
+                  {/* Payment structure + bonus */}
+                  <div className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 space-y-2">
+                    <p className="text-xs text-neutral-700">
+                      <strong>Payment structure:</strong> One-off <em>fully refundable</em> deposit to secure your slot. 
+                      No monthly fees are payable until we&apos;ve delivered a <strong>≥20% lift</strong> on your primary metric. 
+                      If we don&apos;t win, the deposit is refunded in full.
+                    </p>
+                    <p className="text-xs text-neutral-600">
+                      <strong>Optional success bonus:</strong> +10% of incremental profit if a single test exceeds +35% lift (capped at $15k).
+                    </p>
+                  </div>
+
+                  {/* Traffic-scaled fee explainer */}
+                  <section className="mt-8 text-sm text-neutral-700">
                     <h4 className="font-medium text-base text-neutral-900 mb-2">
                       Fee scales with testing capacity
                     </h4>
                     <p>
-                      Because testing velocity grows with traffic, our fee scales with opportunity — not time spent.
+                      More traffic → faster testing → more research → more value. Our fee scales with opportunity, not time spent.
                     </p>
 
                     <div className="mt-4 grid md:grid-cols-4 gap-3 text-center">
-                      {[
-                        {tier: "Core", traffic: "up to 50K sessions", fee: "$7.5K/mo"},
-                        {tier: "Growth", traffic: "50K–150K", fee: "$10K/mo"},
-                        {tier: "Scale", traffic: "150K–500K", fee: "$12.5–15K/mo"},
-                        {tier: "Enterprise", traffic: "500K+", fee: "Custom"},
-                      ].map((t)=>(
-                        <div key={t.tier} className="border border-neutral-200 rounded-xl p-4 bg-white shadow-sm">
-                          <div className="font-medium text-neutral-900">{t.tier}</div>
-                          <div className="text-xs text-neutral-500 mt-1">{t.traffic}</div>
-                          <div className="text-sm font-semibold mt-2">{t.fee}</div>
-                        </div>
-                      ))}
+                      <div className="border border-neutral-200 rounded-xl p-4 bg-white shadow-sm">
+                        <div className="font-medium text-neutral-900">Core</div>
+                        <div className="text-xs text-neutral-500 mt-1">up to 50K sessions</div>
+                        <div className="text-sm font-semibold mt-2">$7.5K/mo</div>
+                      </div>
+                      <div className="border border-neutral-200 rounded-xl p-4 bg-white shadow-sm">
+                        <div className="font-medium text-neutral-900">Growth</div>
+                        <div className="text-xs text-neutral-500 mt-1">50K–150K</div>
+                        <div className="text-sm font-semibold mt-2">$10K/mo</div>
+                      </div>
+                      <div className="border border-neutral-200 rounded-xl p-4 bg-white shadow-sm">
+                        <div className="font-medium text-neutral-900">Scale</div>
+                        <div className="text-xs text-neutral-500 mt-1">150K–500K</div>
+                        <div className="text-sm font-semibold mt-2">$12.5–15K/mo</div>
+                      </div>
+                      <div className="border border-neutral-200 rounded-xl p-4 bg-white shadow-sm">
+                        <div className="font-medium text-neutral-900">Enterprise</div>
+                        <div className="text-xs text-neutral-500 mt-1">500K+</div>
+                        <div className="text-sm font-semibold mt-2">Custom</div>
+                      </div>
                     </div>
 
                     <p className="mt-3 text-xs text-neutral-500">
@@ -408,9 +424,10 @@ export default function ChallengePage() {
                     </p>
                   </section>
 
+                  {/* CTA */}
                   <div className="pt-2">
                     <a 
-                      href="#contact" 
+                      href="#contact"
                       className="inline-flex items-center justify-center rounded-md bg-[#B9F040] px-6 py-3 text-base font-semibold text-black hover:bg-[#a0d636] transition-colors"
                     >
                       Get your free win
