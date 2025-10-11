@@ -16,8 +16,8 @@ export default function Header() {
         {/* Logo */}
         <div className="flex items-center">
           <span className="font-bold text-3xl font-[family-name:var(--font-lato)]">
-            <span className="text-white">david</span>
-            <span className="text-[#B9F040]">rawlings</span>
+            <span className="text-white">market</span>
+            <span className="text-[#B9F040]">ably</span>
           </span>
         </div>
 
