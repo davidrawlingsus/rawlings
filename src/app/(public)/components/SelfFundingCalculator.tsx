@@ -166,38 +166,38 @@ export default function SelfFundingCalculator() {
               </div>
 
               {/* Results */}
-              <div className="pt-4 border-t border-neutral-200">
-                <div className="space-y-4 text-base md:text-lg text-neutral-700">
-                  <div className="space-y-3">
-                    <p>
-                      <strong className="font-semibold">Monthly lift revenue:</strong>{" "}
+              <div className="pt-6 border-t border-neutral-200">
+                <div className="space-y-6 text-lg md:text-xl lg:text-2xl text-neutral-900">
+                  <div className="space-y-4">
+                    <p className="leading-relaxed">
+                      <strong className="font-bold">Monthly lift revenue:</strong>{" "}
                       ${result.liftRev.toLocaleString(undefined, { maximumFractionDigits: 0 })}
                     </p>
-                    <p>
-                      <strong className="font-semibold">Monthly lift profit:</strong>{" "}
+                    <p className="leading-relaxed">
+                      <strong className="font-bold">Monthly lift profit:</strong>{" "}
                       ${result.liftProfit.toLocaleString(undefined, { maximumFractionDigits: 0 })}
                     </p>
-                    <p>
-                      <strong className="font-semibold">Breakeven lift:</strong>{" "}
+                    <p className="leading-relaxed">
+                      <strong className="font-bold">Breakeven lift:</strong>{" "}
                       {result.breakevenLift > 0 && isFinite(result.breakevenLift) 
                         ? `${result.breakevenLift.toFixed(1)}%` 
                         : "—"}
                     </p>
                   </div>
                   
-                  <div className="pt-2 border-t">
+                  <div className="pt-4 border-t">
                     {result.paysForItself ? (
-                      <p className="text-green-700 font-medium">
+                      <p className="text-green-700 font-bold text-base md:text-lg">
                         ✅ Your growth would pay for itself (profit from lift &gt; fee).
                       </p>
                     ) : (
-                      <p className="text-amber-700 font-medium">
+                      <p className="text-amber-700 font-bold text-base md:text-lg">
                         Almost there — a {result.breakevenLift.toFixed(1)}% lift would cover your monthly fee.
                       </p>
                     )}
                   </div>
                   
-                  <Button className="mt-4 w-full bg-[#B9F040] text-black hover:bg-[#a0d636]" asChild>
+                  <Button className="mt-6 w-full h-12 text-base md:text-lg bg-[#B9F040] text-black hover:bg-[#a0d636]" asChild>
                     <a href="#contact">Start with the free Challenge</a>
                   </Button>
                 </div>
