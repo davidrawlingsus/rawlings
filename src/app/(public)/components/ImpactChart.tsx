@@ -104,6 +104,7 @@ export default function ImpactChart() {
               className="bg-[#2A3B4C] border border-neutral-600 shadow-sm rounded-xl p-8 md:p-10 max-w-lg"
             >
               <p className="text-xl font-semibold text-white">214% improvement in ab test profitability with the customer first strategy</p>
+              <p className="text-base text-neutral-300 mt-4">&quot;It&apos;s hard to think of an investment with a better or faster ROI&quot;</p>
 
               <div className="flex items-center gap-4 mt-6">
                 <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
