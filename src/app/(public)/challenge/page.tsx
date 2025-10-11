@@ -113,6 +113,25 @@ export default function ChallengePage() {
             then builds a compounding growth engine that makes your business unstoppable.
           </p>
           
+          <Card className="border-2 mb-8 max-w-4xl">
+            <CardHeader>
+              <CardTitle className="text-xl">0% Risk, 100% Commitment</CardTitle>
+              <p className="text-sm text-neutral-600 mt-2">Before Month 1 - refundable deposit</p>
+            </CardHeader>
+            <CardContent className="text-sm text-neutral-700 space-y-3">
+              <p className="font-medium text-base text-neutral-900">
+                A fully refundable deposit that signals you&apos;re serious - nothing else is payable until we&apos;ve proven a 20% + lift.
+              </p>
+              <p>
+                The deposit secures your onboarding slot and ensures we&apos;re only investing our time with teams ready to act on data-driven recommendations.
+              </p>
+              <p>
+                <strong>Guarantee:</strong> If the first test doesn&apos;t increase your conversion rate by at least 20%, your deposit is refunded in full. 
+                If it does (and it usually does), that single lift funds the entire program.
+              </p>
+            </CardContent>
+          </Card>
+          
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <Card className="border-2">
               <CardHeader>
