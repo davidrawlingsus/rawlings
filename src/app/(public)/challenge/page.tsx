@@ -225,9 +225,9 @@ export default function ChallengePage() {
             One program. One free winning test. One predictable source of profit.
           </p>
 
-          <div className="mt-8 grid lg:grid-cols-[2fr,1fr] gap-8">
+          <div className="mt-8 grid lg:grid-cols-3 gap-8">
             {/* Left Column - Program Card */}
-            <div>
+            <div className="lg:col-span-2">
               <div className="rounded-2xl border-2 border-neutral-900 bg-white shadow-sm">
                 <div className="p-6 border-b border-neutral-200 flex items-center justify-between flex-wrap gap-2">
                   <h3 className="text-2xl font-semibold">6-Month Self-Funding Growth Program</h3>
