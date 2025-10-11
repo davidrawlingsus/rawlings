@@ -49,7 +49,7 @@ export default function HeroSection() {
                 }
               }}
             >
-              At last, now you can combine voice-of-customer research, conversion science, and AI to help your brand listen at scale - turn feedback into decisions, tests, and messaging that drive measurable growth, fast.
+              Turn feedback into growth with voice-of-customer research, conversion science, and AI that help your brand listen and act at scale.
             </motion.p>
             
             <motion.div 
