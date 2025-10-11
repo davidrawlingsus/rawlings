@@ -64,111 +64,110 @@ export default function SelfFundingCalculator() {
           on our entire program, without risking a penny. Use the calculator below to see the math:
         </p>
         
-        <div className="mt-8 grid md:grid-cols-2 gap-6">
-          <Card className="shadow-sm">
+        <div className="mt-8 grid lg:grid-cols-2 gap-8">
+          {/* Calculator Card */}
+          <Card className="shadow-lg">
             <CardHeader>
-              <CardTitle className="text-lg">Your numbers</CardTitle>
+              <CardTitle className="text-xl">Interactive ROI Calculator</CardTitle>
             </CardHeader>
-            <CardContent className="grid gap-5">
-              <div className="space-y-3">
-                <div className="flex justify-between items-center">
-                  <label htmlFor="visitors" className="text-sm font-medium text-neutral-700">
-                    Monthly visitors
+            <CardContent className="space-y-6">
+              {/* Inputs */}
+              <div className="space-y-4">
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center">
+                    <label htmlFor="visitors" className="text-sm font-medium text-neutral-700">
+                      Monthly visitors
+                    </label>
+                    <span className="text-sm font-semibold text-neutral-900">
+                      {formatNumber(visitors)}
+                    </span>
+                  </div>
+                  <Slider 
+                    id="visitors"
+                    min={10000}
+                    max={1000000}
+                    step={10000}
+                    value={visitors}
+                    onValueChange={setVisitors}
+                    aria-label="Monthly visitors" 
+                  />
+                </div>
+                
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center">
+                    <label htmlFor="cv" className="text-sm font-medium text-neutral-700">
+                      Conversion rate
+                    </label>
+                    <span className="text-sm font-semibold text-neutral-900">
+                      {cv.toFixed(2)}%
+                    </span>
+                  </div>
+                  <Slider 
+                    id="cv"
+                    min={0.25}
+                    max={10}
+                    step={0.25}
+                    value={cv}
+                    onValueChange={setCv}
+                    aria-label="Conversion rate percent" 
+                  />
+                </div>
+                
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center">
+                    <label htmlFor="aov" className="text-sm font-medium text-neutral-700">
+                      Average order value / LTV
+                    </label>
+                    <span className="text-sm font-semibold text-neutral-900">
+                      {formatCurrency(aov)}
+                    </span>
+                  </div>
+                  <Slider 
+                    id="aov"
+                    min={30}
+                    max={1000}
+                    step={10}
+                    value={aov}
+                    onValueChange={setAov}
+                    aria-label="Average order value" 
+                  />
+                </div>
+                
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center">
+                    <label htmlFor="margin" className="text-sm font-medium text-neutral-700">
+                      Gross margin
+                    </label>
+                    <span className="text-sm font-semibold text-neutral-900">
+                      {margin}%
+                    </span>
+                  </div>
+                  <Slider 
+                    id="margin"
+                    min={10}
+                    max={100}
+                    step={5}
+                    value={margin}
+                    onValueChange={setMargin}
+                    aria-label="Gross margin percent" 
+                  />
+                </div>
+                
+                <div className="space-y-3">
+                  <label className="text-sm font-medium text-neutral-700">
+                    Assumed lift
                   </label>
-                  <span className="text-sm font-semibold text-neutral-900">
-                    {formatNumber(visitors)}
-                  </span>
-                </div>
-                <Slider 
-                  id="visitors"
-                  min={10000}
-                  max={1000000}
-                  step={10000}
-                  value={visitors}
-                  onValueChange={setVisitors}
-                  aria-label="Monthly visitors" 
-                />
-              </div>
-              
-              <div className="space-y-3">
-                <div className="flex justify-between items-center">
-                  <label htmlFor="cv" className="text-sm font-medium text-neutral-700">
-                    Conversion rate
-                  </label>
-                  <span className="text-sm font-semibold text-neutral-900">
-                    {cv.toFixed(2)}%
-                  </span>
-                </div>
-                <Slider 
-                  id="cv"
-                  min={0.25}
-                  max={10}
-                  step={0.25}
-                  value={cv}
-                  onValueChange={setCv}
-                  aria-label="Conversion rate percent" 
-                />
-              </div>
-              
-              <div className="space-y-3">
-                <div className="flex justify-between items-center">
-                  <label htmlFor="aov" className="text-sm font-medium text-neutral-700">
-                    Average order value / LTV
-                  </label>
-                  <span className="text-sm font-semibold text-neutral-900">
-                    {formatCurrency(aov)}
-                  </span>
-                </div>
-                <Slider 
-                  id="aov"
-                  min={30}
-                  max={1000}
-                  step={10}
-                  value={aov}
-                  onValueChange={setAov}
-                  aria-label="Average order value" 
-                />
-              </div>
-              
-              <div className="space-y-3">
-                <div className="flex justify-between items-center">
-                  <label htmlFor="margin" className="text-sm font-medium text-neutral-700">
-                    Gross margin
-                  </label>
-                  <span className="text-sm font-semibold text-neutral-900">
-                    {margin}%
-                  </span>
-                </div>
-                <Slider 
-                  id="margin"
-                  min={10}
-                  max={100}
-                  step={5}
-                  value={margin}
-                  onValueChange={setMargin}
-                  aria-label="Gross margin percent" 
-                />
-              </div>
-              
-              <div className="space-y-3">
-                <label className="text-sm font-medium text-neutral-700">
-                  Assumed lift
-                </label>
-                <div className="flex gap-2">
-                  <LiftPill v={10}/>
-                  <LiftPill v={15}/>
-                  <LiftPill v={20}/>
+                  <div className="flex gap-2">
+                    <LiftPill v={10}/>
+                    <LiftPill v={15}/>
+                    <LiftPill v={20}/>
+                  </div>
                 </div>
               </div>
-            </CardContent>
-          </Card>
-          
-          <Card className="shadow-sm">
-            <CardHeader>
-              <CardTitle className="text-lg">Result</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-3 text-sm text-neutral-700">
-              <>
+
+              {/* Results */}
+              <div className="pt-4 border-t border-neutral-200">
+                <div className="space-y-3 text-sm text-neutral-700">
                   <div className="space-y-2">
                     <p>
                       <strong className="font-semibold">Monthly lift revenue:</strong>{" "}
@@ -201,7 +200,29 @@ export default function SelfFundingCalculator() {
                   <Button className="mt-4 w-full bg-[#B9F040] text-black hover:bg-[#a0d636]" asChild>
                     <a href="#contact">Start with the free Challenge</a>
                   </Button>
-                </>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Testimonial Card */}
+          <Card className="shadow-lg bg-white border-2 border-neutral-200">
+            <CardContent className="p-8 flex flex-col justify-center h-full">
+              <div className="space-y-4">
+                <div className="text-5xl text-neutral-300">"</div>
+                <blockquote className="text-lg text-neutral-800 leading-relaxed -mt-6">
+                  I thought it was a wild over-promise, but then we ran the first test and saw a 23% lift 
+                  in qualified leads. The program literally paid for itself in the first month.
+                </blockquote>
+                <div className="pt-4 border-t border-neutral-200">
+                  <p className="font-semibold text-neutral-900">
+                    [Client Name]
+                  </p>
+                  <p className="text-sm text-neutral-600">
+                    [Title], [Company]
+                  </p>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </div>
