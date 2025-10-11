@@ -79,7 +79,7 @@ export default function LogoCloudDemo() {
               <span className="font-bold text-[#1A2B3C]">
                 Conversion is not a mystery.
                 <br />
-                It's as mechanical as aerodynamics.
+                It&apos;s as mechanical as aerodynamics.
                 <br />
                 <br />
                 <span 
