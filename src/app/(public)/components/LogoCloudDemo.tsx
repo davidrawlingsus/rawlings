@@ -90,7 +90,7 @@ export default function LogoCloudDemo() {
                     WebkitBoxDecorationBreak: 'clone'
                   }}
                 >
-                  And only your customers know ALL the inputs.
+                  But ONLY your customers can tell you the formula.
                 </span>
               </span>
             </p>
