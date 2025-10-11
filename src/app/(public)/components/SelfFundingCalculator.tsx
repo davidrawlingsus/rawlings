@@ -61,7 +61,7 @@ export default function SelfFundingCalculator() {
         </h2>
         <p className="mt-3 text-lg text-neutral-700 max-w-3xl">
           We guarantee a 20% lift with our first ab test. In most cases, this makes you squarely ROI positive 
-          on our entire program, before you pay your second invoice. Use the calculator below to see the math:
+          on our entire program, without risking a penny. Use the calculator below to see the math:
         </p>
         
         <div className="mt-8 grid md:grid-cols-2 gap-6">
