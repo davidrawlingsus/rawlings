@@ -49,7 +49,7 @@ export default function HeroSection() {
                 }
               }}
             >
-              Turn feedback into growth with voice-of-customer research, conversion science, and AI that help your brand listen and act at scale.
+              Turn feedback into growth with voice-of-customer research, conversion science, and AI that helps your brand listen and act at scale.
             </motion.p>
             
             <motion.div 
