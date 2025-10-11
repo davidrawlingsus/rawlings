@@ -82,7 +82,7 @@ export default function PricingTableSelfFunding() {
             name="Enterprise"
             traffic="500K+"
             price="Custom"
-            testsPerMonth="4+ tests/mo / continuous"
+            testsPerMonth="7+ tests/mo"
             bullets={[
               "Programmatic testing cadence",
               "Advanced analytics & enablement",
