@@ -41,7 +41,7 @@ export default function ChallengePage() {
                 }
               }}
             >
-              Growth that pays for itself - forever.
+              First, we&apos;ll pay for ourselves forever, with a free landing page win. How does that sound?
             </motion.h1>
             
             <motion.p 
