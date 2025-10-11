@@ -72,7 +72,7 @@ export default function ChallengePage() {
                 href="#calculator"
                 className="inline-flex items-center justify-center h-12 px-8 rounded-full font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors"
               >
-                See if it would pay for itself
+                See the maths
               </a>
               <a 
                 href="#contact"
