@@ -183,7 +183,7 @@ export default function ContactForm({
               style={{ transform: `translateX(-${currentStep * 100}%)` }}
             >
               {/* Step 1: Website URL & Traffic */}
-              <div className={`w-full flex-shrink-0 ${showStep0Title || step0Description ? 'p-12' : 'p-8'}`}>
+              <div className={`w-full flex-shrink-0 ${showStep0Title || step0Description ? 'p-12' : 'p-8 py-6'}`}>
                 {showStep0Title && (
                   <h2 className="text-3xl font-bold mb-3 text-foreground">
                     {steps[0].title}
@@ -211,7 +211,7 @@ export default function ContactForm({
                         setFormData({ ...formData, websiteUrl: e.target.value })
                       }
                       placeholder="https://example.com"
-                      className="w-full px-4 py-4 text-lg bg-background border-2 border-input rounded-lg focus:border-[#B9F040] focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 text-base bg-background border-2 border-input rounded-lg focus:border-[#B9F040] focus:outline-none transition-colors"
                       onKeyDown={(e) => {
                         if (e.key === 'Enter' && canProceed()) {
                           handleNext()
@@ -277,7 +277,7 @@ export default function ContactForm({
                       setFormData({ ...formData, name: e.target.value })
                     }
                     placeholder="John Smith"
-                    className="w-full px-4 py-4 text-lg bg-background border-2 border-input rounded-lg focus:border-[#B9F040] focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 text-base bg-background border-2 border-input rounded-lg focus:border-[#B9F040] focus:outline-none transition-colors"
                     onKeyDown={(e) => {
                       if (e.key === 'Enter' && canProceed()) {
                         handleNext()
@@ -312,7 +312,7 @@ export default function ContactForm({
                         setFormData({ ...formData, email: e.target.value })
                       }
                       placeholder="john@example.com"
-                      className="w-full px-4 py-4 text-lg bg-background border-2 border-input rounded-lg focus:border-[#B9F040] focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 text-base bg-background border-2 border-input rounded-lg focus:border-[#B9F040] focus:outline-none transition-colors"
                     />
                   </div>
 
@@ -331,7 +331,7 @@ export default function ContactForm({
                         setFormData({ ...formData, phone: e.target.value })
                       }
                       placeholder="+1 (555) 123-4567"
-                      className="w-full px-4 py-4 text-lg bg-background border-2 border-input rounded-lg focus:border-[#B9F040] focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 text-base bg-background border-2 border-input rounded-lg focus:border-[#B9F040] focus:outline-none transition-colors"
                       onKeyDown={(e) => {
                         if (e.key === 'Enter' && canProceed()) {
                           handleNext()
