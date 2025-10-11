@@ -54,7 +54,7 @@ export default function ChallengePage() {
               }}
             >
               The first test is free - and in most cases, it makes you more monthly revenue than our fee costs. 
-              From day one, we pay for ourselves.
+              We&apos;re the only consultancy that pays for itself - forever - starting with its first recommendation.
             </motion.p>
             
             <motion.div 
