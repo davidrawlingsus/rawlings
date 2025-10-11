@@ -180,17 +180,17 @@ export default function SelfFundingCalculator() {
                       </p>
                     )}
                   </div>
+
+                  {/* Your Math */}
+                  <p className="text-sm text-neutral-600 text-center">
+                    <strong>Your math:</strong> {formatNumber(visitors)} visitors × {cv.toFixed(2)}% CVR × {formatCurrency(aov)} AOV = {formatCurrency(result.baselineRev)}/mo baseline revenue. 
+                    A {lift}% lift adds {formatCurrency(result.liftRev)} revenue; at {margin}% margin that&apos;s {formatCurrency(result.liftProfit)} profit 
+                    {result.paysForItself ? `- comfortably above our fee` : `- you&apos;d need a ${result.breakevenLift.toFixed(1)}% lift to cover our fee`}.
+                  </p>
                   
                   <Button className="w-full h-12 text-base md:text-lg bg-[#B9F040] text-black hover:bg-[#a0d636]" asChild>
                     <a href="#contact">Get Your Free Win</a>
                   </Button>
-
-                  {/* Your Math */}
-                  <p className="text-xs text-neutral-500 text-center">
-                    <strong>Your math:</strong> {formatNumber(visitors)} visitors × {cv.toFixed(2)}% CVR × {formatCurrency(aov)} AOV = {formatCurrency(result.baselineRev)}/mo baseline revenue. 
-                    A {lift}% lift adds {formatCurrency(result.liftRev)} revenue; at {margin}% margin that&apos;s {formatCurrency(result.liftProfit)} profit 
-                    {result.paysForItself ? `- comfortably above a $${fee.toLocaleString()}/mo fee` : `- you&apos;d need a ${result.breakevenLift.toFixed(1)}% lift to cover a $${fee.toLocaleString()}/mo fee`}.
-                  </p>
                 </div>
               </div>
             </CardContent>
