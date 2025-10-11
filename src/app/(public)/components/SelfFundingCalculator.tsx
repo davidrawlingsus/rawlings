@@ -167,39 +167,30 @@ export default function SelfFundingCalculator() {
 
               {/* Results */}
               <div className="pt-6 border-t border-neutral-200">
-                <div className="space-y-6 text-lg md:text-xl lg:text-2xl text-neutral-900">
-                  <div className="space-y-4">
-                    <p className="leading-relaxed">
-                      <strong className="font-bold">Monthly lift revenue:</strong>{" "}
-                      ${result.liftRev.toLocaleString(undefined, { maximumFractionDigits: 0 })}
-                    </p>
-                    <p className="leading-relaxed">
-                      <strong className="font-bold">Monthly lift profit:</strong>{" "}
-                      ${result.liftProfit.toLocaleString(undefined, { maximumFractionDigits: 0 })}
-                    </p>
-                    <p className="leading-relaxed">
-                      <strong className="font-bold">Breakeven lift:</strong>{" "}
-                      {result.breakevenLift > 0 && isFinite(result.breakevenLift) 
-                        ? `${result.breakevenLift.toFixed(1)}%` 
-                        : "—"}
-                    </p>
-                  </div>
-                  
-                  <div className="pt-4 border-t">
+                <div className="space-y-6">
+                  {/* Qualification Message - The Star */}
+                  <div className="text-center py-4">
                     {result.paysForItself ? (
-                      <p className="text-green-700 font-bold text-base md:text-lg">
+                      <p className="text-green-700 font-bold text-xl md:text-2xl">
                         ✅ Your landing page win would pay our fees in perpetuity (profit from lift &gt; fee).
                       </p>
                     ) : (
-                      <p className="text-amber-700 font-bold text-base md:text-lg">
+                      <p className="text-amber-700 font-bold text-xl md:text-2xl">
                         Almost there — a {result.breakevenLift.toFixed(1)}% lift would cover your monthly fee.
                       </p>
                     )}
                   </div>
                   
-                  <Button className="mt-6 w-full h-12 text-base md:text-lg bg-[#B9F040] text-black hover:bg-[#a0d636]" asChild>
+                  <Button className="w-full h-12 text-base md:text-lg bg-[#B9F040] text-black hover:bg-[#a0d636]" asChild>
                     <a href="#contact">Get Your Free Win</a>
                   </Button>
+
+                  {/* Your Math */}
+                  <p className="text-xs text-neutral-500 text-center">
+                    <strong>Your math:</strong> {formatNumber(visitors)} visitors × {cv.toFixed(2)}% CVR × {formatCurrency(aov)} AOV = {formatCurrency(result.baselineRev)}/mo baseline revenue. 
+                    A {lift}% lift adds {formatCurrency(result.liftRev)} revenue; at {margin}% margin that&apos;s {formatCurrency(result.liftProfit)} profit 
+                    {result.paysForItself ? `- comfortably above a $${fee.toLocaleString()}/mo fee` : `- you&apos;d need a ${result.breakevenLift.toFixed(1)}% lift to cover a $${fee.toLocaleString()}/mo fee`}.
+                  </p>
                 </div>
               </div>
             </CardContent>
@@ -226,12 +217,6 @@ export default function SelfFundingCalculator() {
             </CardContent>
           </Card>
         </div>
-        
-        <p className="mt-4 text-xs text-neutral-400 max-w-4xl">
-          <strong>Your math:</strong> {formatNumber(visitors)} visitors × {cv.toFixed(2)}% CVR × {formatCurrency(aov)} AOV = {formatCurrency(result.baselineRev)}/mo baseline revenue. 
-          A {lift}% lift adds {formatCurrency(result.liftRev)} revenue; at {margin}% margin that&apos;s {formatCurrency(result.liftProfit)} profit 
-          {result.paysForItself ? `- comfortably above a $${fee.toLocaleString()}/mo fee` : `- you&apos;d need a ${result.breakevenLift.toFixed(1)}% lift to cover a $${fee.toLocaleString()}/mo fee`}.
-        </p>
       </div>
     </section>
   );
