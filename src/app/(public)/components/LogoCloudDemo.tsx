@@ -79,7 +79,7 @@ export default function LogoCloudDemo() {
               <span className="font-bold text-[#1A2B3C]">
                 Conversion follows laws, not luck.
                 <br />
-                The principles never change, but the variables do.
+                The principles never change - the variables do.
                 <br />
                 <br />
                 <span 
@@ -90,7 +90,7 @@ export default function LogoCloudDemo() {
                     WebkitBoxDecorationBreak: 'clone'
                   }}
                 >
-                  Your customer data reveals them.
+                  And your customer data reveals them.
                 </span>
               </span>
             </p>
