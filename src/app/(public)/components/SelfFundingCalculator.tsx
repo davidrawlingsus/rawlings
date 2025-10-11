@@ -60,7 +60,7 @@ export default function SelfFundingCalculator() {
           Could your first win pay for everything?
         </h2>
         <p className="mt-4 text-lg md:text-xl text-neutral-300">
-          We guarantee a 20% lift with our first winning test. In most cases, this makes you squarely ROI positive 
+          We guarantee a 20% lift with our first winning test. This makes you ROI positive 
           on our entire program, without risking a penny. Use the calculator below to see the math:
         </p>
         
