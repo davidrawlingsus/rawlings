@@ -109,21 +109,21 @@ export default function ChallengePage() {
             The first win funds the program. Then we compound.
           </h2>
           <p className="text-lg text-neutral-700 mb-8 max-w-3xl">
-            Our proven three-phase approach starts with a free winning test that pays for everything, 
-            then builds a compounding growth engine that makes your business unstoppable.
+            Our proven four-step approach starts with a fully-refundable deposit, delivers a free winning test 
+            that pays for everything, then builds a compounding growth engine that makes your business unstoppable.
           </p>
           
           <Card className="border-2 mb-8 max-w-4xl">
             <CardHeader>
-              <CardTitle className="text-xl">0% Risk, 100% Commitment</CardTitle>
-              <p className="text-sm text-neutral-600 mt-2">Before Month 1 - refundable deposit</p>
+              <CardTitle className="text-xl">1. Pay a one-off, fully-refundable deposit</CardTitle>
+              <p className="text-sm text-neutral-600 mt-2">Before Month 1</p>
             </CardHeader>
             <CardContent className="text-sm text-neutral-700 space-y-3">
               <p className="font-medium text-base text-neutral-900">
-                A fully refundable deposit that signals you&apos;re serious - nothing else is payable until we&apos;ve proven a 20% + lift.
+                This signals you&apos;re serious and secures your onboarding slot - nothing else is payable until we&apos;ve proven a 20%+ lift.
               </p>
               <p>
-                The deposit secures your onboarding slot and ensures we&apos;re only investing our time with teams ready to act on data-driven recommendations.
+                We only invest our time with teams ready to act on data-driven recommendations. Your deposit ensures we&apos;re aligned.
               </p>
               <p>
                 <strong>Guarantee:</strong> If the first test doesn&apos;t increase your conversion rate by at least 20%, your deposit is refunded in full. 
@@ -135,7 +135,7 @@ export default function ChallengePage() {
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <Card className="border-2">
               <CardHeader>
-                <CardTitle className="text-xl">1. Free Winning Test</CardTitle>
+                <CardTitle className="text-xl">2. Free Winning Test</CardTitle>
                 <p className="text-sm text-neutral-600 mt-2">Month 1 - Proof Sprint</p>
               </CardHeader>
               <CardContent className="text-sm text-neutral-700 space-y-3">
@@ -156,7 +156,7 @@ export default function ChallengePage() {
             
             <Card className="border-2">
               <CardHeader>
-                <CardTitle className="text-xl">2. Full-Funnel Testing</CardTitle>
+                <CardTitle className="text-xl">3. Full-Funnel Testing</CardTitle>
                 <p className="text-sm text-neutral-600 mt-2">Months 2-4 - Compounding Wins</p>
               </CardHeader>
               <CardContent className="text-sm text-neutral-700 space-y-3">
@@ -176,7 +176,7 @@ export default function ChallengePage() {
             
             <Card className="border-2">
               <CardHeader>
-                <CardTitle className="text-xl">3. Growth Engine</CardTitle>
+                <CardTitle className="text-xl">4. Growth Engine</CardTitle>
                 <p className="text-sm text-neutral-600 mt-2">Months 5-6 - Independence</p>
               </CardHeader>
               <CardContent className="text-sm text-neutral-700 space-y-3">
