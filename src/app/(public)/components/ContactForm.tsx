@@ -183,7 +183,7 @@ export default function ContactForm({
               style={{ transform: `translateX(-${currentStep * 100}%)` }}
             >
               {/* Step 1: Website URL & Traffic */}
-              <div className={`w-full flex-shrink-0 ${showStep0Title || step0Description ? 'p-12' : 'px-8 py-6'}`}>
+              <div className={`w-full flex-shrink-0 ${showStep0Title || step0Description ? 'p-12' : 'px-8 py-6 flex flex-col justify-center'}`}>
                 {showStep0Title && (
                   <h2 className="text-3xl font-bold mb-3 text-foreground">
                     {steps[0].title}
@@ -195,7 +195,7 @@ export default function ContactForm({
                   </p>
                 )}
                 
-                <div className={`${showStep0Title || step0Description ? 'space-y-6' : 'space-y-3'}`}>
+                <div className={`${showStep0Title || step0Description ? 'space-y-6' : 'space-y-5'}`}>
                   <div>
                     <label
                       htmlFor="websiteUrl"
