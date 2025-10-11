@@ -220,7 +220,7 @@ export default function ChallengePage() {
               <div className="p-6 border-b border-neutral-200 flex items-center justify-between flex-wrap gap-2">
                 <h3 className="text-2xl font-semibold">6-Month Self-Funding Growth Program</h3>
                 <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1.5 rounded-md">
-                  Includes free Challenge (Month 1)
+                  Includes free winning a/b test (Month 1)
                 </span>
               </div>
               <div className="p-6 space-y-4 text-sm text-neutral-700">
