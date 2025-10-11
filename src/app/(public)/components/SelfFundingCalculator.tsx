@@ -198,7 +198,7 @@ export default function SelfFundingCalculator() {
                   </div>
                   
                   <Button className="mt-6 w-full h-12 text-base md:text-lg bg-[#B9F040] text-black hover:bg-[#a0d636]" asChild>
-                    <a href="#contact">Start with the free Challenge</a>
+                    <a href="#contact">Get Your Free Win</a>
                   </Button>
                 </div>
               </div>
