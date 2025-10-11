@@ -79,7 +79,9 @@ export default function LogoCloudDemo() {
               <span className="font-bold text-[#1A2B3C]">
                 Conversion follows laws, not luck.
                 <br />
-                The principles never change - the variables do.
+                The principles never change...
+                <br />
+                But the variables do.
                 <br />
                 <br />
                 <span 
