@@ -110,65 +110,85 @@ export default function ChallengePage() {
             The first win funds the program. Then we compound.
           </h2>
           <p className="text-lg text-neutral-700 mb-8 max-w-3xl">
-            Our proven cadence delivers repeatable growth, starting with a free proof-of-concept that 
-            typically generates enough lift to cover our monthly fee indefinitely.
+            Our proven three-phase approach starts with a free winning test that pays for everything, 
+            then builds a compounding growth engine that makes your business unstoppable.
           </p>
           
           <div className="grid md:grid-cols-3 gap-6 mb-8">
-            <Card>
+            <Card className="border-2">
               <CardHeader>
-                <CardTitle>1. Proof Sprint</CardTitle>
+                <CardTitle className="text-xl">1. Free Winning Test</CardTitle>
+                <p className="text-sm text-neutral-600 mt-2">Month 1 – Proof Sprint</p>
               </CardHeader>
-              <CardContent className="text-sm text-neutral-700 space-y-2">
-                <p>
-                  <strong>Free with 6-month program.</strong> Voice-of-customer research + rapid test 
-                  to prove the model works for your business.
+              <CardContent className="text-sm text-neutral-700 space-y-3">
+                <p className="font-medium text-base text-neutral-900">
+                  A free A/B test that pays for everything — forever.
                 </p>
                 <p>
-                  In most cases, this first lift alone generates recurring revenue that exceeds our 
-                  monthly fee.
+                  We run voice-of-customer research and launch one high-impact test on your 
+                  highest-leverage page (landing page, PDP, or checkout).
+                </p>
+                <p>
+                  <strong>The result:</strong> In most cases, this single lift generates enough 
+                  recurring monthly revenue to cover our $7.5–10k fee indefinitely. Everything 
+                  from here is pure upside.
                 </p>
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="border-2">
               <CardHeader>
-                <CardTitle>2. Scale Wins</CardTitle>
+                <CardTitle className="text-xl">2. Full-Funnel Testing</CardTitle>
+                <p className="text-sm text-neutral-600 mt-2">Months 2–4 – Compounding Wins</p>
               </CardHeader>
-              <CardContent className="text-sm text-neutral-700 space-y-2">
-                <p>
-                  Deploy 2–4 tests per month across high-leverage pages: landing pages, PDPs, 
-                  checkout flows, email sequences.
+              <CardContent className="text-sm text-neutral-700 space-y-3">
+                <p className="font-medium text-base text-neutral-900">
+                  Implementation of feedback systems and full-funnel optimization.
                 </p>
                 <p>
-                  Each test is informed by real customer feedback and conversion science, not guesswork.
+                  Deploy 2–4 tests per month across your entire funnel: landing pages, product pages, 
+                  checkout flows, email sequences, and retention touchpoints.
+                </p>
+                <p>
+                  <strong>The result:</strong> Every test is informed by real customer feedback and 
+                  conversion science. Insights compound — each win makes the next test smarter and faster.
                 </p>
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="border-2">
               <CardHeader>
-                <CardTitle>3. Systemize</CardTitle>
+                <CardTitle className="text-xl">3. Growth Engine</CardTitle>
+                <p className="text-sm text-neutral-600 mt-2">Months 5–6 – Independence</p>
               </CardHeader>
-              <CardContent className="text-sm text-neutral-700 space-y-2">
-                <p>
-                  Build a testing playbook and train your team to run experiments independently, 
-                  or continue with our hands-on support.
+              <CardContent className="text-sm text-neutral-700 space-y-3">
+                <p className="font-medium text-base text-neutral-900">
+                  Bigger, faster, more profitable testing — forever.
                 </p>
                 <p>
-                  The insights compound: every win informs the next test.
+                  We equip and empower your team to run intelligent, high-impact tests independently. 
+                  You get a complete testing playbook, documented processes, and ongoing support.
+                </p>
+                <p>
+                  <strong>The result:</strong> Your business and stakeholders can now run a continuous 
+                  test cadence that drives compounding growth long after our engagement ends.
                 </p>
               </CardContent>
             </Card>
           </div>
           
-          <div className="p-6 bg-neutral-50 border border-neutral-200 rounded-lg max-w-3xl">
-            <p className="text-lg font-medium text-neutral-900">
-              💡 In most cases, month-one lift alone covers our fee indefinitely.
+          <div className="p-6 bg-gradient-to-br from-[#B9F040]/10 to-[#B9F040]/5 border-2 border-[#B9F040]/30 rounded-lg max-w-4xl">
+            <p className="text-xl font-semibold text-neutral-900 mb-2">
+              💡 The math works: Month-one lift typically covers our fee forever.
             </p>
-            <p className="mt-2 text-neutral-700">
+            <p className="text-neutral-700 mb-3">
               Investment: <strong>$7.5k–$10k/month</strong> for the 6-month Growth Partnership, 
               which includes your free Challenge test.
+            </p>
+            <p className="text-sm text-neutral-600">
+              After six months, you have three options: continue with ongoing support, run tests independently 
+              with your new playbook, or do both (most clients keep us for high-leverage tests while their 
+              team handles lower-priority experiments).
             </p>
           </div>
         </div>
