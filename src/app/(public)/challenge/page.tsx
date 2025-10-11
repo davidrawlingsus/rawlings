@@ -116,7 +116,6 @@ export default function ChallengePage() {
           <Card className="border-2 mb-8 max-w-4xl">
             <CardHeader>
               <CardTitle className="text-xl">1. Pay a one-off, fully-refundable deposit</CardTitle>
-              <p className="text-sm text-neutral-600 mt-2">Before Month 1</p>
             </CardHeader>
             <CardContent className="text-sm text-neutral-700 space-y-3">
               <p className="font-medium text-base text-neutral-900">
