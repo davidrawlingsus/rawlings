@@ -177,19 +177,33 @@ export default function ChallengePage() {
             </Card>
           </div>
           
-          <div className="p-6 bg-gradient-to-br from-[#B9F040]/10 to-[#B9F040]/5 border-2 border-[#B9F040]/30 rounded-lg max-w-4xl">
-            <p className="text-xl font-semibold text-neutral-900 mb-2">
-              💡 The math works: Month-one lift typically covers our fee forever.
+          <div className="p-6 bg-gradient-to-br from-[#B9F040]/10 to-[#B9F040]/5 border-2 border-[#B9F040]/30 rounded-lg">
+            <p className="text-xl font-semibold text-neutral-900 mb-3">
+              💡 Zero risk: You don&apos;t pay until we&apos;ve paid for ourselves.
             </p>
-            <p className="text-neutral-700 mb-3">
-              Investment: <strong>$7.5k–$10k/month</strong> for the 6-month Growth Partnership, 
-              which includes your free Challenge test.
-            </p>
-            <p className="text-sm text-neutral-600">
-              After six months, you have three options: continue with ongoing support, run tests independently 
-              with your new playbook, or do both (most clients keep us for high-leverage tests while their 
-              team handles lower-priority experiments).
-            </p>
+            
+            <div className="space-y-2 mb-4 text-neutral-700">
+              <p>
+                <strong>How it works:</strong> You pay a refundable deposit, then we work until the first 
+                winning test generates enough recurring revenue to cover our monthly fee forever — usually 
+                within the first 30 days.
+              </p>
+              <p>
+                Only then do you roll into the monthly cycle. <strong>Not a penny more becomes due until 
+                we&apos;ve paid for ourselves.</strong>
+              </p>
+            </div>
+            
+            <div className="pt-3 border-t border-neutral-300">
+              <p className="text-neutral-700 mb-2">
+                <strong>Investment:</strong> $7.5k–$10k/month for the 6-month Growth Partnership.
+              </p>
+              <p className="text-sm text-neutral-600">
+                After six months, you have three options: continue with ongoing support, run tests independently 
+                with your new playbook, or do both (most clients keep us for high-leverage tests while their 
+                team handles lower-priority experiments).
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -293,12 +307,21 @@ export default function ChallengePage() {
                   </li>
                 </ul>
                 
-                <a
-                  href="#contact"
-                  className="inline-flex items-center justify-center w-full h-11 px-6 rounded-md font-semibold bg-neutral-900 text-white hover:bg-neutral-800 transition-colors"
-                >
-                  Book a strategy call
-                </a>
+                <div className="space-y-3">
+                  <a
+                    href="#contact"
+                    className="inline-flex items-center justify-center w-full h-11 px-6 rounded-md font-semibold bg-neutral-900 text-white hover:bg-neutral-800 transition-colors"
+                  >
+                    Book a strategy call
+                  </a>
+                  <div className="p-3 bg-neutral-50 rounded-md border border-neutral-200">
+                    <p className="text-xs text-neutral-700">
+                      <strong>Payment structure:</strong> Refundable deposit, then monthly fees only begin 
+                      after your first winning test covers our cost. Not a penny more due until we&apos;ve 
+                      paid for ourselves.
+                    </p>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>
