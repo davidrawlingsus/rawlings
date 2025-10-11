@@ -412,7 +412,11 @@ export default function ChallengePage() {
       </section>
 
       {/* Contact Form */}
-      <ContactForm headline="Tell us about your control" />
+      <ContactForm 
+        headline="Tell us about your control" 
+        step0Title="Your landing page URL"
+        step0Description=""
+      />
 
       <Footer />
     </main>

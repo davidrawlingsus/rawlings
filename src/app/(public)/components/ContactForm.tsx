@@ -11,7 +11,17 @@ interface FormData {
   phone: string
 }
 
-export default function ContactForm({ headline = "Want your business to be next?" }: { headline?: string }) {
+interface ContactFormProps {
+  headline?: string
+  step0Title?: string
+  step0Description?: string
+}
+
+export default function ContactForm({ 
+  headline = "Want your business to be next?",
+  step0Title = "Tell us about your site",
+  step0Description = "This helps us understand your testing capacity"
+}: ContactFormProps) {
   const [currentStep, setCurrentStep] = useState(0)
   const [formData, setFormData] = useState<FormData>({
     websiteUrl: '',
@@ -25,7 +35,7 @@ export default function ContactForm({ headline = "Want your business to be next?
   const [submitError, setSubmitError] = useState<string | null>(null)
 
   const steps = [
-    { id: 'site-traffic', title: 'Tell us about your site' },
+    { id: 'site-traffic', title: step0Title },
     { id: 'name', title: "What's your name?" },
     { id: 'contact', title: 'How can we reach you?' },
   ]
@@ -173,9 +183,11 @@ export default function ContactForm({ headline = "Want your business to be next?
                 <h2 className="text-3xl font-bold mb-3 text-foreground">
                   {steps[0].title}
                 </h2>
-                <p className="text-foreground/70 mb-8">
-                  This helps us understand your testing capacity
-                </p>
+                {step0Description && (
+                  <p className="text-foreground/70 mb-8">
+                    {step0Description}
+                  </p>
+                )}
                 
                 <div className="space-y-8">
                   <div>
