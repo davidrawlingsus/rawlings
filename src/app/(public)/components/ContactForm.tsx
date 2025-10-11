@@ -208,7 +208,7 @@ export default function ContactForm() {
                       className="block text-sm font-medium mb-3 text-foreground"
                     >
                       Monthly Traffic:{' '}
-                      <span className="text-[#B9F040] font-bold text-xl">
+                      <span className="text-[#1A2B3C] font-bold text-xl">
                         {formatTraffic(formData.monthlyTraffic)}
                       </span>
                     </label>
