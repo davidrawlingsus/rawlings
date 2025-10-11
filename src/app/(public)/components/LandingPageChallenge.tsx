@@ -34,7 +34,7 @@ export default function LandingPageChallenge() {
             </h1>
             <p className="mt-4 text-base md:text-lg text-neutral-600 max-w-2xl">
               Give us your <strong>NPS open‑text</strong> and run a <strong>2‑week post‑conversion objection survey</strong>.
-              We&apos;ll build a new landing page aligned to what customers actually care about. If it doesn&apos;t
+              We&apos;ll build a new landing page aligned to what customers actually care about — not what we assume they care about. If it doesn&apos;t
               beat your control by <strong>20%+ primary lift</strong>, you pay <strong>$0</strong>.
             </p>
             <div className="mt-6 flex flex-col sm:flex-row gap-3">
@@ -42,7 +42,7 @@ export default function LandingPageChallenge() {
                 href="#contact"
                 className="bg-[#B9F040] text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#a0d636] transition-colors inline-flex items-center justify-center gap-2"
               >
-                Take the challenge <ArrowRight className="h-4 w-4" />
+                Take the Challenge <ArrowRight className="h-4 w-4" />
               </a>
               <a
                 href="#how-it-works"
@@ -52,7 +52,8 @@ export default function LandingPageChallenge() {
               </a>
             </div>
             <p className="mt-3 text-xs text-neutral-500">
-              Eligibility: ~10k sessions/14 days or equivalent lead volume, see FAQ for details.
+              Eligibility: ~10k relevant sessions in 14 days (or equivalent lead volume). One primary metric only.
+              Decision rule: 95% two-tailed frequentist or Bayesian BF≥3. Sample-size/power plan agreed at kickoff.
             </p>
           </motion.div>
           <motion.div
@@ -206,8 +207,67 @@ export default function LandingPageChallenge() {
         </div>
       </section>
 
+      {/* PRICING & RISK REVERSAL */}
+      <section className="px-6 md:px-8 py-16 md:py-24 bg-white border-t border-neutral-200">
+        <div className="mx-auto max-w-[1280px]">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1A2B3C]">Pricing & Risk Reversal</h2>
+          <div className="mt-8 grid md:grid-cols-3 gap-6">
+            {/* Left: narrative */}
+            <div className="md:col-span-1">
+              <p className="text-neutral-700">
+                <strong>You only pay if it wins.</strong> Most challenges land between{" "}
+                <strong>$7,500 and $25,000</strong>, depending on traffic and test complexity.
+                If the challenger fails to beat your control by <strong>20%+ relative</strong> on the agreed primary metric,
+                you owe <strong>$0</strong>.
+              </p>
+              <p className="text-neutral-700 mt-4">
+                Sometimes we <em>knock it right out of the park</em>. In one recent experiment, a single landing page delivered a{" "}
+                <strong>+116% lift</strong> in conversion rate.
+              </p>
+              <p className="text-neutral-600 text-sm mt-4">
+                Optional: If lift exceeds <strong>35%</strong>, a success bonus of <strong>10% of incremental profit</strong> (capped at <strong>$15k</strong>) applies.
+              </p>
+              <p className="text-neutral-600 text-sm mt-2">
+                Implementation add-on: If we deploy directly into your stack, add <strong>$2k–$4k</strong> for build/QA (payable regardless of result).
+              </p>
+              <p className="text-neutral-600 text-sm mt-2">
+                After a win, continue on a retainer at <strong>$3k/mo</strong> to optimize subsequent pages using the same VOC model.
+              </p>
+            </div>
+
+            {/* Middle: tiers */}
+            <div className="md:col-span-1">
+              <div className="grid gap-4">
+                <div className="rounded-2xl border border-neutral-200 p-5 bg-white shadow-sm hover:border-[#B9F040]/30 transition-colors">
+                  <div className="text-sm text-neutral-500">Tier</div>
+                  <div className="text-xl font-semibold text-[#1A2B3C] mt-1">Standard Challenge</div>
+                  <div className="text-sm text-neutral-700 mt-2">Ideal for 10–50k sessions/mo</div>
+                  <div className="text-2xl font-semibold text-[#1A2B3C] mt-3">$7,500–$12,500</div>
+                  <div className="text-xs text-neutral-500 mt-2">Payable only on win (≥20% relative lift).</div>
+                </div>
+                <div className="rounded-2xl border border-neutral-200 p-5 bg-white shadow-sm hover:border-[#B9F040]/30 transition-colors">
+                  <div className="text-sm text-neutral-500">Tier</div>
+                  <div className="text-xl font-semibold text-[#1A2B3C] mt-1">Enterprise Challenge</div>
+                  <div className="text-sm text-neutral-700 mt-2">50k+ sessions/mo or ≥$500 AOV</div>
+                  <div className="text-2xl font-semibold text-[#1A2B3C] mt-3">$12,500–$25,000+</div>
+                  <div className="text-xs text-neutral-500 mt-2">Payable only on win (≥20% relative lift).</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right: proof stat card */}
+            <div className="md:col-span-1">
+              <div className="rounded-2xl border border-neutral-200 p-8 bg-white text-center shadow-sm">
+                <div className="text-5xl font-bold text-[#1A2B3C]">+116%</div>
+                <p className="text-neutral-700 mt-2 text-sm">Largest single-test lift achieved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
-      <section className="px-6 md:px-8 py-16 md:py-24 bg-white border-y border-neutral-200">
+      <section className="px-6 md:px-8 py-16 md:py-24 bg-neutral-50 border-y border-neutral-200">
         <div className="mx-auto max-w-[1280px]">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1A2B3C]">FAQ</h2>
           <div className="mt-8 grid md:grid-cols-2 gap-6">
@@ -234,7 +294,7 @@ export default function LandingPageChallenge() {
             href="#contact"
             className="bg-[#B9F040] text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#a0d636] transition-colors inline-flex items-center gap-2 whitespace-nowrap"
           >
-            Start now <ArrowRight className="h-4 w-4" />
+            Take the Challenge <ArrowRight className="h-4 w-4" />
           </a>
         </div>
       </section>
@@ -311,17 +371,22 @@ const faqItems = [
   {
     q: "What exactly is the 20%+ guarantee?",
     a:
-      "We agree on a single primary metric (e.g., purchase CVR or qualified-lead rate). We run an A/B test with a pre-agreed sample-size/power plan. If the challenger fails to beat the control by ≥20% relative on that metric at the agreed confidence threshold, you owe $0.",
+      "We agree on a single primary metric (e.g., purchase CVR or qualified-lead rate). We run an A/B with a pre-agreed sample-size/power plan. If the challenger doesn't beat the control by ≥20% relative at the agreed threshold, you owe $0.",
+  },
+  {
+    q: "How is pricing determined?",
+    a:
+      "Based on traffic and test complexity. Most challenges fall between $7.5k–$25k. You pay only if we win (≥20% relative lift). For outsized wins (≥35%), an optional success bonus may apply.",
+  },
+  {
+    q: "Do you deploy the page?",
+    a:
+      "If we deploy into your stack, add $2k–$4k for build/QA. Otherwise, we hand off a production-ready build/spec at no extra charge.",
   },
   {
     q: "What data do you need to start?",
     a:
       "Anonymized NPS open-text (CSV export is fine), basic analytics access, and we'll provide a 3-question post-conversion survey snippet to install site-wide or on the order confirmation page for ~14 days.",
-  },
-  {
-    q: "Will you handle design and build?",
-    a:
-      "Yes. We deliver copy, wireframe, and a production-ready build. If you prefer your own devs, we hand off clean specs and assets.",
   },
   {
     q: "How fast is 'fast'?",
@@ -337,11 +402,6 @@ const faqItems = [
     q: "Who is a good fit?",
     a:
       "Brands with ≥10k relevant sessions in 14 days (or equivalent leads), an existing control to beat, and willingness to run a clean A/B with a single primary metric.",
-  },
-  {
-    q: "What if you win — how do fees work?",
-    a:
-      "We set a fixed project fee at kickoff. It's payable only if the challenger clears the agreed win threshold. Optional success kicker for lifts beyond 35% can be discussed.",
   },
   {
     q: "What about smaller sites?",
