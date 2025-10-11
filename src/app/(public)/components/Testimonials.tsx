@@ -31,7 +31,7 @@ const testimonials: Testimonial[] = [
   },
   {
     id: '3',
-    quote: 'Paid for himself a thousand times over.',
+    quote: 'Paid for itself a thousand times over.',
     name: 'Elliott Fox',
     title: '',
     company: 'Wattbike',
