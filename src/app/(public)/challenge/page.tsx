@@ -225,65 +225,66 @@ export default function ChallengePage() {
             One program. One free winning test. One predictable source of profit.
           </p>
 
-          <div className="mt-8">
-            <div className="rounded-2xl border-2 border-neutral-900 bg-white shadow-sm">
-              <div className="p-6 border-b border-neutral-200 flex items-center justify-between flex-wrap gap-2">
-                <h3 className="text-2xl font-semibold">6-Month Self-Funding Growth Program</h3>
-                <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1.5 rounded-md">
-                  Includes free winning a/b test (Month 1)
-                </span>
-              </div>
-              <div className="p-6 space-y-4 text-sm text-neutral-700">
-                <p className="text-base">
-                  <strong>Month 1 - Free Challenge test</strong> to prove the model and pay for the program.
-                </p>
-                <p className="text-base">
-                  <strong>Months 2-6 -</strong> Ongoing VOC analysis, prioritized test pipeline, builds, and strategy sessions.
-                </p>
-                <div className="pt-2 border-t border-neutral-200">
-                  <p className="text-2xl font-bold text-neutral-900">$7,500 - $10,000 / month</p>
-                  <p className="text-xs text-neutral-500 mt-2">
-                    💡 Most month-one wins more than cover this fee - the program effectively pays for itself.
-                  </p>
+          <div className="mt-8 grid lg:grid-cols-[2fr,1fr] gap-8">
+            {/* Left Column - Program Card */}
+            <div>
+              <div className="rounded-2xl border-2 border-neutral-900 bg-white shadow-sm">
+                <div className="p-6 border-b border-neutral-200 flex items-center justify-between flex-wrap gap-2">
+                  <h3 className="text-2xl font-semibold">6-Month Self-Funding Growth Program</h3>
+                  <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1.5 rounded-md">
+                    Includes free winning a/b test (Month 1)
+                  </span>
                 </div>
-                <div className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 space-y-2">
-                  <p className="text-xs text-neutral-700">
-                    <strong>Payment structure:</strong> Refundable deposit, then monthly fees only begin 
-                    after your first winning test covers our cost. Not a penny more due until we&apos;ve paid for ourselves.
+                <div className="p-6 space-y-4 text-sm text-neutral-700">
+                  <p className="text-base">
+                    <strong>Month 1 - Free Challenge test</strong> to prove the model and pay for the program.
                   </p>
-                  <p className="text-xs text-neutral-600">
-                    <strong>Optional success bonus:</strong> +10% of incremental profit if a single test 
-                    exceeds +35% lift (capped at $15k).
+                  <p className="text-base">
+                    <strong>Months 2-6 -</strong> Ongoing VOC analysis, prioritized test pipeline, builds, and strategy sessions.
                   </p>
-                </div>
-                <div className="pt-2">
-                  <a 
-                    href="#contact" 
-                    className="inline-flex items-center justify-center rounded-md bg-[#B9F040] px-6 py-3 text-base font-semibold text-black hover:bg-[#a0d636] transition-colors"
-                  >
-                    Get your free win
-                  </a>
+                  <div className="pt-2 border-t border-neutral-200">
+                    <p className="text-2xl font-bold text-neutral-900">$7,500 - $10,000 / month</p>
+                    <p className="text-xs text-neutral-500 mt-2">
+                      💡 Most month-one wins more than cover this fee - the program effectively pays for itself.
+                    </p>
+                  </div>
+                  <div className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 space-y-2">
+                    <p className="text-xs text-neutral-700">
+                      <strong>Payment structure:</strong> Refundable deposit, then monthly fees only begin 
+                      after your first winning test covers our cost. Not a penny more due until we&apos;ve paid for ourselves.
+                    </p>
+                    <p className="text-xs text-neutral-600">
+                      <strong>Optional success bonus:</strong> +10% of incremental profit if a single test 
+                      exceeds +35% lift (capped at $15k).
+                    </p>
+                  </div>
+                  <div className="pt-2">
+                    <a 
+                      href="#contact" 
+                      className="inline-flex items-center justify-center rounded-md bg-[#B9F040] px-6 py-3 text-base font-semibold text-black hover:bg-[#a0d636] transition-colors"
+                    >
+                      Get your free win
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Proof Stats Strip */}
-      <section className="px-6 md:px-8 py-10 bg-neutral-50 border-y border-neutral-200">
-        <div className="mx-auto max-w-screen-xl grid md:grid-cols-3 gap-6 text-center">
-          <div className="rounded-2xl border border-neutral-200 bg-white p-8 shadow-sm">
-            <div className="text-4xl font-semibold text-neutral-900">+116%</div>
-            <div className="text-sm text-neutral-700 mt-2">Largest single-test lift achieved</div>
-          </div>
-          <div className="rounded-2xl border border-neutral-200 bg-white p-8 shadow-sm">
-            <div className="text-4xl font-semibold text-neutral-900">≥20%</div>
-            <div className="text-sm text-neutral-700 mt-2">Minimum win threshold for the guarantee</div>
-          </div>
-          <div className="rounded-2xl border border-neutral-200 bg-white p-8 shadow-sm">
-            <div className="text-4xl font-semibold text-neutral-900">10 days</div>
-            <div className="text-sm text-neutral-700 mt-2">Typical build time after survey window</div>
+            {/* Right Column - Proof Stats Stacked Vertically */}
+            <div className="flex flex-col gap-6">
+              <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm text-center">
+                <div className="text-4xl font-semibold text-neutral-900">+116%</div>
+                <div className="text-sm text-neutral-700 mt-2">Largest single-test lift achieved</div>
+              </div>
+              <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm text-center">
+                <div className="text-4xl font-semibold text-neutral-900">≥20%</div>
+                <div className="text-sm text-neutral-700 mt-2">Minimum win threshold for the guarantee</div>
+              </div>
+              <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm text-center">
+                <div className="text-4xl font-semibold text-neutral-900">10 days</div>
+                <div className="text-sm text-neutral-700 mt-2">Typical build time after survey window</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
