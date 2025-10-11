@@ -71,7 +71,7 @@ const testimonials: Testimonial[] = [
   },
   {
     id: '8',
-    quote: "The best conversion consultant I've met.",
+    quote: "The best conversion consulting I've experienced.",
     name: 'John Parker',
     title: '',
     company: 'Fresh Tracks Canada',
