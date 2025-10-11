@@ -42,7 +42,7 @@ export default function PricingTableSelfFunding() {
             name="Core"
             traffic="up to 50K sessions/mo"
             price="$7.5K/mo"
-            testsPerMonth="1 test/mo"
+            testsPerMonth="2 tests/mo"
             bullets={[
               "High-impact page focus",
               "VOC analysis (NPS + objections)",
@@ -55,7 +55,7 @@ export default function PricingTableSelfFunding() {
             name="Growth"
             traffic="50K–150K"
             price="$10K/mo"
-            testsPerMonth="2 tests/mo"
+            testsPerMonth="3 tests/mo"
             bullets={[
               "Expanded VOC research",
               "Two parallel test tracks",
@@ -69,7 +69,7 @@ export default function PricingTableSelfFunding() {
             name="Scale"
             traffic="150K–500K"
             price="$12.5–15K/mo"
-            testsPerMonth="3–4 tests/mo"
+            testsPerMonth="5–6 tests/mo"
             bullets={[
               "Multi-page coverage",
               "Faster iteration cycles",

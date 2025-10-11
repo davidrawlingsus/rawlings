@@ -72,7 +72,7 @@ export default function HeroSection() {
               </a>
               <div className="w-full sm:w-auto flex flex-col items-center gap-2">
                 <a 
-                  href="/landing-page-challenge"
+                  href="/challenge"
                   className="w-full sm:w-auto h-12 px-6 rounded-full font-semibold border-2 border-neutral-300 text-neutral-700 hover:border-neutral-400 hover:text-neutral-900 transition-colors whitespace-nowrap flex items-center justify-center"
                   aria-label="Take the Landing Page Challenge"
                 >

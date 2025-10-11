@@ -217,55 +217,7 @@ className={`w-full h-auto ${isVisible ? 'chart-visible' : ''}`}
 - React controls everything explicitly
 - No complex CSS selectors or specificity issues
 
-**Implementation Details:**
-```tsx
-// Bar data array
-const barData = [
-  { x: 0, y: 209.794, height: 77, fill: '#F9FAF2', opacity: 0.7 },
-  // ... 25 more bars
-]
-
-// Map over bars with inline styles
-{barData.map((bar, index) => (
-  <rect
-    key={index}
-    style={{
-      opacity: isVisible ? 1 : 0,
-      transition: `opacity 0.4s ease-out ${index * 0.05}s`
-    }}
-    // ... other props
-  />
-))}
-```
-
-**Why this should finally work:**
-- Inline styles are the most reliable across all browsers
-- CSS `transition` (not animation) for opacity changes
-- Direct opacity control via React state
-- Staggered delays via inline style calculation
-- No CSS classes, selectors, or specificity issues
-- Removed all unused CSS animation code
-
-**Result:** ✅ SUCCESS! Animation works perfectly on Safari iOS
-
-**What worked:**
-- Bars invisible on page load
-- Intersection Observer triggers when chart enters viewport
-- Smooth staggered fade-in animation on Safari iOS
-- CSS transitions are reliable where CSS animations failed
-
-**Commit:** `83db1b9`
-
-## Final Solution Summary
-
-After 9 attempts, the working solution uses:
-- **React state** to control visibility
-- **Intersection Observer** to detect viewport entry
-- **Inline styles** with CSS `transition` property
-- **Staggered delays** calculated per bar index
-- No CSS classes, keyframes, or complex selectors
-
-**Key Learning:** Safari iOS has poor support for CSS keyframe animations on SVG elements, but CSS transitions work reliably with inline styles.
+**Testing:** In progress
 
 ## Completed Tests
 

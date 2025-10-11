@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import SelfFundingCalculator from '../components/SelfFundingCalculator'
 import PricingTableSelfFunding from '../components/PricingTableSelfFunding'
+import ContactForm from '../components/ContactForm'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
 export default function ChallengePage() {
@@ -134,7 +135,6 @@ export default function ChallengePage() {
             <Card className="border-2">
               <CardHeader>
                 <CardTitle className="text-xl">2. Free Winning Test</CardTitle>
-                <p className="text-sm text-neutral-600 mt-2">Month 1 - Proof Sprint</p>
               </CardHeader>
               <CardContent className="text-sm text-neutral-700 space-y-3">
                 <p className="font-medium text-base text-neutral-900">
@@ -155,7 +155,6 @@ export default function ChallengePage() {
             <Card className="border-2">
               <CardHeader>
                 <CardTitle className="text-xl">3. Full-Funnel Testing</CardTitle>
-                <p className="text-sm text-neutral-600 mt-2">Months 2-4 - Compounding Wins</p>
               </CardHeader>
               <CardContent className="text-sm text-neutral-700 space-y-3">
                 <p className="font-medium text-base text-neutral-900">
@@ -175,7 +174,6 @@ export default function ChallengePage() {
             <Card className="border-2">
               <CardHeader>
                 <CardTitle className="text-xl">4. Growth Engine</CardTitle>
-                <p className="text-sm text-neutral-600 mt-2">Months 5-6 - Independence</p>
               </CardHeader>
               <CardContent className="text-sm text-neutral-700 space-y-3">
                 <p className="font-medium text-base text-neutral-900">
@@ -227,7 +225,6 @@ export default function ChallengePage() {
             <Card className="border-2 relative">
               <CardHeader>
                 <CardTitle className="text-xl">2. Free Winning Test</CardTitle>
-                <p className="text-sm text-neutral-600 mt-2">Month 1 - Proof Sprint</p>
               </CardHeader>
               <CardContent className="text-sm text-neutral-700 space-y-3">
                 <p className="font-medium text-base text-neutral-900">
@@ -262,7 +259,6 @@ export default function ChallengePage() {
             <Card className="border-2 relative">
               <CardHeader>
                 <CardTitle className="text-xl">4. Growth Engine</CardTitle>
-                <p className="text-sm text-neutral-600 mt-2">Months 5-6 - Independence</p>
               </CardHeader>
               <CardContent className="text-sm text-neutral-700 space-y-3">
                 <p className="font-medium text-base text-neutral-900">
@@ -282,7 +278,6 @@ export default function ChallengePage() {
             <Card className="border-2 relative">
               <CardHeader>
                 <CardTitle className="text-xl">3. Full-Funnel Testing</CardTitle>
-                <p className="text-sm text-neutral-600 mt-2">Months 2-4 - Compounding Wins</p>
               </CardHeader>
               <CardContent className="text-sm text-neutral-700 space-y-3">
                 <p className="font-medium text-base text-neutral-900">
@@ -416,24 +411,8 @@ export default function ChallengePage() {
         </div>
       </section>
 
-      {/* Contact CTA Section */}
-      <section className="px-6 md:px-8 py-16 md:py-24" id="contact">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-            Ready to see if it would pay for itself?
-          </h2>
-          <p className="text-lg text-neutral-700 mb-8">
-            Book a 30-minute strategy call to discuss your traffic, conversion rates, and growth goals. 
-            We&apos;ll show you exactly how the self-funding model would work for your business.
-          </p>
-          <a
-            href="#contact"
-            className="inline-flex items-center justify-center h-14 px-10 rounded-full font-semibold bg-[#B9F040] text-black text-lg hover:bg-[#a0d636] transition-colors"
-          >
-            Book a strategy call
-          </a>
-        </div>
-      </section>
+      {/* Contact Form */}
+      <ContactForm headline="Tell us about your control" />
 
       <Footer />
     </main>

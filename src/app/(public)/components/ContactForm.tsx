@@ -11,7 +11,7 @@ interface FormData {
   phone: string
 }
 
-export default function ContactForm() {
+export default function ContactForm({ headline = "Want your business to be next?" }: { headline?: string }) {
   const [currentStep, setCurrentStep] = useState(0)
   const [formData, setFormData] = useState<FormData>({
     websiteUrl: '',
@@ -128,7 +128,7 @@ export default function ContactForm() {
         <div className="max-w-2xl mx-auto">
           {/* Headline */}
           <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-12">
-            Want your business to be next?
+            {headline}
           </h2>
           
           {/* Progress Bar */}
