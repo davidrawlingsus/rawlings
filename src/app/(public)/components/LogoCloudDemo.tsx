@@ -77,9 +77,9 @@ export default function LogoCloudDemo() {
               All from one simple idea...
               <br />
               <span className="font-bold text-[#1A2B3C]">
-                Conversion is not a mystery.
+                Conversion follows laws, not luck.
                 <br />
-                It&apos;s as mechanical as aerodynamics.
+                The principles never change, but the variables do.
                 <br />
                 <br />
                 <span 
@@ -90,7 +90,7 @@ export default function LogoCloudDemo() {
                     WebkitBoxDecorationBreak: 'clone'
                   }}
                 >
-                  But ONLY your customers can tell you the formula.
+                  Your customer data reveals them.
                 </span>
               </span>
             </p>
