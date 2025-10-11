@@ -65,15 +65,15 @@ export default function HeroSection() {
             >
               <a 
                 href="#contact"
-                className="h-12 px-6 rounded-full font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors whitespace-nowrap flex items-center justify-center"
+                className="w-full sm:w-auto h-12 px-6 rounded-full font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors whitespace-nowrap flex items-center justify-center"
                 aria-label="Book a strategy call"
               >
                 Book a strategy call
               </a>
-              <div className="flex flex-col items-center gap-2">
+              <div className="w-full sm:w-auto flex flex-col items-center gap-2">
                 <a 
                   href="#challenge"
-                  className="h-12 px-6 rounded-full font-semibold border-2 border-neutral-300 text-neutral-700 hover:border-neutral-400 hover:text-neutral-900 transition-colors whitespace-nowrap flex items-center justify-center"
+                  className="w-full sm:w-auto h-12 px-6 rounded-full font-semibold border-2 border-neutral-300 text-neutral-700 hover:border-neutral-400 hover:text-neutral-900 transition-colors whitespace-nowrap flex items-center justify-center"
                   aria-label="Take the Landing Page Challenge"
                 >
                   Take the Landing Page Challenge
