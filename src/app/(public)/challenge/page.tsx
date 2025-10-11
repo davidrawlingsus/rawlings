@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import SelfFundingCalculator from '../components/SelfFundingCalculator'
+import PricingTableSelfFunding from '../components/PricingTableSelfFunding'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
 export default function ChallengePage() {
@@ -338,123 +339,8 @@ export default function ChallengePage() {
         </div>
       </section>
 
-      {/* Program Section */}
-      <section className="px-6 md:px-8 py-16 md:py-24" id="program">
-        <div className="mx-auto max-w-screen-xl">
-          <h2 className="text-3xl md:text-4xl font-semibold">The Self-Funding Growth Program</h2>
-          <p className="mt-3 text-lg text-neutral-700 max-w-3xl">
-            One program. One free winning test. One predictable source of profit.
-          </p>
-
-          <div className="mt-8 grid lg:grid-cols-3 gap-8">
-            {/* Left Column - Program Card */}
-            <div className="lg:col-span-2">
-              <div className="rounded-2xl border-2 border-neutral-900 bg-white shadow-sm">
-                {/* Header */}
-                <div className="p-6 border-b border-neutral-200 flex items-center justify-between flex-wrap gap-2">
-                  <h3 className="text-2xl font-semibold">6-Month Self-Funding Growth Program</h3>
-                  <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1.5 rounded-md">
-                    Includes free winning A/B test (Month 1)
-                  </span>
-                </div>
-
-                {/* Body */}
-                <div className="p-6 space-y-5 text-sm text-neutral-700">
-                  <p className="text-base">
-                    <strong>Month 1 — Free Challenge test</strong> to prove the model <em>and</em> pay for the program.
-                  </p>
-                  <p className="text-base">
-                    <strong>Months 2–6 —</strong> Ongoing voice-of-customer analysis, prioritized test pipeline, page builds, and strategy sessions.
-                  </p>
-
-                  {/* Price + ROI note */}
-                  <div className="pt-3 border-t border-neutral-200">
-                    <p className="text-2xl font-bold text-neutral-900">$7,500–$10,000 / month</p>
-                    <p className="text-xs text-neutral-500 mt-2">
-                      💡 In most cases, the month-one win generates more monthly revenue than our fee — the program effectively pays for itself.
-                    </p>
-                  </div>
-
-                  {/* Payment structure + bonus */}
-                  <div className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 space-y-2">
-                    <p className="text-xs text-neutral-700">
-                      <strong>Payment structure:</strong> One-off <em>fully refundable</em> deposit to secure your slot. 
-                      No monthly fees are payable until we&apos;ve delivered a <strong>≥20% lift</strong> on your primary metric. 
-                      If we don&apos;t win, the deposit is refunded in full.
-                    </p>
-                    <p className="text-xs text-neutral-600">
-                      <strong>Optional success bonus:</strong> +10% of incremental profit if a single test exceeds +35% lift (capped at $15k).
-                    </p>
-                  </div>
-
-                  {/* Traffic-scaled fee explainer */}
-                  <section className="mt-8 text-sm text-neutral-700">
-                    <h4 className="font-medium text-base text-neutral-900 mb-2">
-                      Fee scales with testing capacity
-                    </h4>
-                    <p>
-                      More traffic → faster testing → more research → more value. Our fee scales with opportunity, not time spent.
-                    </p>
-
-                    <div className="mt-4 grid md:grid-cols-4 gap-3 text-center">
-                      <div className="border border-neutral-200 rounded-xl p-4 bg-white shadow-sm">
-                        <div className="font-medium text-neutral-900">Core</div>
-                        <div className="text-xs text-neutral-500 mt-1">up to 50K sessions</div>
-                        <div className="text-sm font-semibold mt-2">$7.5K/mo</div>
-                      </div>
-                      <div className="border border-neutral-200 rounded-xl p-4 bg-white shadow-sm">
-                        <div className="font-medium text-neutral-900">Growth</div>
-                        <div className="text-xs text-neutral-500 mt-1">50K–150K</div>
-                        <div className="text-sm font-semibold mt-2">$10K/mo</div>
-                      </div>
-                      <div className="border border-neutral-200 rounded-xl p-4 bg-white shadow-sm">
-                        <div className="font-medium text-neutral-900">Scale</div>
-                        <div className="text-xs text-neutral-500 mt-1">150K–500K</div>
-                        <div className="text-sm font-semibold mt-2">$12.5–15K/mo</div>
-                      </div>
-                      <div className="border border-neutral-200 rounded-xl p-4 bg-white shadow-sm">
-                        <div className="font-medium text-neutral-900">Enterprise</div>
-                        <div className="text-xs text-neutral-500 mt-1">500K+</div>
-                        <div className="text-sm font-semibold mt-2">Custom</div>
-                      </div>
-                    </div>
-
-                    <p className="mt-3 text-xs text-neutral-500">
-                      Higher-traffic sites can run more tests, generate faster insights, and compound wins — so the program scales with your opportunity.
-                    </p>
-                  </section>
-
-                  {/* CTA */}
-                  <div className="pt-2">
-                    <a 
-                      href="#contact"
-                      className="inline-flex items-center justify-center rounded-md bg-[#B9F040] px-6 py-3 text-base font-semibold text-black hover:bg-[#a0d636] transition-colors"
-                    >
-                      Get your free win
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Column - Proof Stats Stacked Vertically */}
-            <div className="flex flex-col gap-6">
-              <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm text-center">
-                <div className="text-4xl font-semibold text-neutral-900">+116%</div>
-                <div className="text-sm text-neutral-700 mt-2">Largest single-test lift achieved</div>
-              </div>
-              <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm text-center">
-                <div className="text-4xl font-semibold text-neutral-900">≥20%</div>
-                <div className="text-sm text-neutral-700 mt-2">Minimum win threshold for the guarantee</div>
-              </div>
-              <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm text-center">
-                <div className="text-4xl font-semibold text-neutral-900">10 days</div>
-                <div className="text-sm text-neutral-700 mt-2">Typical build time after survey window</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Pricing Section */}
+      <PricingTableSelfFunding />
 
       {/* FAQ Section */}
       <section className="px-6 md:px-8 py-16 md:py-24 bg-[#1A2B3C]">
