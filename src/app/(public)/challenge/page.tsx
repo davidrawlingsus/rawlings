@@ -379,6 +379,35 @@ export default function ChallengePage() {
                       exceeds +35% lift (capped at $15k).
                     </p>
                   </div>
+
+                  <section className="mt-10 text-sm text-neutral-700">
+                    <h4 className="font-medium text-base text-neutral-900 mb-2">
+                      Fee scales with testing capacity
+                    </h4>
+                    <p>
+                      Because testing velocity grows with traffic, our fee scales with opportunity — not time spent.
+                    </p>
+
+                    <div className="mt-4 grid md:grid-cols-4 gap-3 text-center">
+                      {[
+                        {tier: "Core", traffic: "up to 50K sessions", fee: "$7.5K/mo"},
+                        {tier: "Growth", traffic: "50K–150K", fee: "$10K/mo"},
+                        {tier: "Scale", traffic: "150K–500K", fee: "$12.5–15K/mo"},
+                        {tier: "Enterprise", traffic: "500K+", fee: "Custom"},
+                      ].map((t)=>(
+                        <div key={t.tier} className="border border-neutral-200 rounded-xl p-4 bg-white shadow-sm">
+                          <div className="font-medium text-neutral-900">{t.tier}</div>
+                          <div className="text-xs text-neutral-500 mt-1">{t.traffic}</div>
+                          <div className="text-sm font-semibold mt-2">{t.fee}</div>
+                        </div>
+                      ))}
+                    </div>
+
+                    <p className="mt-3 text-xs text-neutral-500">
+                      Higher-traffic sites can run more tests, generate faster insights, and compound wins — so the program scales with your opportunity.
+                    </p>
+                  </section>
+
                   <div className="pt-2">
                     <a 
                       href="#contact" 
