@@ -171,11 +171,11 @@ export default function SelfFundingCalculator() {
                   {/* Qualification Message - The Star */}
                   <div className="text-center py-4">
                     {result.paysForItself ? (
-                      <p className="text-green-700 font-bold text-xl md:text-2xl">
+                      <p className="text-green-700 text-lg md:text-xl">
                         ✅ Your landing page win would pay our fees in perpetuity (profit from lift &gt; fee).
                       </p>
                     ) : (
-                      <p className="text-amber-700 font-bold text-xl md:text-2xl">
+                      <p className="text-amber-700 text-lg md:text-xl">
                         Almost there — a {result.breakevenLift.toFixed(1)}% lift would cover your monthly fee.
                       </p>
                     )}
