@@ -258,14 +258,14 @@ export default function ContactForm({
                 <h2 className="text-3xl font-bold mb-3 text-foreground">
                   {steps[1].title}
                 </h2>
-                <p className="text-foreground/70 mb-8">
+                <p className="text-foreground/70 mb-6">
                   We&apos;d love to know who we&apos;re talking to
                 </p>
                 
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-sm font-medium mb-3 text-foreground"
+                    className="block text-sm font-medium mb-2 text-foreground"
                   >
                     Full Name
                   </label>
@@ -292,15 +292,15 @@ export default function ContactForm({
                 <h2 className="text-3xl font-bold mb-3 text-foreground">
                   {steps[2].title}
                 </h2>
-                <p className="text-foreground/70 mb-8">
+                <p className="text-foreground/70 mb-6">
                   Almost done! We&apos;ll use this to schedule your strategy call
                 </p>
                 
-                <div className="space-y-6">
+                <div className="space-y-4">
                   <div>
                     <label
                       htmlFor="email"
-                      className="block text-sm font-medium mb-3 text-foreground"
+                      className="block text-sm font-medium mb-2 text-foreground"
                     >
                       Email Address
                     </label>
@@ -319,7 +319,7 @@ export default function ContactForm({
                   <div>
                     <label
                       htmlFor="phone"
-                      className="block text-sm font-medium mb-3 text-foreground"
+                      className="block text-sm font-medium mb-2 text-foreground"
                     >
                       Phone Number
                     </label>
