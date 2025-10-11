@@ -10,7 +10,7 @@ export default function SelfFundingCalculator() {
   const [cv, setCv] = useState(2.0);
   const [aov, setAov] = useState(100);
   const [margin, setMargin] = useState(60);
-  const [fee, setFee] = useState(7500);
+  const [fee] = useState(7500);
   const [lift, setLift] = useState(10);
 
   const result = useMemo(() => {
@@ -209,7 +209,7 @@ export default function SelfFundingCalculator() {
           <Card className="shadow-lg bg-white border-2 border-neutral-200">
             <CardContent className="p-8 flex flex-col justify-center h-full">
               <div className="space-y-4">
-                <div className="text-5xl text-neutral-300">"</div>
+                <div className="text-5xl text-neutral-300">&ldquo;</div>
                 <blockquote className="text-lg text-neutral-800 leading-relaxed -mt-6">
                   I thought it was a wild over-promise, but then we ran the first test and saw a 23% lift 
                   in qualified leads. The program literally paid for itself in the first month.
