@@ -44,7 +44,7 @@ export default function Header() {
 
           {/* CTA Buttons */}
           <div className="flex items-center gap-4 ml-8">
-            <a href="#challenge" className="border-2 border-white text-white px-6 py-2 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors">
+            <a href="/landing-page-challenge" className="border-2 border-white text-white px-6 py-2 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors">
               LANDING PAGE CHALLENGE
             </a>
             <a href="#contact" className="bg-[#B9F040] text-black px-6 py-2 rounded-lg font-semibold text-sm uppercase hover:bg-[#a0d636] transition-colors">
@@ -87,7 +87,7 @@ export default function Header() {
             
             {/* Mobile CTA Buttons */}
             <div className="pt-4 flex flex-col gap-3">
-              <a href="#challenge" className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors block text-center">
+              <a href="/landing-page-challenge" className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors block text-center">
                 LANDING PAGE CHALLENGE
               </a>
               <a href="#contact" className="bg-[#B9F040] text-black px-6 py-3 rounded-lg font-semibold text-sm uppercase hover:bg-[#a0d636] transition-colors block text-center">
