@@ -68,7 +68,7 @@ export default function SelfFundingCalculator() {
           {/* Calculator Card */}
           <Card className="shadow-lg">
             <CardHeader>
-              <CardTitle className="text-xl">Interactive ROI Calculator</CardTitle>
+              <CardTitle className="text-xl">See if your business qualifies</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               {/* Inputs */}
