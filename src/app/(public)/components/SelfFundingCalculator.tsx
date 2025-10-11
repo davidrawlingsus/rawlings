@@ -207,8 +207,9 @@ export default function SelfFundingCalculator() {
         </div>
         
         <p className="mt-4 text-xs text-neutral-500 max-w-4xl">
-          Example: 200k visitors × 2% CVR × $100 AOV = $400k/mo baseline revenue. A 10% lift adds $40k revenue; 
-          at 60% margin that&apos;s $24k profit — comfortably above a $7.5–10k/mo fee.
+          <strong>Your math:</strong> {formatNumber(visitors)} visitors × {cv.toFixed(2)}% CVR × {formatCurrency(aov)} AOV = {formatCurrency(result.baselineRev)}/mo baseline revenue. 
+          A {lift}% lift adds {formatCurrency(result.liftRev)} revenue; at {margin}% margin that&apos;s {formatCurrency(result.liftProfit)} profit 
+          {result.paysForItself ? `- comfortably above a $${fee.toLocaleString()}/mo fee` : `- you&apos;d need a ${result.breakevenLift.toFixed(1)}% lift to cover a $${fee.toLocaleString()}/mo fee`}.
         </p>
       </div>
     </section>
