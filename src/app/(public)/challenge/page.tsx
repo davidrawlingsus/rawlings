@@ -119,7 +119,7 @@ export default function ChallengePage() {
             </CardHeader>
             <CardContent className="text-sm text-neutral-700 space-y-3">
               <p className="font-medium text-base text-neutral-900">
-                This signals you&apos;re serious and secures your onboarding slot - nothing else is payable until we&apos;ve proven a 20%+ lift.
+                This secures your onboarding slot - nothing else is payable until we&apos;ve proven a 20%+ lift.
               </p>
               <p>
                 We only invest our time with teams ready to act on data-driven recommendations. Your deposit ensures we&apos;re aligned.
