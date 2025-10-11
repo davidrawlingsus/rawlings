@@ -106,7 +106,7 @@ export default function ChallengePage() {
       <section className="px-6 md:px-8 py-16 md:py-24 border-b border-neutral-200">
         <div className="mx-auto max-w-screen-xl">
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-            The first win funds the program. Then we compound.
+            The first win funds the program. Then it&apos;s pure upside.
           </h2>
           <p className="text-lg text-neutral-700 mb-8 max-w-3xl">
             Our proven four-step approach starts with a fully-refundable deposit, delivers a free winning test 
