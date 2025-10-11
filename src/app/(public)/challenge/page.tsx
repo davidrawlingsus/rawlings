@@ -53,7 +53,7 @@ export default function ChallengePage() {
                 }
               }}
             >
-              The first test is free - and in most cases, it makes you more monthly revenue than our fee costs. 
+              The first winning test is free - and in most cases, it makes you more monthly revenue than our fee costs. 
               We&apos;re the only consultancy that pays for itself - forever - starting with its first recommendation.
             </motion.p>
             
@@ -212,7 +212,7 @@ export default function ChallengePage() {
         <div className="mx-auto max-w-screen-xl">
           <h2 className="text-3xl md:text-4xl font-semibold">The Self-Funding Growth Program</h2>
           <p className="mt-3 text-lg text-neutral-700 max-w-3xl">
-            One program. One free test. One predictable source of profit.
+            One program. One free winning test. One predictable source of profit.
           </p>
 
           <div className="mt-8">
@@ -302,7 +302,7 @@ export default function ChallengePage() {
                 What&apos;s the guarantee?
               </h3>
               <p className="text-neutral-700">
-                One primary metric; ≥20% relative lift or you owe $0. The first test is included free with 
+                One primary metric; ≥20% relative lift or you owe $0. The first winning test is included free with 
                 the 6-month program to demonstrate impact before you commit to ongoing work.
               </p>
             </div>

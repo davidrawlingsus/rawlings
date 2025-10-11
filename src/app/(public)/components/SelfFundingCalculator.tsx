@@ -60,7 +60,7 @@ export default function SelfFundingCalculator() {
           Could your first win pay for everything?
         </h2>
         <p className="mt-3 text-lg text-neutral-700 max-w-3xl">
-          We guarantee a 20% lift with our first ab test. In most cases, this makes you squarely ROI positive 
+          We guarantee a 20% lift with our first winning test. In most cases, this makes you squarely ROI positive 
           on our entire program, without risking a penny. Use the calculator below to see the math:
         </p>
         
