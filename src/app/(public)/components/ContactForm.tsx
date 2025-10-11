@@ -183,7 +183,7 @@ export default function ContactForm({
               style={{ transform: `translateX(-${currentStep * 100}%)` }}
             >
               {/* Step 1: Website URL & Traffic */}
-              <div className={`w-full flex-shrink-0 ${showStep0Title || step0Description ? 'p-12' : 'p-8 py-6'}`}>
+              <div className={`w-full flex-shrink-0 ${showStep0Title || step0Description ? 'p-12' : 'px-8 py-6'}`}>
                 {showStep0Title && (
                   <h2 className="text-3xl font-bold mb-3 text-foreground">
                     {steps[0].title}
@@ -195,11 +195,11 @@ export default function ContactForm({
                   </p>
                 )}
                 
-                <div className={`${showStep0Title || step0Description ? 'space-y-6' : 'space-y-4'}`}>
+                <div className={`${showStep0Title || step0Description ? 'space-y-6' : 'space-y-3'}`}>
                   <div>
                     <label
                       htmlFor="websiteUrl"
-                      className="block text-sm font-medium mb-3 text-foreground"
+                      className="block text-sm font-medium mb-2 text-foreground"
                     >
                       {websiteUrlLabel}
                     </label>
@@ -223,10 +223,10 @@ export default function ContactForm({
                   <div>
                     <label
                       htmlFor="monthlyTraffic"
-                      className="block text-sm font-medium mb-3 text-foreground"
+                      className="block text-sm font-medium mb-2 text-foreground"
                     >
                       Monthly Traffic:{' '}
-                      <span className="text-[#1A2B3C] font-bold text-xl">
+                      <span className="text-[#1A2B3C] font-bold text-lg">
                         {formatTraffic(formData.monthlyTraffic)}
                       </span>
                     </label>
@@ -344,7 +344,7 @@ export default function ContactForm({
             </div>
 
             {/* Navigation Buttons */}
-            <div className="px-12 pb-12">
+            <div className={`${showStep0Title || step0Description ? 'px-12 pb-12' : 'px-8 pb-6'}`}>
               {submitError && (
                 <div className="mb-4 p-4 bg-destructive/10 border border-destructive/20 rounded-lg text-destructive text-sm">
                   {submitError}
