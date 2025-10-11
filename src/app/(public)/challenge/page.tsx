@@ -259,9 +259,9 @@ export default function ChallengePage() {
                 <div className="pt-2">
                   <a 
                     href="#contact" 
-                    className="inline-flex items-center justify-center rounded-md bg-neutral-900 px-6 py-3 text-base font-semibold text-white hover:bg-neutral-800 transition-colors"
+                    className="inline-flex items-center justify-center rounded-md bg-[#B9F040] px-6 py-3 text-base font-semibold text-black hover:bg-[#a0d636] transition-colors"
                   >
-                    Join the Program →
+                    Get your free win
                   </a>
                 </div>
               </div>
