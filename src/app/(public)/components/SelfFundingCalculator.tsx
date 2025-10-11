@@ -56,10 +56,10 @@ export default function SelfFundingCalculator() {
       id="calculator"
     >
       <div className="mx-auto max-w-screen-xl">
-        <h2 className="text-3xl md:text-4xl font-semibold text-white">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white">
           Could your first win pay for everything?
         </h2>
-        <p className="mt-3 text-lg text-neutral-300 max-w-3xl">
+        <p className="mt-4 text-lg md:text-xl text-neutral-300">
           We guarantee a 20% lift with our first winning test. In most cases, this makes you squarely ROI positive 
           on our entire program, without risking a penny. Use the calculator below to see the math:
         </p>
