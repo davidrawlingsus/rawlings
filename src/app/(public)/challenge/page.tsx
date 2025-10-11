@@ -307,29 +307,6 @@ export default function ChallengePage() {
             </Card>
           </div>
           
-          <div className="p-6 bg-gradient-to-br from-[#B9F040]/10 to-[#B9F040]/5 border-2 border-[#B9F040]/30 rounded-lg">
-            <p className="text-xl font-semibold text-neutral-900 mb-3">
-              💡 Zero risk: You don&apos;t pay until we&apos;ve paid for ourselves.
-            </p>
-            
-            <div className="space-y-2 mb-4 text-neutral-700">
-              <p>
-                <strong>How it works:</strong> You pay a refundable deposit, then we work until the first 
-                winning test generates enough recurring revenue to cover our monthly fee forever - usually 
-                within the first 30 days.
-              </p>
-              <p>
-                Only then do you roll into the monthly cycle. <strong>Not a penny more becomes due until 
-                we&apos;ve paid for ourselves.</strong>
-              </p>
-            </div>
-            
-            <div className="pt-3 border-t border-neutral-300">
-              <p className="text-neutral-700 mb-2">
-                <strong>Investment:</strong> $7.5k-$10k/month for the 6-month Growth Partnership.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
