@@ -11,7 +11,7 @@ export default function PricingTableSelfFunding() {
           Start with a free, guaranteed win — then choose the tier that matches your testing capacity.
         </p>
 
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-5 gap-4">
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-5 gap-4 md:items-stretch">
           {/* CARD 0: Free Win */}
           <div className="rounded-2xl border border-neutral-200 bg-[#B9F040] text-black shadow-sm flex flex-col">
             <div className="p-5 border-b border-black/10">
@@ -38,63 +38,74 @@ export default function PricingTableSelfFunding() {
           </div>
 
           {/* CARD 1: Core */}
-          <TierCard
-            name="Core"
-            traffic="up to 50K sessions/mo"
-            price="$7.5K/mo"
-            testsPerMonth="2 tests/mo"
-            bullets={[
-              "High-impact page focus",
-              "VOC analysis (NPS + objections)",
-              "A/B with pre-agreed decision rule",
-            ]}
-          />
+          <div className="flex self-center">
+            <TierCard
+              name="Core"
+              traffic="up to 50K sessions/mo"
+              price="$7.5K/mo"
+              testsPerMonth="2 tests/mo"
+              bullets={[
+                "Single high-leverage page",
+                "Full VoC analysis",
+                "Full build & deployment",
+              ]}
+            />
+          </div>
 
           {/* CARD 2: Growth */}
-          <TierCard
-            name="Growth"
-            traffic="50K–150K"
-            price="$10K/mo"
-            testsPerMonth="3 tests/mo"
-            bullets={[
-              "Expanded VOC research",
-              "Two parallel test tracks",
-              "Copy/design/dev included",
-            ]}
-            highlight
-          />
+          <div className="flex self-center">
+            <TierCard
+              name="Growth"
+              traffic="50K–150K"
+              price="$10K/mo"
+              testsPerMonth="3 tests/mo"
+              bullets={[
+                "Full-funnel testing",
+                "Parallel test tracks",
+                "Dedicated analyst",
+              ]}
+              highlight
+            />
+          </div>
 
           {/* CARD 3: Scale */}
-          <TierCard
-            name="Scale"
-            traffic="150K–500K"
-            price="$12.5–15K/mo"
-            testsPerMonth="5–6 tests/mo"
-            bullets={[
-              "Multi-page coverage",
-              "Faster iteration cycles",
-              "Deeper segmentation",
-            ]}
-          />
+          <div className="flex self-center">
+            <TierCard
+              name="Scale"
+              traffic="150K–500K"
+              price="$12.5–15K/mo"
+              testsPerMonth="5–6 tests/mo"
+              bullets={[
+                "Multi-page optimization",
+                "Advanced segmentation",
+                "Priority dev support",
+              ]}
+            />
+          </div>
 
           {/* CARD 4: Enterprise */}
-          <TierCard
-            name="Enterprise"
-            traffic="500K+"
-            price="Custom"
-            testsPerMonth="7+ tests/mo"
-            bullets={[
-              "Programmatic testing cadence",
-              "Advanced analytics & enablement",
-              "Security & legal support",
-            ]}
-          />
-        </div>
+          <div className="flex self-center">
+            <TierCard
+              name="Enterprise"
+              traffic="500K+"
+              price="Custom"
+              testsPerMonth="7+ tests/mo"
+              bullets={[
+                "Continuous testing",
+                "Custom integrations",
+                "Security & compliance",
+              ]}
+            />
+          </div>
 
-        <p className="mt-4 text-xs text-neutral-500">
-          Fees scale with testing capacity because more traffic enables faster experiments, deeper research, and quicker compounding.
-          Optional success bonus: +10% of incremental profit if a single test exceeds +35% lift (cap $15k).
-        </p>
+          {/* Footnote - spans across the tier cards on desktop */}
+          <div className="md:col-span-4 md:col-start-2 flex items-end">
+            <p className="text-xs text-neutral-500">
+              Fees scale with testing capacity because more traffic enables faster experiments, deeper research, and quicker compounding.
+              Optional success bonus: +10% of incremental profit if a single test exceeds +35% lift (cap $15k).
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
@@ -118,13 +129,13 @@ function TierCard({
   return (
     <div
       className={[
-        "rounded-2xl border bg-white shadow-sm flex flex-col",
+        "rounded-2xl border bg-white shadow-sm flex flex-col w-full h-full",
         highlight ? "border-neutral-900" : "border-neutral-200",
       ].join(" ")}
     >
-      <div className="p-5 border-b border-neutral-200">
+      <div className="px-6 py-5 border-b border-neutral-200">
         <div className="flex items-center justify-between">
-          <h3 className="text-xl font-semibold">{name}</h3>
+          <h3 className="text-lg font-semibold">{name}</h3>
           {highlight && (
             <span className="inline-block bg-neutral-900 text-white text-xs font-semibold px-2 py-1 rounded-md">
               Most popular
@@ -132,12 +143,12 @@ function TierCard({
           )}
         </div>
         <p className="text-xs text-neutral-500 mt-1">{traffic}</p>
-        <div className="mt-2 text-2xl font-bold text-neutral-900">{price}</div>
+        <div className="mt-2 text-xl font-bold text-neutral-900">{price}</div>
         <div className="mt-1 text-xs text-neutral-600">
           Tests per month: <strong>{testsPerMonth}</strong>
         </div>
       </div>
-      <ul className="p-5 text-sm space-y-2">
+      <ul className="px-6 py-5 text-sm space-y-2">
         {bullets.map((b) => (
           <li key={b}>• {b}</li>
         ))}
