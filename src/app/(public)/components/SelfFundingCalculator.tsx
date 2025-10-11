@@ -188,7 +188,7 @@ export default function SelfFundingCalculator() {
                   <div className="pt-4 border-t">
                     {result.paysForItself ? (
                       <p className="text-green-700 font-bold text-base md:text-lg">
-                        ✅ Your growth would pay for itself (profit from lift &gt; fee).
+                        ✅ Your landing page win would pay our fees in perpetuity (profit from lift &gt; fee).
                       </p>
                     ) : (
                       <p className="text-amber-700 font-bold text-base md:text-lg">
