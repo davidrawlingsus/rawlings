@@ -53,9 +53,8 @@ export default function ChallengePage() {
                 }
               }}
             >
-              We use your customers&apos; words to create conversion wins so large they fund our ongoing work. 
-              The first test is free — and in most cases, the new recurring revenue it generates permanently 
-              covers our fee.
+              The first test is free — and in most cases, it makes you more monthly revenue than our fee costs. 
+              From day one, we pay for ourselves.
             </motion.p>
             
             <motion.div 
