@@ -167,8 +167,8 @@ export default function SelfFundingCalculator() {
 
               {/* Results */}
               <div className="pt-4 border-t border-neutral-200">
-                <div className="space-y-3 text-sm text-neutral-700">
-                  <div className="space-y-2">
+                <div className="space-y-4 text-base md:text-lg text-neutral-700">
+                  <div className="space-y-3">
                     <p>
                       <strong className="font-semibold">Monthly lift revenue:</strong>{" "}
                       ${result.liftRev.toLocaleString(undefined, { maximumFractionDigits: 0 })}
