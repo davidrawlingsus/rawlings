@@ -17,7 +17,7 @@ const STEPS = [
   },
   {
     id: '02', 
-    title: 'Build Listening Systems',
+    title: 'Listening Systems',
     description: 'Build the infrastructure that hears your customers at scale.',
     items: [
       'Add surveys and feedback prompts where they matter most',
