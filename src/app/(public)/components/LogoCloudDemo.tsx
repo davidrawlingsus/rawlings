@@ -96,7 +96,7 @@ export default function LogoCloudDemo() {
             </p>
             <a 
               href="#process"
-              className="inline-flex items-center justify-center h-12 px-6 rounded-full font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors"
+              className="inline-flex items-center justify-center text-sm text-gray-600 hover:text-gray-900 underline underline-offset-4 transition-colors"
               aria-label="Learn more"
             >
               Learn More
