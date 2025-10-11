@@ -207,143 +207,73 @@ export default function ChallengePage() {
         </div>
       </section>
 
-      {/* Pricing & Partnership Section */}
-      <section className="px-6 md:px-8 py-16 md:py-24 border-b border-neutral-200" id="pricing">
+      {/* Program Section */}
+      <section className="px-6 md:px-8 py-16 md:py-24" id="program">
         <div className="mx-auto max-w-screen-xl">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-            Two clear paths
-          </h2>
-          <p className="text-lg text-neutral-700 mb-12 max-w-3xl">
-            Start with a single high-leverage test, or commit to a full growth partnership with 
-            ongoing optimization.
+          <h2 className="text-3xl md:text-4xl font-semibold">The Self-Funding Growth Program</h2>
+          <p className="mt-3 text-lg text-neutral-700 max-w-3xl">
+            One program. One free test. One predictable source of profit.
           </p>
-          
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <Card className="border-2">
-              <CardHeader>
-                <CardTitle className="text-2xl">Landing Page Challenge</CardTitle>
-                <p className="text-neutral-600 mt-2">One high-impact test, risk-free</p>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div>
-                  <p className="text-3xl font-bold">$7.5k–$25k</p>
-                  <p className="text-sm text-neutral-600">Pay only on ≥20% win</p>
-                </div>
-                
-                <ul className="space-y-2 text-sm text-neutral-700">
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-600 mt-0.5">✓</span>
-                    <span>Voice-of-customer research (surveys, interviews, session replays)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-600 mt-0.5">✓</span>
-                    <span>1 high-leverage test (landing page, PDP, or checkout flow)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-600 mt-0.5">✓</span>
-                    <span>Statistical analysis & recommendation report</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-600 mt-0.5">✓</span>
-                    <span><strong>Zero risk:</strong> pay nothing if lift is &lt;20%</span>
-                  </li>
-                </ul>
-                
-                <a
-                  href="#contact"
-                  className="inline-flex items-center justify-center w-full h-11 px-6 rounded-md font-semibold border-2 border-neutral-900 text-neutral-900 hover:bg-neutral-900 hover:text-white transition-colors"
-                >
-                  Start the Challenge
-                </a>
-              </CardContent>
-            </Card>
-            
-            <Card className="border-2 border-[#B9F040] bg-[#B9F040]/5">
-              <CardHeader>
-                <div className="inline-block px-3 py-1 bg-[#B9F040] text-black text-xs font-semibold rounded-full mb-2">
-                  RECOMMENDED
-                </div>
-                <CardTitle className="text-2xl">6-Month Growth Partnership</CardTitle>
-                <p className="text-neutral-600 mt-2">Ongoing optimization that pays for itself</p>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div>
-                  <p className="text-3xl font-bold">$7.5k–$10k/mo</p>
-                  <p className="text-sm text-neutral-600">6-month commitment</p>
-                </div>
-                
-                <ul className="space-y-2 text-sm text-neutral-700">
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-600 mt-0.5">✓</span>
-                    <div className="flex-1">
-                      <span>
-                        <strong>Free Challenge test</strong> to prove the model and pay for the program (month 1)
-                      </span>
-                      <p className="text-xs text-neutral-500 mt-1">
-                        💡 Most month-one wins more than cover our $7.5 – $10 K/mo fee — the program effectively pays for itself.
-                      </p>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-600 mt-0.5">✓</span>
-                    <span>2–4 conversion tests per month</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-600 mt-0.5">✓</span>
-                    <span>Continuous voice-of-customer research & insights</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-600 mt-0.5">✓</span>
-                    <span>Test design, implementation, analysis & rollout support</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-600 mt-0.5">✓</span>
-                    <span>Compounding insights: each win informs the next test</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-600 mt-0.5">✓</span>
-                    <span>Team training & testing playbook</span>
-                  </li>
-                </ul>
-                
-                <div className="space-y-3">
-                  <a
-                    href="#contact"
-                    className="inline-flex items-center justify-center w-full h-11 px-6 rounded-md font-semibold bg-neutral-900 text-white hover:bg-neutral-800 transition-colors"
-                  >
-                    Book a strategy call
-                  </a>
-                  <div className="p-3 bg-neutral-50 rounded-md border border-neutral-200">
-                    <p className="text-xs text-neutral-700">
-                      <strong>Payment structure:</strong> Refundable deposit, then monthly fees only begin 
-                      after your first winning test covers our cost. Not a penny more due until we&apos;ve 
-                      paid for ourselves.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="p-6 bg-neutral-50 border border-neutral-200 rounded-lg">
-              <p className="text-sm text-neutral-700">
-                <strong>Optional success kicker:</strong> +10% of incremental profit if a single test 
-                exceeds +35% lift (capped at $15k).
-              </p>
-            </div>
-            
-            <Card className="shadow-md">
-              <CardHeader>
-                <CardTitle className="text-lg">Largest single-test lift</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-4xl font-bold text-green-700">+116%</p>
-                <p className="text-sm text-neutral-600 mt-2">
-                  Conversion rate improvement for a premium DTC brand&apos;s product page
+
+          <div className="mt-8">
+            <div className="rounded-2xl border-2 border-neutral-900 bg-white shadow-sm">
+              <div className="p-6 border-b border-neutral-200 flex items-center justify-between flex-wrap gap-2">
+                <h3 className="text-2xl font-semibold">6-Month Self-Funding Growth Program</h3>
+                <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1.5 rounded-md">
+                  Includes free Challenge (Month 1)
+                </span>
+              </div>
+              <div className="p-6 space-y-4 text-sm text-neutral-700">
+                <p className="text-base">
+                  <strong>Month 1 — Free Challenge test</strong> to prove the model and pay for the program.
                 </p>
-              </CardContent>
-            </Card>
+                <p className="text-base">
+                  <strong>Months 2–6 —</strong> Ongoing VOC analysis, prioritized test pipeline, builds, and strategy sessions.
+                </p>
+                <div className="pt-2 border-t border-neutral-200">
+                  <p className="text-2xl font-bold text-neutral-900">$7,500 – $10,000 / month</p>
+                  <p className="text-xs text-neutral-500 mt-2">
+                    💡 Most month-one wins more than cover this fee — the program effectively pays for itself.
+                  </p>
+                </div>
+                <div className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 space-y-2">
+                  <p className="text-xs text-neutral-700">
+                    <strong>Payment structure:</strong> Refundable deposit, then monthly fees only begin 
+                    after your first winning test covers our cost. Not a penny more due until we&apos;ve paid for ourselves.
+                  </p>
+                  <p className="text-xs text-neutral-600">
+                    <strong>Optional success bonus:</strong> +10% of incremental profit if a single test 
+                    exceeds +35% lift (capped at $15k).
+                  </p>
+                </div>
+                <div className="pt-2">
+                  <a 
+                    href="#contact" 
+                    className="inline-flex items-center justify-center rounded-md bg-neutral-900 px-6 py-3 text-base font-semibold text-white hover:bg-neutral-800 transition-colors"
+                  >
+                    Join the Program →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Proof Stats Strip */}
+      <section className="px-6 md:px-8 py-10 bg-neutral-50 border-y border-neutral-200">
+        <div className="mx-auto max-w-screen-xl grid md:grid-cols-3 gap-6 text-center">
+          <div className="rounded-2xl border border-neutral-200 bg-white p-8 shadow-sm">
+            <div className="text-4xl font-semibold text-neutral-900">+116%</div>
+            <div className="text-sm text-neutral-700 mt-2">Largest single-test lift achieved</div>
+          </div>
+          <div className="rounded-2xl border border-neutral-200 bg-white p-8 shadow-sm">
+            <div className="text-4xl font-semibold text-neutral-900">≥20%</div>
+            <div className="text-sm text-neutral-700 mt-2">Minimum win threshold for the guarantee</div>
+          </div>
+          <div className="rounded-2xl border border-neutral-200 bg-white p-8 shadow-sm">
+            <div className="text-4xl font-semibold text-neutral-900">10 days</div>
+            <div className="text-sm text-neutral-700 mt-2">Typical build time after survey window</div>
           </div>
         </div>
       </section>
@@ -363,44 +293,48 @@ export default function ChallengePage() {
               <p className="text-neutral-700">
                 Use the calculator above. If a 10% lift in conversion would generate more profit than our 
                 monthly fee, you&apos;re a strong fit. In practice, our median lift is 15–25%, and our largest 
-                single test produced a +116% improvement. The first test is included free with the 6-month 
-                program, so you can see the impact before committing to ongoing work.
+                single test produced a +116% improvement.
               </p>
             </div>
             
             <div>
               <h3 className="text-xl font-semibold mb-3">
-                What inputs power the calculator?
+                What&apos;s the guarantee?
               </h3>
               <p className="text-neutral-700">
-                Monthly visitors (sessions), current conversion rate, average order value (or lifetime value 
-                per conversion), gross margin (default 60%), and your monthly program fee (default $7,500). 
-                The calculator shows how much profit a given lift percentage would generate and compares it 
-                to the program cost.
+                One primary metric; ≥20% relative lift or you owe $0. The first test is included free with 
+                the 6-month program to demonstrate impact before you commit to ongoing work.
               </p>
             </div>
             
             <div>
               <h3 className="text-xl font-semibold mb-3">
-                What if we&apos;re lower traffic?
+                What are the traffic requirements?
               </h3>
               <p className="text-neutral-700">
-                We can switch the primary metric to qualified-lead rate, booking rate, or another high-value 
-                action, and extend test duration to reach statistical significance. The self-funding model 
-                still works — you just need a higher conversion value or longer measurement window.
+                ~10k relevant sessions in 14 days (or equivalent lead volume). If you&apos;re lower traffic, 
+                we can switch the primary metric to qualified-lead rate, booking rate, or another high-value 
+                action, and extend test duration to reach statistical significance.
               </p>
             </div>
             
             <div>
               <h3 className="text-xl font-semibold mb-3">
-                How is this different from other CRO agencies?
+                Who handles deployment?
               </h3>
               <p className="text-neutral-700">
-                Most agencies charge monthly retainers regardless of results. We lead with a free or 
-                pay-on-performance Challenge test to prove the model works for your business first. 
-                Our approach is grounded in voice-of-customer research — we use your customers&apos; actual 
-                words, not guesswork — and our track record speaks for itself (+116% single-test max, 
-                median lifts of 15–25%).
+                We can ship production-ready code and deploy directly, or if you prefer your devs handle it, 
+                we hand off clean specs and implementation guidance. Either way works.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-semibold mb-3">
+                How is data handled?
+              </h3>
+              <p className="text-neutral-700">
+                NDA + DPA standard; we collect minimal fields (survey responses, session replays for analysis); 
+                data is purged within 30 days unless otherwise agreed. Your customer data never leaves your control.
               </p>
             </div>
             
@@ -409,22 +343,9 @@ export default function ChallengePage() {
                 What happens after the 6-month program?
               </h3>
               <p className="text-neutral-700">
-                You can continue month-to-month with our ongoing support, or take the testing playbook and 
-                insights we&apos;ve built and run experiments independently. Many clients do both: we handle 
-                high-leverage tests while their team runs lower-priority experiments.
-              </p>
-            </div>
-            
-            <div>
-              <h3 className="text-xl font-semibold mb-3">
-                Do you guarantee results?
-              </h3>
-              <p className="text-neutral-700">
-                For the standalone Challenge, we only charge if the test achieves ≥20% lift. For the 6-month 
-                Growth Partnership, the first test is free to demonstrate impact. While we can&apos;t guarantee 
-                specific lift percentages (testing always carries uncertainty), our process is designed to 
-                maximize the probability of meaningful wins — and in most cases, the recurring revenue from 
-                month-one lift alone exceeds the program fee.
+                You can continue month-to-month with our ongoing support, run tests independently with your 
+                new playbook, or do both. Many clients keep us for high-leverage tests while their team handles 
+                lower-priority experiments.
               </p>
             </div>
           </div>
