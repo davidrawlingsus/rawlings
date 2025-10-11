@@ -39,7 +39,7 @@ export default function ChallengePage() {
                 }
               }}
             >
-              Growth that pays for itself — forever.
+              Growth that pays for itself - forever.
             </motion.h1>
             
             <motion.p 
@@ -53,7 +53,7 @@ export default function ChallengePage() {
                 }
               }}
             >
-              The first test is free — and in most cases, it makes you more monthly revenue than our fee costs. 
+              The first test is free - and in most cases, it makes you more monthly revenue than our fee costs. 
               From day one, we pay for ourselves.
             </motion.p>
             
@@ -117,11 +117,11 @@ export default function ChallengePage() {
             <Card className="border-2">
               <CardHeader>
                 <CardTitle className="text-xl">1. Free Winning Test</CardTitle>
-                <p className="text-sm text-neutral-600 mt-2">Month 1 – Proof Sprint</p>
+                <p className="text-sm text-neutral-600 mt-2">Month 1 - Proof Sprint</p>
               </CardHeader>
               <CardContent className="text-sm text-neutral-700 space-y-3">
                 <p className="font-medium text-base text-neutral-900">
-                  A free A/B test that pays for everything — forever.
+                  A free A/B test that pays for everything - forever.
                 </p>
                 <p>
                   We run voice-of-customer research and launch one high-impact test on your 
@@ -129,7 +129,7 @@ export default function ChallengePage() {
                 </p>
                 <p>
                   <strong>The result:</strong> In most cases, this single lift generates enough 
-                  recurring monthly revenue to cover our $7.5–10k fee indefinitely. Everything 
+                  recurring monthly revenue to cover our $7.5-10k fee indefinitely. Everything 
                   from here is pure upside.
                 </p>
               </CardContent>
@@ -138,19 +138,19 @@ export default function ChallengePage() {
             <Card className="border-2">
               <CardHeader>
                 <CardTitle className="text-xl">2. Full-Funnel Testing</CardTitle>
-                <p className="text-sm text-neutral-600 mt-2">Months 2–4 – Compounding Wins</p>
+                <p className="text-sm text-neutral-600 mt-2">Months 2-4 - Compounding Wins</p>
               </CardHeader>
               <CardContent className="text-sm text-neutral-700 space-y-3">
                 <p className="font-medium text-base text-neutral-900">
                   Implementation of feedback systems and full-funnel optimization.
                 </p>
                 <p>
-                  Deploy 2–4 tests per month across your entire funnel: landing pages, product pages, 
+                  Deploy 2-4 tests per month across your entire funnel: landing pages, product pages, 
                   checkout flows, email sequences, and retention touchpoints.
                 </p>
                 <p>
                   <strong>The result:</strong> Every test is informed by real customer feedback and 
-                  conversion science. Insights compound — each win makes the next test smarter and faster.
+                  conversion science. Insights compound - each win makes the next test smarter and faster.
                 </p>
               </CardContent>
             </Card>
@@ -158,11 +158,11 @@ export default function ChallengePage() {
             <Card className="border-2">
               <CardHeader>
                 <CardTitle className="text-xl">3. Growth Engine</CardTitle>
-                <p className="text-sm text-neutral-600 mt-2">Months 5–6 – Independence</p>
+                <p className="text-sm text-neutral-600 mt-2">Months 5-6 - Independence</p>
               </CardHeader>
               <CardContent className="text-sm text-neutral-700 space-y-3">
                 <p className="font-medium text-base text-neutral-900">
-                  Bigger, faster, more profitable testing — forever.
+                  Bigger, faster, more profitable testing - forever.
                 </p>
                 <p>
                   We equip and empower your team to run intelligent, high-impact tests independently. 
@@ -184,7 +184,7 @@ export default function ChallengePage() {
             <div className="space-y-2 mb-4 text-neutral-700">
               <p>
                 <strong>How it works:</strong> You pay a refundable deposit, then we work until the first 
-                winning test generates enough recurring revenue to cover our monthly fee forever — usually 
+                winning test generates enough recurring revenue to cover our monthly fee forever - usually 
                 within the first 30 days.
               </p>
               <p>
@@ -195,7 +195,7 @@ export default function ChallengePage() {
             
             <div className="pt-3 border-t border-neutral-300">
               <p className="text-neutral-700 mb-2">
-                <strong>Investment:</strong> $7.5k–$10k/month for the 6-month Growth Partnership.
+                <strong>Investment:</strong> $7.5k-$10k/month for the 6-month Growth Partnership.
               </p>
               <p className="text-sm text-neutral-600">
                 After six months, you have three options: continue with ongoing support, run tests independently 
@@ -225,15 +225,15 @@ export default function ChallengePage() {
               </div>
               <div className="p-6 space-y-4 text-sm text-neutral-700">
                 <p className="text-base">
-                  <strong>Month 1 — Free Challenge test</strong> to prove the model and pay for the program.
+                  <strong>Month 1 - Free Challenge test</strong> to prove the model and pay for the program.
                 </p>
                 <p className="text-base">
-                  <strong>Months 2–6 —</strong> Ongoing VOC analysis, prioritized test pipeline, builds, and strategy sessions.
+                  <strong>Months 2-6 -</strong> Ongoing VOC analysis, prioritized test pipeline, builds, and strategy sessions.
                 </p>
                 <div className="pt-2 border-t border-neutral-200">
-                  <p className="text-2xl font-bold text-neutral-900">$7,500 – $10,000 / month</p>
+                  <p className="text-2xl font-bold text-neutral-900">$7,500 - $10,000 / month</p>
                   <p className="text-xs text-neutral-500 mt-2">
-                    💡 Most month-one wins more than cover this fee — the program effectively pays for itself.
+                    💡 Most month-one wins more than cover this fee - the program effectively pays for itself.
                   </p>
                 </div>
                 <div className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 space-y-2">
@@ -292,7 +292,7 @@ export default function ChallengePage() {
               </h3>
               <p className="text-neutral-700">
                 Use the calculator above. If a 10% lift in conversion would generate more profit than our 
-                monthly fee, you&apos;re a strong fit. In practice, our median lift is 15–25%, and our largest 
+                monthly fee, you&apos;re a strong fit. In practice, our median lift is 15-25%, and our largest 
                 single test produced a +116% improvement.
               </p>
             </div>
