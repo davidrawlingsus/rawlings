@@ -295,12 +295,12 @@ export default function Process() {
           initial="initial"
           whileInView="animate"
           viewport={{ amount: 0.3, once: true }}
-          className="mt-14 hidden md:flex flex-col md:flex-row items-center justify-between gap-4 rounded-2xl bg-[#1A2B3C] border border-[#1A2B3C] p-6"
+          className="mt-14 hidden md:flex flex-col md:flex-row items-center justify-between gap-4 rounded-2xl bg-black border border-black p-6"
         >
-          <p className="text-lg text-white">Ready to turn feedback into growth?</p>
+          <p className="text-lg text-white">Ready to see what a 20% lift could do for your business?</p>
           <div className="flex flex-col sm:flex-row gap-3">
-            <a href="#contact" className="bg-[#B9F040] text-black px-6 py-3 rounded-lg font-semibold text-sm hover:bg-[#a0d636] transition-colors inline-flex items-center justify-center">
-              Book a strategy call
+            <a href="/challenge" className="bg-[#B9F040] text-black px-6 py-3 rounded-lg font-semibold text-sm hover:bg-[#a0d636] transition-colors inline-flex items-center justify-center">
+              Take the Landing Page Challenge
             </a>
           </div>
         </motion.div>

@@ -76,7 +76,7 @@ export default function ImpactChart() {
   }, [])
 
   return (
-    <section id="impact" className="bg-[#1A2B3C] py-16 md:py-24 lg:py-32">
+    <section id="impact" className="bg-black py-16 md:py-24 lg:py-32">
       <div className="max-w-[1280px] mx-auto px-6 md:px-8">
         {/* Full-width headline section */}
         <motion.div
@@ -101,7 +101,7 @@ export default function ImpactChart() {
               initial="hidden"
               whileInView="visible"
               viewport={{ amount: 0.3, once: true }}
-              className="bg-[#2A3B4C] border border-neutral-600 shadow-sm rounded-xl p-8 md:p-10 max-w-lg"
+              className="bg-gray-900 border border-neutral-600 shadow-sm rounded-xl p-8 md:p-10 max-w-lg"
             >
               <p className="text-xl font-semibold text-white">214% improvement in ab test profitability with the customer first strategy</p>
               <p className="text-base text-neutral-300 mt-4">&quot;It&apos;s hard to think of an investment with a better or faster ROI&quot;</p>

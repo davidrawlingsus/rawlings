@@ -314,7 +314,7 @@ export default function ChallengePage() {
       <PricingTableSelfFunding />
 
       {/* FAQ Section */}
-      <section className="px-6 md:px-8 py-16 md:py-24 bg-[#1A2B3C]">
+      <section className="px-6 md:px-8 py-16 md:py-24 bg-black">
         <div className="mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-white">
             Frequently asked questions

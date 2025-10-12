@@ -13,7 +13,7 @@ export default function OriginStory() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-[#1A2B3C]">
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-black">
               The Story Behind the System
             </h2>
             <div className="w-24 h-1 bg-[#B9F040] mx-auto mb-8"></div>
@@ -21,33 +21,33 @@ export default function OriginStory() {
           
           <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-xl border border-[#B9F040]/20">
             <div className="prose prose-lg max-w-none">
-              <p className="text-xl text-[#1A2B3C]/90 leading-relaxed mb-6">
+              <p className="text-xl text-black/90 leading-relaxed mb-6">
                 If you&apos;d told me I&apos;d end up here, I wouldn&apos;t have believed you.
               </p>
               
-              <p className="text-lg text-[#1A2B3C]/80 leading-relaxed mb-6">
+              <p className="text-lg text-black/80 leading-relaxed mb-6">
                 I was an ex-soldier with a new wife, a newborn, and a car I couldn&apos;t afford to fill with gas. 
                 One unlikely success in digital marketing became my lifeline - and my ticket into the world&apos;s top CRO agency.
               </p>
               
-              <p className="text-lg text-[#1A2B3C]/80 leading-relaxed mb-6">
+              <p className="text-lg text-black/80 leading-relaxed mb-6">
                 At Conversion Rate Experts, I rose fast - eventually their #1 consultant - but behind the wins was chaos. 
                 Endless analytics. Open-text data. No clear formula for what to say, where, or why. Until I found it: 
                 a value equation used by Disney, Ralph Lauren, and Bank of America to decode perceived value itself.
               </p>
               
-              <p className="text-lg text-[#1A2B3C]/80 leading-relaxed mb-6">
+              <p className="text-lg text-black/80 leading-relaxed mb-6">
                 Suddenly persuasion became mechanical, testable, transferable, scalable.
                 A London VC had me teach it to their portfolio CEOs; their wins proved it wasn&apos;t just me.
               </p>
               
-              <p className="text-lg text-[#1A2B3C]/80 leading-relaxed mb-6">
+              <p className="text-lg text-black/80 leading-relaxed mb-6">
                 Now I fuse that human persuasion framework with AI - a system so reliable it doesn&apos;t just fix websites, 
                 it unlocks entire channels: Facebook, PPC, display, even native - with every engagement funded by our free test.
               </p>
               
-              <p className="text-lg text-[#1A2B3C]/90 font-semibold mb-8">
-                I&apos;m David Rawlings, founder of Marketably.
+              <p className="text-lg text-black/90 font-semibold mb-8">
+                David Rawlings, Founder of Marketably.ai
               </p>
               
               <hr className="border-[#B9F040]/30 my-8" />
@@ -55,7 +55,7 @@ export default function OriginStory() {
               <div className="text-center">
                 <a 
                   href="/challenge" 
-                  className="inline-block bg-[#1A2B3C] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#2a3b4c] transition-colors"
+                  className="inline-block bg-black text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-900 transition-colors"
                 >
                   Click here to get your first free test
                 </a>
@@ -66,11 +66,11 @@ export default function OriginStory() {
               <div className="grid md:grid-cols-2 gap-8 text-center">
                 <div>
                   <div className="text-4xl font-bold text-[#B9F040] mb-2">49+</div>
-                  <div className="text-sm text-[#1A2B3C]/70 font-medium">Clients Transformed</div>
+                  <div className="text-sm text-black/70 font-medium">Clients Transformed</div>
                 </div>
                 <div>
                   <div className="text-4xl font-bold text-[#B9F040] mb-2">$100M+</div>
-                  <div className="text-sm text-[#1A2B3C]/70 font-medium">Revenue Unlocked</div>
+                  <div className="text-sm text-black/70 font-medium">Revenue Unlocked</div>
                 </div>
               </div>
             </div>

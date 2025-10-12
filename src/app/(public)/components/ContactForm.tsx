@@ -108,7 +108,7 @@ export default function ContactForm({
 
   if (isSubmitted) {
     return (
-      <div className="py-24 bg-[#1A2B3C]">
+      <div className="py-24 bg-black">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
             <div className="mb-8 inline-flex items-center justify-center w-20 h-20 rounded-full bg-[#B9F040]/20">
@@ -137,7 +137,7 @@ export default function ContactForm({
   }
 
   return (
-    <div id="contact" className="py-24 bg-[#1A2B3C]">
+    <div id="contact" className="py-24 bg-black">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           {/* Headline */}

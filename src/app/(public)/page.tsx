@@ -5,7 +5,7 @@ import ImpactChart from './components/ImpactChart'
 import Process from './components/Process'
 import Testimonials from './components/Testimonials'
 import OriginStory from './components/OriginStory'
-import ContactForm from './components/ContactForm'
+import TeamSection from './components/TeamSection'
 import Footer from './components/Footer'
 
 export default function HomePage() {
@@ -18,7 +18,7 @@ export default function HomePage() {
       <Testimonials />
       <Process />
       <OriginStory />
-      <ContactForm />
+      <TeamSection />
       <Footer />
     </main>
   )

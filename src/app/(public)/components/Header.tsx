@@ -12,7 +12,7 @@ export default function Header() {
   }
 
   return (
-    <nav className="bg-[#1A2B3C] px-4 lg:px-8 py-4">
+    <nav className="bg-black px-4 lg:px-8 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
