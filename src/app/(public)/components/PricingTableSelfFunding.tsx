@@ -8,7 +8,7 @@ export default function PricingTableSelfFunding() {
       <div className="mx-auto max-w-screen-xl">
         <h2 className="text-3xl font-semibold">Make growth self-funding</h2>
         <p className="mt-2 text-neutral-700">
-          Start with a free, guaranteed win — then choose the tier that matches your testing capacity.
+          Start with a free, guaranteed win - then choose the tier that matches your testing capacity.
         </p>
 
         <div className="mt-8 grid grid-cols-1 md:grid-cols-5 gap-4 md:items-stretch">
@@ -16,13 +16,10 @@ export default function PricingTableSelfFunding() {
           <div className="rounded-2xl border border-neutral-200 bg-[#B9F040] text-black shadow-sm flex flex-col">
             <div className="p-5 border-b border-black/10">
               <div className="text-xs font-semibold uppercase tracking-wide">Onboarding</div>
-              <h3 className="mt-1 text-2xl font-semibold">Free Win</h3>
-              <p className="mt-1 text-sm">
-                Month 1 — <strong>Free Challenge</strong> to prove the model <em>and</em> pay for the program.
-              </p>
+              <h3 className="mt-1 text-2xl font-semibold">Free Win Pays for the Program</h3>
             </div>
             <ul className="p-5 text-sm space-y-2">
-              <li>• Guaranteed ≥ <strong>20% lift</strong> on the primary metric — or you owe $0</li>
+              <li>• Guaranteed ≥ <strong>20% lift</strong> on the primary metric - or you owe $0</li>
               <li>• NPS + Objection Survey → VOC model → one high-impact challenger</li>
               <li>• Largest single-test lift so far: <strong>+116%</strong></li>
               <li>• <strong>Fully refundable deposit</strong> to secure your slot</li>

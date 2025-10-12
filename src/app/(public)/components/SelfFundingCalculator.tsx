@@ -60,7 +60,7 @@ export default function SelfFundingCalculator() {
           Could your first win pay for everything?
         </h2>
         <p className="mt-4 text-lg md:text-xl text-neutral-300">
-          We guarantee a 20% lift with our first winning test. If your landing page qualifies, this will make you ROI positive 
+          We guarantee a 20% lift with our first winning test. If you have a landing page that qualifies, this will make you ROI positive 
           on our entire program, without risking a penny.
         </p>
         
@@ -176,7 +176,7 @@ export default function SelfFundingCalculator() {
                       </p>
                     ) : (
                       <p className="text-amber-700 text-lg md:text-xl">
-                        Almost there — a {result.breakevenLift.toFixed(1)}% lift would cover your monthly investment.
+                        Almost there - a {result.breakevenLift.toFixed(1)}% lift would cover your monthly investment.
                       </p>
                     )}
                   </div>
