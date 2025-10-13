@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Image from 'next/image'
 
 interface Testimonial {
@@ -39,11 +39,11 @@ const testimonials: Testimonial[] = [
   },
   {
     id: '4',
-    quote: 'Our most successful Facebook campaign ever.',
-    name: 'Duncan Bradley',
+    quote: 'Huge bankable wins.',
+    name: 'David Darmanin',
     title: '',
-    company: 'Wattbike',
-    imageSrc: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/wattbike_logo_rectangle.png',
+    company: 'Hotjar',
+    imageSrc: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/hotjar_logo_square.png',
   },
   {
     id: '5',
@@ -79,11 +79,11 @@ const testimonials: Testimonial[] = [
   },
   {
     id: '9',
-    quote: 'Huge bankable wins.',
-    name: 'David Darmanin',
+    quote: 'Our most successful Facebook campaign ever.',
+    name: 'Duncan Bradley',
     title: '',
-    company: 'Hotjar',
-    imageSrc: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/hotjar_logo_square.png',
+    company: 'Wattbike',
+    imageSrc: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/wattbike_logo_rectangle.png',
   },
   {
     id: '10',
@@ -105,6 +105,7 @@ const testimonials: Testimonial[] = [
 
 export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [isPaused, setIsPaused] = useState(false)
   const scrollContainerRef = useRef<HTMLDivElement>(null)
   const sectionRef = useRef<HTMLDivElement>(null)
 
@@ -119,6 +120,17 @@ export default function Testimonials() {
     setCurrentIndex(newIndex)
     scrollToIndex(newIndex)
   }
+
+  // Auto-scroll effect
+  useEffect(() => {
+    if (isPaused) return
+
+    const interval = setInterval(() => {
+      handleNext()
+    }, 5000) // Auto-scroll every 5 seconds
+
+    return () => clearInterval(interval)
+  }, [currentIndex, isPaused])
 
   const scrollToIndex = (index: number) => {
     if (scrollContainerRef.current) {
@@ -146,6 +158,8 @@ export default function Testimonials() {
             scrollbarWidth: 'none', 
             msOverflowStyle: 'none',
           }}
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
         >
           {testimonials.map((testimonial) => (
             <div

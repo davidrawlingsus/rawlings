@@ -33,7 +33,7 @@ export default function CTASection() {
                 Want to put our system to work on your business?
               </h2>
               <p className="text-lg md:text-xl text-neutral-300">
-                Get the whole thing paid for with one free test — take the Landing Page Challenge.
+                Get the whole thing paid for with one free test - take the Landing Page Challenge.
               </p>
               {/* Button on desktop */}
               <Link 

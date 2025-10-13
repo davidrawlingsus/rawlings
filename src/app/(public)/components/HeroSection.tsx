@@ -81,7 +81,7 @@ export default function HeroSection() {
                 >
                   Take the Landing Page Challenge
                 </a>
-                <p className="text-sm text-neutral-600 underline">Get +20% CvR, or pay nothing</p>
+                <a href="/challenge" className="text-sm text-neutral-600 underline hover:text-neutral-900 transition-colors">Get +20% CvR, or pay nothing</a>
               </div>
             </motion.div>
           </motion.div>

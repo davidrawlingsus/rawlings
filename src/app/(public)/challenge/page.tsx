@@ -76,7 +76,7 @@ export default function ChallengePage() {
                 }
               }}
             >
-              The first winning test is free. Our goal is to immediately make you more monthly revenue than our monthly fee, so you&apos;re in positive ROI from day 1.
+              You don&apos;t pay us from your pocket - you pay us from the revenue we generate. Your first winning test is free and covers our monthly fee going forward.
             </motion.p>
             
             <motion.div 
@@ -91,16 +91,16 @@ export default function ChallengePage() {
               }}
             >
               <a 
-                href="#calculator"
+                href="#contact"
                 className="inline-flex items-center justify-center h-12 px-8 rounded-full font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors"
               >
-                See the maths
+                Take the Landing Page Challenge
               </a>
               <a 
-                href="#contact"
+                href="#calculator"
                 className="inline-flex items-center justify-center h-12 px-8 rounded-full font-semibold border-2 border-neutral-300 text-neutral-700 hover:border-neutral-400 hover:text-neutral-900 transition-colors"
               >
-                Take the Landing Page Challenge
+                See the maths
               </a>
             </motion.div>
             

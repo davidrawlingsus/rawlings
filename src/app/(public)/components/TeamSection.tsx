@@ -8,7 +8,7 @@ export default function TeamSection() {
       image: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/team/david-rawlings.jpg',
     },
     {
-      name: 'Francois Du Toit',
+      name: 'Francois De Villiers',
       role: 'CTO',
       image: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/team/francois-du-toit.jpeg',
     },

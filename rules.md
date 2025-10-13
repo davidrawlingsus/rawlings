@@ -1,4 +1,4 @@
-# **rules.md — One-Pager Build Rules**
+# **rules.md - One-Pager Build Rules**
 
 > **Purpose:** Keep Cursor consistent while we build the public one-page brand site.
 > Back-end, auth, and database rules will be added later when the client area comes online.
@@ -11,7 +11,7 @@
 * **Styling:** Tailwind CSS + shadcn/ui (Radix components)
 * **Animations:** Framer Motion (respect `prefers-reduced-motion`)
 * **Images:** `next/image` for all visuals (including screenshots)
-* **Content:** Static / hardcoded in components or MDX — no CMS yet
+* **Content:** Static / hardcoded in components or MDX - no CMS yet
 * **Database:** PostgreSQL (Railway) + Prisma ORM
 * **Deployment:** Railway (static + SSR build)
 * **Analytics:** Plausible (optional but preferred)
@@ -44,7 +44,7 @@ No other libraries or frameworks unless explicitly justified in comments.
 
 ## **3. Development Principles**
 
-* Build **div-by-div** — each section isolated as a self-contained React component.
+* Build **div-by-div** - each section isolated as a self-contained React component.
 * Prioritise **clarity and reuse** over clever abstractions.
 * Use **server components** by default; add `"use client"` only when needed.
 * Keep total JS bundle < 180 KB gz (excluding Next runtime).
