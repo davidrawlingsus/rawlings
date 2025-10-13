@@ -20,7 +20,7 @@ export default function Header() {
             <span className="text-white">market</span>
             <span className="text-[#B9F040]">ably</span>
           </Link>
-          <span className="text-xs text-[#B9F040] tracking-wide mt-1">Feedback-Fueled Conversion</span>
+          <span className="text-xs text-[#B9F040] tracking-wide mt-1">Feedback-Fueled Marketing</span>
         </div>
 
         {/* Desktop Navigation */}
