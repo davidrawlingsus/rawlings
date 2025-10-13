@@ -118,10 +118,10 @@ export default function StrategyCallModal({ isOpen, onClose }: StrategyCallModal
             </div>
             <h2 className="text-4xl font-bold mb-4 text-black">Thank You!</h2>
             <p className="text-lg text-neutral-700 mb-6 max-w-xl mx-auto">
-              We've received your booking request and will reach out shortly to confirm your strategy call.
+              We&apos;ve received your booking request and will reach out shortly to confirm your strategy call.
             </p>
             <p className="text-neutral-600 mb-8">
-              You'll receive a confirmation email at <span className="text-[#B9F040] font-semibold">{formData.email}</span>
+              You&apos;ll receive a confirmation email at <span className="text-[#B9F040] font-semibold">{formData.email}</span>
             </p>
             <Button
               onClick={handleClose}
@@ -286,7 +286,7 @@ export default function StrategyCallModal({ isOpen, onClose }: StrategyCallModal
                   </div>
                 </div>
                 <p className="text-neutral-600 text-sm mt-2">
-                  * Times are in your local timezone. We'll confirm availability and send a calendar invite.
+                  * Times are in your local timezone. We&apos;ll confirm availability and send a calendar invite.
                 </p>
               </div>
 
