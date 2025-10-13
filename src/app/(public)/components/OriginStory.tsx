@@ -1,6 +1,6 @@
 export default function OriginStory() {
   return (
-    <section className="relative py-32 overflow-hidden bg-white">
+    <section className="relative pt-16 pb-32 overflow-hidden bg-white">
       {/* Lime Wave Chart Background Image */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
