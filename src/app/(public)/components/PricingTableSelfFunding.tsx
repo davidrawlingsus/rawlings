@@ -97,7 +97,7 @@ export default function PricingTableSelfFunding() {
 
           {/* Footnote - spans across the tier cards on desktop */}
           <div className="md:col-span-4 md:col-start-2 flex items-end">
-            <p className="text-xs text-neutral-500">
+            <p className="text-xs font-semibold bg-[#b9f040] text-black px-3 py-2 rounded">
               Fees scale with testing capacity because more traffic enables faster experiments, deeper research, and quicker compounding.
               Optional success bonus: +10% of incremental profit if a single test exceeds +35% lift (cap $15k).
             </p>
@@ -139,7 +139,7 @@ function TierCard({
             </span>
           )}
         </div>
-        <p className="text-xs text-neutral-500 mt-1">{traffic}</p>
+        <p className="text-xs font-semibold bg-[#b9f040] text-black px-2 py-1 rounded mt-1 inline-block">{traffic}</p>
         <div className="mt-2 text-xl font-bold text-neutral-900">{price}</div>
         <div className="mt-1 text-xs text-neutral-600">
           Tests per month: <strong>{testsPerMonth}</strong>
