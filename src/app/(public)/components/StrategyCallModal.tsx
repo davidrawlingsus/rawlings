@@ -235,10 +235,10 @@ export default function StrategyCallModal({ isOpen, onClose }: StrategyCallModal
                 </label>
                 <input
                   id="websiteUrl"
-                  type="url"
+                  type="text"
                   value={formData.websiteUrl}
                   onChange={(e) => setFormData({ ...formData, websiteUrl: e.target.value })}
-                  placeholder="https://example.com"
+                  placeholder="example.com"
                   className="w-full px-4 py-3 text-base bg-white border-2 border-neutral-300 rounded-lg text-black placeholder:text-neutral-400 focus:border-[#B9F040] focus:outline-none transition-colors"
                 />
               </div>
