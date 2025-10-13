@@ -6,6 +6,7 @@ import Process from './components/Process'
 import Testimonials from './components/Testimonials'
 import OriginStory from './components/OriginStory'
 import TeamSection from './components/TeamSection'
+import CTASection from './components/CTASection'
 import Footer from './components/Footer'
 
 export default function HomePage() {
@@ -19,6 +20,7 @@ export default function HomePage() {
       <Process />
       <OriginStory />
       <TeamSection />
+      <CTASection />
       <Footer />
     </main>
   )
