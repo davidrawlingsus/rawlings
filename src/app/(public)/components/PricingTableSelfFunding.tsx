@@ -6,7 +6,7 @@ export default function PricingTableSelfFunding() {
   return (
     <section className="px-6 md:px-8 py-16 md:py-24" id="pricing">
       <div className="mx-auto max-w-screen-xl">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center">Make growth self-funding</h2>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center">Who else wants self-funded feedback fuel?</h2>
         <p className="mt-2 text-neutral-700 text-center">
           Start with a free, guaranteed win - then choose the tier that matches your testing capacity.
         </p>

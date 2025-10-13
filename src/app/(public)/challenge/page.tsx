@@ -395,6 +395,13 @@ export default function ChallengePage() {
       {/* Pricing Section */}
       <PricingTableSelfFunding />
 
+      {/* Logo Slider */}
+      <LogoSlider 
+        logos={featuredLogos}
+        title=""
+        speedMs={25000}
+      />
+
       {/* FAQ Section */}
       <section className="px-6 md:px-8 py-16 md:py-24 bg-black">
         <div className="mx-auto max-w-4xl">
@@ -476,13 +483,6 @@ export default function ChallengePage() {
         step0Description=""
         showStep0Title={false}
         websiteUrlLabel="Landing Page URL"
-      />
-
-      {/* Logo Slider */}
-      <LogoSlider 
-        logos={featuredLogos}
-        title="Brands we've made more profitable"
-        speedMs={25000}
       />
 
       <Footer />
