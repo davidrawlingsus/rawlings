@@ -101,7 +101,7 @@ export default function Header() {
           <div className="flex items-center space-x-8">
             {NAV_ITEMS.map((item) => {
               const isActive = isNavItemActive(item)
-              const href = item.path || getNavLink(item.hash)
+              const href = 'path' in item ? item.path : getNavLink(item.hash)
               
               return (
                 <Link
@@ -155,7 +155,7 @@ export default function Header() {
           <div className="flex flex-col space-y-4">
             {NAV_ITEMS.map((item) => {
               const isActive = isNavItemActive(item)
-              const href = item.path || getNavLink(item.hash)
+              const href = 'path' in item ? item.path : getNavLink(item.hash)
               
               return (
                 <Link

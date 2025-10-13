@@ -138,7 +138,7 @@ export default function StrategyCallModal({ isOpen, onClose }: StrategyCallModal
                 Book Your Free Strategy Call
               </h2>
               <p className="text-lg text-neutral-700 max-w-2xl mx-auto">
-                Learn how Marketably's feedback driven system can grow your profitability.
+                Learn how Marketably&apos;s feedback driven system can grow your profitability.
               </p>
             </div>
 
