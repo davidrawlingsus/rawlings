@@ -73,7 +73,7 @@ export default function SelfFundingCalculator() {
 
   return (
     <section 
-      className="px-6 md:px-8 py-16 md:py-24 bg-black" 
+      className="px-6 md:px-8 py-16 md:py-24 bg-black scroll-mt-20" 
       id="calculator"
     >
       <div className="mx-auto max-w-screen-xl">

@@ -25,7 +25,7 @@ export default function TeamSection() {
   ]
 
   return (
-    <section className="bg-black text-white py-24 px-6">
+    <section id="people" className="bg-black text-white py-24 px-6 scroll-mt-20">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-16">

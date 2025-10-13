@@ -137,7 +137,7 @@ export default function ContactForm({
   }
 
   return (
-    <div id="contact" className="py-12 md:py-16 bg-black">
+    <div id="contact" className="py-12 md:py-16 bg-black scroll-mt-20">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           {/* Headline */}

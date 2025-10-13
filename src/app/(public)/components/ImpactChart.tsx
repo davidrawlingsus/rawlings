@@ -78,7 +78,7 @@ export default function ImpactChart() {
   }, [])
 
   return (
-    <section id="impact" className="bg-black py-16 md:py-24 lg:py-32">
+    <section id="impact" className="bg-black py-16 md:py-24 lg:py-32 scroll-mt-20">
       <div className="max-w-[1280px] mx-auto px-6 md:px-8">
         {/* Full-width headline section */}
         <motion.div

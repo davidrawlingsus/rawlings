@@ -478,7 +478,7 @@ export default function ChallengePage() {
 
       {/* Contact Form */}
       <ContactForm 
-        headline="Tell us about your control" 
+        headline="Tell us which control to beat" 
         step0Title="Your landing page URL"
         step0Description=""
         showStep0Title={false}

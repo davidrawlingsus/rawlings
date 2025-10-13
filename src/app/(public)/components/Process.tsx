@@ -139,7 +139,7 @@ export default function Process() {
   const reduce = useReducedMotion();
 
   return (
-    <section id="process" aria-labelledby="process-title" className="bg-white">
+    <section id="process" aria-labelledby="process-title" className="bg-white scroll-mt-20">
       <div className="mx-auto max-w-[1280px] px-6 md:px-8 pt-8 pb-16 md:pt-16 md:pb-24">
         {/* Header */}
         <div className="mb-10 text-center">

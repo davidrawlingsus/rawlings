@@ -1,10 +1,13 @@
 'use client'
 
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import TypingHeadline from './TypingHeadline'
+import StrategyCallModal from './StrategyCallModal'
 
 export default function HeroSection() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
   return (
     <section id="hero" className="relative pt-6 pb-8 md:pt-16 md:pb-0 overflow-visible">
       <div className="max-w-[1280px] mx-auto px-6 md:px-8">
@@ -63,13 +66,13 @@ export default function HeroSection() {
                 }
               }}
             >
-              <a 
-                href="#contact"
+              <button 
+                onClick={() => setIsModalOpen(true)}
                 className="w-full sm:w-auto h-12 px-6 rounded-full font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors whitespace-nowrap flex items-center justify-center"
                 aria-label="Book a strategy call"
               >
                 Book a strategy call
-              </a>
+              </button>
               <div className="w-full sm:w-auto flex flex-col items-center gap-2">
                 <a 
                   href="/challenge"
@@ -110,6 +113,9 @@ export default function HeroSection() {
           </motion.div>
         </div>
       </div>
+
+      {/* Strategy Call Modal */}
+      <StrategyCallModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   )
 }

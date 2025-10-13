@@ -1,6 +1,6 @@
 export default function OriginStory() {
   return (
-    <section className="relative pt-16 pb-32 overflow-hidden bg-white">
+    <section id="backstory" className="relative pt-16 pb-32 overflow-hidden bg-white scroll-mt-20">
       {/* Lime Wave Chart Background Image */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
