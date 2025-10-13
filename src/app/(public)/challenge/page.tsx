@@ -8,6 +8,26 @@ import SelfFundingCalculator from '../components/SelfFundingCalculator'
 import PricingTableSelfFunding from '../components/PricingTableSelfFunding'
 import ContactForm from '../components/ContactForm'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import LogoSlider from '../components/LogoSlider'
+
+// Featured client logos for the slider
+const featuredLogos = [
+  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/lloyds_bank_logo_square.png', alt: 'Lloyds Bank' },
+  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/Bupa_logo_square.png', alt: 'Bupa' },
+  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/conde_nast_logo_square.png', alt: 'Condé Nast' },
+  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/durex_logo_square.png', alt: 'Durex' },
+  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/o2_logo_square.png', alt: 'O2' },
+  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/barbour_logo_rectangle.png', alt: 'Barbour' },
+  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/best_western_square.png', alt: 'Best Western' },
+  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/choice_hotels_logo_square.png', alt: 'Choice Hotels' },
+  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/hotjar_logo_square.png', alt: 'Hotjar' },
+  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/crazy_egg_logo_square.png', alt: 'Crazy Egg' },
+  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/mindful_chef_logo_square.png', alt: 'Mindful Chef' },
+  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/elvie_logo_square.png', alt: 'Elvie' },
+  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/monica_vinader_logo_square.png', alt: 'Monica Vinader' },
+  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/mous_logo_square.png', alt: 'Mous' },
+  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/sally_beauty_logo_square.png', alt: 'Sally Beauty' },
+];
 
 export default function ChallengePage() {
   return (
@@ -126,16 +146,16 @@ export default function ChallengePage() {
       {/* Program Section */}
       <section className="px-6 md:px-8 py-16 md:py-24 border-b border-neutral-200">
         <div className="mx-auto max-w-screen-xl">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-4">
             The first win funds the program. Then it&apos;s pure upside.
           </h2>
-          <p className="text-lg text-neutral-700 mb-8 max-w-3xl">
+          <p className="text-lg text-neutral-700 mb-8 max-w-3xl mx-auto text-center">
             Our proven four-step approach starts with a fully-refundable deposit, delivers a free winning test 
             that pays for everything, then builds a compounding growth engine that makes your business unstoppable.
           </p>
           
           {/* Mobile - Stacked */}
-          <div className="md:hidden space-y-4 mb-8">
+          <div className="md:hidden mb-8">
             <Card className="border-2">
               <CardHeader>
                 <CardTitle className="text-xl">1. Pay a one-off, fully-refundable deposit</CardTitle>
@@ -150,6 +170,20 @@ export default function ChallengePage() {
                 </p>
               </CardContent>
             </Card>
+
+            {/* Arrow down */}
+            <div className="flex justify-center py-1">
+              <svg aria-hidden="true" viewBox="0 0 32 60" className="w-8 h-12 text-[#B9F040]">
+                <path 
+                  d="M16 2 Q14 30 16 56 M8 48 Q12 52 16 56 Q20 52 24 48" 
+                  stroke="currentColor" 
+                  strokeWidth="3.5" 
+                  fill="none" 
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
 
             <Card className="border-2">
               <CardHeader>
@@ -171,6 +205,20 @@ export default function ChallengePage() {
               </CardContent>
             </Card>
 
+            {/* Arrow down */}
+            <div className="flex justify-center py-1">
+              <svg aria-hidden="true" viewBox="0 0 32 60" className="w-8 h-12 text-[#B9F040]">
+                <path 
+                  d="M16 2 Q14 30 16 56 M8 48 Q12 52 16 56 Q20 52 24 48" 
+                  stroke="currentColor" 
+                  strokeWidth="3.5" 
+                  fill="none" 
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
+
             <Card className="border-2">
               <CardHeader>
                 <CardTitle className="text-xl">3. Full-Funnel Testing</CardTitle>
@@ -189,6 +237,20 @@ export default function ChallengePage() {
                 </p>
               </CardContent>
             </Card>
+
+            {/* Arrow down */}
+            <div className="flex justify-center py-1">
+              <svg aria-hidden="true" viewBox="0 0 32 60" className="w-8 h-12 text-[#B9F040]">
+                <path 
+                  d="M16 2 Q14 30 16 56 M8 48 Q12 52 16 56 Q20 52 24 48" 
+                  stroke="currentColor" 
+                  strokeWidth="3.5" 
+                  fill="none" 
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
 
             <Card className="border-2">
               <CardHeader>
@@ -336,7 +398,7 @@ export default function ChallengePage() {
       {/* FAQ Section */}
       <section className="px-6 md:px-8 py-16 md:py-24 bg-black">
         <div className="mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-white">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white text-center mb-12">
             Frequently asked questions
           </h2>
           
@@ -414,6 +476,13 @@ export default function ChallengePage() {
         step0Description=""
         showStep0Title={false}
         websiteUrlLabel="Landing Page URL"
+      />
+
+      {/* Logo Slider */}
+      <LogoSlider 
+        logos={featuredLogos}
+        title="Brands we've made more profitable"
+        speedMs={25000}
       />
 
       <Footer />
