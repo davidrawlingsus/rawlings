@@ -3,12 +3,19 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { Menu } from 'lucide-react'
+import StrategyCallModal from './StrategyCallModal'
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen)
+  }
+
+  const openStrategyCallModal = () => {
+    setIsModalOpen(true)
+    setIsMobileMenuOpen(false) // Close mobile menu if open
   }
 
   return (
@@ -49,9 +56,12 @@ export default function Header() {
             <a href="/challenge" className="border-2 border-white text-white px-6 py-2 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors">
               LANDING PAGE CHALLENGE
             </a>
-            <a href="#contact" className="bg-[#B9F040] text-black px-6 py-2 rounded-lg font-semibold text-sm uppercase hover:bg-[#a0d636] transition-colors">
+            <button 
+              onClick={openStrategyCallModal}
+              className="bg-[#B9F040] text-black px-6 py-2 rounded-lg font-semibold text-sm uppercase hover:bg-[#a0d636] transition-colors"
+            >
               BOOK A STRATEGY CALL
-            </a>
+            </button>
           </div>
         </div>
 
@@ -92,13 +102,19 @@ export default function Header() {
               <a href="/challenge" className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors block text-center">
                 LANDING PAGE CHALLENGE
               </a>
-              <a href="#contact" className="bg-[#B9F040] text-black px-6 py-3 rounded-lg font-semibold text-sm uppercase hover:bg-[#a0d636] transition-colors block text-center">
+              <button 
+                onClick={openStrategyCallModal}
+                className="bg-[#B9F040] text-black px-6 py-3 rounded-lg font-semibold text-sm uppercase hover:bg-[#a0d636] transition-colors block text-center w-full"
+              >
                 BOOK A STRATEGY CALL
-              </a>
+              </button>
             </div>
           </div>
         </div>
       )}
+
+      {/* Strategy Call Modal */}
+      <StrategyCallModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </nav>
   )
 }
