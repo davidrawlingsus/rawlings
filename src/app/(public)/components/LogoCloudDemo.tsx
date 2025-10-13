@@ -79,10 +79,6 @@ export default function LogoCloudDemo() {
               <span className="font-bold text-[#1A2B3C]">
                 Conversion follows laws, not luck.
                 <br />
-                The principles never change...
-                <br />
-                But the variables <span className="underline">do</span>.
-                <br />
                 <br />
                 <span 
                   className="relative inline px-1"

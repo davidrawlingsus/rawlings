@@ -43,7 +43,7 @@ export default function OriginStory() {
               
               <p className="text-lg text-black/80 leading-relaxed mb-6">
                 Now I fuse that human persuasion framework with AI - a system so reliable it doesn&apos;t just fix websites, 
-                it unlocks entire channels: Facebook, PPC, display, even native - with every engagement funded by our free test.
+                it unlocks entire channels: Facebook, PPC, display, even native - with every engagement funded by our <a href="/challenge" className="underline hover:text-black/60 transition-colors">first free test</a>.
               </p>
               
               <p className="text-lg text-black/90 font-semibold mb-8">

@@ -56,15 +56,28 @@ export default function SelfFundingCalculator() {
       id="calculator"
     >
       <div className="mx-auto max-w-screen-xl">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white">
-          Could your first win pay for everything?
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white text-center">
+          Could your first win pay for everything, like it did for Prep Kitchen?
         </h2>
-        <p className="mt-4 text-lg md:text-xl text-neutral-300">
-          We guarantee a 20% lift with our first winning test. If you have a landing page that qualifies, this will make you ROI positive 
-          on our entire program, without risking a penny.
-        </p>
         
-        <div className="mt-8 grid lg:grid-cols-2 gap-8">
+        <div className="mt-8 space-y-8 max-w-4xl mx-auto">
+          {/* Testimonial Video */}
+          <div>
+            <div className="rounded-lg overflow-hidden shadow-lg bg-white border-2 border-neutral-200">
+              <iframe
+                src="https://player.mux.com/IJtQaVuEd2CuYuBPpxLwQINIF68RFxtCRRE02drZplv8?metadata-video-title=Wild+Overpromise&video-title=Wild+Overpromise&accent-color=%23b9f040&autoplay=true&muted=true"
+                style={{ width: '100%', border: 'none', aspectRatio: '16/9' }}
+                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+                allowFullScreen
+                title="Client Testimonial - Wild Overpromise"
+              />
+            </div>
+            <p className="mt-4 text-base md:text-lg text-neutral-300 text-center">
+              We guarantee a 20% lift with our first winning test. If you have a landing page that qualifies, this will make you ROI positive 
+              on our entire program, without risking a penny.
+            </p>
+          </div>
+
           {/* Calculator Card */}
           <Card className="shadow-lg">
             <CardHeader>
@@ -190,27 +203,6 @@ export default function SelfFundingCalculator() {
                   <Button className="w-full h-12 text-base md:text-lg bg-[#B9F040] text-black hover:bg-[#a0d636]" asChild>
                     <a href="#contact">Get Your Free Win</a>
                   </Button>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Testimonial Card */}
-          <Card className="shadow-lg bg-white border-2 border-neutral-200">
-            <CardContent className="p-8 flex flex-col justify-center h-full">
-              <div className="space-y-4">
-                <div className="text-5xl text-neutral-300">&ldquo;</div>
-                <blockquote className="text-lg text-neutral-800 leading-relaxed -mt-6">
-                  I thought it was a wild over-promise, but then we ran the first test and saw a 23% lift 
-                  in qualified leads. The program literally paid for itself in the first month.
-                </blockquote>
-                <div className="pt-4 border-t border-neutral-200">
-                  <p className="font-semibold text-neutral-900">
-                    [Client Name]
-                  </p>
-                  <p className="text-sm text-neutral-600">
-                    [Title], [Company]
-                  </p>
                 </div>
               </div>
             </CardContent>
