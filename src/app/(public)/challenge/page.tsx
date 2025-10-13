@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import SelfFundingCalculator from '../components/SelfFundingCalculator'
@@ -16,20 +17,20 @@ export default function ChallengePage() {
       {/* Hero Section */}
       <section className="px-6 md:px-8 py-16 md:py-24 border-b border-neutral-200">
         <div className="mx-auto max-w-screen-xl">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ amount: 0.3, once: true }}
-            variants={{
-              hidden: {},
-              visible: {
-                transition: {
-                  staggerChildren: 0.1
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.3, once: true }}
+              variants={{
+                hidden: {},
+                visible: {
+                  transition: {
+                    staggerChildren: 0.1
+                  }
                 }
-              }
-            }}
-            className="max-w-4xl"
-          >
+              }}
+            >
             <motion.h1 
               className="text-4xl md:text-6xl font-semibold tracking-tight"
               variants={{
@@ -97,6 +98,25 @@ export default function ChallengePage() {
               <strong>Largest single-test lift to date:</strong> +116% conversion.
             </motion.p>
           </motion.div>
+
+          {/* Graphic - Desktop Only */}
+          <motion.div
+            className="hidden lg:flex lg:justify-center lg:items-center"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ amount: 0.3, once: true }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            <Image
+              src="https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/graphics/program-paid-for.png"
+              alt="MRR + $17K/m Program Paid For!"
+              width={400}
+              height={400}
+              className="w-auto h-auto max-w-md"
+              priority
+            />
+          </motion.div>
+        </div>
         </div>
       </section>
 

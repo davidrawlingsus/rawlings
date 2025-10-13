@@ -8,14 +8,14 @@ export default function Footer() {
           {/* Company Name */}
           <div className="text-white">
             <span className="font-bold text-xl">
-              david<span className="text-[#B9F040]">rawlings</span>
+              Market<span className="text-[#B9F040]">ably</span>
             </span>
           </div>
 
           {/* Legal Info */}
           <div className="text-neutral-400 text-sm space-y-2">
             <p>
-              David Rawlings DBA The Rawlings Marketing Intel Co Limited
+              The Rawlings Marketing Intel Co Limited DBA Marketably
             </p>
             <p>
               A company registered in the Republic of Ireland

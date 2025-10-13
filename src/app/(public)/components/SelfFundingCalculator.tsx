@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Slider } from "@/components/ui/slider";
 import { Button } from "@/components/ui/button";
@@ -12,6 +12,27 @@ export default function SelfFundingCalculator() {
   const [margin, setMargin] = useState(60);
   const [fee] = useState(7500);
   const [lift, setLift] = useState(10);
+  const [videoShouldPlay, setVideoShouldPlay] = useState(false);
+  const videoRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !videoShouldPlay) {
+            setVideoShouldPlay(true);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [videoShouldPlay]);
 
   const result = useMemo(() => {
     const baselineRev = visitors * (cv / 100) * aov;
@@ -62,10 +83,10 @@ export default function SelfFundingCalculator() {
         
         <div className="mt-8 space-y-8 max-w-4xl mx-auto">
           {/* Testimonial Video */}
-          <div>
+          <div ref={videoRef}>
             <div className="rounded-lg overflow-hidden shadow-lg bg-white border-2 border-neutral-200">
               <iframe
-                src="https://player.mux.com/IJtQaVuEd2CuYuBPpxLwQINIF68RFxtCRRE02drZplv8?metadata-video-title=Wild+Overpromise&video-title=Wild+Overpromise&accent-color=%23b9f040&autoplay=true&muted=true"
+                src={`https://player.mux.com/IJtQaVuEd2CuYuBPpxLwQINIF68RFxtCRRE02drZplv8?metadata-video-title=Wild+Overpromise&video-title=Wild+Overpromise&accent-color=%23b9f040${videoShouldPlay ? '&autoplay=true' : ''}&muted=true`}
                 style={{ width: '100%', border: 'none', aspectRatio: '16/9' }}
                 allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
                 allowFullScreen

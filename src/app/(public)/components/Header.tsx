@@ -15,11 +15,12 @@ export default function Header() {
     <nav className="bg-black px-4 lg:px-8 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center">
+        <div className="flex flex-col">
           <Link href="/" className="font-bold text-3xl font-[family-name:var(--font-lato)] hover:opacity-80 transition-opacity">
             <span className="text-white">market</span>
             <span className="text-[#B9F040]">ably</span>
           </Link>
+          <span className="text-xs text-[#B9F040] tracking-wide mt-1">Feedback-Fueled Conversion</span>
         </div>
 
         {/* Desktop Navigation */}

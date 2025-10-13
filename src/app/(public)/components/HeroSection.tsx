@@ -98,7 +98,7 @@ export default function HeroSection() {
             <div className="relative -mt-10 sm:mt-0 overflow-visible">
               <div className="relative z-10 object-contain md:max-w-[462px] w-[70vw] translate-y-6 sm:translate-y-0 md:translate-y-8">
                 <Image
-                  src="/images/hero-v2.webp"
+                  src="https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/replacement%20hero%20girl%20v3.png"
                   alt="Smiling person representing friendly, modern analytics brand"
                   width={462}
                   height={550}

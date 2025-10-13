@@ -5,22 +5,22 @@ export default function TeamSection() {
     {
       name: 'David Rawlings',
       role: 'Founder and Chief Optimizer',
-      image: '/images/team/david-rawlings.jpg',
+      image: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/team/david-rawlings.jpg',
     },
     {
       name: 'Francois Du Toit',
       role: 'CTO',
-      image: '/images/team/francois-du-toit.jpg',
+      image: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/team/francois-du-toit.jpeg',
     },
     {
       name: 'Attila Szucs',
       role: 'Head of Analytics',
-      image: '/images/team/attila-szucs.jpg',
+      image: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/team/attila-szucs.jpeg',
     },
     {
       name: 'Sarah Chen',
       role: 'Head of Paid Media',
-      image: '/images/team/sarah-chen.jpg',
+      image: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/team/sarah-chen.png',
     },
   ]
 
@@ -31,7 +31,7 @@ export default function TeamSection() {
         <div className="mb-16">
           <h2 className="text-5xl md:text-6xl font-bold mb-6">Who we are</h2>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl">
-            We are a curated team of international experts united by a single goal: to create category-defining brands and digital experiences that make an impact, shape culture and connect people.
+            We are a team of conversion scientists who turn customer feedback into guaranteed revenue lifts. Our AI-powered testing framework delivers measurable results - with every engagement funded by a <a href="/challenge" className="text-[#B9F040] underline hover:text-[#a0d636] transition-colors">free winning test</a>.
           </p>
         </div>
 

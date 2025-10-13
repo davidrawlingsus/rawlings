@@ -26,14 +26,14 @@ export default function OriginStory() {
               </p>
               
               <p className="text-lg text-black/80 leading-relaxed mb-6">
-                I was an ex-soldier with a new wife, a newborn, and a car I couldn&apos;t afford to fill with gas. 
-                One unlikely success in digital marketing became my lifeline - and my ticket into the world&apos;s top CRO agency.
+                An ex-soldier with a new wife, a newborn, and a car I couldn&apos;t afford to fill with gas. That was me, 
+                until an unlikely marketing success became my lifeline - and my ticket into the world&apos;s top CRO agency.
               </p>
               
               <p className="text-lg text-black/80 leading-relaxed mb-6">
-                At Conversion Rate Experts, I rose fast - eventually their #1 consultant - but behind the wins was chaos. 
+                At Conversion Rate Experts, I rose miraculously fast - eventually becoming their #1 client keeper - but behind the wins was chaos. 
                 Endless analytics. Open-text data. No clear formula for what to say, where, or why. Until I found it: 
-                a value equation used by Disney, Ralph Lauren, and Bank of America to decode perceived value itself.
+                a value equation used by Google, Disney, and Bank of America to decode perceived value itself.
               </p>
               
               <p className="text-lg text-black/80 leading-relaxed mb-6">

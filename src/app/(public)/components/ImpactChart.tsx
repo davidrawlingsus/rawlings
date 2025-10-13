@@ -3,6 +3,7 @@
 import { motion, Variants } from 'framer-motion'
 import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
+import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
 
 const variants: { fadeUp: Variants } = {
   fadeUp: {
@@ -50,6 +51,7 @@ const barData = [
 export default function ImpactChart() {
   const svgRef = useRef<SVGSVGElement>(null)
   const [isVisible, setIsVisible] = useState(false)
+  const [videoOpen, setVideoOpen] = useState(false)
 
   useEffect(() => {
     const svg = svgRef.current
@@ -86,7 +88,7 @@ export default function ImpactChart() {
           viewport={{ amount: 0.3, once: true }}
           variants={variants.fadeUp}
         >
-          <p className="text-sm uppercase tracking-widest text-neutral-300 mb-4">Why put customers in charge of strategy?</p>
+          <p className="text-sm uppercase tracking-widest text-neutral-300 mb-4">What happens when customers drive your marketing AI?</p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
             The <span className="text-[#B9F040] relative after:absolute after:inset-0 after:blur-xl after:bg-lime-200/50 after:-z-10" aria-label="results with glow effect">results</span> speak for themselves...
           </h2>
@@ -107,15 +109,36 @@ export default function ImpactChart() {
               <p className="text-base text-neutral-300 mt-4">&quot;It&apos;s hard to think of an investment with a better or faster ROI&quot;</p>
 
               <div className="flex items-center gap-4 mt-6">
-                <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
-                  <Image
-                    src="https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/mark_morley_avatar.jpeg"
-                    alt="Mark Morley"
-                    width={48}
-                    height={48}
-                    className="object-cover w-full h-full"
-                  />
-                </div>
+                <Dialog open={videoOpen} onOpenChange={setVideoOpen}>
+                  <DialogTrigger asChild>
+                    <div className="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 cursor-pointer group relative border-2 border-[#B9F040]/30 group-hover:border-[#B9F040] transition-colors">
+                      <Image
+                        src="https://image.mux.com/IJtQaVuEd2CuYuBPpxLwQINIF68RFxtCRRE02drZplv8/animated.gif?width=200&start=0&end=3&fps=12"
+                        alt="Mark Morley video review"
+                        width={80}
+                        height={80}
+                        className="object-cover w-full h-full"
+                        unoptimized
+                      />
+                      <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+                        <svg className="w-8 h-8 text-white opacity-90" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-4xl p-0 bg-black border-0">
+                    <div className="aspect-video w-full">
+                      <iframe
+                        src={`https://player.mux.com/IJtQaVuEd2CuYuBPpxLwQINIF68RFxtCRRE02drZplv8?metadata-video-title=Mark+Morley+Review&accent-color=%23b9f040${videoOpen ? '&autoplay=true' : ''}`}
+                        className="w-full h-full"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowFullScreen
+                        style={{ border: 0 }}
+                      />
+                    </div>
+                  </DialogContent>
+                </Dialog>
                 <div>
                   <p className="font-semibold text-white">Mark Morley</p>
                   <p className="text-sm text-neutral-300">
