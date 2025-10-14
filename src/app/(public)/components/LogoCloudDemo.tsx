@@ -88,7 +88,7 @@ export default function LogoCloudDemo() {
                     WebkitBoxDecorationBreak: 'clone'
                   }}
                 >
-                  And your customer data reveals them.
+                  And your customer feedback unlocks it all.
                 </span>
               </span>
             </p>

@@ -19,7 +19,66 @@ export default function OriginStory() {
             <div className="w-24 h-1 bg-[#B9F040] mx-auto mb-8"></div>
           </div>
           
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-xl border border-[#B9F040]/20">
+          {/* Journey Timeline Container */}
+          <div className="relative md:px-24">
+            {/* Hand-drawn squiggly dotted line - behind everything */}
+            <svg 
+              className="absolute pointer-events-none z-10 hidden md:block" 
+              style={{ 
+                left: '-100px', 
+                top: '0', 
+                width: 'calc(100% + 200px)', 
+                height: '100%',
+                minHeight: '100%'
+              }}
+              viewBox="0 0 1000 1000"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M 80 80 L 80 200 Q 80 250, 130 280 Q 300 350, 500 380 Q 700 410, 870 380 Q 920 370, 920 420 L 920 500 Q 920 540, 850 580 Q 700 650, 500 690 Q 300 730, 150 680 Q 80 650, 80 700"
+                stroke="#000000"
+                strokeWidth="4"
+                strokeDasharray="10,15"
+                fill="none"
+                strokeLinecap="round"
+              />
+            </svg>
+
+            {/* Image 1: Army days - top left */}
+            <div className="absolute -left-20 top-10 z-30 hidden md:block">
+              <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                <img 
+                  src="https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/journey/army-me.png" 
+                  alt="David in the army"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Image 2: CRO days - middle right */}
+            <div className="absolute -right-20 top-1/3 z-30 hidden md:block">
+              <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                <img 
+                  src="https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/journey/me-at-cre.png" 
+                  alt="David at Conversion Rate Experts"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Image 3: Now - bottom left */}
+            <div className="absolute -left-20 bottom-32 z-30 hidden md:block">
+              <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                <img 
+                  src="https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/journey/marketably-me.png" 
+                  alt="David Rawlings today"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Main content box */}
+            <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-xl border border-[#B9F040]/20 relative z-20">
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-black/90 leading-relaxed mb-6">
                 If you&apos;d told me I&apos;d end up here, I wouldn&apos;t have believed you.
@@ -31,13 +90,13 @@ export default function OriginStory() {
               </p>
               
               <p className="text-lg text-black/80 leading-relaxed mb-6">
-                At Conversion Rate Experts, I rose miraculously fast - eventually becoming their #1 client keeper - but behind the wins was chaos. 
+                At Conversion Rate Experts, I defied the odds and become one their highest rated consultants - but behind the wins was chaos. 
                 Endless analytics. Open-text data. No clear formula for what to say, where, or why. Until I found it: 
                 a value equation used by Google, Disney, and Bank of America to decode perceived value itself.
               </p>
               
               <p className="text-lg text-black/80 leading-relaxed mb-6">
-                Suddenly persuasion became mechanical, testable, transferable, scalable.
+                Suddenly I knew exactly what to do in almost every situation. Persuasion became mechanical, testable, transferable, scalable.
                 A London VC had me teach it to their portfolio CEOs; their wins proved it wasn&apos;t just me.
               </p>
               
@@ -74,6 +133,7 @@ export default function OriginStory() {
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>
