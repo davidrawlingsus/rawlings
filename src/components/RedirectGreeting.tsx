@@ -43,10 +43,10 @@ export default function RedirectGreeting() {
               Rawlings.us is now <span className="text-lime-400 font-semibold">Marketably.ai</span> — the new home for my conversion work as we scale into the AI age.
             </p>
             <p className="mb-4">
-              If you came here looking for insights that turn data into growth, you're in the right place.
+              If you came here looking for insights that turn data into growth, you&apos;re in the right place.
             </p>
             <p>
-              Pull up a chair - let's make your site work smarter.
+              Pull up a chair - let&apos;s make your site work smarter.
             </p>
           </DialogDescription>
         </DialogHeader>
