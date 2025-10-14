@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Lato } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 
 const lato = Lato({ 
@@ -33,6 +34,9 @@ export const metadata: Metadata = {
     'revenue optimization',
     'conversion science'
   ],
+  icons: {
+    icon: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/favicon.png',
+  },
   openGraph: {
     title: 'Expert Conversion Rate Optimization Services | CRO Consultant',
     description: 'Proven CRO methodology combining voice-of-customer research with AI. 49+ clients transformed. $100M+ revenue unlocked. Get your first test FREE.',
@@ -117,6 +121,20 @@ export default function RootLayout({
       </head>
       <body className={lato.className}>
         {children}
+        <Script
+          id="social-intents-chat"
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(){var e=window,i=document,t="socialintents",u=e[t]=e[t]||[];if(u.t) return console.error("Duplicate Social Intents code snippet.");u.t=!0;u.load=function(s){u.settings=s||{};var c=i.createElement("script");c.async=!0;c.src="https://www.socialintents.com/api/chat/socialintents.1.5.js";i.getElementsByTagName("script")[0].parentNode.insertBefore(c,null);};}();
+              socialintents.load({
+                app_id: "2c9fa6a699daccdf0199e0b363820747",
+                alignment: "right",
+                horizontal_padding: "25px"
+              });
+            `
+          }}
+        />
       </body>
     </html>
   )
