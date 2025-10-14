@@ -31,7 +31,7 @@ export default function TeamSection() {
         <div className="mb-16">
           <h2 className="text-5xl md:text-6xl font-bold mb-6">Who we are</h2>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl">
-            We are a team of conversion scientists who turn customer feedback into guaranteed revenue lifts. Our AI-powered testing framework delivers measurable results - with every engagement funded by a <a href="/challenge" className="text-[#B9F040] underline hover:text-[#a0d636] transition-colors">free winning test</a>.
+            We are a team of conversion experts who turn customer data into guaranteed revenue lifts. Our feedback-powered AI testing framework delivers real results - with every engagement funded with <a href="/challenge" className="text-[#B9F040] underline hover:text-[#a0d636] transition-colors">free wins upfront</a>.
           </p>
         </div>
 

@@ -90,19 +90,26 @@ export default function OriginStory() {
               </p>
               
               <p className="text-lg text-black/80 leading-relaxed mb-6">
-                At Conversion Rate Experts, I defied the odds and become one their highest rated consultants - but behind the wins was chaos. 
+                At Conversion Rate Experts, I defied my overwhelming inexperience and become one their highest rated consultants - <strong>but behind the wins was chaos</strong>. 
                 Endless analytics. Open-text data. No clear formula for what to say, where, or why. Until I found it: 
                 a value equation used by Google, Disney, and Bank of America to decode perceived value itself.
               </p>
               
               <p className="text-lg text-black/80 leading-relaxed mb-6">
-                Suddenly I knew exactly what to do in almost every situation. Persuasion became mechanical, testable, transferable, scalable.
+                Suddenly I knew exactly what to do in almost every situation. <strong>Persuasion became mechanical, testable, transferable, scalable.</strong>
                 A London VC had me teach it to their portfolio CEOs; their wins proved it wasn&apos;t just me.
               </p>
               
               <p className="text-lg text-black/80 leading-relaxed mb-6">
                 Now I fuse that human persuasion framework with AI - a system so reliable it doesn&apos;t just fix websites, 
-                it unlocks entire channels: Facebook, PPC, display, even native - with every engagement funded by our <a href="/challenge" className="underline hover:text-black/60 transition-colors">first free test</a>.
+                it unlocks entire channels: Facebook, PPC, display, even native - <span 
+                  className="relative inline px-1"
+                  style={{
+                    background: 'linear-gradient(104deg, rgba(190, 242, 100, 0) 0.9%, rgba(190, 242, 100, 0.8) 2.4%, rgba(190, 242, 100, 0.5) 5.8%, rgba(190, 242, 100, 0.4) 93%, rgba(190, 242, 100, 0.7) 96%, rgba(190, 242, 100, 0) 98%), linear-gradient(183deg, rgba(190, 242, 100, 0) 0%, rgba(190, 242, 100, 0.3) 7.9%, rgba(190, 242, 100, 0) 15%)',
+                    boxDecorationBreak: 'clone',
+                    WebkitBoxDecorationBreak: 'clone'
+                  }}
+                >with every engagement funded by our <a href="/challenge" className="underline hover:text-black/60 transition-colors">first free test</a></span>.
               </p>
               
               <p className="text-lg text-black/90 font-semibold mb-8">
