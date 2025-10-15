@@ -62,7 +62,7 @@ export default function ChallengePage() {
                 }
               }}
             >
-              The first thing we&apos;ll do, is pay for ourselves forever.
+              The first thing we&apos;ll do, is pay for ourselves, forever.
             </motion.h1>
             
             <motion.p 
