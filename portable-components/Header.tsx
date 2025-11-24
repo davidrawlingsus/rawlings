@@ -150,15 +150,15 @@ export default function Header() {
 
           {/* CTA Buttons */}
           <div className="flex items-center gap-4 ml-8">
-            <Link href="https://vizualizd.marketably.ai" className="border-2 border-white text-white px-6 py-2 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors">
-              LOG IN
-            </Link>
             <button 
               onClick={openStrategyCallModal}
               className="bg-[#B9F040] text-black px-6 py-2 rounded-lg font-semibold text-sm uppercase hover:bg-[#a0d636] transition-colors"
             >
               BOOK A STRATEGY CALL
             </button>
+            <Link href="https://vizualizd.marketably.ai" className="border-2 border-white text-white px-6 py-2 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors">
+              LOG IN
+            </Link>
           </div>
         </div>
 
@@ -198,15 +198,15 @@ export default function Header() {
             
             {/* Mobile CTA Buttons */}
             <div className="pt-4 flex flex-col gap-3">
-              <Link href="https://vizualizd.marketably.ai" onClick={closeMobileMenu} className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors block text-center">
-                LOG IN
-              </Link>
               <button 
                 onClick={openStrategyCallModal}
                 className="bg-[#B9F040] text-black px-6 py-3 rounded-lg font-semibold text-sm uppercase hover:bg-[#a0d636] transition-colors block text-center w-full"
               >
                 BOOK A STRATEGY CALL
               </button>
+              <Link href="https://vizualizd.marketably.ai" onClick={closeMobileMenu} className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors block text-center">
+                LOG IN
+              </Link>
             </div>
 
             {/* Testimonial */}
