@@ -125,8 +125,8 @@ export default function Header() {
 
           {/* CTA Buttons */}
           <div className="flex items-center gap-4 ml-8">
-            <Link href="/challenge" className="border-2 border-white text-white px-6 py-2 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors">
-              LANDING PAGE CHALLENGE
+            <Link href="https://vizualizd.marketably.ai" className="border-2 border-white text-white px-6 py-2 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors">
+              LOG IN
             </Link>
             <button 
               onClick={openStrategyCallModal}
@@ -173,8 +173,8 @@ export default function Header() {
             
             {/* Mobile CTA Buttons */}
             <div className="pt-4 flex flex-col gap-3">
-              <Link href="/challenge" onClick={closeMobileMenu} className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors block text-center">
-                LANDING PAGE CHALLENGE
+              <Link href="https://vizualizd.marketably.ai" onClick={closeMobileMenu} className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors block text-center">
+                LOG IN
               </Link>
               <button 
                 onClick={openStrategyCallModal}
