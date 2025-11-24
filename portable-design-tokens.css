@@ -1,0 +1,423 @@
+/**
+ * Marketably.ai Design Tokens
+ * Portable CSS Custom Properties for consistent design across domains
+ * 
+ * Usage:
+ * 1. Copy this file to your project
+ * 2. Import in your main CSS file: @import './portable-design-tokens.css';
+ * 3. Use variables: background-color: var(--marketably-brand-lime);
+ * 
+ * Last Updated: November 23, 2025
+ */
+
+:root {
+  /* ============================================
+     BRAND COLORS
+     ============================================ */
+  
+  /* Primary Brand Color - Lime Green */
+  --marketably-brand-lime: #B9F040;
+  --marketably-brand-lime-hover: #a0d636;
+  --marketably-brand-lime-pressed: #90c026;
+  --marketably-brand-lime-glow: rgba(185, 240, 64, 0.5);
+  --marketably-brand-lime-transparent-10: rgba(185, 240, 64, 0.1);
+  --marketably-brand-lime-transparent-20: rgba(185, 240, 64, 0.2);
+  --marketably-brand-lime-transparent-30: rgba(185, 240, 64, 0.3);
+  
+  /* ============================================
+     BACKGROUND COLORS
+     ============================================ */
+  
+  /* Light Backgrounds */
+  --marketably-bg-white: #FFFFFF;
+  --marketably-bg-light-gray: #F7F7F7;
+  --marketably-bg-card: #FFFFFF;
+  
+  /* Dark Backgrounds */
+  --marketably-bg-black: #000000;
+  --marketably-bg-navy: #1A2B3C;
+  --marketably-bg-navy-dark: #0F1B28;
+  
+  /* Neutral Backgrounds */
+  --marketably-bg-neutral-50: rgb(250, 250, 250);
+  --marketably-bg-neutral-100: rgb(245, 245, 245);
+  --marketably-bg-neutral-200: rgb(229, 229, 229);
+  
+  /* ============================================
+     TEXT COLORS
+     ============================================ */
+  
+  /* Primary Text */
+  --marketably-text-primary: #0F0F0F;
+  --marketably-text-white: #FFFFFF;
+  
+  /* Secondary Text */
+  --marketably-text-secondary: rgb(82, 82, 82);
+  --marketably-text-muted: rgb(115, 115, 115);
+  
+  /* Text on Dark Backgrounds */
+  --marketably-text-on-dark-primary: #FFFFFF;
+  --marketably-text-on-dark-secondary: rgb(212, 212, 212);
+  --marketably-text-on-dark-muted: rgb(163, 163, 163);
+  
+  /* ============================================
+     BORDER & DIVIDER COLORS
+     ============================================ */
+  
+  --marketably-border-light: rgb(229, 229, 229);
+  --marketably-border-medium: rgb(212, 212, 212);
+  --marketably-border-dark: rgb(38, 38, 38);
+  --marketably-border-accent: rgba(185, 240, 64, 0.3);
+  
+  /* ============================================
+     STATE COLORS
+     ============================================ */
+  
+  /* Success */
+  --marketably-success: #10B981;
+  --marketably-success-bg: #D1FAE5;
+  
+  /* Error/Destructive */
+  --marketably-error: #EF4444;
+  --marketably-error-bg: #FEE2E2;
+  
+  /* Warning */
+  --marketably-warning: #F59E0B;
+  --marketably-warning-bg: #FEF3C7;
+  
+  /* Info */
+  --marketably-info: #3B82F6;
+  --marketably-info-bg: #DBEAFE;
+  
+  /* ============================================
+     FOCUS & INTERACTION STATES
+     ============================================ */
+  
+  --marketably-focus-ring: var(--marketably-brand-lime);
+  --marketably-focus-ring-offset: 2px;
+  --marketably-hover-overlay: rgba(0, 0, 0, 0.05);
+  --marketably-active-overlay: rgba(0, 0, 0, 0.1);
+  
+  /* ============================================
+     SHADOWS
+     ============================================ */
+  
+  --marketably-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --marketably-shadow-base: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --marketably-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --marketably-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --marketably-shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --marketably-shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  
+  /* ============================================
+     TYPOGRAPHY
+     ============================================ */
+  
+  /* Font Families */
+  --marketably-font-primary: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  
+  /* Font Sizes */
+  --marketably-text-xs: 0.75rem;      /* 12px */
+  --marketably-text-sm: 0.875rem;     /* 14px */
+  --marketably-text-base: 1rem;       /* 16px */
+  --marketably-text-lg: 1.125rem;     /* 18px */
+  --marketably-text-xl: 1.25rem;      /* 20px */
+  --marketably-text-2xl: 1.5rem;      /* 24px */
+  --marketably-text-3xl: 1.875rem;    /* 30px */
+  --marketably-text-4xl: 2.25rem;     /* 36px */
+  --marketably-text-5xl: 3rem;        /* 48px */
+  --marketably-text-6xl: 3.75rem;     /* 60px */
+  --marketably-text-7xl: 4.5rem;      /* 72px */
+  
+  /* Font Weights */
+  --marketably-font-light: 300;
+  --marketably-font-normal: 400;
+  --marketably-font-medium: 500;
+  --marketably-font-semibold: 600;
+  --marketably-font-bold: 700;
+  --marketably-font-black: 900;
+  
+  /* Line Heights */
+  --marketably-leading-none: 1;
+  --marketably-leading-tight: 1.25;
+  --marketably-leading-snug: 1.375;
+  --marketably-leading-normal: 1.5;
+  --marketably-leading-relaxed: 1.625;
+  --marketably-leading-loose: 2;
+  
+  /* Letter Spacing */
+  --marketably-tracking-tighter: -0.05em;
+  --marketably-tracking-tight: -0.025em;
+  --marketably-tracking-normal: 0em;
+  --marketably-tracking-wide: 0.025em;
+  --marketably-tracking-wider: 0.05em;
+  --marketably-tracking-widest: 0.1em;
+  
+  /* ============================================
+     SPACING
+     ============================================ */
+  
+  --marketably-spacing-0: 0;
+  --marketably-spacing-1: 0.25rem;    /* 4px */
+  --marketably-spacing-2: 0.5rem;     /* 8px */
+  --marketably-spacing-3: 0.75rem;    /* 12px */
+  --marketably-spacing-4: 1rem;       /* 16px */
+  --marketably-spacing-5: 1.25rem;    /* 20px */
+  --marketably-spacing-6: 1.5rem;     /* 24px */
+  --marketably-spacing-8: 2rem;       /* 32px */
+  --marketably-spacing-10: 2.5rem;    /* 40px */
+  --marketably-spacing-12: 3rem;      /* 48px */
+  --marketably-spacing-16: 4rem;      /* 64px */
+  --marketably-spacing-20: 5rem;      /* 80px */
+  --marketably-spacing-24: 6rem;      /* 96px */
+  --marketably-spacing-32: 8rem;      /* 128px */
+  
+  /* ============================================
+     BORDER RADIUS
+     ============================================ */
+  
+  --marketably-radius-none: 0;
+  --marketably-radius-sm: 0.375rem;   /* 6px */
+  --marketably-radius-base: 0.5rem;   /* 8px */
+  --marketably-radius-md: 0.625rem;   /* 10px */
+  --marketably-radius-lg: 0.75rem;    /* 12px */
+  --marketably-radius-xl: 1rem;       /* 16px */
+  --marketably-radius-2xl: 1.5rem;    /* 24px */
+  --marketably-radius-full: 9999px;   /* Full round */
+  
+  /* ============================================
+     LAYOUT
+     ============================================ */
+  
+  --marketably-max-width-sm: 640px;
+  --marketably-max-width-md: 768px;
+  --marketably-max-width-lg: 1024px;
+  --marketably-max-width-xl: 1280px;
+  --marketably-max-width-2xl: 1536px;
+  
+  --marketably-max-width-content: 1280px;
+  --marketably-max-width-narrow: 672px;
+  --marketably-max-width-wide: 1536px;
+  
+  /* ============================================
+     Z-INDEX LAYERS
+     ============================================ */
+  
+  --marketably-z-base: 0;
+  --marketably-z-dropdown: 10;
+  --marketably-z-sticky: 20;
+  --marketably-z-fixed: 30;
+  --marketably-z-modal-backdrop: 40;
+  --marketably-z-modal: 50;
+  --marketably-z-popover: 60;
+  --marketably-z-tooltip: 70;
+  
+  /* ============================================
+     TRANSITIONS
+     ============================================ */
+  
+  --marketably-transition-fast: 150ms;
+  --marketably-transition-base: 200ms;
+  --marketably-transition-medium: 300ms;
+  --marketably-transition-slow: 500ms;
+  
+  --marketably-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --marketably-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --marketably-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --marketably-ease-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  
+  /* ============================================
+     CHART COLORS
+     ============================================ */
+  
+  --marketably-chart-1: #F97316;
+  --marketably-chart-2: #06B6D4;
+  --marketably-chart-3: #3B82F6;
+  --marketably-chart-4: #84CC16;
+  --marketably-chart-5: #EAB308;
+}
+
+/* ============================================
+   DARK MODE OVERRIDES
+   Optional: Use if implementing dark mode
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Override background colors */
+    --marketably-bg-white: var(--marketably-bg-navy-dark);
+    --marketably-bg-card: var(--marketably-bg-navy);
+    
+    /* Override text colors */
+    --marketably-text-primary: var(--marketably-text-white);
+    --marketably-text-secondary: var(--marketably-text-on-dark-secondary);
+    
+    /* Override border colors */
+    --marketably-border-light: var(--marketably-border-dark);
+  }
+}
+
+/* Force dark mode (alternative to media query) */
+.dark {
+  --marketably-bg-white: var(--marketably-bg-navy-dark);
+  --marketably-bg-card: var(--marketably-bg-navy);
+  --marketably-text-primary: var(--marketably-text-white);
+  --marketably-text-secondary: var(--marketably-text-on-dark-secondary);
+  --marketably-border-light: var(--marketably-border-dark);
+}
+
+/* ============================================
+   UTILITY CLASSES (OPTIONAL)
+   Copy these if you want pre-built classes
+   ============================================ */
+
+.marketably-btn-primary {
+  background-color: var(--marketably-brand-lime);
+  color: var(--marketably-bg-black);
+  padding: 0.5rem 1.5rem;
+  border-radius: var(--marketably-radius-base);
+  font-weight: var(--marketably-font-semibold);
+  font-size: var(--marketably-text-sm);
+  text-transform: uppercase;
+  letter-spacing: var(--marketably-tracking-wide);
+  transition: background-color var(--marketably-transition-base) var(--marketably-ease-out);
+  border: none;
+  cursor: pointer;
+}
+
+.marketably-btn-primary:hover {
+  background-color: var(--marketably-brand-lime-hover);
+}
+
+.marketably-btn-primary:active {
+  background-color: var(--marketably-brand-lime-pressed);
+}
+
+.marketably-btn-primary:focus-visible {
+  outline: 2px solid var(--marketably-focus-ring);
+  outline-offset: var(--marketably-focus-ring-offset);
+}
+
+.marketably-btn-secondary {
+  background-color: transparent;
+  color: var(--marketably-text-white);
+  border: 2px solid var(--marketably-text-white);
+  padding: 0.5rem 1.5rem;
+  border-radius: var(--marketably-radius-base);
+  font-weight: var(--marketably-font-semibold);
+  font-size: var(--marketably-text-sm);
+  text-transform: uppercase;
+  letter-spacing: var(--marketably-tracking-wide);
+  transition: all var(--marketably-transition-base) var(--marketably-ease-out);
+  cursor: pointer;
+}
+
+.marketably-btn-secondary:hover {
+  background-color: var(--marketably-text-white);
+  color: var(--marketably-bg-navy);
+}
+
+.marketably-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: var(--marketably-text-base);
+  background-color: var(--marketably-bg-white);
+  border: 2px solid var(--marketably-border-medium);
+  border-radius: var(--marketably-radius-base);
+  color: var(--marketably-text-primary);
+  transition: border-color var(--marketably-transition-base) var(--marketably-ease-out);
+}
+
+.marketably-input::placeholder {
+  color: var(--marketably-text-muted);
+}
+
+.marketably-input:focus {
+  outline: none;
+  border-color: var(--marketably-brand-lime);
+}
+
+.marketably-card {
+  background-color: var(--marketably-bg-card);
+  border: 1px solid var(--marketably-border-light);
+  border-radius: var(--marketably-radius-lg);
+  padding: var(--marketably-spacing-6);
+  box-shadow: var(--marketably-shadow-sm);
+}
+
+.marketably-container {
+  max-width: var(--marketably-max-width-content);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--marketably-spacing-6);
+  padding-right: var(--marketably-spacing-6);
+}
+
+/* ============================================
+   ACCESSIBILITY
+   ============================================ */
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Focus visible styles */
+:focus-visible {
+  outline: 2px solid var(--marketably-focus-ring);
+  outline-offset: var(--marketably-focus-ring-offset);
+}
+
+/* Remove default focus outline (replaced by focus-visible) */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ============================================
+   USAGE EXAMPLES
+   ============================================ */
+
+/*
+Example 1: Using color variables
+.my-element {
+  background-color: var(--marketably-brand-lime);
+  color: var(--marketably-bg-black);
+}
+
+Example 2: Using spacing
+.my-section {
+  padding: var(--marketably-spacing-16) var(--marketably-spacing-6);
+  margin-bottom: var(--marketably-spacing-12);
+}
+
+Example 3: Using typography
+.my-heading {
+  font-family: var(--marketably-font-primary);
+  font-size: var(--marketably-text-4xl);
+  font-weight: var(--marketably-font-bold);
+  line-height: var(--marketably-leading-tight);
+}
+
+Example 4: Using transitions
+.my-button {
+  transition: background-color var(--marketably-transition-base) var(--marketably-ease-out);
+}
+
+Example 5: Using shadows
+.my-card {
+  box-shadow: var(--marketably-shadow-md);
+}
+
+Example 6: Using border radius
+.my-container {
+  border-radius: var(--marketably-radius-lg);
+}
+*/
+
