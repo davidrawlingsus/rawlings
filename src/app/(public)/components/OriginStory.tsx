@@ -4,7 +4,7 @@ export default function OriginStory() {
       {/* Lime Wave Chart Background Image */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/images/lime_chart_optimized.jpg)' }}
+        style={{ backgroundImage: 'url(https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/graphics/lime_chart_optimized-fUsyGH5AX9ChVxASbwhOq6Ez8cFV7D.jpg)' }}
         role="img" 
         aria-label="Abstract lime chart with layered waves and highlight line"
       />
