@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 
 interface FormData {
   websiteUrl: string
-  monthlyTraffic: number
+  monthlyAdSpend: number
   name: string
   email: string
   phone: string
@@ -29,7 +29,7 @@ export default function ContactForm({
   const [currentStep, setCurrentStep] = useState(0)
   const [formData, setFormData] = useState<FormData>({
     websiteUrl: '',
-    monthlyTraffic: 50000,
+    monthlyAdSpend: 10000,
     name: '',
     email: '',
     phone: '',
@@ -97,13 +97,13 @@ export default function ContactForm({
     }
   }
 
-  const formatTraffic = (value: number) => {
+  const formatAdSpend = (value: number) => {
     if (value >= 1000000) {
-      return `${(value / 1000000).toFixed(1)}M`
+      return `$${(value / 1000000).toFixed(1)}M`
     } else if (value >= 1000) {
-      return `${(value / 1000).toFixed(0)}K`
+      return `$${(value / 1000).toFixed(0)}K`
     }
-    return value.toString()
+    return `$${value}`
   }
 
   if (isSubmitted) {
@@ -222,32 +222,32 @@ export default function ContactForm({
 
                   <div>
                     <label
-                      htmlFor="monthlyTraffic"
+                      htmlFor="monthlyAdSpend"
                       className="block text-sm font-medium mb-2 text-foreground"
                     >
-                      Monthly Traffic:{' '}
+                      FB Adspend:{' '}
                       <span className="text-[#1A2B3C] font-bold text-lg">
-                        {formatTraffic(formData.monthlyTraffic)}
+                        {formatAdSpend(formData.monthlyAdSpend)}
                       </span>
                     </label>
                     <input
-                      id="monthlyTraffic"
+                      id="monthlyAdSpend"
                       type="range"
                       min="1000"
-                      max="1000000"
+                      max="100000"
                       step="1000"
-                      value={formData.monthlyTraffic}
+                      value={formData.monthlyAdSpend}
                       onChange={(e) =>
                         setFormData({
                           ...formData,
-                          monthlyTraffic: parseInt(e.target.value),
+                          monthlyAdSpend: parseInt(e.target.value),
                         })
                       }
                       className="w-full h-3 bg-muted rounded-lg appearance-none cursor-pointer slider"
                     />
                     <div className="flex justify-between text-xs text-foreground/50 mt-2">
-                      <span>1K</span>
-                      <span>1M+</span>
+                      <span>$1K</span>
+                      <span>$100K+</span>
                     </div>
                   </div>
                 </div>
