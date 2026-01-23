@@ -10,7 +10,7 @@ const lato = Lato({
 })
 
 export const metadata: Metadata = {
-  title: 'Conversion Rate Optimization Services | Expert CRO Consultant & A/B Testing | Marketably.ai',
+  title: "World's best Facebook ads",
   description: 'Transform your website performance with expert CRO services. Voice-of-customer research + AI-powered conversion optimization. 49+ clients, $100M+ revenue unlocked. First test FREE. Specializing in e-commerce, SaaS, and lead gen optimization.',
   keywords: [
     'conversion rate optimization', 

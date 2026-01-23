@@ -1,32 +1,43 @@
+import Link from 'next/link'
+
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
     <footer className="bg-black py-12 md:py-16">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
-        <div className="text-center space-y-4">
-          {/* Company Name */}
+        <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-8">
+          {/* Left side - Brand */}
           <div className="text-white">
-            <span className="font-bold text-xl">
+            <span className="font-bold text-2xl">
               Market<span className="text-[#B9F040]">ably</span>
             </span>
+            <p className="text-neutral-400 mt-2 max-w-xs">
+              Turning Voice of Customer into high-converting ads.
+            </p>
           </div>
 
-          {/* Legal Info */}
-          <div className="text-neutral-400 text-sm space-y-2">
-            <p>
-              The Rawlings Marketing Intel Co Limited DBA Marketably
-            </p>
-            <p>
-              A company registered in the Republic of Ireland
-            </p>
-            <p>
-              © {currentYear} All rights reserved
-            </p>
+          {/* Right side - Navigation */}
+          <div className="flex gap-8">
+            <Link href="#about" className="text-neutral-400 hover:text-[#B9F040] transition-colors">
+              About
+            </Link>
+            <Link href="#pricing" className="text-neutral-400 hover:text-[#B9F040] transition-colors">
+              Pricing
+            </Link>
+            <Link href="#apply" className="text-neutral-400 hover:text-[#B9F040] transition-colors">
+              Contact
+            </Link>
           </div>
+        </div>
+
+        {/* Bottom legal */}
+        <div className="mt-12 pt-8 border-t border-neutral-800">
+          <p className="text-neutral-500 text-sm text-center">
+            © {currentYear} Marketably.ai. Built for brands who listen.
+          </p>
         </div>
       </div>
     </footer>
   )
 }
-

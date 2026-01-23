@@ -4,31 +4,22 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu } from 'lucide-react'
-import StrategyCallModal from './StrategyCallModal'
 
 // Navigation items configuration
 const NAV_ITEMS = [
-  { id: 'clients', label: 'Clients', hash: '#clients' },
-  { id: 'impact', label: 'Results', hash: '#impact' },
-  { id: 'process', label: 'Process', hash: '#process' },
-  { id: 'backstory', label: 'Backstory', hash: '#backstory' },
-  { id: 'people', label: 'People', hash: '#people' },
-  { id: 'pricing', label: 'Pricing', path: '/challenge' },
+  { id: 'how-it-works', label: 'How It Works', hash: '#how-it-works' },
+  { id: 'results', label: 'Results', hash: '#results' },
+  { id: 'pricing', label: 'Pricing', hash: '#pricing' },
+  { id: 'about', label: 'About', hash: '#about' },
 ] as const
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [isModalOpen, setIsModalOpen] = useState(false)
   const [activeSection, setActiveSection] = useState<string | null>(null)
   const pathname = usePathname()
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen)
-  }
-
-  const openStrategyCallModal = () => {
-    setIsModalOpen(true)
-    setIsMobileMenuOpen(false) // Close mobile menu if open
   }
 
   const closeMobileMenu = () => {
@@ -65,7 +56,7 @@ export default function Header() {
     const observer = new IntersectionObserver(observerCallback, observerOptions)
 
     // Observe all sections
-    const sections = ['clients', 'impact', 'process', 'backstory', 'people'].map(id => 
+    const sections = ['how-it-works', 'results', 'pricing', 'about'].map(id => 
       document.getElementById(id)
     ).filter(Boolean) as HTMLElement[]
 
@@ -75,11 +66,6 @@ export default function Header() {
   }, [pathname])
 
   const isNavItemActive = (item: typeof NAV_ITEMS[number]) => {
-    // For pricing, check if we're on the challenge page
-    if (item.id === 'pricing') {
-      return pathname === '/challenge'
-    }
-    // For hash sections, check if section is active
     return activeSection === item.id
   }
 
@@ -101,7 +87,7 @@ export default function Header() {
           <div className="flex items-center space-x-8">
             {NAV_ITEMS.map((item) => {
               const isActive = isNavItemActive(item)
-              const href = 'path' in item ? item.path : getNavLink(item.hash)
+              const href = getNavLink(item.hash)
               
               return (
                 <Link
@@ -125,12 +111,12 @@ export default function Header() {
 
           {/* CTA Buttons */}
           <div className="flex items-center gap-4 ml-8">
-            <button 
-              onClick={openStrategyCallModal}
+            <Link 
+              href={pathname === '/' ? '#apply' : '/#apply'}
               className="bg-[#B9F040] text-black px-6 py-2 rounded-lg font-semibold text-sm uppercase hover:bg-[#a0d636] transition-colors"
             >
-              BOOK A STRATEGY CALL
-            </button>
+              START A PILOT
+            </Link>
             <Link href="https://vizualizd.marketably.ai" className="border-2 border-white text-white px-6 py-2 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors">
               LOG IN
             </Link>
@@ -155,7 +141,7 @@ export default function Header() {
           <div className="flex flex-col space-y-4">
             {NAV_ITEMS.map((item) => {
               const isActive = isNavItemActive(item)
-              const href = 'path' in item ? item.path : getNavLink(item.hash)
+              const href = getNavLink(item.hash)
               
               return (
                 <Link
@@ -173,12 +159,13 @@ export default function Header() {
             
             {/* Mobile CTA Buttons */}
             <div className="pt-4 flex flex-col gap-3">
-              <button 
-                onClick={openStrategyCallModal}
+              <Link 
+                href={pathname === '/' ? '#apply' : '/#apply'}
+                onClick={closeMobileMenu}
                 className="bg-[#B9F040] text-black px-6 py-3 rounded-lg font-semibold text-sm uppercase hover:bg-[#a0d636] transition-colors block text-center w-full"
               >
-                BOOK A STRATEGY CALL
-              </button>
+                START A PILOT
+              </Link>
               <Link href="https://vizualizd.marketably.ai" onClick={closeMobileMenu} className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors block text-center">
                 LOG IN
               </Link>
@@ -190,15 +177,13 @@ export default function Header() {
                 &ldquo;Paid for itself a thousand times over.&rdquo;
               </blockquote>
               <p className="text-white/70 text-sm">
-                <span className="font-semibold">Elliott Fox</span> &mdash; Wattbike
+                <span className="font-semibold">Elliott Fox</span>, Wattbike
               </p>
             </div>
           </div>
         </div>
       )}
 
-      {/* Strategy Call Modal */}
-      <StrategyCallModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </nav>
   )
 }
