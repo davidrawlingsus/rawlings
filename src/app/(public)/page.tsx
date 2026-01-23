@@ -147,14 +147,35 @@ export default function HomePage() {
                 className="mt-6 text-lg md:text-xl text-neutral-600 leading-relaxed"
                 variants={fadeInUp}
               >
-                Your customers already wrote your best ads. They&apos;re buried in spreadsheets while your agency bills another $10K to recycle the same AI slop they used on three other clients.
+                Your customers already wrote your best ads. They&apos;re sitting in spreadsheets, surveys, and support tickets while your agency bills $10K/month to recycle the same three hooks they used on everyone else.
               </motion.p>
               
               <motion.p 
-                className="mt-4 text-lg text-neutral-700 leading-relaxed"
+                className="mt-4 text-lg font-semibold text-neutral-800"
                 variants={fadeInUp}
               >
-                We spent 10 years cracking the code on what makes customers buy. Your agency spent 20 minutes on your brand deck. That&apos;s why their ads convert like garbage and ours don&apos;t.
+                Here&apos;s the thing...
+              </motion.p>
+              
+              <motion.p 
+                className="mt-2 text-lg text-neutral-700 leading-relaxed"
+                variants={fadeInUp}
+              >
+                Marketably turns that buried gold into ad concepts beating your current ads by 40%+ on ROAS, CPA, or profit.
+              </motion.p>
+              
+              <motion.p 
+                className="mt-4 text-lg font-semibold text-neutral-800"
+                variants={fadeInUp}
+              >
+                How?
+              </motion.p>
+              
+              <motion.p 
+                className="mt-2 text-lg text-neutral-700 leading-relaxed"
+                variants={fadeInUp}
+              >
+                We spent 10 years cracking the code on customer language. The exact phrases that make people stop scrolling and pull out their wallets. That&apos;s why their ads bomb and ours don&apos;t.
               </motion.p>
               
               <motion.div 
