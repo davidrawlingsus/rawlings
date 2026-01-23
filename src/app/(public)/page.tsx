@@ -175,7 +175,21 @@ export default function HomePage() {
                 className="mt-2 text-lg text-neutral-700 leading-relaxed"
                 variants={fadeInUp}
               >
-                We spent 10 years cracking the code on customer language. The exact phrases that make people stop scrolling and pull out their wallets. That&apos;s why their ads bomb and ours don&apos;t.
+                We spent 10 years cracking the code on customer language. The exact phrases that make people stop scrolling and pull out their wallets.
+              </motion.p>
+              
+              <motion.p 
+                className="mt-4 text-lg font-semibold text-neutral-800"
+                variants={fadeInUp}
+              >
+                Your agency is still guessing. You&apos;re getting our entire decade of pattern recognition in a 14-day pilot.
+              </motion.p>
+              
+              <motion.p 
+                className="mt-2 text-lg text-neutral-700 leading-relaxed"
+                variants={fadeInUp}
+              >
+                That&apos;s why their ads bomb and ours don&apos;t.
               </motion.p>
               
               <motion.div 
@@ -189,10 +203,10 @@ export default function HomePage() {
                   Get Winning Ads
                 </a>
                 <a 
-                  href="#results"
-                  className="h-14 px-4 text-neutral-600 hover:text-neutral-900 transition-colors flex items-center justify-center underline underline-offset-4"
+                  href="#how-it-works"
+                  className="h-14 px-4 text-neutral-500 hover:text-neutral-700 transition-colors flex items-center justify-center text-sm"
                 >
-                  Show me proof this actually works
+                  See our guarantee →
                 </a>
               </motion.div>
             </motion.div>
@@ -365,6 +379,48 @@ export default function HomePage() {
                   <li>• Image/video creative prompts</li>
                   <li>• Testing prioritization</li>
                 </ul>
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SECTION 4B: WHY THIS WORKS */}
+      <section className="py-16 md:py-24 bg-neutral-50">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-8">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.3, once: true }}
+            variants={staggerContainer}
+          >
+            <motion.h2 
+              className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12"
+              variants={fadeInUp}
+            >
+              Why agencies can&apos;t do this (and we can)
+            </motion.h2>
+            
+            <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+              <motion.div variants={fadeInUp}>
+                <h3 className="text-xl font-semibold text-[#B9F040] mb-3">They&apos;re learning on your dime.</h3>
+                <p className="text-neutral-600">
+                  Your agency treats every client like a blank slate. They spend 3-6 months &ldquo;getting to know your brand,&rdquo; testing random concepts, burning your budget to figure out what works.
+                </p>
+              </motion.div>
+              
+              <motion.div variants={fadeInUp}>
+                <h3 className="text-xl font-semibold text-[#B9F040] mb-3">We&apos;ve already done the work.</h3>
+                <p className="text-neutral-600">
+                  We spent 10 years analyzing 300+ brands, $12M in ad spend, and millions of customer feedback points. We know which language patterns convert before we touch your data.
+                </p>
+              </motion.div>
+              
+              <motion.div variants={fadeInUp}>
+                <h3 className="text-xl font-semibold text-[#B9F040] mb-3">You get the shortcuts without the tuition.</h3>
+                <p className="text-neutral-600">
+                  What took us a decade to learn gets applied to your brand in 14 days. That&apos;s the entire value proposition.
+                </p>
               </motion.div>
             </div>
           </motion.div>
@@ -629,6 +685,20 @@ export default function HomePage() {
             </motion.ul>
             
             <motion.div 
+              className="mb-8 p-6 bg-[#B9F040]/5 rounded-xl border border-[#B9F040]/20"
+              variants={fadeInUp}
+            >
+              <h4 className="text-xl font-semibold text-neutral-800 mb-4">Here&apos;s what makes this different:</h4>
+              <p className="text-lg text-neutral-700 mb-3">
+                Your agency spends 3 months &ldquo;learning your brand.&rdquo; We spent 10 years learning customer language patterns across 300+ brands.
+              </p>
+              <p className="text-lg text-neutral-700 mb-3">
+                They&apos;re starting from zero every time. You&apos;re getting a decade of pattern recognition applied to your data in 14 days.
+              </p>
+              <p className="text-lg font-semibold text-[#B9F040]">That&apos;s the edge.</p>
+            </motion.div>
+            
+            <motion.div 
               className="mb-8 p-6 bg-neutral-50 rounded-xl border border-neutral-200"
               variants={fadeInUp}
             >
@@ -640,7 +710,8 @@ export default function HomePage() {
               className="p-6 bg-[#B9F040]/10 rounded-xl border-2 border-[#B9F040]"
               variants={fadeInUp}
             >
-              <p className="text-xl font-semibold text-neutral-800">The deal: Our concepts beat your current ads in 14 days, or we keep working until they do.</p>
+              <p className="text-xl font-semibold text-neutral-800 mb-3">The deal: Our concepts beat your current ads in 14 days, or you get your money back. No questions asked.</p>
+              <p className="text-lg text-neutral-700">We&apos;re so confident in this process, we&apos;ll refund every penny if you&apos;re unhappy for any reason. Your agency won&apos;t do that. Because they can&apos;t.</p>
             </motion.div>
           </motion.div>
         </div>
@@ -680,6 +751,13 @@ export default function HomePage() {
               </ul>
             </motion.div>
             
+            <motion.p 
+              className="mt-6 text-xl font-bold text-[#B9F040]"
+              variants={fadeInUp}
+            >
+              Zero risk. Full refund if you&apos;re unhappy for any reason.
+            </motion.p>
+            
             <motion.div 
               className="mt-8 p-6 bg-white rounded-xl border border-neutral-200 text-left"
               variants={fadeInUp}
@@ -687,8 +765,11 @@ export default function HomePage() {
               <p className="text-neutral-700 mb-4">
                 Your agency charges $10K/month. You get 20-30 hours of junior strategist time, half of which goes to &ldquo;status updates&rdquo; and &ldquo;sync calls.&rdquo;
               </p>
+              <p className="text-neutral-800 font-semibold mb-4">
+                We charge $2,500 once. You get 10 years of customer language expertise applied to your brand in 2 weeks.
+              </p>
               <p className="text-neutral-700">
-                This pilot gives you 12-20 ad concepts grounded in actual customer language. No retainer. No sync calls. No junior strategist learning on your dime.
+                This pilot gives you 12-20 ad concepts grounded in actual customer language. No retainer. No sync calls. No junior strategist learning on your dime. And if it doesn&apos;t work? You pay nothing.
               </p>
             </motion.div>
             
@@ -725,7 +806,7 @@ export default function HomePage() {
               className="text-xl text-neutral-700 mb-8"
               variants={fadeInUp}
             >
-              Most teams continue with Marketably as an ongoing creative intelligence layer.
+              Most teams continue with Marketably as an ongoing creative intelligence layer - because once you&apos;ve seen what a decade of pattern recognition looks like, going back to agency guesswork feels insane.
             </motion.p>
             
             <motion.div variants={fadeInUp}>
@@ -787,6 +868,7 @@ export default function HomePage() {
                     'You\'ve sent them customer research they never actually read',
                     'You\'re tired of paying for "testing" that never materializes',
                     'You want ads that sound like customers, not a 26-year-old\'s LinkedIn caption',
+                    'You want to try this without risk (we offer a full money-back guarantee)',
                   ].map((item, index) => (
                     <li key={index} className="flex gap-3 items-start">
                       <CheckCircle2 className="w-5 h-5 text-[#B9F040] flex-shrink-0 mt-0.5" />
@@ -959,10 +1041,17 @@ export default function HomePage() {
             </motion.h2>
             
             <motion.p 
-              className="text-xl text-neutral-300 mb-10"
+              className="text-xl text-neutral-300 mb-4"
               variants={fadeInUp}
             >
               Let&apos;s turn what your customers said into ads that actually convert.
+            </motion.p>
+            
+            <motion.p 
+              className="text-lg font-semibold text-[#B9F040] mb-10"
+              variants={fadeInUp}
+            >
+              Risk-free pilot. Full refund if we don&apos;t beat your current ads.
             </motion.p>
             
             <motion.div className="flex flex-col items-center gap-4" variants={fadeInUp}>
