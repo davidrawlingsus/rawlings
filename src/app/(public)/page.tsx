@@ -26,30 +26,6 @@ const clientLogos = [
   { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/monica_vinader_logo_square.png', alt: 'Monica Vinader' },
 ]
 
-// Team data
-const teamMembers = [
-  {
-    name: 'David Rawlings',
-    role: 'Founder',
-    image: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/team/david-rawlings.jpg',
-  },
-  {
-    name: 'Francois De Villiers',
-    role: 'CTO',
-    image: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/team/francois-du-toit.jpeg',
-  },
-  {
-    name: 'Attila Szucs',
-    role: 'Head of Analytics',
-    image: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/team/attila-szucs.jpeg',
-  },
-  {
-    name: 'Sarah Chen',
-    role: 'Head of Paid Media',
-    image: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/team/sarah-chen.png',
-  },
-]
-
 // Bar chart data for results section
 const barData = [
   { x: 0, y: 209.794, height: 77, fill: '#F9FAF2', opacity: 0.7 },
@@ -175,21 +151,14 @@ export default function HomePage() {
                 className="mt-2 text-lg text-neutral-700 leading-relaxed"
                 variants={fadeInUp}
               >
-                We spent 10 years cracking the code on customer language. The exact phrases that make people stop scrolling and pull out their wallets.
+                We spent 10 years cracking the code on customer language - the exact phrases that make people stop scrolling and pull out their wallets.
               </motion.p>
               
               <motion.p 
-                className="mt-4 text-lg font-semibold text-neutral-800"
+                className="mt-4 text-lg text-neutral-700 leading-relaxed"
                 variants={fadeInUp}
               >
-                Your agency is still guessing. You&apos;re getting our entire decade of pattern recognition in a 14-day pilot.
-              </motion.p>
-              
-              <motion.p 
-                className="mt-2 text-lg text-neutral-700 leading-relaxed"
-                variants={fadeInUp}
-              >
-                That&apos;s why their ads bomb and ours don&apos;t.
+                So while your agency is still guessing and running ads that bomb, we turn your buried customer insights into concepts that SMASH IT in 14 days or less.
               </motion.p>
               
               <motion.div 
@@ -980,51 +949,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SECTION 12: TEAM */}
-      <section id="team" className="bg-black text-white py-16 md:py-24 scroll-mt-20">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-8">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ amount: 0.3, once: true }}
-            variants={staggerContainer}
-          >
-            <motion.h2 
-              className="text-4xl md:text-5xl font-bold mb-4"
-              variants={fadeInUp}
-            >
-              Who we are
-            </motion.h2>
-            
-            <motion.p 
-              className="text-lg text-neutral-300 mb-12 max-w-2xl"
-              variants={fadeInUp}
-            >
-              We&apos;re a small team of former operators, not a bloated agency. Everyone here has run campaigns, owned P&amp;Ls, and lost sleep over CAC.
-            </motion.p>
-            
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
-              {teamMembers.map((member) => (
-                <motion.div key={member.name} className="group" variants={fadeInUp}>
-                  <div className="relative aspect-[3/4] mb-4 overflow-hidden bg-neutral-800">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      fill
-                      className="object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
-                      sizes="(max-width: 768px) 50vw, 25vw"
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
-                  <p className="text-sm text-neutral-400">{member.role}</p>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* SECTION 13: FINAL CTA */}
+      {/* SECTION 12: FINAL CTA */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-[#1A2B3C] to-[#0F1B28]">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8 text-center">
           <motion.div
