@@ -99,11 +99,11 @@ export default function ContactForm({
 
   const formatAdSpend = (value: number) => {
     if (value >= 1000000) {
-      return `$${(value / 1000000).toFixed(1)}M`
+      return `$${(value / 1000000).toFixed(1)}M/m`
     } else if (value >= 1000) {
-      return `$${(value / 1000).toFixed(0)}K`
+      return `$${(value / 1000).toFixed(0)}K/m`
     }
-    return `$${value}`
+    return `$${value}/m`
   }
 
   if (isSubmitted) {
@@ -246,8 +246,8 @@ export default function ContactForm({
                       className="w-full h-3 bg-muted rounded-lg appearance-none cursor-pointer slider"
                     />
                     <div className="flex justify-between text-xs text-foreground/50 mt-2">
-                      <span>$1K</span>
-                      <span>$100K+</span>
+                      <span>$1K/m</span>
+                      <span>$100K+/m</span>
                     </div>
                   </div>
                 </div>

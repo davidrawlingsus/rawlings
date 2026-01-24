@@ -52,7 +52,7 @@ export default function LogoSlider({
               {tripled.map((logo, idx) => (
                 <div 
                   key={`${logo.alt}-${idx}`}
-                  className="relative flex-shrink-0 h-12 md:h-16 w-32 md:w-40 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300"
+                  className="relative flex-shrink-0 h-12 md:h-16 w-32 md:w-40"
                 >
                   <Image
                     src={logo.src}

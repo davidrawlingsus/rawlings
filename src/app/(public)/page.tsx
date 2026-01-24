@@ -102,7 +102,7 @@ export default function HomePage() {
       <Header />
 
       {/* SECTION 1: HERO */}
-      <section id="hero" className="pt-12 pb-16 md:pt-20 md:pb-24">
+      <section id="hero" className="pt-12 pb-16 md:pt-20 md:pb-24 bg-black">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8">
           <div className="grid md:grid-cols-[60%_40%] gap-12 items-center">
             {/* Left Copy */}
@@ -113,49 +113,49 @@ export default function HomePage() {
               variants={staggerContainer}
             >
               <motion.h1 
-                className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight"
+                className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-white"
                 variants={fadeInUp}
               >
                 Finally, you can <span className="text-[#B9F040]">fire your Facebook agency.</span>
               </motion.h1>
               
               <motion.p 
-                className="mt-6 text-lg md:text-xl text-neutral-600 leading-relaxed"
+                className="mt-6 text-lg md:text-xl text-neutral-300 leading-relaxed"
                 variants={fadeInUp}
               >
                 Your customers already wrote your best ads. They&apos;re sitting in surveys, spreadsheets and support tickets while your agency bills $10K/month to recycle the same three hooks they used on everyone else.
               </motion.p>
               
               <motion.p 
-                className="mt-4 text-lg font-semibold text-neutral-800"
+                className="mt-4 text-lg font-semibold text-white"
                 variants={fadeInUp}
               >
                 Here&apos;s the thing...
               </motion.p>
               
               <motion.p 
-                className="mt-2 text-lg text-neutral-700 leading-relaxed"
+                className="mt-2 text-lg text-neutral-300 leading-relaxed"
                 variants={fadeInUp}
               >
                 Marketably turns that buried gold into ad concepts that beat your current ads by 40%+ on ROAS, CPA, or profit.
               </motion.p>
               
               <motion.p 
-                className="mt-4 text-lg font-semibold text-neutral-800"
+                className="mt-4 text-lg font-semibold text-white"
                 variants={fadeInUp}
               >
                 How?
               </motion.p>
               
               <motion.p 
-                className="mt-2 text-lg text-neutral-700 leading-relaxed"
+                className="mt-2 text-lg text-neutral-300 leading-relaxed"
                 variants={fadeInUp}
               >
                 We spent 10 years learning how to extract money-printing phrases from customer data.
               </motion.p>
               
               <motion.p 
-                className="mt-4 text-lg text-neutral-700 leading-relaxed"
+                className="mt-4 text-lg text-neutral-300 leading-relaxed"
                 variants={fadeInUp}
               >
                 So while your agency is still guessing and running ads that bomb, we turn your buried customer insights into concepts that SMASH IT in 14 days or less.
@@ -173,7 +173,7 @@ export default function HomePage() {
                 </a>
                 <a 
                   href="#how-it-works"
-                  className="h-14 px-4 text-neutral-500 hover:text-neutral-700 transition-colors flex items-center justify-center text-sm"
+                  className="h-14 px-4 text-neutral-400 hover:text-white transition-colors flex items-center justify-center text-sm"
                 >
                   See our guarantee →
                 </a>
@@ -203,9 +203,9 @@ export default function HomePage() {
       </section>
 
       {/* SECTION 2: LOGO BAND / TRUST SIGNALS */}
-      <section className="border-y border-neutral-200">
+      <section className="border-y border-neutral-800 bg-black">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8 py-6">
-          <p className="text-center text-neutral-600 mb-2">
+          <p className="text-center text-neutral-400 mb-2">
             Trusted by brands who stopped guessing and started listening.
           </p>
         </div>
@@ -225,7 +225,7 @@ export default function HomePage() {
               className="text-sm uppercase tracking-widest text-neutral-400 mb-4"
               variants={fadeInUp}
             >
-              Here&apos;s what you&apos;re actually paying for...
+              Here&apos;s what you&apos;re actually paying your agency for...
             </motion.p>
             
             <motion.h2 
@@ -268,8 +268,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SECTION 4: THE SOLUTION (White/light background) */}
-      <section id="how-it-works" className="py-16 md:py-24 scroll-mt-20">
+      {/* SECTION 4: THE SOLUTION */}
+      <section id="how-it-works" className="py-16 md:py-24 scroll-mt-20 bg-neutral-900">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
@@ -285,14 +285,14 @@ export default function HomePage() {
             </motion.p>
             
             <motion.h2 
-              className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white"
               variants={fadeInUp}
             >
               Turn Voice of Customer into ads that actually convert.
             </motion.h2>
             
             <motion.p 
-              className="text-xl text-neutral-600 mb-16 max-w-3xl"
+              className="text-xl text-neutral-400 mb-16 max-w-3xl"
               variants={fadeInUp}
             >
               Marketably bridges the gap between what your customers say and what you ship in your ad account.
@@ -301,13 +301,13 @@ export default function HomePage() {
             <div className="grid md:grid-cols-3 gap-8 md:gap-12">
               {/* Step 1 */}
               <motion.div 
-                className="relative p-8 rounded-2xl border border-neutral-200 bg-white"
+                className="relative p-8 rounded-2xl border border-neutral-800 bg-neutral-800"
                 variants={fadeInUp}
               >
                 <div className="w-12 h-12 rounded-full bg-[#B9F040] flex items-center justify-center text-black font-bold text-xl mb-6">1</div>
-                <h3 className="text-2xl font-semibold mb-4">Ingest</h3>
-                <p className="text-neutral-600 mb-4">Upload your customer research:</p>
-                <ul className="space-y-2 text-neutral-600">
+                <h3 className="text-2xl font-semibold mb-4 text-white">Ingest</h3>
+                <p className="text-neutral-300 mb-4">Upload your customer research:</p>
+                <ul className="space-y-2 text-neutral-300">
                   <li>• Survey responses</li>
                   <li>• Review data</li>
                   <li>• Support tickets</li>
@@ -318,13 +318,13 @@ export default function HomePage() {
               
               {/* Step 2 */}
               <motion.div 
-                className="relative p-8 rounded-2xl border border-neutral-200 bg-white"
+                className="relative p-8 rounded-2xl border border-neutral-800 bg-neutral-800"
                 variants={fadeInUp}
               >
                 <div className="w-12 h-12 rounded-full bg-[#B9F040] flex items-center justify-center text-black font-bold text-xl mb-6">2</div>
-                <h3 className="text-2xl font-semibold mb-4">Analyze</h3>
-                <p className="text-neutral-600 mb-4">Our engine identifies:</p>
-                <ul className="space-y-2 text-neutral-600">
+                <h3 className="text-2xl font-semibold mb-4 text-white">Analyze</h3>
+                <p className="text-neutral-300 mb-4">Our engine identifies:</p>
+                <ul className="space-y-2 text-neutral-300">
                   <li>• High-signal language patterns</li>
                   <li>• Emotional trigger points</li>
                   <li>• Job-to-be-done frameworks</li>
@@ -335,13 +335,13 @@ export default function HomePage() {
               
               {/* Step 3 */}
               <motion.div 
-                className="relative p-8 rounded-2xl border border-neutral-200 bg-white"
+                className="relative p-8 rounded-2xl border border-neutral-800 bg-neutral-800"
                 variants={fadeInUp}
               >
                 <div className="w-12 h-12 rounded-full bg-[#B9F040] flex items-center justify-center text-black font-bold text-xl mb-6">3</div>
-                <h3 className="text-2xl font-semibold mb-4">Generate</h3>
-                <p className="text-neutral-600 mb-4">You get ready-to-test ad concepts:</p>
-                <ul className="space-y-2 text-neutral-600">
+                <h3 className="text-2xl font-semibold mb-4 text-white">Generate</h3>
+                <p className="text-neutral-300 mb-4">You get ready-to-test ad concepts:</p>
+                <ul className="space-y-2 text-neutral-300">
                   <li>• 12-20 Facebook ad variations</li>
                   <li>• Hooks in customer language</li>
                   <li>• Primary text and headlines</li>
@@ -355,7 +355,7 @@ export default function HomePage() {
       </section>
 
       {/* SECTION 4B: WHY THIS WORKS */}
-      <section className="py-16 md:py-24 bg-neutral-50">
+      <section className="py-16 md:py-24 bg-black">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
@@ -364,7 +364,7 @@ export default function HomePage() {
             variants={staggerContainer}
           >
             <motion.h2 
-              className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-white"
               variants={fadeInUp}
             >
               Why agencies can&apos;t do this (and we can)
@@ -373,21 +373,21 @@ export default function HomePage() {
             <div className="grid md:grid-cols-3 gap-8 md:gap-12">
               <motion.div variants={fadeInUp}>
                 <h3 className="text-xl font-semibold text-[#B9F040] mb-3">They&apos;re learning on your dime.</h3>
-                <p className="text-neutral-600">
+                <p className="text-neutral-300">
                   Your agency treats every client like a blank slate. They spend 3-6 months &ldquo;getting to know your brand,&rdquo; testing random concepts, burning your budget to figure out what works.
                 </p>
               </motion.div>
               
               <motion.div variants={fadeInUp}>
                 <h3 className="text-xl font-semibold text-[#B9F040] mb-3">We&apos;ve already done the work.</h3>
-                <p className="text-neutral-600">
+                <p className="text-neutral-300">
                   We spent 10 years analyzing 300+ brands, $12M in ad spend, and millions of customer feedback points. We know which language patterns convert before we touch your data.
                 </p>
               </motion.div>
               
               <motion.div variants={fadeInUp}>
                 <h3 className="text-xl font-semibold text-[#B9F040] mb-3">You get the shortcuts without the tuition.</h3>
-                <p className="text-neutral-600">
+                <p className="text-neutral-300">
                   What took us a decade to learn gets applied to your brand in 14 days. That&apos;s the entire value proposition.
                 </p>
               </motion.div>
@@ -476,7 +476,7 @@ export default function HomePage() {
       </section>
 
       {/* SECTION 6: TESTIMONIALS */}
-      <section className="py-16 md:py-24 bg-neutral-50">
+      <section className="py-16 md:py-24 bg-neutral-900">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
@@ -486,14 +486,14 @@ export default function HomePage() {
           >
             <div className="grid md:grid-cols-3 gap-6">
               <motion.div 
-                className="p-8 rounded-2xl bg-white border border-neutral-200"
+                className="p-8 rounded-2xl bg-neutral-800 border border-neutral-700"
                 variants={fadeInUp}
               >
-                <p className="text-2xl md:text-3xl font-semibold text-neutral-900 mb-8">
+                <p className="text-2xl md:text-3xl font-semibold text-white mb-8">
                   &ldquo;A huge impact on the business.&rdquo;
                 </p>
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-neutral-100 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-full bg-neutral-700 flex items-center justify-center">
                     <Image
                       src="https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/katkin_logo_square.png"
                       alt="KatKin"
@@ -503,21 +503,21 @@ export default function HomePage() {
                     />
                   </div>
                   <div>
-                    <p className="font-semibold">Jim Warren</p>
-                    <p className="text-sm text-neutral-500">KatKin &amp; Mous</p>
+                    <p className="font-semibold text-white">Jim Warren</p>
+                    <p className="text-sm text-neutral-400">KatKin &amp; Mous</p>
                   </div>
                 </div>
               </motion.div>
               
               <motion.div 
-                className="p-8 rounded-2xl bg-white border border-neutral-200"
+                className="p-8 rounded-2xl bg-neutral-800 border border-neutral-700"
                 variants={fadeInUp}
               >
-                <p className="text-2xl md:text-3xl font-semibold text-neutral-900 mb-8">
+                <p className="text-2xl md:text-3xl font-semibold text-white mb-8">
                   &ldquo;Logical, pragmatic, and guided by data.&rdquo;
                 </p>
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-neutral-100 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-full bg-neutral-700 flex items-center justify-center">
                     <Image
                       src="https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/mous_logo_square.png"
                       alt="Mous"
@@ -527,21 +527,21 @@ export default function HomePage() {
                     />
                   </div>
                   <div>
-                    <p className="font-semibold">Richard Kessell</p>
-                    <p className="text-sm text-neutral-500">Mous</p>
+                    <p className="font-semibold text-white">Richard Kessell</p>
+                    <p className="text-sm text-neutral-400">Mous</p>
                   </div>
                 </div>
               </motion.div>
               
               <motion.div 
-                className="p-8 rounded-2xl bg-white border border-neutral-200"
+                className="p-8 rounded-2xl bg-neutral-800 border border-neutral-700"
                 variants={fadeInUp}
               >
-                <p className="text-2xl md:text-3xl font-semibold text-neutral-900 mb-8">
+                <p className="text-2xl md:text-3xl font-semibold text-white mb-8">
                   &ldquo;Our most successful Facebook campaign ever.&rdquo;
                 </p>
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-neutral-100 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-full bg-neutral-700 flex items-center justify-center">
                     <Image
                       src="https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/wattbike_logo_rectangle.png"
                       alt="Wattbike"
@@ -551,8 +551,8 @@ export default function HomePage() {
                     />
                   </div>
                   <div>
-                    <p className="font-semibold">Duncan Bradley</p>
-                    <p className="text-sm text-neutral-500">Wattbike</p>
+                    <p className="font-semibold text-white">Duncan Bradley</p>
+                    <p className="text-sm text-neutral-400">Wattbike</p>
                   </div>
                 </div>
               </motion.div>
@@ -562,7 +562,7 @@ export default function HomePage() {
       </section>
 
       {/* SECTION 7: THE OFFER */}
-      <section id="offer" className="py-16 md:py-24 scroll-mt-20">
+      <section id="offer" className="py-16 md:py-24 scroll-mt-20 bg-black">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
@@ -579,18 +579,18 @@ export default function HomePage() {
             </motion.p>
             
             <motion.h2 
-              className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white"
               variants={fadeInUp}
             >
               Start with a Facebook Ads Pilot.
             </motion.h2>
             
             <motion.div 
-              className="text-lg text-neutral-600 mb-12"
+              className="text-lg text-neutral-400 mb-12"
               variants={fadeInUp}
             >
               <p>This is not software access. This is not generic AI copy.</p>
-              <p className="mt-4 text-xl font-medium text-neutral-800">This is a 14-day cage match between our ad concepts and whatever you&apos;re running now.</p>
+              <p className="mt-4 text-xl font-medium text-white">This is a 14-day cage match between our ad concepts and whatever you&apos;re running now.</p>
             </motion.div>
           </motion.div>
           
@@ -602,25 +602,25 @@ export default function HomePage() {
             className="max-w-3xl mx-auto"
           >
             <motion.h3 
-              className="text-2xl font-semibold mb-4"
+              className="text-2xl font-semibold mb-4 text-white"
               variants={fadeInUp}
             >
               The setup:
             </motion.h3>
             
             <motion.p 
-              className="text-lg text-neutral-700 mb-6"
+              className="text-lg text-neutral-300 mb-6"
               variants={fadeInUp}
             >
               We mine your Voice of Customer data for 12-20 ad concepts. You run them head-to-head against your current ads (or your agency&apos;s latest work).
             </motion.p>
             
             <motion.div 
-              className="mb-8 p-6 bg-neutral-50 rounded-xl border border-neutral-200"
+              className="mb-8 p-6 bg-neutral-900 rounded-xl border border-neutral-800"
               variants={fadeInUp}
             >
-              <p className="text-lg font-semibold text-neutral-800 mb-4">We win if we beat your control by 40%+ on:</p>
-              <ul className="space-y-2 text-lg text-neutral-700 mb-4">
+              <p className="text-lg font-semibold text-white mb-4">We win if we beat your control by 40%+ on:</p>
+              <ul className="space-y-2 text-lg text-neutral-300 mb-4">
                 <li><strong>ROAS</strong> (more revenue per dollar spent)</li>
                 <li><strong>CPA</strong> (cheaper customers)</li>
                 <li><strong>Profit per customer</strong> (more money in your account)</li>
@@ -629,7 +629,7 @@ export default function HomePage() {
             </motion.div>
             
             <motion.h3 
-              className="text-2xl font-semibold mb-6"
+              className="text-2xl font-semibold mb-6 text-white"
               variants={fadeInUp}
             >
               What you get:
@@ -648,46 +648,46 @@ export default function HomePage() {
               ].map((item, index) => (
                 <li key={index} className="flex gap-3 items-start">
                   <CheckCircle2 className="w-6 h-6 text-[#B9F040] flex-shrink-0 mt-0.5" />
-                  <span className="text-lg text-neutral-700">{item}</span>
+                  <span className="text-lg text-neutral-300">{item}</span>
                 </li>
               ))}
             </motion.ul>
             
             <motion.div 
-              className="mb-8 p-6 bg-[#B9F040]/5 rounded-xl border border-[#B9F040]/20"
+              className="mb-8 p-6 bg-neutral-900 rounded-xl border border-[#B9F040]/30"
               variants={fadeInUp}
             >
-              <h4 className="text-xl font-semibold text-neutral-800 mb-4">Here&apos;s what makes this different:</h4>
-              <p className="text-lg text-neutral-700 mb-3">
+              <h4 className="text-xl font-semibold text-white mb-4">Here&apos;s what makes this different:</h4>
+              <p className="text-lg text-neutral-300 mb-3">
                 Your agency spends 3 months &ldquo;learning your brand.&rdquo; We spent 10 years learning customer language patterns across 300+ brands.
               </p>
-              <p className="text-lg text-neutral-700 mb-3">
+              <p className="text-lg text-neutral-300 mb-3">
                 They&apos;re starting from zero every time. You&apos;re getting a decade of pattern recognition applied to your data in 14 days.
               </p>
               <p className="text-lg font-semibold text-[#B9F040]">That&apos;s the edge.</p>
             </motion.div>
             
             <motion.div 
-              className="mb-8 p-6 bg-neutral-50 rounded-xl border border-neutral-200"
+              className="mb-8 p-6 bg-neutral-900 rounded-xl border border-neutral-800"
               variants={fadeInUp}
             >
-              <p className="text-neutral-700 mb-2"><strong>Already running ads?</strong> We&apos;ll test against your best performers.</p>
-              <p className="text-neutral-700"><strong>Starting from scratch?</strong> We&apos;ll build your first campaigns with proper test structure baked in.</p>
+              <p className="text-neutral-300 mb-2"><strong className="text-white">Already running ads?</strong> We&apos;ll test against your best performers.</p>
+              <p className="text-neutral-300"><strong className="text-white">Starting from scratch?</strong> We&apos;ll build your first campaigns with proper test structure baked in.</p>
             </motion.div>
             
             <motion.div 
               className="p-6 bg-[#B9F040]/10 rounded-xl border-2 border-[#B9F040]"
               variants={fadeInUp}
             >
-              <p className="text-xl font-semibold text-neutral-800 mb-3">The deal: Our concepts beat your current ads in 14 days, or you get your money back. No questions asked.</p>
-              <p className="text-lg text-neutral-700">We&apos;re so confident in this process, we&apos;ll refund every penny if you&apos;re unhappy for any reason. Your agency won&apos;t do that. Because they can&apos;t.</p>
+              <p className="text-xl font-semibold text-white mb-3">The deal: Our concepts beat your current ads in 14 days, or you get your money back. No questions asked.</p>
+              <p className="text-lg text-neutral-300">We&apos;re so confident in this process, we&apos;ll refund every penny if you&apos;re unhappy for any reason. Your agency won&apos;t do that. Because they can&apos;t.</p>
             </motion.div>
           </motion.div>
         </div>
       </section>
 
       {/* SECTION 8: PRICING */}
-      <section id="pricing" className="py-16 md:py-24 bg-neutral-100 scroll-mt-20">
+      <section id="pricing" className="py-16 md:py-24 bg-neutral-900 scroll-mt-20">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
@@ -697,7 +697,7 @@ export default function HomePage() {
             className="max-w-2xl mx-auto text-center"
           >
             <motion.h2 
-              className="text-3xl md:text-4xl font-bold mb-8"
+              className="text-3xl md:text-4xl font-bold mb-8 text-white"
               variants={fadeInUp}
             >
               Stop paying agency prices for recycled work.
@@ -705,11 +705,11 @@ export default function HomePage() {
             
             <motion.div variants={fadeInUp}>
               <p className="text-5xl md:text-6xl font-bold text-[#B9F040]">Pilot: Starting at $2,500</p>
-              <p className="text-lg text-neutral-500 mt-2">(vs. $10K-15K/month for your agency to ignore your customer data)</p>
+              <p className="text-lg text-neutral-400 mt-2">(vs. $10K-15K/month for your agency to ignore your customer data)</p>
             </motion.div>
             
             <motion.div 
-              className="mt-8 text-lg text-neutral-600"
+              className="mt-8 text-lg text-neutral-400"
               variants={fadeInUp}
             >
               <p className="mb-4">Final cost depends on:</p>
@@ -728,16 +728,16 @@ export default function HomePage() {
             </motion.p>
             
             <motion.div 
-              className="mt-8 p-6 bg-white rounded-xl border border-neutral-200 text-left"
+              className="mt-8 p-6 bg-neutral-800 rounded-xl border border-neutral-700 text-left"
               variants={fadeInUp}
             >
-              <p className="text-neutral-700 mb-4">
+              <p className="text-neutral-300 mb-4">
                 Your agency charges $10K/month. You get 20-30 hours of junior strategist time, half of which goes to &ldquo;status updates&rdquo; and &ldquo;sync calls.&rdquo;
               </p>
-              <p className="text-neutral-800 font-semibold mb-4">
+              <p className="text-white font-semibold mb-4">
                 We charge $2,500 once. You get 10 years of customer language expertise applied to your brand in 2 weeks.
               </p>
-              <p className="text-neutral-700">
+              <p className="text-neutral-300">
                 This pilot gives you 12-20 ad concepts grounded in actual customer language. No retainer. No sync calls. No junior strategist learning on your dime. And if it doesn&apos;t work? You pay nothing.
               </p>
             </motion.div>
@@ -755,7 +755,7 @@ export default function HomePage() {
       </section>
 
       {/* SECTION 9: FUTURE VALUE ANCHOR */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-black">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
@@ -765,22 +765,22 @@ export default function HomePage() {
             className="max-w-3xl mx-auto"
           >
             <motion.h2 
-              className="text-3xl md:text-4xl font-bold mb-6"
+              className="text-3xl md:text-4xl font-bold mb-6 text-white"
               variants={fadeInUp}
             >
               What happens after the pilot?
             </motion.h2>
             
             <motion.p 
-              className="text-xl text-neutral-700 mb-8"
+              className="text-xl text-neutral-300 mb-8"
               variants={fadeInUp}
             >
               Most teams continue with Marketably as an ongoing creative intelligence layer - because once you&apos;ve seen what a decade of pattern recognition looks like, going back to agency guesswork feels insane.
             </motion.p>
             
             <motion.div variants={fadeInUp}>
-              <p className="text-lg text-neutral-600 mb-4">Typical next step includes:</p>
-              <ul className="space-y-2 text-lg text-neutral-700">
+              <p className="text-lg text-neutral-400 mb-4">Typical next step includes:</p>
+              <ul className="space-y-2 text-lg text-neutral-300">
                 <li>• Monthly ad concept generation</li>
                 <li>• Continuous VoC ingestion and analysis</li>
                 <li>• Iteration based on live campaign performance</li>
@@ -789,17 +789,17 @@ export default function HomePage() {
             </motion.div>
             
             <motion.div 
-              className="mt-10 p-6 bg-neutral-50 rounded-xl border border-neutral-200"
+              className="mt-10 p-6 bg-neutral-900 rounded-xl border border-neutral-800"
               variants={fadeInUp}
             >
-              <p className="text-xl font-semibold text-neutral-800 mb-2">
+              <p className="text-xl font-semibold text-white mb-2">
                 Ongoing engagements typically range from $3,000-$7,000/month
               </p>
-              <p className="text-neutral-600">depending on scope and ad spend.</p>
+              <p className="text-neutral-400">depending on scope and ad spend.</p>
             </motion.div>
             
             <motion.p 
-              className="mt-6 text-lg text-neutral-600"
+              className="mt-6 text-lg text-neutral-400"
               variants={fadeInUp}
             >
               The pilot lets you experience the value before committing.
@@ -873,7 +873,7 @@ export default function HomePage() {
       </section>
 
       {/* SECTION 11: FOUNDER STORY */}
-      <section id="about" className="py-16 md:py-24 bg-gradient-to-br from-[#B9F040]/10 to-transparent scroll-mt-20">
+      <section id="about" className="py-16 md:py-24 bg-neutral-900 scroll-mt-20">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
@@ -893,7 +893,7 @@ export default function HomePage() {
                 className="flex justify-center md:justify-start"
                 variants={fadeInUp}
               >
-                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-[#B9F040]/30">
+                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-[#B9F040]/50">
                   <Image
                     src="https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/team/david-rawlings.jpg"
                     alt="David Rawlings, Founder"
@@ -905,11 +905,11 @@ export default function HomePage() {
               </motion.div>
               
               <motion.div variants={fadeInUp}>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
                   I built this because I was tired of watching great insights die in spreadsheets.
                 </h2>
                 
-                <div className="prose prose-lg max-w-none text-neutral-700">
+                <div className="prose prose-lg max-w-none text-neutral-300">
                   <p>
                     I&apos;m David Rawlings, and I&apos;ve spent over a decade running growth for brands that actually had to make their numbers.
                   </p>
@@ -917,17 +917,17 @@ export default function HomePage() {
                     The pattern was always the same: teams would run surveys, collect reviews, talk to customers, then turn around and ship ads that sounded nothing like what they&apos;d just learned.
                   </p>
                   <p>
-                    The gap between <strong>knowing</strong> and <strong>doing</strong> was killing performance.
+                    The gap between <strong className="text-white">knowing</strong> and <strong className="text-white">doing</strong> was killing performance.
                   </p>
                   <p>
-                    So I built Marketably to close it. Not as another analytics dashboard. Not as a copywriting tool. As an <strong>execution layer</strong> that turns Voice of Customer into concepts you can actually test tomorrow.
+                    So I built Marketably to close it. Not as another analytics dashboard. Not as a copywriting tool. As an <strong className="text-white">execution layer</strong> that turns Voice of Customer into concepts you can actually test tomorrow.
                   </p>
                 </div>
                 
                 <div className="mt-8">
                   <a 
                     href="#apply"
-                    className="inline-flex h-12 px-6 rounded-lg font-semibold bg-black text-white hover:bg-neutral-800 transition-colors items-center justify-center"
+                    className="inline-flex h-12 px-6 rounded-lg font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors items-center justify-center"
                   >
                     See what it can do for your brand →
                   </a>
@@ -936,11 +936,11 @@ export default function HomePage() {
                 <div className="mt-10 grid grid-cols-2 gap-8">
                   <div>
                     <p className="text-4xl font-bold text-[#B9F040]">300+</p>
-                    <p className="text-neutral-600">brands helped</p>
+                    <p className="text-neutral-400">brands helped</p>
                   </div>
                   <div>
                     <p className="text-4xl font-bold text-[#B9F040]">$12M+</p>
-                    <p className="text-neutral-600">in ad spend analyzed</p>
+                    <p className="text-neutral-400">in ad spend analyzed</p>
                   </div>
                 </div>
               </motion.div>
