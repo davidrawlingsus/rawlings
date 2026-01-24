@@ -222,7 +222,7 @@ export default function HomePage() {
             variants={staggerContainer}
           >
             <motion.p 
-              className="text-sm uppercase tracking-widest text-neutral-400 mb-4"
+              className="text-sm uppercase tracking-widest text-[#B9F040] mb-4 font-semibold"
               variants={fadeInUp}
             >
               Here&apos;s what you&apos;re actually paying your agency for...
@@ -313,6 +313,7 @@ export default function HomePage() {
                   <li>• Support tickets</li>
                   <li>• Interview transcripts</li>
                   <li>• Any voice-of-customer source</li>
+                  <li className="text-[#B9F040] italic">• No VoC yet? We&apos;ll help you get it</li>
                 </ul>
               </motion.div>
               
@@ -700,46 +701,72 @@ export default function HomePage() {
               className="text-3xl md:text-4xl font-bold mb-8 text-white"
               variants={fadeInUp}
             >
-              Stop paying agency prices for recycled work.
+              Full refund if we don&apos;t beat your current ads. Here&apos;s why we&apos;re so confident:
             </motion.h2>
             
             <motion.div variants={fadeInUp}>
               <p className="text-5xl md:text-6xl font-bold text-[#B9F040]">14-Day Test: Starting at $2,500</p>
-              <p className="text-lg text-neutral-400 mt-2">(vs. $10K-15K/month for your agency to ignore your customer data)</p>
             </motion.div>
             
             <motion.div 
-              className="mt-8 text-lg text-neutral-400"
+              className="mt-8 text-lg text-neutral-300 text-left max-w-xl mx-auto space-y-4"
               variants={fadeInUp}
             >
-              <p className="mb-4">Final cost depends on:</p>
-              <ul className="space-y-2">
+              <p>
+                We spent a decade mastering Voice of Customer research for 49 brands—generating hundreds of millions in revenue through conversion optimization.
+              </p>
+              <p>
+                The entire time, we watched those same brands hand their customer insights to agencies... who&apos;d ignore them and ship recycled hooks instead.
+              </p>
+              <p>
+                So we built a system that does what agencies won&apos;t: actually uses your customer language to write ads.
+              </p>
+              <p className="text-xl font-semibold text-white">
+                Your agency is guessing. We already know what works.
+              </p>
+            </motion.div>
+            
+            {/* You get vs They get comparison */}
+            <motion.div 
+              className="mt-10 grid md:grid-cols-2 gap-6 text-left"
+              variants={fadeInUp}
+            >
+              <div className="p-6 bg-[#B9F040]/10 rounded-xl border border-[#B9F040]/30">
+                <p className="text-lg font-bold text-[#B9F040] mb-4">With us:</p>
+                <ul className="space-y-2 text-neutral-300">
+                  <li>• Ads built from what your customers actually said</li>
+                  <li>• 12-20 concepts ready to test in 14 days</li>
+                  <li>• Full refund if we don&apos;t beat your current ads</li>
+                </ul>
+              </div>
+              
+              <div className="p-6 bg-neutral-800 rounded-xl border border-neutral-700">
+                <p className="text-lg font-bold text-neutral-400 mb-4">With them:</p>
+                <ul className="space-y-2 text-neutral-400">
+                  <li>• Ads built from what a 26-year-old thinks might work</li>
+                  <li>• 3 months of &ldquo;learning your brand&rdquo; before they get any real traction</li>
+                  <li>• Locked into % of ad spend (so they win even when you lose)</li>
+                </ul>
+              </div>
+            </motion.div>
+            
+            <motion.p 
+              className="mt-8 text-xl font-bold text-[#B9F040]"
+              variants={fadeInUp}
+            >
+              And if it doesn&apos;t work? You pay nothing.
+            </motion.p>
+            
+            <motion.div 
+              className="mt-8 text-neutral-400"
+              variants={fadeInUp}
+            >
+              <p className="font-semibold text-white mb-2">Final cost depends on:</p>
+              <ul className="space-y-1">
                 <li>• Volume of existing customer data</li>
                 <li>• Hands-on support required</li>
                 <li>• Whether active campaigns exist</li>
               </ul>
-            </motion.div>
-            
-            <motion.p 
-              className="mt-6 text-xl font-bold text-[#B9F040]"
-              variants={fadeInUp}
-            >
-              Zero risk. Full refund if you&apos;re unhappy for any reason.
-            </motion.p>
-            
-            <motion.div 
-              className="mt-8 p-6 bg-neutral-800 rounded-xl border border-neutral-700 text-left"
-              variants={fadeInUp}
-            >
-              <p className="text-neutral-300 mb-4">
-                Your agency charges $10K/month. You get 20-30 hours of junior strategist time, half of which goes to &ldquo;status updates&rdquo; and &ldquo;sync calls.&rdquo;
-              </p>
-              <p className="text-white font-semibold mb-4">
-                We charge $2,500 once. You get 10 years of customer language expertise applied to your brand in 2 weeks.
-              </p>
-              <p className="text-neutral-300">
-                This test gives you 12-20 ad concepts grounded in actual customer language. No retainer. No sync calls. No junior strategist learning on your dime. And if it doesn&apos;t work? You pay nothing.
-              </p>
             </motion.div>
             
             <motion.div className="mt-10" variants={fadeInUp}>
@@ -857,7 +884,7 @@ export default function HomePage() {
                     'You\'re happy with your agency (keep them!)',
                     'You trust your instincts more than your customer data',
                     'You\'re not ready to test concepts in live campaigns',
-                    'You think "brand voice" trumps conversion every time',
+                    'You care more about "sounding on-brand" than making money',
                     'You need weekly sync calls to feel like you\'re getting value',
                   ].map((item, index) => (
                     <li key={index} className="flex gap-3 items-start">
@@ -909,7 +936,7 @@ export default function HomePage() {
                   I built this because I was tired of watching great insights die in spreadsheets.
                 </h2>
                 
-                <div className="prose prose-lg max-w-none text-neutral-300">
+                <div className="space-y-6 text-lg text-neutral-300">
                   <p>
                     I&apos;m David Rawlings, and I&apos;ve spent over a decade running growth for brands that actually had to make their numbers.
                   </p>
