@@ -169,7 +169,7 @@ export default function HomePage() {
                   href="#apply"
                   className="h-14 px-8 rounded-lg font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors flex items-center justify-center text-lg"
                 >
-                  Get Winning Ads
+                  Start Your 14-Day Test
                 </a>
                 <a 
                   href="#how-it-works"
@@ -431,7 +431,7 @@ export default function HomePage() {
                 <div className="p-6 rounded-xl bg-neutral-900 border border-neutral-800">
                   <p className="text-4xl md:text-5xl font-bold text-[#B9F040] mb-2">$180K</p>
                   <p className="text-xl text-white font-medium">saved in agency fees</p>
-                  <p className="text-neutral-400 mt-2">One pilot replaced 6 months of them telling you to &ldquo;test more creative&rdquo;</p>
+                  <p className="text-neutral-400 mt-2">One test replaced 6 months of them telling you to &ldquo;test more creative&rdquo;</p>
                 </div>
                 
                 <div className="p-6 rounded-xl bg-neutral-900 border border-neutral-800">
@@ -582,7 +582,7 @@ export default function HomePage() {
               className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white"
               variants={fadeInUp}
             >
-              Start with a Facebook Ads Pilot.
+              Put Us to the Test.
             </motion.h2>
             
             <motion.div 
@@ -590,7 +590,7 @@ export default function HomePage() {
               variants={fadeInUp}
             >
               <p>This is not software access. This is not generic AI copy.</p>
-              <p className="mt-4 text-xl font-medium text-white">This is a 14-day cage match between our ad concepts and whatever you&apos;re running now.</p>
+              <p className="mt-4 text-xl font-medium text-white">This is a 14-day test: our ad concepts vs. whatever you&apos;re running now.</p>
             </motion.div>
           </motion.div>
           
@@ -625,7 +625,7 @@ export default function HomePage() {
                 <li><strong>CPA</strong> (cheaper customers)</li>
                 <li><strong>Profit per customer</strong> (more money in your account)</li>
               </ul>
-              <p className="text-lg font-medium text-[#B9F040]">You only need to win on ONE of these metrics to make this pilot worth 10x what you paid.</p>
+              <p className="text-lg font-medium text-[#B9F040]">You only need to win on ONE of these metrics to make this test worth 10x what you paid.</p>
             </motion.div>
             
             <motion.h3 
@@ -704,7 +704,7 @@ export default function HomePage() {
             </motion.h2>
             
             <motion.div variants={fadeInUp}>
-              <p className="text-5xl md:text-6xl font-bold text-[#B9F040]">Pilot: Starting at $2,500</p>
+              <p className="text-5xl md:text-6xl font-bold text-[#B9F040]">14-Day Test: Starting at $2,500</p>
               <p className="text-lg text-neutral-400 mt-2">(vs. $10K-15K/month for your agency to ignore your customer data)</p>
             </motion.div>
             
@@ -738,7 +738,7 @@ export default function HomePage() {
                 We charge $2,500 once. You get 10 years of customer language expertise applied to your brand in 2 weeks.
               </p>
               <p className="text-neutral-300">
-                This pilot gives you 12-20 ad concepts grounded in actual customer language. No retainer. No sync calls. No junior strategist learning on your dime. And if it doesn&apos;t work? You pay nothing.
+                This test gives you 12-20 ad concepts grounded in actual customer language. No retainer. No sync calls. No junior strategist learning on your dime. And if it doesn&apos;t work? You pay nothing.
               </p>
             </motion.div>
             
@@ -747,7 +747,7 @@ export default function HomePage() {
                 href="#apply"
                 className="inline-flex h-14 px-8 rounded-lg font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors items-center justify-center text-lg"
               >
-                Replace Expensive Guesswork →
+                Start Your Test →
               </a>
             </motion.div>
           </motion.div>
@@ -768,7 +768,7 @@ export default function HomePage() {
               className="text-3xl md:text-4xl font-bold mb-6 text-white"
               variants={fadeInUp}
             >
-              What happens after the pilot?
+              What happens after the test?
             </motion.h2>
             
             <motion.p 
@@ -802,7 +802,7 @@ export default function HomePage() {
               className="mt-6 text-lg text-neutral-400"
               variants={fadeInUp}
             >
-              The pilot lets you experience the value before committing.
+              The test lets you experience the value before committing.
             </motion.p>
           </motion.div>
         </div>
@@ -976,7 +976,7 @@ export default function HomePage() {
               className="text-lg font-semibold text-[#B9F040] mb-10"
               variants={fadeInUp}
             >
-              Risk-free pilot. Full refund if we don&apos;t beat your current ads.
+              Risk-free test. Full refund if we don&apos;t beat your current ads.
             </motion.p>
             
             <motion.div className="flex flex-col items-center gap-4" variants={fadeInUp}>
@@ -1000,7 +1000,7 @@ export default function HomePage() {
       {/* SECTION 14: CONTACT FORM */}
       <div id="apply" className="scroll-mt-20">
         <ContactForm 
-          headline="Apply for the Facebook Ads Pilot" 
+          headline="Start Your 14-Day Test" 
           step0Title="Your brand"
           step0Description="Tell us about your business"
           showStep0Title={true}

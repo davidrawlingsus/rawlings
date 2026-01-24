@@ -115,7 +115,7 @@ export default function Header() {
               href={pathname === '/' ? '#apply' : '/#apply'}
               className="bg-[#B9F040] text-black px-6 py-2 rounded-lg font-semibold text-sm uppercase hover:bg-[#a0d636] transition-colors"
             >
-              START A PILOT
+              START A TEST
             </Link>
             <Link href="https://vizualizd.marketably.ai" className="border-2 border-white text-white px-6 py-2 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors">
               LOG IN
@@ -164,7 +164,7 @@ export default function Header() {
                 onClick={closeMobileMenu}
                 className="bg-[#B9F040] text-black px-6 py-3 rounded-lg font-semibold text-sm uppercase hover:bg-[#a0d636] transition-colors block text-center w-full"
               >
-                START A PILOT
+                START A TEST
               </Link>
               <Link href="https://vizualizd.marketably.ai" onClick={closeMobileMenu} className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors block text-center">
                 LOG IN
