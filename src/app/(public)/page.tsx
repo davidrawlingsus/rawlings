@@ -123,7 +123,7 @@ export default function HomePage() {
                 className="mt-6 text-lg md:text-xl text-neutral-600 leading-relaxed"
                 variants={fadeInUp}
               >
-                Your customers already wrote your best ads. They&apos;re sitting in spreadsheets, surveys, and support tickets while your agency bills $10K/month to recycle the same three hooks they used on everyone else.
+                Your customers already wrote your best ads. They&apos;re sitting in surveys, spreadsheets and support tickets while your agency bills $10K/month to recycle the same three hooks they used on everyone else.
               </motion.p>
               
               <motion.p 
@@ -137,7 +137,7 @@ export default function HomePage() {
                 className="mt-2 text-lg text-neutral-700 leading-relaxed"
                 variants={fadeInUp}
               >
-                Marketably turns that buried gold into ad concepts beating your current ads by 40%+ on ROAS, CPA, or profit.
+                Marketably turns that buried gold into ad concepts that beat your current ads by 40%+ on ROAS, CPA, or profit.
               </motion.p>
               
               <motion.p 
@@ -151,7 +151,7 @@ export default function HomePage() {
                 className="mt-2 text-lg text-neutral-700 leading-relaxed"
                 variants={fadeInUp}
               >
-                We spent 10 years cracking the code on customer language - the exact phrases that make people stop scrolling and pull out their wallets.
+                We spent 10 years learning how to extract money-printing phrases from customer data.
               </motion.p>
               
               <motion.p 
@@ -784,7 +784,7 @@ export default function HomePage() {
                 <li>• Monthly ad concept generation</li>
                 <li>• Continuous VoC ingestion and analysis</li>
                 <li>• Iteration based on live campaign performance</li>
-                <li>• Expansion into landing pages, email, and SEO copy</li>
+                <li>• Expansion into landing pages, email, and SEO copy. (Our method will deliver wins across your marketing mix)</li>
               </ul>
             </motion.div>
             
@@ -855,10 +855,10 @@ export default function HomePage() {
                 <ul className="space-y-4">
                   {[
                     'You\'re happy with your agency (keep them!)',
-                    'You don\'t have customer feedback data yet',
-                    'You\'re looking for someone to manage your ad account',
-                    'You\'re not ready to test concepts in the real world',
-                    'You need hand-holding and weekly status calls',
+                    'You trust your instincts more than your customer data',
+                    'You\'re not ready to test concepts in live campaigns',
+                    'You think "brand voice" trumps conversion every time',
+                    'You need weekly sync calls to feel like you\'re getting value',
                   ].map((item, index) => (
                     <li key={index} className="flex gap-3 items-start">
                       <XCircle className="w-5 h-5 text-neutral-500 flex-shrink-0 mt-0.5" />
