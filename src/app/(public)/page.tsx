@@ -137,7 +137,7 @@ export default function HomePage() {
                 className="mt-2 text-lg text-neutral-300 leading-relaxed"
                 variants={fadeInUp}
               >
-                Marketably turns that buried feedback gold into ad concepts that beat your current ads by 40%+ on ROAS, CPA, or profit.
+                Marketably turns that buried feedback into ad concepts that beat your current ads by 40%+ on ROAS, CPA, or profit.
               </motion.p>
               
               <motion.p 
