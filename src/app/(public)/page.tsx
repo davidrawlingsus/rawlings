@@ -155,6 +155,13 @@ export default function HomePage() {
               </motion.p>
               
               <motion.p 
+                className="mt-2 text-lg text-neutral-300 leading-relaxed"
+                variants={fadeInUp}
+              >
+                Then we built our system on research analyzing 100+ million Facebook posts.
+              </motion.p>
+              
+              <motion.p 
                 className="mt-4 text-lg text-neutral-300 leading-relaxed"
                 variants={fadeInUp}
               >
@@ -382,14 +389,14 @@ export default function HomePage() {
               <motion.div variants={fadeInUp}>
                 <h3 className="text-xl font-semibold text-[#B9F040] mb-3">We&apos;ve already done the work.</h3>
                 <p className="text-neutral-300">
-                  We spent 10 years analyzing 300+ brands, $12M in ad spend, and millions of customer feedback points. We know which language patterns convert before we touch your data.
+                  We spent 10 years mastering VoC across 49 brands and hundreds of millions in revenue. Then we built our system on research analyzing 100+ million Facebook posts - so we know which ad patterns convert before we touch your data.
                 </p>
               </motion.div>
               
               <motion.div variants={fadeInUp}>
                 <h3 className="text-xl font-semibold text-[#B9F040] mb-3">You get the shortcuts without the tuition.</h3>
                 <p className="text-neutral-300">
-                  What took us a decade to learn gets applied to your brand in 14 days. That&apos;s the entire value proposition.
+                  What took us a decade to learn - and what took researchers 100+ million posts to discover - gets applied to your brand in 14 days. That&apos;s the entire value proposition.
                 </p>
               </motion.div>
             </div>
@@ -665,7 +672,7 @@ export default function HomePage() {
               <p className="text-lg text-neutral-300 mb-3">
                 They&apos;re starting from zero every time. You&apos;re getting a decade of pattern recognition applied to your data in 14 days.
               </p>
-              <p className="text-lg font-semibold text-[#B9F040]">That&apos;s the edge.</p>
+              <p className="text-lg font-semibold text-[#B9F040]">That&apos;s our edge.</p>
             </motion.div>
             
             <motion.div 
@@ -713,16 +720,16 @@ export default function HomePage() {
               variants={fadeInUp}
             >
               <p>
-                We spent a decade mastering Voice of Customer research for 49 brands—generating hundreds of millions in revenue through conversion optimization.
+                We spent a decade mastering Voice of Customer research for 49 brands - generating hundreds of millions in revenue through conversion optimization.
               </p>
               <p>
                 The entire time, we watched those same brands hand their customer insights to agencies... who&apos;d ignore them and ship recycled hooks instead.
               </p>
               <p>
-                So we built a system that does what agencies won&apos;t: actually uses your customer language to write ads.
+                So we built a system that does what agencies won&apos;t: filters your customer language through an ad construction framework built on research analyzing 100+ million Facebook posts.
               </p>
               <p className="text-xl font-semibold text-white">
-                Your agency is guessing. We already know what works.
+                Your agency is guessing based on their last 10 clients. We&apos;re building on patterns from 100+ million posts.
               </p>
             </motion.div>
             
@@ -734,7 +741,7 @@ export default function HomePage() {
               <div className="p-6 bg-[#B9F040]/10 rounded-xl border border-[#B9F040]/30">
                 <p className="text-lg font-bold text-[#B9F040] mb-4">With us:</p>
                 <ul className="space-y-2 text-neutral-300">
-                  <li>• Ads built from what your customers actually said</li>
+                  <li>• Your customer language filtered through research on 100+ million Facebook posts</li>
                   <li>• 12-20 concepts ready to test in 14 days</li>
                   <li>• Full refund if we don&apos;t beat your current ads</li>
                 </ul>
@@ -743,7 +750,7 @@ export default function HomePage() {
               <div className="p-6 bg-neutral-800 rounded-xl border border-neutral-700">
                 <p className="text-lg font-bold text-neutral-400 mb-4">With them:</p>
                 <ul className="space-y-2 text-neutral-400">
-                  <li>• Ads built from what a 26-year-old thinks might work</li>
+                  <li>• Generic hooks based on their last 10 clients</li>
                   <li>• 3 months of &ldquo;learning your brand&rdquo; before they get any real traction</li>
                   <li>• Locked into % of ad spend (so they win even when you lose)</li>
                 </ul>
