@@ -405,7 +405,7 @@ export default function HomePage() {
               </motion.div>
               
               <motion.div variants={fadeInUp}>
-                <h3 className="text-xl font-semibold text-[#B9F040] mb-3">You get the shortcuts without the tuition.</h3>
+                <h3 className="text-xl font-semibold text-[#B9F040] mb-3">We spent 10 years. You spend 14 days.</h3>
                 <p className="text-neutral-300">
                   What took us a decade to learn - and what took researchers 100+ million posts to discover - gets applied to your brand in 14 days. That&apos;s the entire value proposition.
                 </p>
