@@ -169,7 +169,7 @@ export default function HomePage() {
                   href="#apply"
                   className="h-14 px-8 rounded-lg font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors flex items-center justify-center text-lg"
                 >
-                  Run your best ads ever: Launched in 2 days, proven in 2 weeks. Guaranteed.
+                  Run Your Best Ads Ever
                 </a>
                 <a 
                   href="#how-it-works"
