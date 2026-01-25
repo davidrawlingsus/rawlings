@@ -172,7 +172,7 @@ export default function HomePage() {
                   Run Your Best Ads Ever
                 </a>
                 <a 
-                  href="#how-it-works"
+                  href="#pricing"
                   className="h-14 px-4 text-neutral-400 hover:text-white transition-colors flex items-center justify-center text-sm"
                 >
                   See our guarantee →
@@ -951,7 +951,7 @@ export default function HomePage() {
               
               <motion.div variants={fadeInUp}>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-                  I built this because I was tired of watching great insights die in spreadsheets.
+                  I built this because I was tired of watching killer insights die in forgotten slide-decks.
                 </h2>
                 
                 <div className="space-y-6 text-lg text-neutral-300">
