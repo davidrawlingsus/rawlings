@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     'conversion science'
   ],
   icons: {
-    icon: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/favicon-Qc2DuikfU52nbitbWV3tei3zuUEUYm.ico',
+    icon: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/favicon-qlH9OqIOBTSdQfukX5aQGHooOkeXMJ.png',
   },
   openGraph: {
     title: 'Expert Conversion Rate Optimization Services | CRO Consultant',
