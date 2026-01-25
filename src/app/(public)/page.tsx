@@ -151,14 +151,7 @@ export default function HomePage() {
                 className="mt-2 text-lg text-neutral-300 leading-relaxed"
                 variants={fadeInUp}
               >
-                We spent 10 years learning how to extract money-printing phrases from customer data.
-              </motion.p>
-              
-              <motion.p 
-                className="mt-2 text-lg text-neutral-300 leading-relaxed"
-                variants={fadeInUp}
-              >
-                Then we built our system on research analyzing 100+ million Facebook posts.
+                We extract buying motives from your customer data, then filter them through an ad framework built on 100+ million Facebook posts.
               </motion.p>
               
               <motion.p 
@@ -176,7 +169,7 @@ export default function HomePage() {
                   href="#apply"
                   className="h-14 px-8 rounded-lg font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors flex items-center justify-center text-lg"
                 >
-                  Start Your 14-Day Test
+                  Run your best ads ever: Launched in 2 days, proven in 2 weeks. Guaranteed.
                 </a>
                 <a 
                   href="#how-it-works"
@@ -269,7 +262,7 @@ export default function HomePage() {
               className="mt-12 text-xl text-neutral-400 text-center"
               variants={fadeInUp}
             >
-              You&apos;ve been paying for &ldquo;strategy.&rdquo; You&apos;ve been getting recycled guesswork.
+              You&apos;ve been paying for strategy, but getting recycled guesswork.
             </motion.p>
           </motion.div>
         </div>
@@ -305,7 +298,7 @@ export default function HomePage() {
               Marketably bridges the gap between what your customers say and what you ship in your ad account.
             </motion.p>
             
-            <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+            <div className="grid md:grid-cols-2 gap-8">
               {/* Step 1 */}
               <motion.div 
                 className="relative p-8 rounded-2xl border border-neutral-800 bg-neutral-800"
@@ -347,14 +340,32 @@ export default function HomePage() {
                 variants={fadeInUp}
               >
                 <div className="w-12 h-12 rounded-full bg-[#B9F040] flex items-center justify-center text-black font-bold text-xl mb-6">3</div>
+                <h3 className="text-2xl font-semibold mb-4 text-white">Formulate</h3>
+                <p className="text-neutral-300 mb-4">This is where we beat agencies:</p>
+                <p className="text-neutral-300 mb-4">We run your customer insights through an ad construction framework built on research analyzing 100+ million Facebook posts.</p>
+                <p className="text-neutral-300 mb-2">It knows:</p>
+                <ul className="space-y-2 text-neutral-300">
+                  <li>• Which emotional hooks stop scrolls (not which sound clever)</li>
+                  <li>• Which proof patterns trigger purchases (not which win awards)</li>
+                  <li>• Which benefit structures convert (not which feel on-brand)</li>
+                </ul>
+                <p className="text-[#B9F040] font-semibold mt-4">Your agency has their last 10 clients as reference. We have 100+ million posts.</p>
+              </motion.div>
+              
+              {/* Step 4 */}
+              <motion.div 
+                className="relative p-8 rounded-2xl border border-neutral-800 bg-neutral-800"
+                variants={fadeInUp}
+              >
+                <div className="w-12 h-12 rounded-full bg-[#B9F040] flex items-center justify-center text-black font-bold text-xl mb-6">4</div>
                 <h3 className="text-2xl font-semibold mb-4 text-white">Generate</h3>
                 <p className="text-neutral-300 mb-4">You get ready-to-test ad concepts:</p>
                 <ul className="space-y-2 text-neutral-300">
-                  <li>• 12-20 Facebook ad variations</li>
+                  <li>• 10 Facebook ad variations</li>
                   <li>• Hooks in customer language</li>
-                  <li>• Primary text and headlines</li>
+                  <li>• Primary text and headlines optimized for thumb-stopping readability</li>
                   <li>• Image/video creative prompts</li>
-                  <li>• Testing prioritization</li>
+                  <li>• Testing prioritization based on proven patterns</li>
                 </ul>
               </motion.div>
             </div>
@@ -620,7 +631,7 @@ export default function HomePage() {
               className="text-lg text-neutral-300 mb-6"
               variants={fadeInUp}
             >
-              We mine your Voice of Customer data for 12-20 ad concepts. You run them head-to-head against your current ads (or your agency&apos;s latest work).
+              We mine your Voice of Customer data for 10 ad concepts. You run them head-to-head against your current ads (or your agency&apos;s latest work).
             </motion.p>
             
             <motion.div 
@@ -645,7 +656,7 @@ export default function HomePage() {
             
             <motion.ul className="space-y-4 mb-8" variants={fadeInUp}>
               {[
-                '12-20 ad concepts built from your actual customer language',
+                '10 ad concepts built from your actual customer language',
                 'Hooks that stop scrolls (not agency boilerplate)',
                 'Complete ad copy, headlines, and angle variations',
                 'Image and video creative prompts',
@@ -742,7 +753,7 @@ export default function HomePage() {
                 <p className="text-lg font-bold text-[#B9F040] mb-4">With us:</p>
                 <ul className="space-y-2 text-neutral-300">
                   <li>• Your customer language filtered through research on 100+ million Facebook posts</li>
-                  <li>• 12-20 concepts ready to test in 14 days</li>
+                  <li>• 10 concepts ready to test in 14 days</li>
                   <li>• Full refund if we don&apos;t beat your current ads</li>
                 </ul>
               </div>
@@ -996,7 +1007,7 @@ export default function HomePage() {
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
               variants={fadeInUp}
             >
-              Ready to stop paying for recycled hooks?
+              Ready to stop paying for recycled hooks and AI slop?
             </motion.h2>
             
             <motion.p 
@@ -1034,7 +1045,7 @@ export default function HomePage() {
       {/* SECTION 14: CONTACT FORM */}
       <div id="apply" className="scroll-mt-20">
         <ContactForm 
-          headline="Start Your 14-Day Test" 
+          headline="<span class='text-[#B9F040]'>Run your best ads ever:</span> Launched in 2 days, proven in 2 weeks. Guaranteed." 
           step0Title="Your brand"
           step0Description="Tell us about your business"
           showStep0Title={true}

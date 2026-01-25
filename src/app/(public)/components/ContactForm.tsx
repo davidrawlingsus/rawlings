@@ -141,9 +141,10 @@ export default function ContactForm({
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           {/* Headline */}
-          <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-12">
-            {headline}
-          </h2>
+          <h2 
+            className="text-4xl md:text-5xl font-bold text-white text-center mb-12"
+            dangerouslySetInnerHTML={{ __html: headline }}
+          />
           
           {/* Progress Bar */}
           <div className="mb-12">
