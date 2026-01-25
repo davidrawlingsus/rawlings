@@ -206,7 +206,7 @@ export default function HomePage() {
       <section className="border-y border-neutral-800 bg-black">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8 py-6">
           <p className="text-center text-neutral-400 mb-2">
-            Trusted by brands who stopped guessing and started listening.
+            Trusted by brands who stopped guessing and started winning.
           </p>
         </div>
         <LogoSlider logos={clientLogos} speedMs={30000} title="" />
