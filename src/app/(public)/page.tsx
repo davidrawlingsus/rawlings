@@ -715,16 +715,16 @@ export default function HomePage() {
             variants={staggerContainer}
             className="max-w-2xl mx-auto text-center"
           >
+            <motion.div variants={fadeInUp} className="mb-6">
+              <p className="text-5xl md:text-6xl font-bold text-[#B9F040]">$2,500. 14 days. New best performers.</p>
+            </motion.div>
+            
             <motion.h2 
               className="text-3xl md:text-4xl font-bold mb-8 text-white"
               variants={fadeInUp}
             >
               Full refund if we don&apos;t beat your current ads. Here&apos;s why we&apos;re so confident:
             </motion.h2>
-            
-            <motion.div variants={fadeInUp}>
-              <p className="text-5xl md:text-6xl font-bold text-[#B9F040]">14-Day Test: Starting at $2,500</p>
-            </motion.div>
             
             <motion.div 
               className="mt-8 text-lg text-neutral-300 text-left max-w-xl mx-auto space-y-4"
