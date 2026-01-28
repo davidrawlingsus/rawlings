@@ -226,7 +226,7 @@ export default function ContactForm({
                       htmlFor="monthlyAdSpend"
                       className="block text-sm font-medium mb-2 text-foreground"
                     >
-                      FB Adspend:{' '}
+                      Monthly Ad Spend:{' '}
                       <span className="text-[#1A2B3C] font-bold text-lg">
                         {formatAdSpend(formData.monthlyAdSpend)}
                       </span>

@@ -5,3 +5,8 @@ Allow: /
 # Sitemap location
 Sitemap: https://rawlings.us/sitemap.xml
 
+# LLM-friendly content
+# See https://llmstxt.org for the llms.txt standard
+# llms.txt provides a concise summary for AI/LLM crawlers
+# llms-full.txt provides comprehensive information
+

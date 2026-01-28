@@ -109,7 +109,7 @@ export default function HomePage() {
             <motion.div
               initial="hidden"
               whileInView="visible"
-              viewport={{ amount: 0.3, once: true }}
+              viewport={{ amount: 0.1, once: true }}
               variants={staggerContainer}
             >
               <motion.h1 
@@ -137,7 +137,7 @@ export default function HomePage() {
                 className="mt-2 text-lg text-neutral-300 leading-relaxed"
                 variants={fadeInUp}
               >
-                Marketably turns that buried customer feedback into ad concepts that beat your current ads by 40%+ on ROAS, CPA, or profit.
+                Marketably turns that buried customer feedback into ad concepts that beat your current ads by 20%+ on ROAS, CPA, or profit - or you pay nothing.
               </motion.p>
               
               <motion.p 
@@ -158,7 +158,7 @@ export default function HomePage() {
                 className="mt-4 text-lg text-neutral-300 leading-relaxed"
                 variants={fadeInUp}
               >
-                So while your agency is still guessing and running ads that bomb, we turn your buried customer insights into concepts that SMASH IT in 14 days or less.
+                So while your agency is still guessing and running ads that bomb, we deliver concepts in 2-3 days. You test them for up to 14 days. When one beats your control by 20%+, we send our first invoice.
               </motion.p>
               
               <motion.div 
@@ -169,13 +169,13 @@ export default function HomePage() {
                   href="#apply"
                   className="h-14 px-8 rounded-lg font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors flex items-center justify-center text-lg"
                 >
-                  Run Your Best Ads Ever
+                  Apply for $0 Risk Test
                 </a>
                 <a 
                   href="#pricing"
                   className="h-14 px-4 text-neutral-400 hover:text-white transition-colors flex items-center justify-center text-sm"
                 >
-                  See our guarantee →
+                  Concepts delivered in 2-3 days →
                 </a>
               </motion.div>
             </motion.div>
@@ -185,7 +185,7 @@ export default function HomePage() {
               className="hidden md:flex justify-center"
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ amount: 0.3, once: true }}
+              viewport={{ amount: 0.1, once: true }}
               transition={{ duration: 0.6 }}
             >
               <Image
@@ -218,7 +218,7 @@ export default function HomePage() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.3, once: true }}
+            viewport={{ amount: 0.1, once: true }}
             variants={staggerContainer}
           >
             <motion.p 
@@ -274,7 +274,7 @@ export default function HomePage() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.3, once: true }}
+            viewport={{ amount: 0.1, once: true }}
             variants={staggerContainer}
           >
             <motion.p 
@@ -359,56 +359,14 @@ export default function HomePage() {
               >
                 <div className="w-12 h-12 rounded-full bg-[#B9F040] flex items-center justify-center text-black font-bold text-xl mb-6">4</div>
                 <h3 className="text-2xl font-semibold mb-4 text-white">Generate</h3>
-                <p className="text-neutral-300 mb-4">You get ready-to-test ad concepts:</p>
+                <p className="text-neutral-300 mb-4">You get ready-to-test ad concepts delivered in 2-3 days:</p>
                 <ul className="space-y-2 text-neutral-300">
-                  <li>• 10 Facebook ad variations</li>
+                  <li>• 5-10 Facebook ad variations</li>
                   <li>• Hooks in customer language</li>
                   <li>• Primary text and headlines optimized for thumb-stopping readability</li>
                   <li>• Image/video creative prompts</li>
                   <li>• Testing prioritization based on proven patterns</li>
                 </ul>
-              </motion.div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* SECTION 4B: WHY THIS WORKS */}
-      <section className="py-16 md:py-24 bg-black">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-8">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ amount: 0.3, once: true }}
-            variants={staggerContainer}
-          >
-            <motion.h2 
-              className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-white"
-              variants={fadeInUp}
-            >
-              Why agencies can&apos;t do this (and we can)
-            </motion.h2>
-            
-            <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-              <motion.div variants={fadeInUp}>
-                <h3 className="text-xl font-semibold text-[#B9F040] mb-3">They&apos;re learning on your dime.</h3>
-                <p className="text-neutral-300">
-                  Your agency treats every client like a blank slate. They spend 3-6 months &ldquo;getting to know your brand,&rdquo; testing random concepts, burning your budget to figure out what works.
-                </p>
-              </motion.div>
-              
-              <motion.div variants={fadeInUp}>
-                <h3 className="text-xl font-semibold text-[#B9F040] mb-3">We&apos;ve already done the work.</h3>
-                <p className="text-neutral-300">
-                  We spent 10 years mastering VoC across 49 brands and hundreds of millions in revenue. Then we built our system on research analyzing 100+ million Facebook posts - so we know which ad patterns convert before we touch your data.
-                </p>
-              </motion.div>
-              
-              <motion.div variants={fadeInUp}>
-                <h3 className="text-xl font-semibold text-[#B9F040] mb-3">We spent 10 years. You spend 14 days.</h3>
-                <p className="text-neutral-300">
-                  What took us a decade to learn - and what took researchers 100+ million posts to discover - gets applied to your brand in 14 days. That&apos;s the entire value proposition.
-                </p>
               </motion.div>
             </div>
           </motion.div>
@@ -421,7 +379,7 @@ export default function HomePage() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.3, once: true }}
+            viewport={{ amount: 0.1, once: true }}
             variants={staggerContainer}
           >
             <motion.p 
@@ -444,7 +402,7 @@ export default function HomePage() {
                 <div className="p-6 rounded-xl bg-neutral-900 border border-neutral-800">
                   <p className="text-4xl md:text-5xl font-bold text-[#B9F040] mb-2">+243%</p>
                   <p className="text-xl text-white font-medium">improvement in ad set profitability</p>
-                  <p className="text-neutral-400 mt-2">Across campaigns using VoC-driven concepts vs. the &ldquo;custom strategy&rdquo; your agency shipped</p>
+                  <p className="text-neutral-400 mt-2">Our concepts typically beat controls by 20-40%. Some absolutely demolish them. This is what&apos;s possible when you use actual customer language.</p>
                 </div>
                 
                 <div className="p-6 rounded-xl bg-neutral-900 border border-neutral-800">
@@ -500,7 +458,7 @@ export default function HomePage() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.3, once: true }}
+            viewport={{ amount: 0.1, once: true }}
             variants={staggerContainer}
           >
             <div className="grid md:grid-cols-3 gap-6">
@@ -581,12 +539,12 @@ export default function HomePage() {
       </section>
 
       {/* SECTION 7: THE OFFER */}
-      <section id="offer" className="py-16 md:py-24 scroll-mt-20 bg-black">
+      <section id="offer" className="py-8 md:py-24 scroll-mt-20 bg-black">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.3, once: true }}
+            viewport={{ amount: 0.1, once: true }}
             variants={staggerContainer}
             className="max-w-3xl mx-auto text-center"
           >
@@ -601,7 +559,7 @@ export default function HomePage() {
               className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white"
               variants={fadeInUp}
             >
-              Put Us to the Test.
+              We&apos;ll Prove It For Free.
             </motion.h2>
             
             <motion.div 
@@ -609,14 +567,14 @@ export default function HomePage() {
               variants={fadeInUp}
             >
               <p>This is not software access. This is not generic AI copy.</p>
-              <p className="mt-4 text-xl font-medium text-white">This is a 14-day test: our ad concepts vs. whatever you&apos;re running now.</p>
+              <p className="mt-4 text-xl font-medium text-white">This is a $0 risk test: We deliver 5-10 concepts in 2-3 days. You test them for up to 14 days. You only pay if one beats your control by 20%+.</p>
             </motion.div>
           </motion.div>
           
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.3, once: true }}
+            viewport={{ amount: 0.1, once: true }}
             variants={staggerContainer}
             className="max-w-3xl mx-auto"
           >
@@ -631,20 +589,20 @@ export default function HomePage() {
               className="text-lg text-neutral-300 mb-6"
               variants={fadeInUp}
             >
-              We mine your Voice of Customer data for 10 ad concepts. You run them head-to-head against your current ads (or your agency&apos;s latest work).
+              We mine your Voice of Customer data for 5-10 ad concepts. You run them head-to-head against your current ads (or your agency&apos;s latest work).
             </motion.p>
             
             <motion.div 
               className="mb-8 p-6 bg-neutral-900 rounded-xl border border-neutral-800"
               variants={fadeInUp}
             >
-              <p className="text-lg font-semibold text-white mb-4">We win if we beat your control by 40%+ on:</p>
+              <p className="text-lg font-semibold text-white mb-4">We win if we beat your control by 20%+ on:</p>
               <ul className="space-y-2 text-lg text-neutral-300 mb-4">
                 <li><strong>ROAS</strong> (more revenue per dollar spent)</li>
                 <li><strong>CPA</strong> (cheaper customers)</li>
                 <li><strong>Profit per customer</strong> (more money in your account)</li>
               </ul>
-              <p className="text-lg font-medium text-[#B9F040]">You only need to win on ONE of these metrics to make this test worth 10x what you paid.</p>
+              <p className="text-lg font-medium text-[#B9F040]">That&apos;s it. 20%+ improvement on your primary metric and you&apos;ve won.</p>
             </motion.div>
             
             <motion.h3 
@@ -656,13 +614,11 @@ export default function HomePage() {
             
             <motion.ul className="space-y-4 mb-8" variants={fadeInUp}>
               {[
-                '10 ad concepts built from your actual customer language',
-                'Hooks that stop scrolls (not agency boilerplate)',
+                '5-10 ad concepts built from your actual customer language',
                 'Complete ad copy, headlines, and angle variations',
                 'Image and video creative prompts',
                 'A/B test structure: what to test, what to kill, what to scale',
                 'Our prediction for which concepts will demolish your current ads (and why)',
-                'Psychological breakdown of why each concept works',
                 'Loom walkthrough of how to deploy and read the data',
               ].map((item, index) => (
                 <li key={index} className="flex gap-3 items-start">
@@ -678,10 +634,7 @@ export default function HomePage() {
             >
               <h4 className="text-xl font-semibold text-white mb-4">Here&apos;s what makes this different:</h4>
               <p className="text-lg text-neutral-300 mb-3">
-                Your agency spends 3 months &ldquo;learning your brand.&rdquo; We spent 10 years learning customer language patterns across 300+ brands.
-              </p>
-              <p className="text-lg text-neutral-300 mb-3">
-                They&apos;re starting from zero every time. You&apos;re getting a decade of pattern recognition applied to your data in 14 days.
+                Your agency spends 3 months &ldquo;learning your brand.&rdquo; We deliver in 2-3 days.
               </p>
               <p className="text-lg font-semibold text-[#B9F040]">That&apos;s our edge.</p>
             </motion.div>
@@ -694,13 +647,6 @@ export default function HomePage() {
               <p className="text-neutral-300"><strong className="text-white">Starting from scratch?</strong> We&apos;ll build your first campaigns with proper test structure baked in.</p>
             </motion.div>
             
-            <motion.div 
-              className="p-6 bg-[#B9F040]/10 rounded-xl border-2 border-[#B9F040]"
-              variants={fadeInUp}
-            >
-              <p className="text-xl font-semibold text-white mb-3">The deal: Our concepts beat your current ads in 14 days, or you get your money back. No questions asked.</p>
-              <p className="text-lg text-neutral-300">We&apos;re so confident in this process, we&apos;ll refund every penny if you&apos;re unhappy for any reason. Your agency won&apos;t do that. Because they can&apos;t.</p>
-            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -711,144 +657,126 @@ export default function HomePage() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.3, once: true }}
+            viewport={{ amount: 0.1, once: true }}
             variants={staggerContainer}
-            className="max-w-2xl mx-auto text-center"
+            className="max-w-3xl mx-auto"
           >
-            <motion.div variants={fadeInUp} className="mb-6">
-              <p className="text-5xl md:text-6xl font-bold text-[#B9F040]">$2,500. 14 days. New best performers.</p>
+            <motion.div variants={fadeInUp} className="text-center mb-12">
+              <p className="text-4xl md:text-5xl font-bold text-[#B9F040] mb-4">$0 upfront. You only pay after we beat your best ads by 20%+.</p>
             </motion.div>
             
-            <motion.h2 
-              className="text-3xl md:text-4xl font-bold mb-8 text-white"
+            <motion.div 
+              className="text-lg text-neutral-300 space-y-6"
               variants={fadeInUp}
             >
-              Full refund if we don&apos;t beat your current ads. Here&apos;s why we&apos;re so confident:
-            </motion.h2>
+              <p className="text-2xl font-bold text-white">The offer:</p>
+              <p>We&apos;ll deliver 5-10 challenger concepts from your customer data in 2-3 days - completely free.</p>
+              <p>You test them against your current control for up to 14 days.</p>
+              <p>When one beats your control by 20%+ on ROAS, CPA, or profit → you pay your first month and roll into ongoing engagement.</p>
+              <p className="text-xl font-semibold text-[#B9F040]">If none hit 20%? You owe us nothing.</p>
+            </motion.div>
             
             <motion.div 
-              className="mt-8 text-lg text-neutral-300 text-left max-w-xl mx-auto space-y-4"
+              className="mt-12 p-8 bg-neutral-800 rounded-xl border border-neutral-700"
               variants={fadeInUp}
             >
-              <p>
-                We spent a decade mastering Voice of Customer research for 49 brands - generating hundreds of millions in revenue through conversion optimization.
+              <p className="text-2xl font-bold text-white mb-6">Why we can make this offer:</p>
+              <div className="text-lg text-neutral-300 space-y-4">
+                <p>We spent 10 years mastering Voice of Customer across 49 brands generating hundreds of millions in revenue.</p>
+                <p>Then we built a system that filters customer insights through research analyzing 100+ million Facebook posts.</p>
+                <p>We know which patterns convert before we touch your data. That&apos;s why we can work for free until we prove it.</p>
+                <p className="text-xl font-semibold text-white">Your agency can&apos;t make this offer. Because they&apos;re guessing.</p>
+              </div>
+            </motion.div>
+            
+            <motion.div 
+              className="mt-12"
+              variants={fadeInUp}
+            >
+              <p className="text-2xl font-bold text-white mb-8 text-center">Once we hit 20%+, choose your tier:</p>
+              
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="p-6 bg-neutral-800 rounded-xl border border-neutral-700">
+                  <p className="text-3xl font-bold text-[#B9F040] mb-2">$2,500/month</p>
+                  <p className="text-xl font-semibold text-white mb-4">Creative Engine</p>
+                  <ul className="space-y-2 text-neutral-300">
+                    <li>• 12-20 concepts monthly</li>
+                    <li>• You handle deployment</li>
+                    <li>• Best for: $10K-50K ad spend</li>
+                  </ul>
+                </div>
+                
+                <div className="p-6 bg-[#B9F040]/10 rounded-xl border-2 border-[#B9F040]">
+                  <p className="text-3xl font-bold text-[#B9F040] mb-2">$5,000/month</p>
+                  <p className="text-xl font-semibold text-white mb-4">Creative + Strategy</p>
+                  <ul className="space-y-2 text-neutral-300">
+                    <li>• 20-30 concepts monthly</li>
+                    <li>• Performance reviews + test guidance</li>
+                    <li>• Best for: $50K-150K ad spend</li>
+                  </ul>
+                </div>
+                
+                <div className="p-6 bg-neutral-800 rounded-xl border border-neutral-700">
+                  <p className="text-3xl font-bold text-[#B9F040] mb-2">$7,500/month</p>
+                  <p className="text-xl font-semibold text-white mb-4">Embedded Partner</p>
+                  <ul className="space-y-2 text-neutral-300">
+                    <li>• Unlimited concepts + hands-on support</li>
+                    <li>• Test design, analysis, iteration</li>
+                    <li>• Best for: $150K+ ad spend</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <p className="mt-8 text-center text-lg text-neutral-300">
+                <span className="font-semibold text-white">Monthly guarantee:</span> We beat your controls by 20%+ or that month is free. Cancel anytime.
               </p>
-              <p>
-                The entire time, we watched those same brands hand their customer insights to agencies... who&apos;d ignore them and ship recycled hooks instead.
-              </p>
-              <p>
-                So we built a system that does what agencies won&apos;t: filters your customer language through an ad construction framework built on research analyzing 100+ million Facebook posts.
-              </p>
-              <p className="text-xl font-semibold text-white">
-                Your agency is guessing based on their last 10 clients. We&apos;re building on patterns from 100+ million posts.
-              </p>
+            </motion.div>
+            
+            <motion.div 
+              className="mt-12 p-6 bg-neutral-800 rounded-xl border border-neutral-700"
+              variants={fadeInUp}
+            >
+              <p className="text-xl font-bold text-white mb-4">To qualify:</p>
+              <ul className="space-y-2 text-neutral-300">
+                <li>✅ Spending $10K+/month on Facebook ads (need volume for fast results)</li>
+                <li>✅ Have customer feedback data (or will collect it)</li>
+                <li>✅ Can deploy and test within 14 days</li>
+                <li>✅ Want results, not creative awards</li>
+              </ul>
             </motion.div>
             
             {/* You get vs They get comparison */}
             <motion.div 
-              className="mt-10 grid md:grid-cols-2 gap-6 text-left"
+              className="mt-12 grid md:grid-cols-2 gap-6"
               variants={fadeInUp}
             >
               <div className="p-6 bg-[#B9F040]/10 rounded-xl border border-[#B9F040]/30">
                 <p className="text-lg font-bold text-[#B9F040] mb-4">With us:</p>
                 <ul className="space-y-2 text-neutral-300">
-                  <li>• Your customer language filtered through research on 100+ million Facebook posts</li>
-                  <li>• 10 concepts ready to test in 14 days</li>
-                  <li>• Full refund if we don&apos;t beat your current ads</li>
+                  <li>• $0 until we deliver 20%+ improvement</li>
+                  <li>• We earn your business monthly</li>
+                  <li>• No contracts, cancel anytime</li>
                 </ul>
               </div>
               
               <div className="p-6 bg-neutral-800 rounded-xl border border-neutral-700">
                 <p className="text-lg font-bold text-neutral-400 mb-4">With them:</p>
                 <ul className="space-y-2 text-neutral-400">
-                  <li>• Generic hooks based on their last 10 clients</li>
-                  <li>• 3 months of &ldquo;learning your brand&rdquo; before they get any real traction</li>
-                  <li>• Locked into % of ad spend (so they win even when you lose)</li>
+                  <li>• $10K-15K/month whether ads work or not</li>
+                  <li>• Locked into % of ad spend contracts</li>
+                  <li>• 6-month minimums</li>
                 </ul>
               </div>
             </motion.div>
             
-            <motion.p 
-              className="mt-8 text-xl font-bold text-[#B9F040]"
-              variants={fadeInUp}
-            >
-              And if it doesn&apos;t work? You pay nothing.
-            </motion.p>
-            
-            <motion.div 
-              className="mt-8 text-neutral-400"
-              variants={fadeInUp}
-            >
-              <p className="font-semibold text-white mb-2">Final cost depends on:</p>
-              <ul className="space-y-1">
-                <li>• Volume of existing customer data</li>
-                <li>• Hands-on support required</li>
-                <li>• Whether active campaigns exist</li>
-              </ul>
-            </motion.div>
-            
-            <motion.div className="mt-10" variants={fadeInUp}>
+            <motion.div className="mt-12 text-center" variants={fadeInUp}>
               <a 
                 href="#apply"
                 className="inline-flex h-14 px-8 rounded-lg font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors items-center justify-center text-lg"
               >
-                Start Your Test →
+                Apply for $0 Risk Engagement →
               </a>
             </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* SECTION 9: FUTURE VALUE ANCHOR */}
-      <section className="py-16 md:py-24 bg-black">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-8">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ amount: 0.3, once: true }}
-            variants={staggerContainer}
-            className="max-w-3xl mx-auto"
-          >
-            <motion.h2 
-              className="text-3xl md:text-4xl font-bold mb-6 text-white"
-              variants={fadeInUp}
-            >
-              What happens after the test?
-            </motion.h2>
-            
-            <motion.p 
-              className="text-xl text-neutral-300 mb-8"
-              variants={fadeInUp}
-            >
-              Most teams continue with Marketably as an ongoing creative intelligence layer - because once you&apos;ve seen what a decade of pattern recognition looks like, going back to agency guesswork feels insane.
-            </motion.p>
-            
-            <motion.div variants={fadeInUp}>
-              <p className="text-lg text-neutral-400 mb-4">Typical next step includes:</p>
-              <ul className="space-y-2 text-lg text-neutral-300">
-                <li>• Monthly ad concept generation</li>
-                <li>• Continuous VoC ingestion and analysis</li>
-                <li>• Iteration based on live campaign performance</li>
-                <li>• Expansion into landing pages, email, and SEO copy. (Our method will deliver wins across your marketing mix)</li>
-              </ul>
-            </motion.div>
-            
-            <motion.div 
-              className="mt-10 p-6 bg-neutral-900 rounded-xl border border-neutral-800"
-              variants={fadeInUp}
-            >
-              <p className="text-xl font-semibold text-white mb-2">
-                Ongoing engagements typically range from $3,000-$7,000/month
-              </p>
-              <p className="text-neutral-400">depending on scope and ad spend.</p>
-            </motion.div>
-            
-            <motion.p 
-              className="mt-6 text-lg text-neutral-400"
-              variants={fadeInUp}
-            >
-              The test lets you experience the value before committing.
-            </motion.p>
           </motion.div>
         </div>
       </section>
@@ -859,7 +787,7 @@ export default function HomePage() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.3, once: true }}
+            viewport={{ amount: 0.1, once: true }}
             variants={staggerContainer}
           >
             <motion.h2 
@@ -877,12 +805,12 @@ export default function HomePage() {
                 <h3 className="text-xl font-semibold text-[#B9F040] mb-6">This IS for you if:</h3>
                 <ul className="space-y-4">
                   {[
-                    'You\'re spending $8K-15K/month on a Facebook agency',
+                    'You\'re spending $10K+/month on Facebook ads',
                     'Your "custom strategy" looks identical to their other clients',
                     'You\'ve sent them customer research they never actually read',
                     'You\'re tired of paying for "testing" that never materializes',
                     'You want ads that sound like customers, not a 26-year-old\'s LinkedIn caption',
-                    'You want to try this without risk (we offer a full money-back guarantee)',
+                    'You want to try this without risk ($0 upfront until we prove it)',
                   ].map((item, index) => (
                     <li key={index} className="flex gap-3 items-start">
                       <CheckCircle2 className="w-5 h-5 text-[#B9F040] flex-shrink-0 mt-0.5" />
@@ -923,7 +851,7 @@ export default function HomePage() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.3, once: true }}
+            viewport={{ amount: 0.1, once: true }}
             variants={staggerContainer}
           >
             <motion.p 
@@ -951,7 +879,7 @@ export default function HomePage() {
               
               <motion.div variants={fadeInUp}>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-                  I built this because I was tired of watching killer insights die in forgotten slide-decks.
+                  I built this because I was tired of watching killer insights die in spreadsheets.
                 </h2>
                 
                 <div className="space-y-6 text-lg text-neutral-300">
@@ -980,12 +908,12 @@ export default function HomePage() {
                 
                 <div className="mt-10 grid grid-cols-2 gap-8">
                   <div>
-                    <p className="text-4xl font-bold text-[#B9F040]">49+</p>
+                    <p className="text-4xl font-bold text-[#B9F040]">49</p>
                     <p className="text-neutral-400">brands helped</p>
                   </div>
                   <div>
-                    <p className="text-4xl font-bold text-[#B9F040]">$12M+</p>
-                    <p className="text-neutral-400">in ad spend analyzed</p>
+                    <p className="text-4xl font-bold text-[#B9F040]">$100M+</p>
+                    <p className="text-neutral-400">in revenue generated</p>
                   </div>
                 </div>
               </motion.div>
@@ -1000,7 +928,7 @@ export default function HomePage() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.3, once: true }}
+            viewport={{ amount: 0.1, once: true }}
             variants={staggerContainer}
           >
             <motion.h2 
@@ -1021,7 +949,7 @@ export default function HomePage() {
               className="text-lg font-semibold text-[#B9F040] mb-10"
               variants={fadeInUp}
             >
-              Risk-free test. Full refund if we don&apos;t beat your current ads.
+              $0 risk test. Concepts in 2-3 days. You only pay after we beat your control by 20%+.
             </motion.p>
             
             <motion.div className="flex flex-col items-center gap-4" variants={fadeInUp}>
@@ -1045,7 +973,7 @@ export default function HomePage() {
       {/* SECTION 14: CONTACT FORM */}
       <div id="apply" className="scroll-mt-20">
         <ContactForm 
-          headline="<span class='text-[#B9F040]'>Run your best ads ever:</span> Launched in 2 days, proven in 2 weeks. Guaranteed." 
+          headline="<span class='text-[#B9F040]'>Apply for $0 Risk Test:</span> Concepts delivered in 2-3 days. Proven in 14 days. You only pay after we beat your control by 20%+." 
           step0Title="Your brand"
           step0Description="Tell us about your business"
           showStep0Title={true}

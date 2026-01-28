@@ -1,0 +1,230 @@
+# Marketably.ai - Complete Information
+
+> Voice-of-Customer driven Facebook ads that beat your agency's best work - guaranteed.
+
+## Company Overview
+
+Marketably.ai is a specialized Facebook ads and conversion rate optimization (CRO) consultancy founded by David Rawlings. The core value proposition is transforming buried customer feedback into high-performing ad concepts using a proprietary framework built on research analyzing 100+ million Facebook posts.
+
+Unlike traditional agencies that recycle generic hooks across clients, Marketably extracts actual customer language from surveys, reviews, support tickets, and interviews to create ads that resonate with real buying motivations.
+
+## Founder Background
+
+**David Rawlings**
+- 10+ years experience in voice-of-customer research and conversion optimization
+- Former consultant at Conversion Rate Experts
+- Worked with 49+ brands generating hundreds of millions in revenue
+- Built Marketably to close the gap between customer insights and ad execution
+
+Quote from David: "I built this because I was tired of watching killer insights die in forgotten slide-decks. Teams would run surveys, collect reviews, talk to customers, then turn around and ship ads that sounded nothing like what they'd just learned."
+
+## Services
+
+### 1. Facebook Ads Service
+
+**Price:** $2,500 one-time fee
+
+**Duration:** 14 days
+
+**What's Included:**
+- 10 ad concepts built from your actual customer language
+- Hooks that stop scrolls (not agency boilerplate)
+- Complete ad copy, headlines, and angle variations
+- Image and video creative prompts
+- A/B test structure: what to test, what to kill, what to scale
+- Prediction for which concepts will win (and why)
+- Psychological breakdown of why each concept works
+- Loom walkthrough of how to deploy and read the data
+
+**Guarantee:** Full refund if concepts don't beat your current ads by 40%+ on ROAS, CPA, or profit per customer. You only need to win on ONE metric.
+
+**Ideal For:**
+- Brands spending $8K-15K/month on a Facebook agency
+- Those whose "custom strategy" looks identical to other clients
+- Teams who've sent customer research that was never actually read
+- Those tired of paying for "testing" that never materializes
+- Brands wanting ads that sound like customers, not generic copy
+
+**Not For:**
+- Those happy with their current agency
+- Those who trust instincts more than customer data
+- Those not ready to test concepts in live campaigns
+- Those prioritizing "sounding on-brand" over performance
+- Those who need weekly sync calls to feel value
+
+### 2. Ongoing Engagement
+
+**Price:** $3,000-$7,000/month (depends on scope and ad spend)
+
+**What's Included:**
+- Monthly ad concept generation
+- Continuous VoC ingestion and analysis
+- Iteration based on live campaign performance
+- Expansion into landing pages, email, and SEO copy
+
+### 3. Landing Page Challenge (CRO Program)
+
+**Structure:**
+1. **Fully-refundable deposit** - Secures onboarding slot
+2. **Free Winning Test** - First A/B test that pays for the program
+3. **Full-Funnel Testing** - 2-4 tests/month across entire funnel
+4. **Growth Engine** - Team enablement and playbook handoff
+
+**Price:** $7,500-$10,000/month (6-month program)
+
+**Guarantee:** If first test doesn't achieve ≥20% relative lift, deposit is refunded in full.
+
+**Requirements:** ~10k relevant sessions in 14 days (or equivalent lead volume)
+
+**Data Handling:** NDA + DPA standard; minimal data collection; purged within 30 days
+
+## Methodology
+
+### The Four-Step Process
+
+**Step 1: Ingest**
+Upload customer research:
+- Survey responses
+- Review data
+- Support tickets
+- Interview transcripts
+- Any voice-of-customer source
+- (No VoC yet? Marketably helps gather it)
+
+**Step 2: Analyze**
+The engine identifies:
+- High-signal language patterns
+- Emotional trigger points
+- Job-to-be-done frameworks
+- Objections and anxieties
+- Motivation clusters
+
+**Step 3: Formulate**
+Customer insights are filtered through an ad construction framework built on research analyzing 100+ million Facebook posts. This framework knows:
+- Which emotional hooks stop scrolls (not which sound clever)
+- Which proof patterns trigger purchases (not which win awards)
+- Which benefit structures convert (not which feel on-brand)
+
+**Step 4: Generate**
+Ready-to-test ad concepts delivered:
+- 10 Facebook ad variations
+- Hooks in customer language
+- Primary text and headlines optimized for thumb-stopping readability
+- Image/video creative prompts
+- Testing prioritization based on proven patterns
+
+### Why This Works
+
+**Agency Limitations:**
+- Agencies juggle 10+ clients, spending ~45 minutes/month per account
+- They never deeply read customer data - skim first page, steal phrases
+- They bill for testing that never happens (3 variations of same ad)
+- They're learning on your dime, spending 3-6 months "getting to know your brand"
+
+**Marketably's Edge:**
+- 10 years mastering VoC across 49 brands
+- Framework built on 100+ million Facebook posts
+- Pattern recognition from hundreds of millions in revenue
+- What took a decade to learn gets applied to your brand in 14 days
+
+## Results & Proof
+
+### Key Metrics
+- **49+** brands helped
+- **$100M+** revenue unlocked for clients
+- **$12M+** in ad spend analyzed
+- **+243%** improvement in ad set profitability (average)
+- **$180K** saved in agency fees (example case)
+- **67%** faster concept validation
+- **+116%** largest single-test conversion lift
+
+### Client Testimonials
+
+**Jim Warren, KatKin & Mous:**
+"A huge impact on the business."
+
+**Richard Kessell, Mous:**
+"Logical, pragmatic, and guided by data."
+
+**Duncan Bradley, Wattbike:**
+"Our most successful Facebook campaign ever."
+
+### Notable Clients
+
+Enterprise & Finance:
+- Lloyds Bank
+- Bupa
+- O2
+
+Media & Publishing:
+- Condé Nast
+
+Software & Tech:
+- Hotjar
+- Crazy Egg
+
+E-commerce & DTC:
+- KatKin (pet food)
+- Mous (phone cases)
+- Wattbike (fitness equipment)
+- Mindful Chef (meal delivery)
+- Omlet (pet products)
+- Elvie (women's health tech)
+- Sally Beauty
+- Monica Vinader (jewelry)
+
+Hospitality:
+- Best Western
+- Choice Hotels
+
+Consumer Goods:
+- Durex
+- Barbour
+
+## Frequently Asked Questions
+
+**How do I know it will pay for itself?**
+If a 10% lift in conversion would generate more profit than the monthly fee, you're a strong fit. Median lift is 15-25%.
+
+**What's the guarantee?**
+One primary metric; ≥20% relative lift (CRO) or 40%+ improvement (ads) or you owe $0.
+
+**What are the traffic requirements?**
+~10k relevant sessions in 14 days. Lower traffic? Can switch to qualified-lead rate or booking rate and extend test duration.
+
+**Who handles deployment?**
+Marketably can ship production-ready code and deploy directly, or hand off clean specs for your devs.
+
+**How is data handled?**
+NDA + DPA standard; minimal data collection (survey responses, session replays); data purged within 30 days.
+
+## Contact & Links
+
+**Website:** https://rawlings.us
+
+**Pages:**
+- Home: https://rawlings.us
+- Landing Page Challenge: https://rawlings.us/challenge
+- Sitemap: https://rawlings.us/sitemap.xml
+
+**How to Get Started:**
+Book a strategy call through the website contact form. The form collects:
+- Website/landing page URL
+- Monthly visitors
+- Monthly revenue
+- Contact information
+
+## Technical Information
+
+**Domain:** rawlings.us
+**Company Name:** Marketably.ai
+**Location:** Serves clients worldwide
+**Price Range:** $$
+
+## Schema.org Structured Data
+
+The website includes JSON-LD structured data with:
+- @type: ProfessionalService
+- Service types: Conversion Rate Optimization, A/B Testing, Voice of Customer Research, Website Optimization, Landing Page Optimization, E-commerce Optimization, SaaS Optimization
+- Aggregate rating: 5/5 from 49 reviews
+- First test free offer included

@@ -1,0 +1,60 @@
+# Marketably.ai
+
+> Voice-of-Customer driven Facebook ads that beat your agency's best work - guaranteed.
+
+## About
+
+Marketably.ai is a Facebook ads and conversion optimization service founded by David Rawlings. We turn buried customer feedback (surveys, reviews, support tickets) into high-performing ad concepts using a framework built on research analyzing 100+ million Facebook posts.
+
+## Founder
+
+David Rawlings - Former consultant at Conversion Rate Experts with 10+ years experience in voice-of-customer research and conversion optimization across 49+ brands.
+
+## Core Services
+
+### Facebook Ads Service ($2,500)
+- 14-day head-to-head test against your current ads
+- 10 ad concepts built from your customer language
+- Full refund if we don't beat your control by 40%+ on ROAS, CPA, or profit
+- Includes: ad copy, headlines, creative prompts, testing strategy, Loom walkthrough
+
+### Ongoing Engagement ($3,000-$7,000/month)
+- Monthly ad concept generation
+- Continuous VoC analysis
+- Expansion into landing pages, email, and SEO copy
+
+### Landing Page Challenge (CRO)
+- Voice-of-customer research + A/B testing
+- First test free - pays for the program
+- 20%+ lift guarantee or full refund
+- Full-funnel optimization
+
+## Key Results
+
+- 49+ brands served
+- $100M+ revenue unlocked for clients
+- +243% average improvement in ad set profitability
+- 67% faster concept validation
+- Largest single-test lift: +116% conversion
+
+## Notable Clients
+
+Lloyds Bank, Bupa, Condé Nast, Hotjar, KatKin, Mous, Wattbike, Mindful Chef, Omlet, Elvie, Sally Beauty, Monica Vinader, Crazy Egg, Durex, O2, Barbour, Best Western, Choice Hotels
+
+## Process
+
+1. **Ingest** - Upload customer research (surveys, reviews, support tickets, interviews)
+2. **Analyze** - Identify language patterns, emotional triggers, objections, motivation clusters
+3. **Formulate** - Filter insights through ad framework built on 100M+ Facebook posts
+4. **Generate** - Deliver ready-to-test ad concepts with hooks in customer language
+
+## Contact
+
+- Website: https://rawlings.us
+- Strategy call booking available on website
+
+## Links
+
+- Home: https://rawlings.us
+- Landing Page Challenge: https://rawlings.us/challenge
+- Sitemap: https://rawlings.us/sitemap.xml
