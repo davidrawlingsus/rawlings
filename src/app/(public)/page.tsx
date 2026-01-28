@@ -655,9 +655,8 @@ export default function HomePage() {
       <section id="pricing" className="py-16 md:py-24 bg-neutral-900 scroll-mt-20">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8">
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ amount: 0.1, once: true }}
+            initial="visible"
+            animate="visible"
             variants={staggerContainer}
             className="max-w-3xl mx-auto"
           >

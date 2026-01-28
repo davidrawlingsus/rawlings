@@ -142,7 +142,7 @@ export default function ContactForm({
         <div className="max-w-2xl mx-auto">
           {/* Headline */}
           <h2 
-            className="text-4xl md:text-5xl font-bold text-white text-center mb-12"
+            className="text-2xl md:text-3xl font-bold text-white text-center mb-12"
             dangerouslySetInnerHTML={{ __html: headline }}
           />
           
