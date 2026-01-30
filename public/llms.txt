@@ -50,11 +50,11 @@ Lloyds Bank, Bupa, Condé Nast, Hotjar, KatKin, Mous, Wattbike, Mindful Chef, Om
 
 ## Contact
 
-- Website: https://rawlings.us
+- Website: https://marketably.ai
 - Strategy call booking available on website
 
 ## Links
 
-- Home: https://rawlings.us
-- Landing Page Challenge: https://rawlings.us/challenge
-- Sitemap: https://rawlings.us/sitemap.xml
+- Home: https://marketably.ai
+- Landing Page Challenge: https://marketably.ai/challenge
+- Sitemap: https://marketably.ai/sitemap.xml

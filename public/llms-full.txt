@@ -200,12 +200,12 @@ NDA + DPA standard; minimal data collection (survey responses, session replays);
 
 ## Contact & Links
 
-**Website:** https://rawlings.us
+**Website:** https://marketably.ai
 
 **Pages:**
-- Home: https://rawlings.us
-- Landing Page Challenge: https://rawlings.us/challenge
-- Sitemap: https://rawlings.us/sitemap.xml
+- Home: https://marketably.ai
+- Landing Page Challenge: https://marketably.ai/challenge
+- Sitemap: https://marketably.ai/sitemap.xml
 
 **How to Get Started:**
 Book a strategy call through the website contact form. The form collects:
@@ -216,7 +216,7 @@ Book a strategy call through the website contact form. The form collects:
 
 ## Technical Information
 
-**Domain:** rawlings.us
+**Domain:** marketably.ai
 **Company Name:** Marketably.ai
 **Location:** Serves clients worldwide
 **Price Range:** $$
@@ -225,6 +225,6 @@ Book a strategy call through the website contact form. The form collects:
 
 The website includes JSON-LD structured data with:
 - @type: ProfessionalService
-- Service types: Conversion Rate Optimization, A/B Testing, Voice of Customer Research, Website Optimization, Landing Page Optimization, E-commerce Optimization, SaaS Optimization
+- Service types: Facebook Advertising, Meta Ads Optimization, Ad Creative Development, Voice of Customer Research, Ad Copywriting, Campaign Strategy, A/B Testing
 - Aggregate rating: 5/5 from 49 reviews
-- First test free offer included
+- $0 Risk Test - Pay only after we beat your control by 20%+

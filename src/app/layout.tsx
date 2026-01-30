@@ -10,45 +10,45 @@ const lato = Lato({
 })
 
 export const metadata: Metadata = {
-  title: "World's best Facebook ads",
-  description: 'Transform your website performance with expert CRO services. Voice-of-customer research + AI-powered conversion optimization. 49+ clients, $100M+ revenue unlocked. First test FREE. Specializing in e-commerce, SaaS, and lead gen optimization.',
+  title: "Marketably | Voice of Customer Facebook Ads That Beat Your Agency",
+  description: 'Turn customer feedback into Facebook ads that outperform your agency by 20%+. We extract buying motives from surveys, reviews, and support tickets, then filter them through an ad framework built on 100M+ Facebook posts. $0 risk test - you only pay after we beat your control.',
   keywords: [
-    'conversion rate optimization', 
-    'CRO services', 
-    'CRO consultant', 
-    'A/B testing services',
-    'conversion optimization expert',
-    'website optimization',
-    'landing page optimization',
-    'e-commerce conversion optimization',
-    'SaaS conversion optimization',
-    'voice of customer research',
-    'customer feedback analysis',
-    'conversion rate expert',
-    'website testing',
-    'split testing',
-    'multivariate testing',
-    'user experience optimization',
-    'conversion strategy',
-    'website performance optimization',
-    'revenue optimization',
-    'conversion science'
+    'facebook ads agency',
+    'facebook advertising',
+    'voice of customer ads',
+    'facebook ad creative',
+    'meta ads optimization',
+    'facebook ad copywriting',
+    'customer research ads',
+    'facebook ROAS improvement',
+    'ad creative testing',
+    'facebook ad concepts',
+    'performance marketing',
+    'paid social advertising',
+    'facebook ad strategy',
+    'ad copy optimization',
+    'customer feedback marketing',
+    'facebook campaign optimization',
+    'social media advertising',
+    'ecommerce facebook ads',
+    'DTC facebook ads',
+    'facebook ad performance'
   ],
   icons: {
     icon: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/favicon.png',
   },
   openGraph: {
-    title: 'Expert Conversion Rate Optimization Services | CRO Consultant',
-    description: 'Proven CRO methodology combining voice-of-customer research with AI. 49+ clients transformed. $100M+ revenue unlocked. Get your first test FREE.',
-    url: 'https://rawlings.us',
-    siteName: 'Marketably.ai - David Rawlings',
+    title: 'Marketably | Facebook Ads Built From Your Customer Data',
+    description: 'Finally fire your Facebook agency. We turn Voice of Customer into ad concepts that beat your control by 20%+ - or you pay nothing. Concepts delivered in 2-3 days.',
+    url: 'https://marketably.ai',
+    siteName: 'Marketably.ai',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Expert CRO Services | Conversion Rate Optimization Consultant',
-    description: 'Transform your conversion rates with proven CRO methodology. 49+ clients. $100M+ revenue unlocked. First test FREE.',
+    title: 'Marketably | Facebook Ads Built From Your Customer Data',
+    description: 'Turn customer feedback into Facebook ads that outperform your agency by 20%+. $0 risk test - concepts in 2-3 days.',
   },
   robots: {
     index: true,
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://rawlings.us',
+    canonical: 'https://marketably.ai',
   },
 }
 
@@ -70,22 +70,22 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
   name: 'Marketably.ai',
-  description: 'Expert Conversion Rate Optimization (CRO) services combining voice-of-customer research with AI-powered testing and optimization',
-  url: 'https://rawlings.us',
+  description: 'Facebook ads built from Voice of Customer data. We turn customer feedback into ad concepts that beat your control by 20%+ using an ad framework built on 100M+ Facebook posts.',
+  url: 'https://marketably.ai',
   founder: {
     '@type': 'Person',
     name: 'David Rawlings',
-    jobTitle: 'Conversion Rate Optimization Consultant',
-    description: 'Former consultant at Conversion Rate Experts, specializing in voice-of-customer research and AI-powered conversion optimization',
+    jobTitle: 'Facebook Ads Strategist',
+    description: 'Growth expert specializing in voice-of-customer research and high-converting Facebook ad creative',
   },
   serviceType: [
-    'Conversion Rate Optimization',
-    'A/B Testing',
+    'Facebook Advertising',
+    'Meta Ads Optimization',
+    'Ad Creative Development',
     'Voice of Customer Research',
-    'Website Optimization',
-    'Landing Page Optimization',
-    'E-commerce Optimization',
-    'SaaS Optimization'
+    'Ad Copywriting',
+    'Campaign Strategy',
+    'A/B Testing'
   ],
   areaServed: 'Worldwide',
   priceRange: '$$',
@@ -96,12 +96,12 @@ const jsonLd = {
   },
   offers: {
     '@type': 'Offer',
-    description: 'First conversion test FREE - Risk-free CRO engagement',
+    description: '$0 Risk Test - Pay only after we beat your control by 20%+',
     priceSpecification: {
       '@type': 'PriceSpecification',
       priceCurrency: 'USD',
       price: '0',
-      description: 'First test free'
+      description: 'Free until proven results'
     }
   }
 }

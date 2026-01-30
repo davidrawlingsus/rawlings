@@ -18,7 +18,7 @@ export default function Footer() {
           </div>
 
           {/* Right side - Navigation */}
-          <div className="flex gap-8">
+          <div className="flex flex-wrap gap-6 md:gap-8">
             <Link href="#about" className="text-neutral-400 hover:text-[#B9F040] transition-colors">
               About
             </Link>
@@ -27,6 +27,15 @@ export default function Footer() {
             </Link>
             <Link href="#apply" className="text-neutral-400 hover:text-[#B9F040] transition-colors">
               Contact
+            </Link>
+            <Link href="/terms" className="text-neutral-400 hover:text-[#B9F040] transition-colors">
+              Terms
+            </Link>
+            <Link href="/privacy-policy" className="text-neutral-400 hover:text-[#B9F040] transition-colors">
+              Privacy
+            </Link>
+            <Link href="/data-deletion" className="text-neutral-400 hover:text-[#B9F040] transition-colors">
+              Data Deletion
             </Link>
           </div>
         </div>
