@@ -114,8 +114,8 @@ export default function Header() {
         {/* Logo */}
         <div className="flex flex-col">
           <Link href="/" className="font-bold text-3xl font-[family-name:var(--font-lato)] hover:opacity-80 transition-opacity">
-            <span className="text-white">market</span>
-            <span className="text-[#B9F040]">ably</span>
+            <span className="text-white">MapThe</span>
+            <span className="text-[#B9F040]">Gap</span>
           </Link>
           <span className="text-xs text-[#B9F040] tracking-wide mt-1">Feedback-Fueled Marketing</span>
         </div>
@@ -156,7 +156,7 @@ export default function Header() {
             >
               BOOK A STRATEGY CALL
             </button>
-            <Link href="https://vizualizd.marketably.ai" className="border-2 border-white text-white px-6 py-2 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors">
+            <Link href="https://vizualizd.mapthegap.ai" className="border-2 border-white text-white px-6 py-2 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors">
               LOG IN
             </Link>
           </div>
@@ -204,7 +204,7 @@ export default function Header() {
               >
                 BOOK A STRATEGY CALL
               </button>
-              <Link href="https://vizualizd.marketably.ai" onClick={closeMobileMenu} className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors block text-center">
+              <Link href="https://vizualizd.mapthegap.ai" onClick={closeMobileMenu} className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold text-sm uppercase hover:bg-white hover:text-[#1A2B3C] transition-colors block text-center">
                 LOG IN
               </Link>
             </div>

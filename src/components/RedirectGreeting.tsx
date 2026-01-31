@@ -40,7 +40,7 @@ export default function RedirectGreeting() {
           </DialogTitle>
           <DialogDescription className="text-neutral-300 text-base leading-relaxed">
             <p className="mb-4">
-              Rawlings.us is now <span className="text-lime-400 font-semibold">Marketably.ai</span> — the new home for my conversion work as we scale into the AI age.
+              Rawlings.us is now <span className="text-lime-400 font-semibold">MapTheGap.ai</span> — the new home for my conversion work as we scale into the AI age.
             </p>
             <p className="mb-4">
               If you came here looking for insights that turn data into growth, you&apos;re in the right place.
@@ -55,7 +55,7 @@ export default function RedirectGreeting() {
             onClick={() => setIsOpen(false)}
             className="w-full bg-lime-400 text-black hover:bg-lime-500 font-semibold focus:outline-none focus:ring-0"
           >
-            Explore Marketably →
+            Explore MapTheGap →
           </Button>
         </DialogFooter>
       </DialogContent>

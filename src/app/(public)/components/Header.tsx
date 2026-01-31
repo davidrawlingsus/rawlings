@@ -75,8 +75,8 @@ export default function Header() {
         {/* Logo */}
         <div className="flex flex-col">
           <Link href="/" className="font-bold text-[34px] font-[family-name:var(--font-lato)] hover:opacity-80 transition-opacity">
-            <span className="text-white">mapthe</span>
-            <span className="text-[#B9F040]">gap</span>
+            <span className="text-white">MapThe</span>
+            <span className="text-[#B9F040]">Gap</span>
           </Link>
           <span className="text-xs text-[#B9F040] tracking-wide mt-1">Feedback-Fueled Marketing</span>
         </div>

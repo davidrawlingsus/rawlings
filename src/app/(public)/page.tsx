@@ -137,7 +137,7 @@ export default function HomePage() {
                 className="mt-2 text-lg text-neutral-300 leading-relaxed"
                 variants={fadeInUp}
               >
-                Marketably turns that buried customer feedback into ad concepts that beat your current ads by 20%+ on ROAS, CPA, or profit - or you pay nothing.
+                MapTheGap turns that buried customer feedback into ad concepts that beat your current ads by 20%+ on ROAS, CPA, or profit - or you pay nothing.
               </motion.p>
               
               <motion.p 
@@ -190,7 +190,7 @@ export default function HomePage() {
             >
               <Image
                 src="https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/replacement%20hero%20girl%20v3.png"
-                alt="Marketably transforms customer feedback into ads"
+                alt="MapTheGap transforms customer feedback into ads"
                 width={462}
                 height={550}
                 className="object-contain"
@@ -295,7 +295,7 @@ export default function HomePage() {
               className="text-xl text-neutral-400 mb-16 max-w-3xl"
               variants={fadeInUp}
             >
-              Marketably bridges the gap between what your customers say and what you ship in your ad account.
+              MapTheGap bridges the gap between what your customers say and what you ship in your ad account.
             </motion.p>
             
             <div className="grid md:grid-cols-2 gap-8">
@@ -793,7 +793,7 @@ export default function HomePage() {
               className="text-3xl md:text-4xl font-bold text-white text-center mb-12"
               variants={fadeInUp}
             >
-              Is Marketably right for you?
+              Is MapTheGap right for you?
             </motion.h2>
             
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -857,7 +857,7 @@ export default function HomePage() {
               className="text-sm uppercase tracking-widest text-[#B9F040] mb-4 font-semibold"
               variants={fadeInUp}
             >
-              The Story Behind Marketably
+              The Story Behind MapTheGap
             </motion.p>
             
             <div className="grid md:grid-cols-[200px_1fr] gap-12 items-start">
@@ -892,7 +892,7 @@ export default function HomePage() {
                     The gap between <strong className="text-white">knowing</strong> and <strong className="text-white">doing</strong> was killing performance.
                   </p>
                   <p>
-                    So I built Marketably to close it. Not as another analytics dashboard. Not as a copywriting tool. As an <strong className="text-white">execution layer</strong> that turns Voice of Customer into concepts you can actually test tomorrow.
+                    So I built MapTheGap to close it. Not as another analytics dashboard. Not as a copywriting tool. As an <strong className="text-white">execution layer</strong> that turns Voice of Customer into concepts you can actually test tomorrow.
                   </p>
                 </div>
                 

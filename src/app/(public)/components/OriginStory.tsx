@@ -113,7 +113,7 @@ export default function OriginStory() {
               </p>
               
               <p className="text-lg text-black/90 font-semibold mb-8">
-                David Rawlings, Founder of Marketably.ai
+                David Rawlings, Founder of MapTheGap.ai
               </p>
               
               <hr className="border-[#B9F040]/30 my-8" />
