@@ -3,8 +3,8 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Marketably.ai',
-  description: 'Terms of Service for Marketably.ai - Read our terms and conditions for using our Facebook advertising services and platform integrations.',
+  title: 'Terms of Service | MapTheGap.ai',
+  description: 'Terms of Service for MapTheGap.ai - Read our terms and conditions for using our Facebook advertising services and platform integrations.',
   robots: {
     index: true,
     follow: true,
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function TermsOfServicePage() {
   const lastUpdated = 'January 29, 2026'
-  const contactEmail = 'support@marketably.ai'
+  const contactEmail = 'support@mapthegap.ai'
 
   return (
     <main className="min-h-screen bg-black text-white">
@@ -27,13 +27,13 @@ export default function TermsOfServicePage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-[#B9F040] mb-4">1. Agreement to Terms</h2>
           <p className="text-neutral-300 mb-4">
-            Welcome to Marketably.ai. These Terms of Service (&quot;Terms&quot;) govern your access to and use of our website, services, and applications, including any integrations with third-party platforms such as Facebook/Meta (&quot;Services&quot;).
+            Welcome to MapTheGap.ai. These Terms of Service (&quot;Terms&quot;) govern your access to and use of our website, services, and applications, including any integrations with third-party platforms such as Facebook/Meta (&quot;Services&quot;).
           </p>
           <p className="text-neutral-300 mb-4">
             By accessing or using our Services, you agree to be bound by these Terms. If you do not agree to these Terms, you may not access or use our Services.
           </p>
           <p className="text-neutral-300">
-            &quot;Marketably,&quot; &quot;we,&quot; &quot;us,&quot; and &quot;our&quot; refer to Marketably.ai. &quot;You&quot; and &quot;your&quot; refer to you, the user of our Services.
+            &quot;MapTheGap,&quot; &quot;we,&quot; &quot;us,&quot; and &quot;our&quot; refer to MapTheGap.ai. &quot;You&quot; and &quot;your&quot; refer to you, the user of our Services.
           </p>
         </section>
 
@@ -41,7 +41,7 @@ export default function TermsOfServicePage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-[#B9F040] mb-4">2. Description of Services</h2>
           <p className="text-neutral-300 mb-4">
-            Marketably.ai provides Facebook advertising optimization services, including:
+            MapTheGap.ai provides Facebook advertising optimization services, including:
           </p>
           <ul className="list-disc list-inside text-neutral-300 space-y-2 ml-4">
             <li>Analysis of voice-of-customer data to create ad concepts</li>
@@ -216,7 +216,7 @@ export default function TermsOfServicePage() {
           </p>
           <ul className="list-disc list-inside text-neutral-300 space-y-2 ml-4">
             <li>Visit our <a href="/data-deletion" className="text-[#B9F040] hover:underline">Data Deletion Request</a> page</li>
-            <li>Email us at privacy@marketably.ai</li>
+            <li>Email us at privacy@mapthegap.ai</li>
             <li>Revoke app access through your Facebook Business Settings</li>
           </ul>
           <p className="text-neutral-300 mt-4">
@@ -258,7 +258,7 @@ export default function TermsOfServicePage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-[#B9F040] mb-4">13. Limitation of Liability</h2>
           <p className="text-neutral-300 mb-4">
-            TO THE MAXIMUM EXTENT PERMITTED BY LAW, MARKETABLY.AI SHALL NOT BE LIABLE FOR:
+            TO THE MAXIMUM EXTENT PERMITTED BY LAW, MAPTHEGAP.AI SHALL NOT BE LIABLE FOR:
           </p>
           <ul className="list-disc list-inside text-neutral-300 space-y-2 ml-4">
             <li>Any indirect, incidental, special, consequential, or punitive damages</li>
@@ -275,7 +275,7 @@ export default function TermsOfServicePage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-[#B9F040] mb-4">14. Indemnification</h2>
           <p className="text-neutral-300">
-            You agree to indemnify and hold harmless Marketably.ai, its officers, directors, employees, and agents from any claims, damages, losses, or expenses (including reasonable attorney&apos;s fees) arising from: (a) your use of our Services; (b) your violation of these Terms; (c) your violation of any third-party rights; or (d) your content or advertising materials.
+            You agree to indemnify and hold harmless MapTheGap.ai, its officers, directors, employees, and agents from any claims, damages, losses, or expenses (including reasonable attorney&apos;s fees) arising from: (a) your use of our Services; (b) your violation of these Terms; (c) your violation of any third-party rights; or (d) your content or advertising materials.
           </p>
         </section>
 
@@ -332,7 +332,7 @@ export default function TermsOfServicePage() {
           
           <h3 className="text-xl font-semibold mb-3 mt-6">18.1 Entire Agreement</h3>
           <p className="text-neutral-300 mb-4">
-            These Terms, together with our Privacy Policy and any service agreements, constitute the entire agreement between you and Marketably.ai regarding our Services.
+            These Terms, together with our Privacy Policy and any service agreements, constitute the entire agreement between you and MapTheGap.ai regarding our Services.
           </p>
 
           <h3 className="text-xl font-semibold mb-3 mt-6">18.2 Severability</h3>
@@ -358,9 +358,9 @@ export default function TermsOfServicePage() {
             If you have any questions about these Terms of Service, please contact us:
           </p>
           <div className="bg-neutral-900 rounded-lg p-6 border border-neutral-800">
-            <p className="text-neutral-300 mb-2"><strong>Marketably.ai</strong></p>
+            <p className="text-neutral-300 mb-2"><strong>MapTheGap.ai</strong></p>
             <p className="text-neutral-300 mb-2">Email: <a href={`mailto:${contactEmail}`} className="text-[#B9F040] hover:underline">{contactEmail}</a></p>
-            <p className="text-neutral-300">Website: <a href="https://marketably.ai" className="text-[#B9F040] hover:underline">https://marketably.ai</a></p>
+            <p className="text-neutral-300">Website: <a href="https://mapthegap.ai" className="text-[#B9F040] hover:underline">https://mapthegap.ai</a></p>
           </div>
         </section>
 

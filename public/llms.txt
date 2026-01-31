@@ -1,10 +1,10 @@
-# Marketably.ai
+# MapTheGap.ai
 
 > Voice-of-Customer driven Facebook ads that beat your agency's best work - guaranteed.
 
 ## About
 
-Marketably.ai is a Facebook ads and conversion optimization service founded by David Rawlings. We turn buried customer feedback (surveys, reviews, support tickets) into high-performing ad concepts using a framework built on research analyzing 100+ million Facebook posts.
+MapTheGap.ai is a Facebook ads and conversion optimization service founded by David Rawlings. We turn buried customer feedback (surveys, reviews, support tickets) into high-performing ad concepts using a framework built on research analyzing 100+ million Facebook posts.
 
 ## Founder
 
@@ -50,11 +50,11 @@ Lloyds Bank, Bupa, Condé Nast, Hotjar, KatKin, Mous, Wattbike, Mindful Chef, Om
 
 ## Contact
 
-- Website: https://marketably.ai
+- Website: https://mapthegap.ai
 - Strategy call booking available on website
 
 ## Links
 
-- Home: https://marketably.ai
-- Landing Page Challenge: https://marketably.ai/challenge
-- Sitemap: https://marketably.ai/sitemap.xml
+- Home: https://mapthegap.ai
+- Landing Page Challenge: https://mapthegap.ai/challenge
+- Sitemap: https://mapthegap.ai/sitemap.xml

@@ -45,7 +45,7 @@ export default function DataDeletionForm() {
 
       setIsSubmitted(true)
     } catch {
-      setError('Something went wrong. Please try again or email us directly at privacy@marketably.ai')
+      setError('Something went wrong. Please try again or email us directly at privacy@mapthegap.ai')
     } finally {
       setIsSubmitting(false)
     }
@@ -113,7 +113,7 @@ export default function DataDeletionForm() {
           className="w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-lg text-white placeholder-neutral-500 focus:outline-none focus:border-[#B9F040] transition-colors"
           placeholder="Email associated with your account"
         />
-        <p className="text-neutral-500 text-sm mt-1">Use the email address associated with your Marketably account or Facebook login</p>
+        <p className="text-neutral-500 text-sm mt-1">Use the email address associated with your MapTheGap account or Facebook login</p>
       </div>
 
       {/* Company Name */}

@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://marketably.ai/sitemap.xml
+Sitemap: https://mapthegap.ai/sitemap.xml
 
 # LLM-friendly content
 # See https://llmstxt.org for the llms.txt standard

@@ -95,7 +95,7 @@ export async function POST(request: Request) {
 
       // Return the required response format
       return NextResponse.json({
-        url: `https://marketably.ai/data-deletion?confirmation=${confirmationCode}`,
+        url: `https://mapthegap.ai/data-deletion?confirmation=${confirmationCode}`,
         confirmation_code: confirmationCode,
       })
     }
@@ -137,7 +137,7 @@ export async function POST(request: Request) {
             'Authorization': `Bearer ${resendApiKey}`,
           },
           body: JSON.stringify({
-            from: 'Privacy Requests <privacy@marketably.ai>',
+            from: 'Privacy Requests <privacy@mapthegap.ai>',
             to: ['david@rawlings.us'],
             subject: `🗑️ Facebook Data Deletion Callback [${confirmationCode}]`,
             text: `
@@ -167,7 +167,7 @@ This request was automatically received via the Facebook data deletion callback.
     // Return the required response format per Facebook's documentation
     // https://developers.facebook.com/docs/development/create-an-app/app-dashboard/data-deletion-callback
     return NextResponse.json({
-      url: `https://marketably.ai/data-deletion?confirmation=${confirmationCode}`,
+      url: `https://mapthegap.ai/data-deletion?confirmation=${confirmationCode}`,
       confirmation_code: confirmationCode,
     })
 
@@ -186,6 +186,6 @@ export async function GET() {
     name: 'Facebook Data Deletion Callback',
     description: 'This endpoint handles data deletion requests from Facebook',
     documentation: 'https://developers.facebook.com/docs/development/create-an-app/app-dashboard/data-deletion-callback',
-    status_check_url: 'https://marketably.ai/data-deletion',
+    status_check_url: 'https://mapthegap.ai/data-deletion',
   })
 }

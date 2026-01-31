@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Left side - Brand */}
           <div className="text-white">
             <span className="font-bold text-2xl">
-              Market<span className="text-[#B9F040]">ably</span>
+              MapThe<span className="text-[#B9F040]">Gap</span>
             </span>
             <p className="text-neutral-400 mt-2 max-w-xs">
               Turning Voice of Customer into high-converting ads.
@@ -43,7 +43,7 @@ export default function Footer() {
         {/* Bottom legal */}
         <div className="mt-12 pt-8 border-t border-neutral-800">
           <p className="text-neutral-500 text-sm text-center">
-            © {currentYear} Marketably.ai. Built for brands who listen.
+            © {currentYear} MapTheGap.ai. Built for brands who listen.
           </p>
         </div>
       </div>

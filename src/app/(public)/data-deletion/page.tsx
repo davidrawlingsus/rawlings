@@ -4,8 +4,8 @@ import Footer from '../components/Footer'
 import DataDeletionForm from './DataDeletionForm'
 
 export const metadata: Metadata = {
-  title: 'Data Deletion Request | Marketably.ai',
-  description: 'Request deletion of your personal data from Marketably.ai. We comply with GDPR, CCPA, and Facebook Platform requirements for data deletion.',
+  title: 'Data Deletion Request | MapTheGap.ai',
+  description: 'Request deletion of your personal data from MapTheGap.ai. We comply with GDPR, CCPA, and Facebook Platform requirements for data deletion.',
   robots: {
     index: true,
     follow: true,
@@ -25,7 +25,7 @@ export default function DataDeletionPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-[#B9F040] mb-4">Your Right to Data Deletion</h2>
           <p className="text-neutral-300 mb-4">
-            At Marketably.ai, we respect your privacy and your right to control your personal data. In compliance with the General Data Protection Regulation (GDPR), California Consumer Privacy Act (CCPA), and Meta Platform requirements, you have the right to request deletion of your personal data from our systems.
+            At MapTheGap.ai, we respect your privacy and your right to control your personal data. In compliance with the General Data Protection Regulation (GDPR), California Consumer Privacy Act (CCPA), and Meta Platform requirements, you have the right to request deletion of your personal data from our systems.
           </p>
           <p className="text-neutral-300">
             This includes any data we may have collected through our website, services, or via the Facebook Marketing API integration.
@@ -114,7 +114,7 @@ export default function DataDeletionPage() {
             If you prefer, you can also submit a data deletion request by emailing us directly:
           </p>
           <div className="bg-neutral-900 rounded-lg p-6 border border-neutral-800">
-            <p className="text-neutral-300 mb-2"><strong>Email:</strong> <a href="mailto:privacy@marketably.ai" className="text-[#B9F040] hover:underline">privacy@marketably.ai</a></p>
+            <p className="text-neutral-300 mb-2"><strong>Email:</strong> <a href="mailto:privacy@mapthegap.ai" className="text-[#B9F040] hover:underline">privacy@mapthegap.ai</a></p>
             <p className="text-neutral-300 text-sm mt-4">
               Please include &quot;Data Deletion Request&quot; in the subject line and provide your full name, email address associated with your account, and any additional information that will help us locate your data.
             </p>

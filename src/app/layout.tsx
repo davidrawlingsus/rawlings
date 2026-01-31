@@ -10,7 +10,7 @@ const lato = Lato({
 })
 
 export const metadata: Metadata = {
-  title: "Marketably | Voice of Customer Facebook Ads That Beat Your Agency",
+  title: "MapTheGap | Voice of Customer Facebook Ads That Beat Your Agency",
   description: 'Turn customer feedback into Facebook ads that outperform your agency by 20%+. We extract buying motives from surveys, reviews, and support tickets, then filter them through an ad framework built on 100M+ Facebook posts. $0 risk test - you only pay after we beat your control.',
   keywords: [
     'facebook ads agency',
@@ -38,16 +38,16 @@ export const metadata: Metadata = {
     icon: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/favicon.png',
   },
   openGraph: {
-    title: 'Marketably | Facebook Ads Built From Your Customer Data',
+    title: 'MapTheGap | Facebook Ads Built From Your Customer Data',
     description: 'Finally fire your Facebook agency. We turn Voice of Customer into ad concepts that beat your control by 20%+ - or you pay nothing. Concepts delivered in 2-3 days.',
-    url: 'https://marketably.ai',
-    siteName: 'Marketably.ai',
+    url: 'https://mapthegap.ai',
+    siteName: 'MapTheGap.ai',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Marketably | Facebook Ads Built From Your Customer Data',
+    title: 'MapTheGap | Facebook Ads Built From Your Customer Data',
     description: 'Turn customer feedback into Facebook ads that outperform your agency by 20%+. $0 risk test - concepts in 2-3 days.',
   },
   robots: {
@@ -62,16 +62,16 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://marketably.ai',
+    canonical: 'https://mapthegap.ai',
   },
 }
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
-  name: 'Marketably.ai',
+  name: 'MapTheGap.ai',
   description: 'Facebook ads built from Voice of Customer data. We turn customer feedback into ad concepts that beat your control by 20%+ using an ad framework built on 100M+ Facebook posts.',
-  url: 'https://marketably.ai',
+  url: 'https://mapthegap.ai',
   founder: {
     '@type': 'Person',
     name: 'David Rawlings',

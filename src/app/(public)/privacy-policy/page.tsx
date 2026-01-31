@@ -3,8 +3,8 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Marketably.ai',
-  description: 'Privacy Policy for Marketably.ai - Learn how we collect, use, and protect your data, including information accessed through the Facebook Marketing API.',
+  title: 'Privacy Policy | MapTheGap.ai',
+  description: 'Privacy Policy for MapTheGap.ai - Learn how we collect, use, and protect your data, including information accessed through the Facebook Marketing API.',
   robots: {
     index: true,
     follow: true,
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   const lastUpdated = 'January 29, 2026'
-  const contactEmail = 'privacy@marketably.ai'
+  const contactEmail = 'privacy@mapthegap.ai'
 
   return (
     <main className="min-h-screen bg-black text-white">
@@ -27,7 +27,7 @@ export default function PrivacyPolicyPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-[#B9F040] mb-4">1. Introduction</h2>
           <p className="text-neutral-300 mb-4">
-            Marketably.ai (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website, services, and applications, including our integration with the Facebook Marketing API (Meta Platform).
+            MapTheGap.ai (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website, services, and applications, including our integration with the Facebook Marketing API (Meta Platform).
           </p>
           <p className="text-neutral-300 mb-4">
             This policy applies to all users of our services, including business clients who authorize us to access their Facebook Ads Manager accounts, website visitors, and any individuals whose data may be processed through our advertising optimization services.
@@ -332,10 +332,10 @@ export default function PrivacyPolicyPage() {
             If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:
           </p>
           <div className="bg-neutral-900 rounded-lg p-6 border border-neutral-800">
-            <p className="text-neutral-300 mb-2"><strong>Marketably.ai</strong></p>
+            <p className="text-neutral-300 mb-2"><strong>MapTheGap.ai</strong></p>
             <p className="text-neutral-300 mb-2">Data Protection Inquiries</p>
             <p className="text-neutral-300 mb-2">Email: <a href={`mailto:${contactEmail}`} className="text-[#B9F040] hover:underline">{contactEmail}</a></p>
-            <p className="text-neutral-300">Website: <a href="https://marketably.ai" className="text-[#B9F040] hover:underline">https://marketably.ai</a></p>
+            <p className="text-neutral-300">Website: <a href="https://mapthegap.ai" className="text-[#B9F040] hover:underline">https://mapthegap.ai</a></p>
           </div>
           <p className="text-neutral-300 mt-4">
             We aim to respond to all inquiries within 5 business days. For urgent matters related to data security, please indicate &quot;URGENT&quot; in your subject line.
