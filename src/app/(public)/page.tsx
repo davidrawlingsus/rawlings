@@ -437,11 +437,8 @@ export default function HomePage() {
                   <span className="text-2xl">💸</span>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">Wasted Budget</h3>
-                <p className="text-neutral-400 mb-4">
-                  Every dollar spent on &ldquo;brand voice&rdquo; ads travels further from a conversion.
-                </p>
-                <p className="text-neutral-300">
-                  You&apos;re not spending $50K on ads. You&apos;re spending $50K on ads <span className="text-[#B9F040] font-semibold">+ $18K on a language gap</span> you didn&apos;t know existed.
+                <p className="text-neutral-400">
+                  &ldquo;Brand voice&rdquo; ads force customers to translate what you&apos;re saying into what they actually care about.<br /><br /><span className="text-[#B9F040] font-semibold">That translation adds 30-40% to your CPA.</span>
                 </p>
               </motion.div>
 
@@ -455,13 +452,9 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">Lost Customers</h3>
                 <p className="text-neutral-400 mb-4">
-                  When ads don&apos;t mirror customer language, the brain registers it as &ldquo;not for me.&rdquo;
+                  When your ads don&apos;t sound like your customers, their brain registers it as &ldquo;not for me&rdquo; in 1.3 seconds.
                 </p>
-                <ul className="space-y-2 text-neutral-300">
-                  <li>Scroll speed increases <span className="text-white font-semibold">34%</span></li>
-                  <li>Click-through drops <span className="text-white font-semibold">40%+</span></li>
-                  <li>You lose them in <span className="text-white font-semibold">1.3 seconds</span></li>
-                </ul>
+                <p className="text-[#B9F040] font-semibold">You lose 2-5% of your market before they finish the headline.</p>
               </motion.div>
 
               {/* Column 3 */}
@@ -476,8 +469,8 @@ export default function HomePage() {
                 <p className="text-neutral-400 mb-4">
                   Every day you optimize &ldquo;brand voice&rdquo; ads, you drift further from customer voice.
                 </p>
-                <p className="text-neutral-300">
-                  The gap doesn&apos;t shrink. <span className="text-white font-semibold">It widens.</span> And costs more.
+                <p className="text-[#B9F040] font-semibold">
+                  The gap doesn&apos;t shrink. It widens. And costs more.
                 </p>
               </motion.div>
             </div>
@@ -617,7 +610,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <p className="text-sm text-neutral-400 italic">
-                  &ldquo;MapTheGap closed a $27K gap in under two weeks.&rdquo;
+                  &ldquo;The way you approached this with us was incredible&rdquo;
                 </p>
               </motion.div>
 
@@ -662,7 +655,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <p className="text-sm text-neutral-400 italic">
-                  &ldquo;The delta between our &apos;clinical&apos; messaging and &apos;I can finally sleep&apos; language was costing us six figures.&rdquo;
+                  &ldquo;Map The Gap led to our best performing and longest running ad&rdquo;
                 </p>
               </motion.div>
 
@@ -707,7 +700,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <p className="text-sm text-neutral-400 italic">
-                  &ldquo;We were selling features. Our customers bought feelings.&rdquo;
+                  &ldquo;Your ad copy boosted social sales by 100% YoY&rdquo;
                 </p>
               </motion.div>
             </div>
@@ -739,7 +732,7 @@ export default function HomePage() {
               className="text-3xl md:text-5xl font-bold text-white mb-6"
               variants={fadeInUp}
             >
-              We measure the gap. You close it. ROAS goes up.
+              We measure the gap. Our ads close it. ROAS goes up.
             </motion.h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
@@ -826,7 +819,7 @@ export default function HomePage() {
               className="text-3xl md:text-5xl font-bold text-white mb-6"
               variants={fadeInUp}
             >
-              Why MapTheGap ads beat &ldquo;brand voice&rdquo; ads by 40%+
+              Why MapTheGap ads beat &ldquo;regular&rdquo; ads by 40%+
             </motion.h2>
             
             <motion.div className="max-w-3xl" variants={fadeInUp}>
@@ -925,7 +918,7 @@ export default function HomePage() {
                   <tr className="border-b border-neutral-800">
                     <td className="py-4 px-4 text-white">Uses actual customer language</td>
                     <td className="text-center py-4 px-4 text-neutral-500">Maybe</td>
-                    <td className="text-center py-4 px-4"><X className="w-5 h-5 text-red-400 mx-auto" /></td>
+                    <td className="text-center py-4 px-4"><Check className="w-5 h-5 text-neutral-400 mx-auto" /></td>
                     <td className="text-center py-4 px-4"><X className="w-5 h-5 text-red-400 mx-auto" /></td>
                     <td className="text-center py-4 px-4"><Check className="w-5 h-5 text-[#B9F040] mx-auto" /></td>
                   </tr>
@@ -1021,7 +1014,7 @@ export default function HomePage() {
                 <div className="w-16 h-16 rounded-full bg-[#B9F040]/10 flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🎯</span>
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2">&ldquo;On-Brand&rdquo; Ads Perform Best</h3>
+                <h3 className="text-lg font-bold text-white mb-2">Marketers write your ads</h3>
                 <p className="text-neutral-400 text-sm">
                   Your team insists ads stay &ldquo;on voice&rdquo; — but that voice was written in a conference room, not pulled from customers
                 </p>
@@ -1264,7 +1257,7 @@ export default function HomePage() {
 
       {/* ============ FAQ SECTION ============ */}
       <section id="faq" className="bg-black scroll-mt-20">
-        <div className="max-w-3xl mx-auto px-6 md:px-8">
+        <div className="max-w-3xl mx-auto px-6 md:px-8 mb-10">
           <motion.div
             initial="hidden"
             whileInView="visible"
