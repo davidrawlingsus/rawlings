@@ -531,7 +531,7 @@ export default function HomePage() {
                   <span className="text-2xl">💸</span>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">Wasted Budget</h3>
-                <p className="text-neutral-400">
+                <p className="text-neutral-300">
                   &ldquo;Brand voice&rdquo; ads force customers to translate what you&apos;re saying into what they actually care about.<br /><br /><span className="text-[#B9F040] font-semibold">That translation adds 30-40% to your CPA.</span>
                 </p>
               </motion.div>
@@ -545,7 +545,7 @@ export default function HomePage() {
                   <span className="text-2xl">👋</span>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">Lost Customers</h3>
-                <p className="text-neutral-400 mb-4">
+                <p className="text-neutral-300 mb-4">
                   When your ads don&apos;t sound like your customers, their brain registers it as &ldquo;not for me&rdquo; in 1.3 seconds.
                 </p>
                 <p className="text-[#B9F040] font-semibold">You lose 2-5% of your market before they finish the headline.</p>
@@ -560,7 +560,7 @@ export default function HomePage() {
                   <span className="text-2xl">📉</span>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">Compounding Drift</h3>
-                <p className="text-neutral-400 mb-4">
+                <p className="text-neutral-300 mb-4">
                   Every day you optimize &ldquo;brand voice&rdquo; ads, you drift further from customer voice.
                 </p>
                 <p className="text-[#B9F040] font-semibold">
