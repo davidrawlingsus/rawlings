@@ -466,16 +466,16 @@ export default function HomePage() {
               className="mt-12 grid md:grid-cols-2 gap-6"
               variants={fadeInUp}
             >
-              <div className="p-6 rounded-xl bg-neutral-900 border border-neutral-800">
-                <p className="text-xs uppercase tracking-wider text-neutral-500 mb-3">Your customers say:</p>
-                <p className="text-xl text-white italic">
-                  &ldquo;Finally something that doesn&apos;t make my joints feel like broken glass every morning&rdquo;
-                </p>
-              </div>
-              <div className="p-6 rounded-xl bg-neutral-900/50 border border-neutral-800">
-                <p className="text-xs uppercase tracking-wider text-neutral-500 mb-3">Your ads say:</p>
+              <div className="p-6 rounded-xl bg-gradient-to-br from-red-950/30 to-neutral-900 border border-red-900/30">
+                <p className="text-xs uppercase tracking-wider text-red-400 mb-3">Your ads say:</p>
                 <p className="text-xl text-neutral-400 italic">
                   &ldquo;Clinically-proven joint support formula&rdquo;
+                </p>
+              </div>
+              <div className="p-6 rounded-xl bg-[#B9F040]/10 border border-[#B9F040]/30">
+                <p className="text-xs uppercase tracking-wider text-[#B9F040] mb-3">Your customers say:</p>
+                <p className="text-xl text-white italic">
+                  &ldquo;Finally something that doesn&apos;t make my joints feel like broken glass every morning&rdquo;
                 </p>
               </div>
             </motion.div>
