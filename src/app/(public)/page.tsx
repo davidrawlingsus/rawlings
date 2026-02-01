@@ -373,7 +373,7 @@ export default function HomePage() {
                   className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#B9F040] mb-6"
                   variants={fadeInUp}
                 >
-                  The gap is measured in dollars.
+                  The gap is measured in lost dollars.
                 </motion.p>
                 <motion.p 
                   className="text-xl md:text-2xl text-neutral-300 leading-relaxed"
