@@ -1286,7 +1286,7 @@ export default function HomePage() {
               />
               <FAQItem 
                 question="What if the ads don't beat my controls?"
-                answer="If we don't beat your control ads by 30%+ in the first 30 days, you don't pay. We've closed a profitable gap for 47 of the last 49 brands we've worked with."
+                answer="You don't pay a penny until our ads beat your controls. Period."
               />
               <FAQItem 
                 question="Do I need to change my brand guidelines?"
