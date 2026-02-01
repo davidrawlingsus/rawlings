@@ -1,6 +1,6 @@
 'use client'
 
-import { Suspense, useState, useRef, useEffect } from 'react'
+import { Suspense, useState, useRef, useEffect, useCallback } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Header from './components/Header'
@@ -140,7 +140,7 @@ const fadeInUp = {
   visible: { 
     opacity: 1, 
     y: 0,
-    transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }
+    transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] as const }
   }
 }
 
@@ -215,24 +215,29 @@ function RotatingGapComparison() {
   const [isSliding, setIsSliding] = useState(false)
   const [slideDirection, setSlideDirection] = useState<'left' | 'right'>('left')
 
-  const goToIndex = (newIndex: number) => {
-    if (newIndex === currentIndex) return
-    setSlideDirection(newIndex > currentIndex ? 'left' : 'right')
-    setIsSliding(true)
-    setTimeout(() => {
-      setCurrentIndex(newIndex)
-      setTimeout(() => setIsSliding(false), 50)
-    }, 300)
-  }
+  const goToIndex = useCallback((newIndex: number) => {
+    setCurrentIndex(prev => {
+      if (newIndex === prev) return prev
+      setSlideDirection(newIndex > prev ? 'left' : 'right')
+      setIsSliding(true)
+      setTimeout(() => setIsSliding(false), 350)
+      return newIndex
+    })
+  }, [])
 
   useEffect(() => {
     if (isPaused) return
     const interval = setInterval(() => {
-      const nextIndex = (currentIndex + 1) % gapExamples.length
-      goToIndex(nextIndex)
+      setCurrentIndex(prev => {
+        const nextIndex = (prev + 1) % gapExamples.length
+        setSlideDirection('left')
+        setIsSliding(true)
+        setTimeout(() => setIsSliding(false), 350)
+        return nextIndex
+      })
     }, 9000)
     return () => clearInterval(interval)
-  }, [isPaused, currentIndex])
+  }, [isPaused])
 
   const example = gapExamples[currentIndex]
 
@@ -689,8 +694,8 @@ export default function HomePage() {
                     <span className="text-red-400 font-semibold">$27,780/mo</span>
                   </div>
                   <div className="flex justify-between pt-3 border-t border-neutral-800">
-                    <span className="text-neutral-400">CPA Improvement</span>
-                    <span className="text-[#B9F040] font-semibold">-42%</span>
+                    <span className="text-neutral-400">ROAS Improvement</span>
+                    <span className="text-[#B9F040] font-semibold">+42%</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-neutral-400">Monthly Recovery</span>
@@ -779,8 +784,8 @@ export default function HomePage() {
                     <span className="text-red-400 font-semibold">$15,580/mo</span>
                   </div>
                   <div className="flex justify-between pt-3 border-t border-neutral-800">
-                    <span className="text-neutral-400">CPA Improvement</span>
-                    <span className="text-[#B9F040] font-semibold">-47%</span>
+                    <span className="text-neutral-400">ROAS Improvement</span>
+                    <span className="text-[#B9F040] font-semibold">+47%</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-neutral-400">Monthly Recovery</span>
@@ -820,7 +825,7 @@ export default function HomePage() {
               className="text-3xl md:text-5xl font-bold text-white mb-6"
               variants={fadeInUp}
             >
-              We measure the gap. Our ads close it. ROAS goes up.
+              Measure the gap. Write better ads. ROAS goes up.
             </motion.h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
@@ -865,7 +870,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2">Get Customer-Voice Ads</h3>
                 <p className="text-neutral-400 text-sm">
-                  We generate 12+ ad concepts written in customer language, filtered through our framework built from 100M+ Facebook posts.
+                  We generate up to 40 ad concepts per month, written in customer language.
                 </p>
               </motion.div>
 
@@ -930,8 +935,19 @@ export default function HomePage() {
                 className="p-6 rounded-2xl bg-neutral-900 border border-neutral-800"
                 variants={fadeInUp}
               >
+                <div className="text-3xl mb-4">💡</div>
+                <h3 className="text-lg font-bold text-white mb-2">Surprise</h3>
+                <p className="text-neutral-400">
+                  Pattern interrupts pulled from customer &ldquo;aha moments&rdquo; stop the scroll
+                </p>
+              </motion.div>
+
+              <motion.div 
+                className="p-6 rounded-2xl bg-neutral-900 border border-neutral-800"
+                variants={fadeInUp}
+              >
                 <div className="text-3xl mb-4">📖</div>
-                <h3 className="text-lg font-bold text-white mb-2">Story-Driven</h3>
+                <h3 className="text-lg font-bold text-white mb-2">Story</h3>
                 <p className="text-neutral-400">
                   Customer narratives beat product features <span className="text-white font-semibold">3:1</span> in testing
                 </p>
@@ -941,10 +957,10 @@ export default function HomePage() {
                 className="p-6 rounded-2xl bg-neutral-900 border border-neutral-800"
                 variants={fadeInUp}
               >
-                <div className="text-3xl mb-4">💡</div>
-                <h3 className="text-lg font-bold text-white mb-2">Surprise Angles</h3>
+                <div className="text-3xl mb-4">🧲</div>
+                <h3 className="text-lg font-bold text-white mb-2">Curiosity</h3>
                 <p className="text-neutral-400">
-                  Unexpected hooks pulled from actual customer &ldquo;aha moments&rdquo; stop the scroll
+                  Information gaps that demand attention and create irresistible openings
                 </p>
               </motion.div>
 
@@ -952,10 +968,32 @@ export default function HomePage() {
                 className="p-6 rounded-2xl bg-neutral-900 border border-neutral-800"
                 variants={fadeInUp}
               >
-                <div className="text-3xl mb-4">🧲</div>
-                <h3 className="text-lg font-bold text-white mb-2">Curiosity Gaps</h3>
+                <div className="text-3xl mb-4">📋</div>
+                <h3 className="text-lg font-bold text-white mb-2">Instructional</h3>
                 <p className="text-neutral-400">
-                  We use the questions customers asked before buying to create irresistible openings
+                  Clear, actionable value that positions you as a trusted advisor
+                </p>
+              </motion.div>
+
+              <motion.div 
+                className="p-6 rounded-2xl bg-neutral-900 border border-neutral-800"
+                variants={fadeInUp}
+              >
+                <div className="text-3xl mb-4">🔥</div>
+                <h3 className="text-lg font-bold text-white mb-2">Hyperbole</h3>
+                <p className="text-neutral-400">
+                  Bold claims backed by VoC that cut through the noise
+                </p>
+              </motion.div>
+
+              <motion.div 
+                className="p-6 rounded-2xl bg-neutral-900 border border-neutral-800"
+                variants={fadeInUp}
+              >
+                <div className="text-3xl mb-4">🏆</div>
+                <h3 className="text-lg font-bold text-white mb-2">Ranking</h3>
+                <p className="text-neutral-400">
+                  Positioning and comparison angles that leverage social proof
                 </p>
               </motion.div>
             </div>

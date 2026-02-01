@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 
 interface Testimonial {
@@ -109,17 +109,31 @@ export default function Testimonials() {
   const scrollContainerRef = useRef<HTMLDivElement>(null)
   const sectionRef = useRef<HTMLDivElement>(null)
 
-  const handlePrevious = () => {
-    const newIndex = currentIndex > 0 ? currentIndex - 1 : testimonials.length - 1
-    setCurrentIndex(newIndex)
-    scrollToIndex(newIndex)
-  }
+  const scrollToIndex = useCallback((index: number) => {
+    if (scrollContainerRef.current) {
+      const cardWidth = scrollContainerRef.current.scrollWidth / testimonials.length
+      scrollContainerRef.current.scrollTo({
+        left: cardWidth * index,
+        behavior: 'smooth',
+      })
+    }
+  }, [])
 
-  const handleNext = () => {
-    const newIndex = currentIndex < testimonials.length - 1 ? currentIndex + 1 : 0
-    setCurrentIndex(newIndex)
-    scrollToIndex(newIndex)
-  }
+  const handlePrevious = useCallback(() => {
+    setCurrentIndex(prev => {
+      const newIndex = prev > 0 ? prev - 1 : testimonials.length - 1
+      scrollToIndex(newIndex)
+      return newIndex
+    })
+  }, [scrollToIndex])
+
+  const handleNext = useCallback(() => {
+    setCurrentIndex(prev => {
+      const newIndex = prev < testimonials.length - 1 ? prev + 1 : 0
+      scrollToIndex(newIndex)
+      return newIndex
+    })
+  }, [scrollToIndex])
 
   // Auto-scroll effect
   useEffect(() => {
@@ -130,17 +144,7 @@ export default function Testimonials() {
     }, 5000) // Auto-scroll every 5 seconds
 
     return () => clearInterval(interval)
-  }, [currentIndex, isPaused])
-
-  const scrollToIndex = (index: number) => {
-    if (scrollContainerRef.current) {
-      const cardWidth = scrollContainerRef.current.scrollWidth / testimonials.length
-      scrollContainerRef.current.scrollTo({
-        left: cardWidth * index,
-        behavior: 'smooth',
-      })
-    }
-  }
+  }, [isPaused, handleNext])
 
   const handleDotClick = (index: number) => {
     setCurrentIndex(index)
