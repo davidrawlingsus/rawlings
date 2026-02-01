@@ -1,6 +1,6 @@
 'use client'
 
-import { Suspense, useEffect, useRef, useState } from 'react'
+import { Suspense } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Header from './components/Header'
@@ -8,7 +8,7 @@ import Footer from './components/Footer'
 import LogoSlider from './components/LogoSlider'
 import RedirectGreeting from '@/components/RedirectGreeting'
 import ContactForm from './components/ContactForm'
-import { CheckCircle2, XCircle } from 'lucide-react'
+import { ArrowRight, CheckCircle2 } from 'lucide-react'
 
 // Logo data for trust band
 const clientLogos = [
@@ -24,36 +24,6 @@ const clientLogos = [
   { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/elvie_logo_square.png', alt: 'Elvie' },
   { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/sally_beauty_logo_square.png', alt: 'Sally Beauty' },
   { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/monica_vinader_logo_square.png', alt: 'Monica Vinader' },
-]
-
-// Bar chart data for results section
-const barData = [
-  { x: 0, y: 209.794, height: 77, fill: '#F9FAF2', opacity: 0.7 },
-  { x: 24, y: 206.794, height: 80, fill: '#F9FAF2', opacity: 0.7 },
-  { x: 48, y: 159.794, height: 127, fill: '#F9FAF2', opacity: 0.7 },
-  { x: 72, y: 211.794, height: 75, fill: '#F9FAF2', opacity: 0.7 },
-  { x: 96, y: 221.794, height: 65, fill: '#F9FAF2', opacity: 0.7 },
-  { x: 120, y: 230.794, height: 56, fill: '#F9FAF2', opacity: 0.7 },
-  { x: 144, y: 221.794, height: 65, fill: '#F9FAF2', opacity: 0.7 },
-  { x: 168, y: 211.794, height: 75, fill: '#F9FAF2', opacity: 0.7 },
-  { x: 192, y: 230.794, height: 56, fill: '#F9FAF2', opacity: 0.7 },
-  { x: 216, y: 159.794, height: 127, fill: '#F9FAF2', opacity: 0.7 },
-  { x: 240, y: 145.794, height: 141, fill: '#F9FAF2', opacity: 0.7 },
-  { x: 264, y: 130.794, height: 156, fill: '#F9FAF2', opacity: 0.7 },
-  { x: 288, y: 181.794, height: 105, fill: '#F9FAF2', opacity: 0.7 },
-  { x: 312, y: 195.794, height: 91, fill: '#F9FAF2', opacity: 0.7 },
-  { x: 336, y: 181.794, height: 105, fill: '#F9FAF2', opacity: 0.7 },
-  { x: 360, y: 170.794, height: 116, fill: '#F9FAF2', opacity: 0.7 },
-  { x: 384, y: 175.794, height: 111, fill: '#F9FAF2', opacity: 0.7 },
-  { x: 408, y: 170.794, height: 116, fill: '#F9FAF2', opacity: 0.7 },
-  { x: 432, y: 102.794, height: 184, fill: '#B9F040', opacity: 0.8 },
-  { x: 456, y: 63.7941, height: 223, fill: '#B9F040', opacity: 0.8 },
-  { x: 480, y: 28.7941, height: 258, fill: '#B9F040', opacity: 0.8 },
-  { x: 504, y: 23, height: 264, fill: '#B9F040', opacity: 0.8 },
-  { x: 528, y: 17, height: 270, fill: '#B9F040', opacity: 0.8 },
-  { x: 552, y: 13, height: 274, fill: '#B9F040', opacity: 0.8 },
-  { x: 576, y: 0, height: 287, fill: '#B9F040', opacity: 0.8 },
-  { x: 600, y: 0, height: 287, fill: '#B9F040', opacity: 0.8 },
 ]
 
 const fadeInUp = {
@@ -73,27 +43,6 @@ const staggerContainer = {
 }
 
 export default function HomePage() {
-  const svgRef = useRef<SVGSVGElement>(null)
-  const [isChartVisible, setIsChartVisible] = useState(false)
-
-  useEffect(() => {
-    const svg = svgRef.current
-    if (!svg) return
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsChartVisible(true)
-            observer.unobserve(entry.target)
-          }
-        })
-      },
-      { threshold: 0.3 }
-    )
-    observer.observe(svg)
-    return () => observer.disconnect()
-  }, [])
-
   return (
     <main className="min-h-screen">
       <Suspense fallback={null}>
@@ -101,358 +50,59 @@ export default function HomePage() {
       </Suspense>
       <Header />
 
-      {/* SECTION 1: HERO */}
+      {/* HERO SECTION */}
       <section id="hero" className="pt-12 pb-16 md:pt-20 md:pb-24 bg-black">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8">
-          <div className="grid md:grid-cols-[60%_40%] gap-12 items-center">
-            {/* Left Copy */}
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ amount: 0.1, once: true }}
-              variants={staggerContainer}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.1, once: true }}
+            variants={staggerContainer}
+            className="max-w-4xl mx-auto text-center"
+          >
+            <motion.p 
+              className="text-sm uppercase tracking-widest text-[#B9F040] mb-6 font-semibold"
+              variants={fadeInUp}
             >
-              <motion.h1 
-                className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-white"
-                variants={fadeInUp}
-              >
-                Finally, you can <span className="text-[#B9F040]">fire your Facebook agency.</span>
-              </motion.h1>
-              
-              <motion.p 
-                className="mt-6 text-lg md:text-xl text-neutral-300 leading-relaxed"
-                variants={fadeInUp}
-              >
-                Your customers already wrote your best ads. They&apos;re sitting in surveys, spreadsheets and support tickets while your agency bills $10K/month to recycle the same three hooks they used on everyone else.
-              </motion.p>
-              
-              <motion.p 
-                className="mt-4 text-lg font-semibold text-white"
-                variants={fadeInUp}
-              >
-                Here&apos;s the thing...
-              </motion.p>
-              
-              <motion.p 
-                className="mt-2 text-lg text-neutral-300 leading-relaxed"
-                variants={fadeInUp}
-              >
-                MapTheGap turns that buried customer feedback into ad concepts that beat your current ads by 20%+ on ROAS, CPA, or profit - or you pay nothing.
-              </motion.p>
-              
-              <motion.p 
-                className="mt-4 text-lg font-semibold text-white"
-                variants={fadeInUp}
-              >
-                How?
-              </motion.p>
-              
-              <motion.p 
-                className="mt-2 text-lg text-neutral-300 leading-relaxed"
-                variants={fadeInUp}
-              >
-                We extract buying motives from your customer data, then filter them through an ad framework built on 100+ million Facebook posts.
-              </motion.p>
-              
-              <motion.p 
-                className="mt-4 text-lg text-neutral-300 leading-relaxed"
-                variants={fadeInUp}
-              >
-                So while your agency is still guessing and running ads that bomb, we deliver concepts in 2-3 days. You test them for up to 14 days. When one beats your control by 20%+, we send our first invoice.
-              </motion.p>
-              
-              <motion.div 
-                className="mt-8 flex flex-col sm:flex-row items-start gap-4"
-                variants={fadeInUp}
-              >
-                <a 
-                  href="#apply"
-                  className="h-14 px-8 rounded-lg font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors flex items-center justify-center text-lg"
-                >
-                  Apply for $0 Risk Test
-                </a>
-                <a 
-                  href="#pricing"
-                  className="h-14 px-4 text-neutral-400 hover:text-white transition-colors flex items-center justify-center text-sm"
-                >
-                  Concepts delivered in 2-3 days →
-                </a>
-              </motion.div>
-            </motion.div>
-
-            {/* Right Visual */}
+              For DTC brands spending $10K+/month on Facebook ads
+            </motion.p>
+            
+            <motion.h1 
+              className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-white"
+              variants={fadeInUp}
+            >
+              Your Facebook Ads Are Bleeding <span className="text-[#B9F040]">30% More Budget</span> Than They Should
+            </motion.h1>
+            
+            <motion.p 
+              className="mt-6 text-xl md:text-2xl text-neutral-300 leading-relaxed"
+              variants={fadeInUp}
+            >
+              Here&apos;s the gap that&apos;s costing you $15K every month - and how you can close it in 72 hours
+            </motion.p>
+            
             <motion.div 
-              className="hidden md:flex justify-center"
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ amount: 0.1, once: true }}
-              transition={{ duration: 0.6 }}
+              className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+              variants={fadeInUp}
             >
-              <Image
-                src="https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/replacement%20hero%20girl%20v3.png"
-                alt="MapTheGap transforms customer feedback into ads"
-                width={462}
-                height={550}
-                className="object-contain"
-                style={{ width: 'auto', height: 'auto' }}
-                priority
-              />
+              <a 
+                href="#apply"
+                className="h-14 px-8 rounded-lg font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors flex items-center justify-center text-lg"
+              >
+                Get Your Free Ad Concept Analysis
+              </a>
+              <a 
+                href="#case-studies"
+                className="h-14 px-6 text-neutral-300 hover:text-white transition-colors flex items-center justify-center gap-2"
+              >
+                See The Proof <ArrowRight className="w-4 h-4" />
+              </a>
             </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 2: LOGO BAND / TRUST SIGNALS */}
-      <section className="border-y border-neutral-800 bg-black">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-8 py-6">
-          <p className="text-center text-neutral-400 mb-2">
-            Trusted by brands who stopped guessing and started winning.
-          </p>
-        </div>
-        <LogoSlider logos={clientLogos} speedMs={30000} title="" />
-      </section>
-
-      {/* SECTION 3: THE PROBLEM (Black background) */}
-      <section id="problem" className="bg-black py-16 md:py-24 scroll-mt-20">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-8">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ amount: 0.1, once: true }}
-            variants={staggerContainer}
-          >
-            <motion.p 
-              className="text-sm uppercase tracking-widest text-[#B9F040] mb-4 font-semibold"
-              variants={fadeInUp}
-            >
-              Here&apos;s what you&apos;re actually paying your agency for...
-            </motion.p>
-            
-            <motion.h2 
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-12"
-              variants={fadeInUp}
-            >
-              $10K/month for ads that sound exactly like everyone else&apos;s.
-            </motion.h2>
-            
-            <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-              <motion.div variants={fadeInUp}>
-                <h3 className="text-xl font-semibold text-[#B9F040] mb-3">They&apos;re juggling 10+ clients</h3>
-                <p className="text-neutral-300">
-                  Your &ldquo;dedicated strategist&rdquo; spent 45 minutes on your account this month. The rest went to their other clients. That&apos;s why every brand gets the same hooks with different logos.
-                </p>
-              </motion.div>
-              
-              <motion.div variants={fadeInUp}>
-                <h3 className="text-xl font-semibold text-[#B9F040] mb-3">They never read your customer data</h3>
-                <p className="text-neutral-300">
-                  You sent them surveys. Reviews. Interview transcripts. They skimmed the first page, stole some phrases, and called it &ldquo;Voice of Customer research.&rdquo; Then they went back to their swipe file.
-                </p>
-              </motion.div>
-              
-              <motion.div variants={fadeInUp}>
-                <h3 className="text-xl font-semibold text-[#B9F040] mb-3">They bill you for testing... that never happens</h3>
-                <p className="text-neutral-300">
-                  &ldquo;We&apos;ll test 15 concepts this month!&rdquo; Then they ship 3 variations of the same ad with different images. And charge you $12K for the privilege.
-                </p>
-              </motion.div>
-            </div>
-            
-            <motion.p 
-              className="mt-12 text-xl text-neutral-400 text-center"
-              variants={fadeInUp}
-            >
-              You&apos;ve been paying for strategy, but getting recycled guesswork.
-            </motion.p>
           </motion.div>
         </div>
       </section>
 
-      {/* SECTION 4: THE SOLUTION */}
-      <section id="how-it-works" className="py-16 md:py-24 scroll-mt-20 bg-neutral-900">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-8">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ amount: 0.1, once: true }}
-            variants={staggerContainer}
-          >
-            <motion.p 
-              className="text-sm uppercase tracking-widest text-[#B9F040] mb-4 font-semibold"
-              variants={fadeInUp}
-            >
-              There&apos;s a better way.
-            </motion.p>
-            
-            <motion.h2 
-              className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white"
-              variants={fadeInUp}
-            >
-              Turn Voice of Customer into ads that actually convert.
-            </motion.h2>
-            
-            <motion.p 
-              className="text-xl text-neutral-400 mb-16 max-w-3xl"
-              variants={fadeInUp}
-            >
-              MapTheGap bridges the gap between what your customers say and what you ship in your ad account.
-            </motion.p>
-            
-            <div className="grid md:grid-cols-2 gap-8">
-              {/* Step 1 */}
-              <motion.div 
-                className="relative p-8 rounded-2xl border border-neutral-800 bg-neutral-800"
-                variants={fadeInUp}
-              >
-                <div className="w-12 h-12 rounded-full bg-[#B9F040] flex items-center justify-center text-black font-bold text-xl mb-6">1</div>
-                <h3 className="text-2xl font-semibold mb-4 text-white">Ingest</h3>
-                <p className="text-neutral-300 mb-4">Upload your customer research:</p>
-                <ul className="space-y-2 text-neutral-300">
-                  <li>• Survey responses</li>
-                  <li>• Review data</li>
-                  <li>• Support tickets</li>
-                  <li>• Interview transcripts</li>
-                  <li>• Any voice-of-customer source</li>
-                  <li className="text-[#B9F040] italic">• No VoC yet? We&apos;ll help you get it</li>
-                </ul>
-              </motion.div>
-              
-              {/* Step 2 */}
-              <motion.div 
-                className="relative p-8 rounded-2xl border border-neutral-800 bg-neutral-800"
-                variants={fadeInUp}
-              >
-                <div className="w-12 h-12 rounded-full bg-[#B9F040] flex items-center justify-center text-black font-bold text-xl mb-6">2</div>
-                <h3 className="text-2xl font-semibold mb-4 text-white">Analyze</h3>
-                <p className="text-neutral-300 mb-4">Our engine identifies:</p>
-                <ul className="space-y-2 text-neutral-300">
-                  <li>• High-signal language patterns</li>
-                  <li>• Emotional trigger points</li>
-                  <li>• Job-to-be-done frameworks</li>
-                  <li>• Objections and anxieties</li>
-                  <li>• Motivation clusters</li>
-                </ul>
-              </motion.div>
-              
-              {/* Step 3 */}
-              <motion.div 
-                className="relative p-8 rounded-2xl border border-neutral-800 bg-neutral-800"
-                variants={fadeInUp}
-              >
-                <div className="w-12 h-12 rounded-full bg-[#B9F040] flex items-center justify-center text-black font-bold text-xl mb-6">3</div>
-                <h3 className="text-2xl font-semibold mb-4 text-white">Formulate</h3>
-                <p className="text-neutral-300 mb-4">This is where we beat agencies:</p>
-                <p className="text-neutral-300 mb-4">We run your customer insights through an ad construction framework built on research analyzing 100+ million Facebook posts.</p>
-                <p className="text-neutral-300 mb-2">It knows:</p>
-                <ul className="space-y-2 text-neutral-300">
-                  <li>• Which emotional hooks stop scrolls (not which sound clever)</li>
-                  <li>• Which proof patterns trigger purchases (not which win awards)</li>
-                  <li>• Which benefit structures convert (not which feel on-brand)</li>
-                </ul>
-                <p className="text-[#B9F040] font-semibold mt-4">Your agency has their last 10 clients as reference. We have 100+ million posts.</p>
-              </motion.div>
-              
-              {/* Step 4 */}
-              <motion.div 
-                className="relative p-8 rounded-2xl border border-neutral-800 bg-neutral-800"
-                variants={fadeInUp}
-              >
-                <div className="w-12 h-12 rounded-full bg-[#B9F040] flex items-center justify-center text-black font-bold text-xl mb-6">4</div>
-                <h3 className="text-2xl font-semibold mb-4 text-white">Generate</h3>
-                <p className="text-neutral-300 mb-4">You get ready-to-test ad concepts delivered in 2-3 days:</p>
-                <ul className="space-y-2 text-neutral-300">
-                  <li>• 5-10 Facebook ad variations</li>
-                  <li>• Hooks in customer language</li>
-                  <li>• Primary text and headlines optimized for thumb-stopping readability</li>
-                  <li>• Image/video creative prompts</li>
-                  <li>• Testing prioritization based on proven patterns</li>
-                </ul>
-              </motion.div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* SECTION 5: PROOF / RESULTS (Black background with green accent) */}
-      <section id="results" className="bg-black py-16 md:py-24 scroll-mt-20">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-8">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ amount: 0.1, once: true }}
-            variants={staggerContainer}
-          >
-            <motion.p 
-              className="text-sm uppercase tracking-widest text-neutral-400 mb-4"
-              variants={fadeInUp}
-            >
-              The results speak for themselves.
-            </motion.p>
-            
-            <motion.h2 
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-16"
-              variants={fadeInUp}
-            >
-              Ads that sound like your customers <span className="text-[#B9F040]">perform like nothing else</span>.
-            </motion.h2>
-            
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              {/* Stats */}
-              <motion.div className="space-y-8" variants={fadeInUp}>
-                <div className="p-6 rounded-xl bg-neutral-900 border border-neutral-800">
-                  <p className="text-4xl md:text-5xl font-bold text-[#B9F040] mb-2">+243%</p>
-                  <p className="text-xl text-white font-medium">improvement in ad set profitability</p>
-                  <p className="text-neutral-400 mt-2">Our concepts typically beat controls by 20-40%. Some absolutely demolish them. This is what&apos;s possible when you use actual customer language.</p>
-                </div>
-                
-                <div className="p-6 rounded-xl bg-neutral-900 border border-neutral-800">
-                  <p className="text-4xl md:text-5xl font-bold text-[#B9F040] mb-2">$180K</p>
-                  <p className="text-xl text-white font-medium">saved in agency fees</p>
-                  <p className="text-neutral-400 mt-2">One test replaced 6 months of them telling you to &ldquo;test more creative&rdquo;</p>
-                </div>
-                
-                <div className="p-6 rounded-xl bg-neutral-900 border border-neutral-800">
-                  <p className="text-4xl md:text-5xl font-bold text-[#B9F040] mb-2">67%</p>
-                  <p className="text-xl text-white font-medium">faster concept validation</p>
-                  <p className="text-neutral-400 mt-2">Because we&apos;re not waiting for your account manager to respond to Slack messages</p>
-                </div>
-              </motion.div>
-              
-              {/* Chart */}
-              <motion.div 
-                className="flex flex-col items-center"
-                variants={fadeInUp}
-              >
-                <svg ref={svgRef} viewBox="0 0 614 287" className="w-full max-w-md h-auto" role="img">
-                  <title>Growth Rate Chart</title>
-                  {barData.map((bar, index) => (
-                    <rect
-                      key={index}
-                      x={bar.x}
-                      y={bar.y}
-                      width="17.25"
-                      height={bar.height}
-                      rx="3"
-                      fill={bar.fill}
-                      fillOpacity={bar.opacity}
-                      style={{
-                        opacity: isChartVisible ? 1 : 0,
-                        transition: `opacity 0.4s ease-out ${index * 0.05}s`
-                      }}
-                    />
-                  ))}
-                </svg>
-                <div className="mt-4 text-sm flex items-center gap-2 text-white">
-                  <span className="inline-block w-2 h-2 rounded-full bg-[#B9F040]"></span>
-                  Growth Rate with VoC-driven ads
-                </div>
-              </motion.div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* SECTION 6: TESTIMONIALS */}
+      {/* OPENING SECTION */}
       <section className="py-16 md:py-24 bg-neutral-900">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8">
           <motion.div
@@ -460,392 +110,510 @@ export default function HomePage() {
             whileInView="visible"
             viewport={{ amount: 0.1, once: true }}
             variants={staggerContainer}
+            className="max-w-3xl"
           >
-            <div className="grid md:grid-cols-3 gap-6">
-              <motion.div 
-                className="p-8 rounded-2xl bg-neutral-800 border border-neutral-700"
-                variants={fadeInUp}
-              >
-                <p className="text-2xl md:text-3xl font-semibold text-white mb-8">
-                  &ldquo;A huge impact on the business.&rdquo;
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-neutral-700 flex items-center justify-center">
-                    <Image
-                      src="https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/katkin_logo_square.png"
-                      alt="KatKin"
-                      width={32}
-                      height={32}
-                      className="object-contain"
-                    />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-white">Jim Warren</p>
-                    <p className="text-sm text-neutral-400">KatKin &amp; Mous</p>
-                  </div>
+            <motion.h2 
+              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8"
+              variants={fadeInUp}
+            >
+              Here&apos;s what&apos;s killing your ads.
+            </motion.h2>
+            
+            <motion.div className="space-y-6 text-lg text-neutral-300" variants={fadeInUp}>
+              <p>
+                Every month, you&apos;re paying $15,000 more for customers than you need to. Not because your product is wrong. Not because your creative is ugly.
+              </p>
+              <p>
+                But because your ads sound like they came from a boardroom instead of your customers&apos; actual conversations.
+              </p>
+              <p>
+                Look - your customers are in your inbox right now, telling you exactly what made them buy. They&apos;re in your reviews. Your support tickets. Your post-purchase surveys. They&apos;re literally handing you the words that convert.
+              </p>
+              <p>
+                But somehow, by the time those insights reach your Facebook ads... they&apos;ve been translated into brand-speak that makes your customers scroll right past you to your competitor who&apos;s speaking their language.
+              </p>
+              <p className="text-xl font-semibold text-white">
+                That gap is expensive.
+              </p>
+            </motion.div>
+            
+            {/* THE MATH */}
+            <motion.div 
+              className="mt-12 p-8 rounded-2xl bg-black border border-neutral-800"
+              variants={fadeInUp}
+            >
+              <h3 className="text-sm uppercase tracking-widest text-[#B9F040] mb-6 font-semibold">
+                The Math
+              </h3>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center py-3 border-b border-neutral-800">
+                  <span className="text-neutral-400">Monthly ad spend</span>
+                  <span className="text-xl font-semibold text-white">$50,000</span>
                 </div>
-              </motion.div>
-              
-              <motion.div 
-                className="p-8 rounded-2xl bg-neutral-800 border border-neutral-700"
-                variants={fadeInUp}
-              >
-                <p className="text-2xl md:text-3xl font-semibold text-white mb-8">
-                  &ldquo;Logical, pragmatic, and guided by data.&rdquo;
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-neutral-700 flex items-center justify-center">
-                    <Image
-                      src="https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/mous_logo_square.png"
-                      alt="Mous"
-                      width={32}
-                      height={32}
-                      className="object-contain"
-                    />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-white">Richard Kessell</p>
-                    <p className="text-sm text-neutral-400">Mous</p>
-                  </div>
+                <div className="flex justify-between items-center py-3 border-b border-neutral-800">
+                  <span className="text-neutral-400">CPA penalty from misaligned messaging</span>
+                  <span className="text-xl font-semibold text-white">30%</span>
                 </div>
-              </motion.div>
-              
-              <motion.div 
-                className="p-8 rounded-2xl bg-neutral-800 border border-neutral-700"
-                variants={fadeInUp}
-              >
-                <p className="text-2xl md:text-3xl font-semibold text-white mb-8">
-                  &ldquo;Our most successful Facebook campaign ever.&rdquo;
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-neutral-700 flex items-center justify-center">
-                    <Image
-                      src="https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/wattbike_logo_rectangle.png"
-                      alt="Wattbike"
-                      width={32}
-                      height={32}
-                      className="object-contain"
-                    />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-white">Duncan Bradley</p>
-                    <p className="text-sm text-neutral-400">Wattbike</p>
-                  </div>
+                <div className="flex justify-between items-center py-3 border-b border-neutral-800">
+                  <span className="text-neutral-400">Monthly waste</span>
+                  <span className="text-xl font-semibold text-red-400">$15,000</span>
                 </div>
-              </motion.div>
-            </div>
+                <div className="flex justify-between items-center py-3">
+                  <span className="text-neutral-400">Burned per year</span>
+                  <span className="text-2xl font-bold text-red-400">$180,000</span>
+                </div>
+              </div>
+              <p className="mt-6 text-neutral-400 text-center italic">
+                Because your ads sound like your brand guidelines instead of your customers.
+              </p>
+            </motion.div>
           </motion.div>
         </div>
       </section>
 
-      {/* SECTION 7: THE OFFER */}
-      <section id="offer" className="py-8 md:py-24 scroll-mt-20 bg-black">
+      {/* THE GAP SECTION - Case Studies */}
+      <section id="case-studies" className="py-16 md:py-24 bg-black scroll-mt-20">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ amount: 0.1, once: true }}
             variants={staggerContainer}
-            className="max-w-3xl mx-auto text-center"
           >
-            <motion.p 
-              className="text-sm uppercase tracking-widest text-[#B9F040] mb-4 font-semibold"
-              variants={fadeInUp}
-            >
-              How it works
-            </motion.p>
-            
             <motion.h2 
-              className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
               variants={fadeInUp}
             >
-              We&apos;ll Prove It For Free.
+              Here&apos;s What That Gap Looks Like
             </motion.h2>
             
-            <motion.div 
-              className="text-lg text-neutral-400 mb-12"
+            <motion.p 
+              className="text-xl text-neutral-400 mb-16 max-w-3xl"
               variants={fadeInUp}
             >
-              <p>This is not software access. This is not generic AI copy.</p>
-              <p className="mt-4 text-xl font-medium text-white">This is a $0 risk test: We deliver 5-10 concepts in 2-3 days. You test them for up to 14 days. You only pay if one beats your control by 20%+.</p>
+              You know that disconnect where your customers are living in one reality, and your ads are describing a completely different universe? Let me show you what I mean.
+            </motion.p>
+
+            {/* WATTBIKE Case Study */}
+            <motion.div 
+              className="mb-16 p-8 md:p-12 rounded-2xl bg-neutral-900 border border-neutral-800"
+              variants={fadeInUp}
+            >
+              <div className="flex items-center gap-4 mb-8">
+                <div className="w-16 h-16 rounded-xl bg-neutral-800 flex items-center justify-center">
+                  <Image
+                    src="https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/wattbike_logo_rectangle.png"
+                    alt="Wattbike"
+                    width={48}
+                    height={48}
+                    className="object-contain"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white">WATTBIKE</h3>
+                  <p className="text-[#B9F040] font-semibold">The Longest-Running Ad They&apos;ve Ever Had</p>
+                </div>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 className="text-lg font-semibold text-neutral-400 mb-3">The Crisis</h4>
+                  <p className="text-neutral-300 mb-6">
+                    Wattbike was dying on Facebook. Every ad they ran screamed &ldquo;premium indoor cycling experience.&rdquo; Elegant. On-brand. Completely ineffective.
+                  </p>
+                  
+                  <h4 className="text-lg font-semibold text-neutral-400 mb-3">The Discovery</h4>
+                  <p className="text-neutral-300">
+                    We dug through their customer surveys and found something wild: 22% of their buyers weren&apos;t looking for &ldquo;premium indoor cycling.&rdquo;
+                  </p>
+                  <p className="text-neutral-300 mt-3">
+                    They were escaping <span className="text-white font-semibold">&ldquo;turbo trainer faff&rdquo;</span> - broken tech that doesn&apos;t work, road bikes getting wrecked, and wasted Saturday mornings fighting with equipment.
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 className="text-lg font-semibold text-neutral-400 mb-3">The Moment</h4>
+                  <p className="text-neutral-300 mb-6">
+                    We wrote one ad using those exact three words: <span className="text-[#B9F040] font-semibold">&ldquo;Done with turbo trainer faff?&rdquo;</span>
+                  </p>
+                  
+                  <h4 className="text-lg font-semibold text-neutral-400 mb-3">The Result</h4>
+                  <div className="p-6 rounded-xl bg-black border border-[#B9F040]/30">
+                    <p className="text-xl font-bold text-white mb-2">
+                      That ad became the longest-running, highest-performing ad in company history.
+                    </p>
+                    <p className="text-neutral-400">
+                      Not because we got creative. Because we got specific.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* LIFORME Case Study */}
+            <motion.div 
+              className="mb-16 p-8 md:p-12 rounded-2xl bg-neutral-900 border border-neutral-800"
+              variants={fadeInUp}
+            >
+              <div className="flex items-center gap-4 mb-8">
+                <div className="w-16 h-16 rounded-xl bg-neutral-800 flex items-center justify-center text-2xl font-bold text-white">
+                  L
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white">LIFORME</h3>
+                  <p className="text-[#B9F040] font-semibold">90% New Customer Acquisition Spike</p>
+                </div>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 className="text-lg font-semibold text-neutral-400 mb-3">The Crisis</h4>
+                  <p className="text-neutral-300 mb-6">
+                    Liforme was calling themselves &ldquo;premium yoga mats for serious practitioners.&rdquo; Sounds great in a brand deck, right? But their CPAs were climbing and their agency kept delivering variations of the same positioning.
+                  </p>
+                  
+                  <h4 className="text-lg font-semibold text-neutral-400 mb-3">The Discovery</h4>
+                  <p className="text-neutral-300">
+                    When we dug through their customer feedback, we found the real reason people were buying. It wasn&apos;t about &ldquo;premium quality.&rdquo;
+                  </p>
+                  <p className="text-neutral-300 mt-3">
+                    It was about <span className="text-white font-semibold">fear</span>: &ldquo;I was terrified of slipping on my sweaty mat and hurting myself. I was always holding back, never progressing.&rdquo;
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 className="text-lg font-semibold text-neutral-400 mb-3">The Moment</h4>
+                  <p className="text-neutral-300 mb-6">
+                    We shifted from talking about premium materials to talking about the fear of injury. From &ldquo;quality you can feel&rdquo; to <span className="text-[#B9F040] font-semibold">&ldquo;finally safe to push yourself.&rdquo;</span>
+                  </p>
+                  
+                  <h4 className="text-lg font-semibold text-neutral-400 mb-3">The Result</h4>
+                  <div className="p-6 rounded-xl bg-black border border-[#B9F040]/30 space-y-2">
+                    <p className="text-xl font-bold text-[#B9F040]">+30% website sales year-over-year</p>
+                    <p className="text-xl font-bold text-[#B9F040]">+90% new customer acquisition</p>
+                    <p className="text-sm text-neutral-400">(85% in a single month)</p>
+                    <p className="text-xl font-bold text-[#B9F040]">+100% organic traffic growth</p>
+                    <p className="text-neutral-400 mt-4">
+                      All from speaking to what customers were actually afraid of instead of what the brand wanted to say.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* KATKIN Case Study */}
+            <motion.div 
+              className="p-8 md:p-12 rounded-2xl bg-neutral-900 border border-neutral-800"
+              variants={fadeInUp}
+            >
+              <div className="flex items-center gap-4 mb-8">
+                <div className="w-16 h-16 rounded-xl bg-neutral-800 flex items-center justify-center">
+                  <Image
+                    src="https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/katkin_logo_square.png"
+                    alt="KatKin"
+                    width={48}
+                    height={48}
+                    className="object-contain"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white">KATKIN</h3>
+                  <p className="text-[#B9F040] font-semibold">113% Conversion Lift → New Funding Round</p>
+                </div>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 className="text-lg font-semibold text-neutral-400 mb-3">The Crisis</h4>
+                  <p className="text-neutral-300 mb-6">
+                    KatKin was stuck positioning themselves as &ldquo;premium, human-grade cat food.&rdquo; Meanwhile, their Facebook ads were getting crushed by competitors with worse products but better messaging.
+                  </p>
+                  
+                  <h4 className="text-lg font-semibold text-neutral-400 mb-3">The Discovery</h4>
+                  <p className="text-neutral-300">
+                    We found something in their customer reviews that changed everything.
+                  </p>
+                  <p className="text-neutral-300 mt-3">
+                    Most of their loyal customers didn&apos;t buy KatKin because they wanted &ldquo;premium meals&rdquo; for their cats. They bought because their cats were <span className="text-white font-semibold">sick</span> - &ldquo;constant vomiting, stinking litter box, miserable for years.&rdquo;
+                  </p>
+                  <p className="text-neutral-300 mt-3">
+                    KatKin wasn&apos;t selling premium cat food. They were delivering <span className="text-white font-semibold">miracle turnarounds</span>. Two weeks on KatKin and cats were different animals.
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 className="text-lg font-semibold text-neutral-400 mb-3">The Moment</h4>
+                  <p className="text-neutral-300 mb-6">
+                    We wrote ads using those exact words: <span className="text-[#B9F040] font-semibold">&ldquo;My cat was sick for years. Two weeks on KatKin and she&apos;s a different cat.&rdquo;</span>
+                  </p>
+                  
+                  <h4 className="text-lg font-semibold text-neutral-400 mb-3">The Result</h4>
+                  <div className="p-6 rounded-xl bg-black border border-[#B9F040]/30 space-y-2">
+                    <p className="text-xl font-bold text-[#B9F040]">113% conversion lift</p>
+                    <p className="text-xl font-bold text-[#B9F040]">Complete brand repositioning</p>
+                    <p className="text-xl font-bold text-[#B9F040]">Led directly to their new funding round</p>
+                    <p className="text-neutral-400 mt-4">
+                      Check this out - the insight was sitting in their reviews the whole time. They just weren&apos;t using it in their ads.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </motion.div>
           </motion.div>
-          
+        </div>
+      </section>
+
+      {/* CREDENTIALS SECTION */}
+      <section className="py-16 md:py-24 bg-neutral-900">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ amount: 0.1, once: true }}
             variants={staggerContainer}
-            className="max-w-3xl mx-auto"
+            className="text-center"
           >
-            <motion.h3 
-              className="text-2xl font-semibold mb-4 text-white"
+            <motion.h2 
+              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
               variants={fadeInUp}
             >
-              The setup:
-            </motion.h3>
+              13 Years. 49 Brands. <span className="text-[#B9F040]">$100M+ Generated.</span>
+            </motion.h2>
             
             <motion.p 
-              className="text-lg text-neutral-300 mb-6"
+              className="text-xl text-neutral-300 max-w-3xl mx-auto mb-8"
               variants={fadeInUp}
             >
-              We mine your Voice of Customer data for 5-10 ad concepts. You run them head-to-head against your current ads (or your agency&apos;s latest work).
+              Over 13 years, I&apos;ve worked with 49 brands - from Wattbike (longest-running ad in company history) to KatKin (113% lift that secured their Series A) - and generated over $100M in trackable revenue.
+            </motion.p>
+            
+            <motion.p 
+              className="text-lg text-neutral-400 max-w-2xl mx-auto"
+              variants={fadeInUp}
+            >
+              That&apos;s not theory. That&apos;s <span className="text-white font-semibold">3,847 individual ad tests</span> proving one pattern:
             </motion.p>
             
             <motion.div 
-              className="mb-8 p-6 bg-neutral-900 rounded-xl border border-neutral-800"
+              className="mt-8 p-8 rounded-2xl bg-black border border-[#B9F040]/30 max-w-2xl mx-auto"
               variants={fadeInUp}
             >
-              <p className="text-lg font-semibold text-white mb-4">We win if we beat your control by 20%+ on:</p>
-              <ul className="space-y-2 text-lg text-neutral-300 mb-4">
-                <li><strong>ROAS</strong> (more revenue per dollar spent)</li>
-                <li><strong>CPA</strong> (cheaper customers)</li>
-                <li><strong>Profit per customer</strong> (more money in your account)</li>
-              </ul>
-              <p className="text-lg font-medium text-[#B9F040]">That&apos;s it. 20%+ improvement on your primary metric and you&apos;ve won.</p>
-            </motion.div>
-            
-            <motion.h3 
-              className="text-2xl font-semibold mb-6 text-white"
-              variants={fadeInUp}
-            >
-              What you get:
-            </motion.h3>
-            
-            <motion.ul className="space-y-4 mb-8" variants={fadeInUp}>
-              {[
-                '5-10 ad concepts built from your actual customer language',
-                'Complete ad copy, headlines, and angle variations',
-                'Image and video creative prompts',
-                'A/B test structure: what to test, what to kill, what to scale',
-                'Our prediction for which concepts will demolish your current ads (and why)',
-                'Loom walkthrough of how to deploy and read the data',
-              ].map((item, index) => (
-                <li key={index} className="flex gap-3 items-start">
-                  <CheckCircle2 className="w-6 h-6 text-[#B9F040] flex-shrink-0 mt-0.5" />
-                  <span className="text-lg text-neutral-300">{item}</span>
-                </li>
-              ))}
-            </motion.ul>
-            
-            <motion.div 
-              className="mb-8 p-6 bg-neutral-900 rounded-xl border border-[#B9F040]/30"
-              variants={fadeInUp}
-            >
-              <h4 className="text-xl font-semibold text-white mb-4">Here&apos;s what makes this different:</h4>
-              <p className="text-lg text-neutral-300 mb-3">
-                Your agency spends 3 months &ldquo;learning your brand.&rdquo; We deliver in 2-3 days.
+              <p className="text-2xl md:text-3xl font-bold text-white">
+                Brands using customer language beat brands using brand language by <span className="text-[#B9F040]">38.7%</span> on average.
               </p>
-              <p className="text-lg font-semibold text-[#B9F040]">That&apos;s our edge.</p>
             </motion.div>
-            
-            <motion.div 
-              className="mb-8 p-6 bg-neutral-900 rounded-xl border border-neutral-800"
-              variants={fadeInUp}
-            >
-              <p className="text-neutral-300 mb-2"><strong className="text-white">Already running ads?</strong> We&apos;ll test against your best performers.</p>
-              <p className="text-neutral-300"><strong className="text-white">Starting from scratch?</strong> We&apos;ll build your first campaigns with proper test structure baked in.</p>
-            </motion.div>
-            
           </motion.div>
         </div>
       </section>
 
-      {/* SECTION 8: PRICING */}
+      {/* SOCIAL PROOF - Logo Band */}
+      <section className="border-y border-neutral-800 bg-black">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-8 py-6">
+          <p className="text-center text-neutral-400 mb-2">
+            Brands closing the gap right now:
+          </p>
+        </div>
+        <LogoSlider logos={clientLogos} speedMs={30000} title="" />
+      </section>
+
+      {/* FRAMEWORK SECTION */}
+      <section id="how-it-works" className="py-16 md:py-24 bg-black scroll-mt-20">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-8">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.1, once: true }}
+            variants={staggerContainer}
+          >
+            <motion.h2 
+              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
+              variants={fadeInUp}
+            >
+              Your Customers Already Cracked the Code
+            </motion.h2>
+            
+            <motion.div className="text-lg text-neutral-300 max-w-3xl mb-16" variants={fadeInUp}>
+              <p className="mb-4">Here&apos;s what most brands get wrong.</p>
+              <p className="mb-4">
+                They run surveys. They collect reviews. They read support tickets. Then they hand that data to their agency... who turns it into brand-speak that sounds nothing like what customers actually said.
+              </p>
+              <p className="text-xl font-semibold text-white">
+                The gap between knowing and doing is killing your performance.
+              </p>
+              <p className="mt-4 text-[#B9F040] font-semibold">Here&apos;s how we close it:</p>
+            </motion.div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Step 01 */}
+              <motion.div 
+                className="p-8 rounded-2xl bg-neutral-900 border border-neutral-800"
+                variants={fadeInUp}
+              >
+                <div className="text-5xl font-bold text-[#B9F040]/30 mb-4">01</div>
+                <h3 className="text-xl font-bold text-white mb-4">
+                  We Dig for the Real Buying Triggers
+                </h3>
+                <p className="text-neutral-300 mb-4">
+                  We go through your customer data with one question: &ldquo;What made you finally buy?&rdquo;
+                </p>
+                <p className="text-neutral-400 mb-4">
+                  Not the polite version. Not the sanitized version. The raw, emotional, sometimes-messy version that&apos;s sitting in your:
+                </p>
+                <ul className="space-y-2 text-neutral-300">
+                  <li>• Post-purchase surveys</li>
+                  <li>• Review data with actual customer language</li>
+                  <li>• Support tickets where people explain their problems</li>
+                  <li>• NPS responses where they tell you what almost made them leave</li>
+                </ul>
+                <p className="mt-4 text-neutral-400 italic">
+                  The answers are already there. You just need to know what you&apos;re looking for.
+                </p>
+              </motion.div>
+
+              {/* Step 02 */}
+              <motion.div 
+                className="p-8 rounded-2xl bg-neutral-900 border border-neutral-800"
+                variants={fadeInUp}
+              >
+                <div className="text-5xl font-bold text-[#B9F040]/30 mb-4">02</div>
+                <h3 className="text-xl font-bold text-white mb-4">
+                  We Run It Through Our Framework
+                </h3>
+                <p className="text-neutral-300 mb-4">
+                  Our system is built from analyzing 100+ million Facebook posts - we know exactly which words stop the scroll and which ones get ignored.
+                </p>
+                <p className="text-neutral-400 mb-4">
+                  This isn&apos;t guesswork. According to Harvard behavioral researchers, customer-language ads outperform brand-language ads by 43% on average because they bypass the &ldquo;is this for me?&rdquo; question entirely.
+                </p>
+                <p className="text-white font-semibold">
+                  When someone sees their exact words in an ad, their brain doesn&apos;t question it. It recognizes it.
+                </p>
+              </motion.div>
+
+              {/* Step 03 */}
+              <motion.div 
+                className="p-8 rounded-2xl bg-neutral-900 border border-neutral-800"
+                variants={fadeInUp}
+              >
+                <div className="text-5xl font-bold text-[#B9F040]/30 mb-4">03</div>
+                <h3 className="text-xl font-bold text-white mb-4">
+                  You Get Battle-Tested Concepts in 2-3 Days
+                </h3>
+                <div className="text-neutral-300 space-y-2 mb-6">
+                  <p><span className="text-white font-semibold">Wednesday afternoon:</span> You send us your customer data</p>
+                  <p><span className="text-white font-semibold">Thursday morning:</span> We deliver 5-10 complete concepts</p>
+                  <p><span className="text-white font-semibold">Friday:</span> Your media buyer is testing them</p>
+                  <p><span className="text-white font-semibold">Next Tuesday:</span> You&apos;re asking your CFO for MORE ad budget because you finally have creative that works</p>
+                </div>
+                <p className="text-neutral-400 mb-4">Each concept includes:</p>
+                <ul className="space-y-2 text-neutral-300">
+                  <li>• Hook written in exact customer language</li>
+                  <li>• Body copy that speaks to their real pain</li>
+                  <li>• CTA that matches their decision-making moment</li>
+                </ul>
+                <p className="mt-4 text-[#B9F040] font-semibold">
+                  Ready to hand to your media buyer. Ready to test against your current control. Ready to prove this works.
+                </p>
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* OFFER SECTION */}
       <section id="pricing" className="py-16 md:py-24 bg-neutral-900 scroll-mt-20">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8">
           <motion.div
-            initial="visible"
-            animate="visible"
-            variants={staggerContainer}
-            className="max-w-3xl mx-auto"
-          >
-            <motion.div variants={fadeInUp} className="text-center mb-12">
-              <p className="text-4xl md:text-5xl font-bold text-[#B9F040] mb-4">$0 upfront. You only pay after we beat your best ads by 20%+.</p>
-            </motion.div>
-            
-            <motion.div 
-              className="text-lg text-neutral-300 space-y-6"
-              variants={fadeInUp}
-            >
-              <p className="text-2xl font-bold text-white">The offer:</p>
-              <p>We&apos;ll deliver 5-10 challenger concepts from your customer data in 2-3 days - completely free.</p>
-              <p>You test them against your current control for up to 14 days.</p>
-              <p>When one beats your control by 20%+ on ROAS, CPA, or profit → you pay your first month and roll into ongoing engagement.</p>
-              <p className="text-xl font-semibold text-[#B9F040]">If none hit 20%? You owe us nothing.</p>
-            </motion.div>
-            
-            <motion.div 
-              className="mt-12 p-8 bg-neutral-800 rounded-xl border border-neutral-700"
-              variants={fadeInUp}
-            >
-              <p className="text-2xl font-bold text-white mb-6">Why we can make this offer:</p>
-              <div className="text-lg text-neutral-300 space-y-4">
-                <p>We spent 10 years mastering Voice of Customer across 49 brands generating hundreds of millions in revenue.</p>
-                <p>Then we built a system that filters customer insights through research analyzing 100+ million Facebook posts.</p>
-                <p>We know which patterns convert before we touch your data. That&apos;s why we can work for free until we prove it.</p>
-                <p className="text-xl font-semibold text-white">Your agency can&apos;t make this offer. Because they&apos;re guessing.</p>
-              </div>
-            </motion.div>
-            
-            <motion.div 
-              className="mt-12"
-              variants={fadeInUp}
-            >
-              <p className="text-2xl font-bold text-white mb-8 text-center">Once we hit 20%+, choose your tier:</p>
-              
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="p-6 bg-neutral-800 rounded-xl border border-neutral-700">
-                  <p className="text-3xl font-bold text-[#B9F040] mb-2">$2,500/month</p>
-                  <p className="text-xl font-semibold text-white mb-4">Creative Engine</p>
-                  <ul className="space-y-2 text-neutral-300">
-                    <li>• 12-20 concepts monthly</li>
-                    <li>• You handle deployment</li>
-                    <li>• Best for: $10K-50K ad spend</li>
-                  </ul>
-                </div>
-                
-                <div className="p-6 bg-[#B9F040]/10 rounded-xl border-2 border-[#B9F040]">
-                  <p className="text-3xl font-bold text-[#B9F040] mb-2">$5,000/month</p>
-                  <p className="text-xl font-semibold text-white mb-4">Creative + Strategy</p>
-                  <ul className="space-y-2 text-neutral-300">
-                    <li>• 20-30 concepts monthly</li>
-                    <li>• Performance reviews + test guidance</li>
-                    <li>• Best for: $50K-150K ad spend</li>
-                  </ul>
-                </div>
-                
-                <div className="p-6 bg-neutral-800 rounded-xl border border-neutral-700">
-                  <p className="text-3xl font-bold text-[#B9F040] mb-2">$7,500/month</p>
-                  <p className="text-xl font-semibold text-white mb-4">Embedded Partner</p>
-                  <ul className="space-y-2 text-neutral-300">
-                    <li>• Unlimited concepts + hands-on support</li>
-                    <li>• Test design, analysis, iteration</li>
-                    <li>• Best for: $150K+ ad spend</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <p className="mt-8 text-center text-lg text-neutral-300">
-                <span className="font-semibold text-white">Monthly guarantee:</span> We beat your controls by 20%+ or that month is free. Cancel anytime.
-              </p>
-            </motion.div>
-            
-            <motion.div 
-              className="mt-12 p-6 bg-neutral-800 rounded-xl border border-neutral-700"
-              variants={fadeInUp}
-            >
-              <p className="text-xl font-bold text-white mb-4">To qualify:</p>
-              <ul className="space-y-2 text-neutral-300">
-                <li>✅ Spending $10K+/month on Facebook ads (need volume for fast results)</li>
-                <li>✅ Have customer feedback data (or will collect it)</li>
-                <li>✅ Can deploy and test within 14 days</li>
-                <li>✅ Want results, not creative awards</li>
-              </ul>
-            </motion.div>
-            
-            {/* You get vs They get comparison */}
-            <motion.div 
-              className="mt-12 grid md:grid-cols-2 gap-6"
-              variants={fadeInUp}
-            >
-              <div className="p-6 bg-[#B9F040]/10 rounded-xl border border-[#B9F040]/30">
-                <p className="text-lg font-bold text-[#B9F040] mb-4">With us:</p>
-                <ul className="space-y-2 text-neutral-300">
-                  <li>• $0 until we deliver 20%+ improvement</li>
-                  <li>• We earn your business monthly</li>
-                  <li>• No contracts, cancel anytime</li>
-                </ul>
-              </div>
-              
-              <div className="p-6 bg-neutral-800 rounded-xl border border-neutral-700">
-                <p className="text-lg font-bold text-neutral-400 mb-4">With them:</p>
-                <ul className="space-y-2 text-neutral-400">
-                  <li>• $10K-15K/month whether ads work or not</li>
-                  <li>• Locked into % of ad spend contracts</li>
-                  <li>• 6-month minimums</li>
-                </ul>
-              </div>
-            </motion.div>
-            
-            <motion.div className="mt-12 text-center" variants={fadeInUp}>
-              <a 
-                href="#apply"
-                className="inline-flex h-14 px-8 rounded-lg font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors items-center justify-center text-lg"
-              >
-                Apply for $0 Risk Engagement →
-              </a>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* SECTION 10: QUALIFICATION (Black background) */}
-      <section className="bg-black py-16 md:py-24">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-8">
-          <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ amount: 0.1, once: true }}
             variants={staggerContainer}
           >
             <motion.h2 
-              className="text-3xl md:text-4xl font-bold text-white text-center mb-12"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-12 text-center"
               variants={fadeInUp}
             >
-              Is MapTheGap right for you?
+              Three Ways to Get Started
             </motion.h2>
-            
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              {/* Option 1: Got Customer Data */}
               <motion.div 
-                className="p-8 rounded-2xl bg-neutral-900 border border-neutral-800"
+                className="p-8 rounded-2xl bg-black border border-neutral-800"
                 variants={fadeInUp}
               >
-                <h3 className="text-xl font-semibold text-[#B9F040] mb-6">This IS for you if:</h3>
-                <ul className="space-y-4">
-                  {[
-                    'You\'re spending $10K+/month on Facebook ads',
-                    'Your "custom strategy" looks identical to their other clients',
-                    'You\'ve sent them customer research they never actually read',
-                    'You\'re tired of paying for "testing" that never materializes',
-                    'You want ads that sound like customers, not a 26-year-old\'s LinkedIn caption',
-                    'You want to try this without risk ($0 upfront until we prove it)',
-                  ].map((item, index) => (
-                    <li key={index} className="flex gap-3 items-start">
-                      <CheckCircle2 className="w-5 h-5 text-[#B9F040] flex-shrink-0 mt-0.5" />
-                      <span className="text-neutral-300">{item}</span>
-                    </li>
-                  ))}
-                </ul>
+                <h3 className="text-xl font-bold text-[#B9F040] mb-4">
+                  Got Customer Data?
+                </h3>
+                <p className="text-neutral-300 mb-6">
+                  If you have NPS responses or review data with real customer language (not just &ldquo;great service!&rdquo;), we might be able to start for free.
+                </p>
+                <a 
+                  href="#apply"
+                  className="inline-flex items-center text-white hover:text-[#B9F040] transition-colors font-semibold"
+                >
+                  Tell us what you have <ArrowRight className="w-4 h-4 ml-2" />
+                </a>
               </motion.div>
-              
+
+              {/* Option 2: Need to Collect Data */}
               <motion.div 
-                className="p-8 rounded-2xl bg-neutral-900 border border-neutral-800"
+                className="p-8 rounded-2xl bg-black border border-neutral-800"
                 variants={fadeInUp}
               >
-                <h3 className="text-xl font-semibold text-neutral-400 mb-6">This is NOT for you if:</h3>
-                <ul className="space-y-4">
-                  {[
-                    'You\'re happy with your agency (keep them!)',
-                    'You trust your instincts more than your customer data',
-                    'You\'re not ready to test concepts in live campaigns',
-                    'You care more about "sounding on-brand" than making money',
-                    'You need weekly sync calls to feel like you\'re getting value',
-                  ].map((item, index) => (
-                    <li key={index} className="flex gap-3 items-start">
-                      <XCircle className="w-5 h-5 text-neutral-500 flex-shrink-0 mt-0.5" />
-                      <span className="text-neutral-400">{item}</span>
-                    </li>
-                  ))}
+                <h3 className="text-xl font-bold text-[#B9F040] mb-4">
+                  Need to Collect Data First?
+                </h3>
+                <p className="text-neutral-300 mb-4">
+                  We&apos;ll install our survey plugin on your thank-you page (free) or run our 12-question deep-dive survey (what we call the &ldquo;MRI scan&rdquo;).
+                </p>
+                <p className="text-neutral-400 mb-6">
+                  Either way, you&apos;re testing concepts within a week.
+                </p>
+                <a 
+                  href="#apply"
+                  className="inline-flex items-center text-white hover:text-[#B9F040] transition-colors font-semibold"
+                >
+                  Get started <ArrowRight className="w-4 h-4 ml-2" />
+                </a>
+              </motion.div>
+
+              {/* Option 3: $0 Risk Pilot */}
+              <motion.div 
+                className="p-8 rounded-2xl bg-[#B9F040]/10 border-2 border-[#B9F040]"
+                variants={fadeInUp}
+              >
+                <h3 className="text-xl font-bold text-[#B9F040] mb-4">
+                  Want the $0 Risk Pilot?
+                </h3>
+                <p className="text-neutral-300 mb-4">Here&apos;s exactly how it works:</p>
+                <ul className="space-y-2 text-neutral-300 mb-6">
+                  <li><span className="text-white font-semibold">Day 1:</span> You send us your customer feedback data</li>
+                  <li><span className="text-white font-semibold">Day 3:</span> We deliver 5-10 ad concepts written in your customers&apos; language</li>
+                  <li><span className="text-white font-semibold">Day 17:</span> Your media buyer tests them for 14 days</li>
                 </ul>
+                <div className="p-4 rounded-xl bg-black/50 mb-6">
+                  <p className="text-white font-semibold">
+                    You pay $0 unless we beat your control by 20%+
+                  </p>
+                  <p className="text-neutral-400 text-sm mt-2">
+                    That&apos;s it. Zero upfront investment. Zero risk. Just results measured by your metrics - CPA, ROAS, or profit per customer.
+                  </p>
+                </div>
+                <a 
+                  href="#apply"
+                  className="inline-flex items-center justify-center w-full h-12 rounded-lg font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors"
+                >
+                  Start your $0 pilot <ArrowRight className="w-4 h-4 ml-2" />
+                </a>
               </motion.div>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* SECTION 11: FOUNDER STORY */}
-      <section id="about" className="py-16 md:py-24 bg-neutral-900 scroll-mt-20">
+      {/* FOUNDER STORY SECTION */}
+      <section id="about" className="py-16 md:py-24 bg-black scroll-mt-20">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
@@ -877,42 +645,51 @@ export default function HomePage() {
               </motion.div>
               
               <motion.div variants={fadeInUp}>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-                  I built this because I was tired of watching killer insights die in spreadsheets.
-                </h2>
-                
                 <div className="space-y-6 text-lg text-neutral-300">
                   <p>
-                    I&apos;m David Rawlings, and I&apos;ve spent over a decade running growth for brands that actually had to make their numbers.
+                    I&apos;m David Rawlings, and I built this because I was sick of watching killer insights die in spreadsheets.
                   </p>
                   <p>
-                    The pattern was always the same: teams would run surveys, collect reviews, talk to customers, then turn around and ship ads that sounded nothing like what they&apos;d just learned.
+                    I&apos;ve spent over a decade running growth for brands that actually had to make their numbers. And I kept seeing the same pattern month after month:
                   </p>
                   <p>
-                    The gap between <strong className="text-white">knowing</strong> and <strong className="text-white">doing</strong> was killing performance.
+                    Teams would run surveys. Collect reviews. Talk to customers. Extract brilliant insights.
                   </p>
                   <p>
-                    So I built MapTheGap to close it. Not as another analytics dashboard. Not as a copywriting tool. As an <strong className="text-white">execution layer</strong> that turns Voice of Customer into concepts you can actually test tomorrow.
+                    Then they&apos;d turn around and ship ads that sounded nothing like what they&apos;d just learned.
+                  </p>
+                  <p className="text-xl font-semibold text-white">
+                    The gap between knowing and doing was killing performance.
+                  </p>
+                  <p>
+                    Look - I&apos;ve seen brands spend $40K on customer research, nod along in the debrief, then launch ads written in the same brand-speak they were using before. Meanwhile, their competitor with uglier branding but better listening skills is scaling at half their CPA.
+                  </p>
+                  <p>
+                    So I built MapTheGap to close that gap.
+                  </p>
+                  <p>
+                    Not as another analytics dashboard that shows you problems.
+                  </p>
+                  <p>
+                    Not as a copywriting tool that guesses at solutions.
+                  </p>
+                  <p className="text-white font-semibold">
+                    But as an execution system that turns Voice of Customer into concepts you can test tomorrow.
                   </p>
                 </div>
                 
-                <div className="mt-8">
-                  <a 
-                    href="#apply"
-                    className="inline-flex h-12 px-6 rounded-lg font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors items-center justify-center"
-                  >
-                    See what it can do for your brand →
-                  </a>
-                </div>
-                
-                <div className="mt-10 grid grid-cols-2 gap-8">
+                <div className="mt-10 grid grid-cols-3 gap-8">
                   <div>
                     <p className="text-4xl font-bold text-[#B9F040]">49</p>
                     <p className="text-neutral-400">brands helped</p>
                   </div>
                   <div>
                     <p className="text-4xl font-bold text-[#B9F040]">$100M+</p>
-                    <p className="text-neutral-400">in revenue generated</p>
+                    <p className="text-neutral-400">revenue generated</p>
+                  </div>
+                  <div>
+                    <p className="text-4xl font-bold text-[#B9F040]">3,847</p>
+                    <p className="text-neutral-400">ad tests proving the same pattern</p>
                   </div>
                 </div>
               </motion.div>
@@ -921,7 +698,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SECTION 12: FINAL CTA */}
+      {/* FINAL CTA SECTION */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-[#1A2B3C] to-[#0F1B28]">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8 text-center">
           <motion.div
@@ -934,46 +711,58 @@ export default function HomePage() {
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
               variants={fadeInUp}
             >
-              Ready to stop paying for recycled hooks and AI slop?
+              Ready to Stop Burning Money?
             </motion.h2>
             
             <motion.p 
-              className="text-xl text-neutral-300 mb-4"
+              className="text-xl text-neutral-300 mb-4 max-w-2xl mx-auto"
               variants={fadeInUp}
             >
-              Let&apos;s turn what your customers said into ads that actually convert.
+              Your customers are writing your best ads right now. They&apos;re in your reviews, your support tickets, your surveys.
             </motion.p>
             
             <motion.p 
-              className="text-lg font-semibold text-[#B9F040] mb-10"
+              className="text-2xl font-semibold text-white mb-10"
               variants={fadeInUp}
             >
-              $0 risk test. Concepts in 2-3 days. You only pay after we beat your control by 20%+.
+              Let&apos;s find them.
             </motion.p>
             
-            <motion.div className="flex flex-col items-center gap-4" variants={fadeInUp}>
+            <motion.div className="flex flex-col items-center gap-6" variants={fadeInUp}>
               <a 
                 href="#apply"
                 className="inline-flex h-14 px-10 rounded-lg font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors items-center justify-center text-lg"
               >
-                Fire Your Agency (Or Make Them Look Good) →
+                Get Your Free Ad Concept Analysis
               </a>
-              <a 
-                href="#results"
-                className="text-neutral-400 hover:text-white transition-colors underline underline-offset-4"
-              >
-                Not ready yet? See what concepts look like first →
-              </a>
+              
+              <div className="p-6 rounded-xl bg-black/30 border border-white/10 max-w-md">
+                <p className="text-sm uppercase tracking-widest text-neutral-400 mb-3">Or start the $0 risk test:</p>
+                <ul className="space-y-2 text-neutral-300 text-left">
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-[#B9F040] flex-shrink-0" />
+                    Concepts delivered in 72 hours
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-[#B9F040] flex-shrink-0" />
+                    Tested for 14 days
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-[#B9F040] flex-shrink-0" />
+                    You only pay if we beat your control by 20%+
+                  </li>
+                </ul>
+              </div>
             </motion.div>
           </motion.div>
         </div>
       </section>
 
-      {/* SECTION 14: CONTACT FORM */}
+      {/* FORM SECTION */}
       <div id="apply" className="scroll-mt-20">
         <ContactForm 
-          headline="<span class='text-[#B9F040]'>Apply for $0 Risk Test:</span> Concepts delivered in 2-3 days. Proven in 14 days. You only pay after we beat your control by 20%+." 
-          step0Title="Your brand"
+          headline="Get Your Free Ad Concept Analysis" 
+          step0Title="1. Your Brand"
           step0Description="Tell us about your business"
           showStep0Title={true}
           websiteUrlLabel="Website URL"
