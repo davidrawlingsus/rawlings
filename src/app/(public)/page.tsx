@@ -106,7 +106,7 @@ const gapExamples = [
   {
     category: 'Premium Pet Food',
     marketing: 'Grain-free, responsibly sourced nutrition your cat deserves',
-    customer: 'She actually runs to her bowl now instead of sniffing and walking away',
+    customer: 'My 12 year old ragdoll, Nellie, went from lazy and chubs to playful and healthy!',
     cost: '$18,340',
   },
   {
