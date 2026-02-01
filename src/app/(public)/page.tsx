@@ -259,8 +259,8 @@ function RotatingGapComparison() {
         
         {/* Split comparison */}
         <div className="grid grid-cols-2 gap-4 mb-6">
-          <div className="p-4 rounded-lg bg-neutral-800/50">
-            <p className="text-xs uppercase tracking-wider text-neutral-500 mb-2">Marketing language</p>
+          <div className="p-4 rounded-lg bg-gradient-to-br from-red-950/30 to-neutral-900 border border-red-900/30">
+            <p className="text-xs uppercase tracking-wider text-red-400 mb-2">Marketing language</p>
             <p className="text-sm text-neutral-400 italic">&ldquo;{example.marketing}&rdquo;</p>
           </div>
           <div className="p-4 rounded-lg bg-[#B9F040]/10 border border-[#B9F040]/30">
