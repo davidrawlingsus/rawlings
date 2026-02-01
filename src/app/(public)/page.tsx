@@ -89,7 +89,7 @@ export default function HomePage() {
                 href="#apply"
                 className="h-14 px-8 rounded-lg font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors flex items-center justify-center text-lg"
               >
-                Get Your Free Ad Concept Analysis
+                Fix Your Expensive Ads in 72 Hours
               </a>
               <a 
                 href="#case-studies"
@@ -410,7 +410,7 @@ export default function HomePage() {
       <section className="border-y border-neutral-800 bg-black">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8 py-6">
           <p className="text-center text-neutral-400 mb-2">
-            Brands closing the gap right now:
+            Brands that closed the gap:
           </p>
         </div>
         <LogoSlider logos={clientLogos} speedMs={30000} title="" />
@@ -733,7 +733,7 @@ export default function HomePage() {
                 href="#apply"
                 className="inline-flex h-14 px-10 rounded-lg font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors items-center justify-center text-lg"
               >
-                Get Your Free Ad Concept Analysis
+                Fix Your Expensive Ads in 72 Hours
               </a>
               
               <div className="p-6 rounded-xl bg-black/30 border border-white/10 max-w-md">
@@ -761,7 +761,7 @@ export default function HomePage() {
       {/* FORM SECTION */}
       <div id="apply" className="scroll-mt-20">
         <ContactForm 
-          headline="Get Your Free Ad Concept Analysis" 
+          headline="Fix Your Expensive Ads in 72 Hours" 
           step0Title="1. Your Brand"
           step0Description="Tell us about your business"
           showStep0Title={true}
