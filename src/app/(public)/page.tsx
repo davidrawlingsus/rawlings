@@ -481,7 +481,7 @@ export default function HomePage() {
             </motion.div>
 
             <motion.div 
-              className="mt-12 p-8 rounded-2xl bg-gradient-to-br from-red-950/30 to-neutral-900 border border-red-900/30"
+              className="mt-12 p-8 rounded-2xl bg-neutral-900 border border-neutral-800"
               variants={fadeInUp}
             >
               <p className="text-2xl md:text-3xl font-bold text-white mb-4">See the gap?</p>
