@@ -591,7 +591,7 @@ export default function HomePage() {
               className="text-3xl md:text-5xl font-bold text-white mb-6"
               variants={fadeInUp}
             >
-              &ldquo;Conversion rate doubled - and that&apos;s conservative&rdquo;
+              &ldquo;Conversions doubled - and that&apos;s conservative&rdquo;
             </motion.h2>
 
             {/* Chart and Video Row */}
