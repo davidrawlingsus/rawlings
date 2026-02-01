@@ -237,10 +237,10 @@ export default function HomePage() {
           >
             {/* Full-width Headline */}
             <motion.h1 
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
               variants={fadeInUp}
             >
-              There&apos;s a gap between what your marketing says and what your customers say.
+              Your customers speak one language. Your marketing speaks another.
             </motion.h1>
 
             {/* Two-column layout: Copy left, Visual right */}
@@ -251,13 +251,13 @@ export default function HomePage() {
                   className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#B9F040] mb-6"
                   variants={fadeInUp}
                 >
-                  And it&apos;s measured in dollars.
+                  The gap is measured in dollars.
                 </motion.p>
                 <motion.p 
                   className="text-xl md:text-2xl text-neutral-300 leading-relaxed"
                   variants={fadeInUp}
                 >
-                  We listen to your customers at scale, create ads that speak their language, then deposit those dollars back in your bank account — starting in 72 hours.
+                  We analyze what your customers say, rewrite your ads in their language, and prove the impact in your ad account.
                 </motion.p>
                 
                 <motion.div className="mt-8 flex flex-col sm:flex-row gap-4" variants={fadeInUp}>
@@ -279,7 +279,7 @@ export default function HomePage() {
                   className="mt-8 text-sm text-neutral-400 border-l-2 border-[#B9F040] pl-4"
                   variants={fadeInUp}
                 >
-                  Brands using MapTheGap beat their control ads by <span className="text-white font-semibold">40%+</span> on ROAS, CPA, or profit. Because they finally sound like their customers.
+                  Brands using MapTheGap beat their control ads by an average of <span className="text-white font-semibold">43% on CPA</span>, with top performers seeing <span className="text-white font-semibold">116%+</span> improvement.
                 </motion.p>
               </div>
 
@@ -303,18 +303,18 @@ export default function HomePage() {
                   {/* Split comparison */}
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     <div className="p-4 rounded-lg bg-neutral-800/50">
-                      <p className="text-xs uppercase tracking-wider text-neutral-500 mb-2">Your Marketing</p>
+                      <p className="text-xs uppercase tracking-wider text-neutral-500 mb-2">Marketing language</p>
                       <p className="text-sm text-neutral-400 italic">&ldquo;Intelligent markers gives you as much, or as little, guidance as you need&rdquo;</p>
                     </div>
                     <div className="p-4 rounded-lg bg-[#B9F040]/10 border border-[#B9F040]/30">
-                      <p className="text-xs uppercase tracking-wider text-[#B9F040] mb-2">Your Customers</p>
+                      <p className="text-xs uppercase tracking-wider text-[#B9F040] mb-2">Customer language</p>
                       <p className="text-sm text-white italic">&ldquo;The mat literally shows you where your body should be.&rdquo;</p>
                     </div>
                   </div>
                   
                   {/* Gap indicator */}
                   <div className="text-center py-6 border-t border-neutral-800">
-                    <p className="text-xs uppercase tracking-wider text-neutral-500 mb-2">This gap costs:</p>
+                    <p className="text-xs uppercase tracking-wider text-neutral-500 mb-2">This gap costs you:</p>
                     <p className="text-5xl md:text-6xl font-bold text-[#B9F040]">$29,419<span className="text-2xl text-neutral-400">/mo</span></p>
                   </div>
                 </div>
