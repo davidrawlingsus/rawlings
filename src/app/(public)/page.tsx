@@ -315,7 +315,7 @@ export default function HomePage() {
                   {/* Gap indicator */}
                   <div className="text-center py-6 border-t border-neutral-800">
                     <p className="text-xs uppercase tracking-wider text-neutral-500 mb-2">This gap costs:</p>
-                    <p className="text-5xl md:text-6xl font-bold text-[#B9F040]">$47,382<span className="text-2xl text-neutral-400">/mo</span></p>
+                    <p className="text-5xl md:text-6xl font-bold text-[#B9F040]">$29,419<span className="text-2xl text-neutral-400">/mo</span></p>
                   </div>
                 </div>
               </motion.div>
