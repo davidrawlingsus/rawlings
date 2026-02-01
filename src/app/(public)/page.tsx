@@ -1031,7 +1031,7 @@ export default function HomePage() {
               className="overflow-x-auto"
               variants={fadeInUp}
             >
-              <table className="w-full min-w-[700px]">
+              <table className="w-full min-w-[800px]">
                 <thead>
                   <tr className="border-b border-neutral-700">
                     <th className="text-left py-4 px-4 text-neutral-400 font-normal"></th>
