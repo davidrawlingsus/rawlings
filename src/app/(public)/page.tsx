@@ -475,7 +475,7 @@ export default function HomePage() {
               <div className="p-6 rounded-xl bg-[#B9F040]/10 border border-[#B9F040]/30">
                 <p className="text-xs uppercase tracking-wider text-[#B9F040] mb-3">Your customers say:</p>
                 <p className="text-xl text-white italic">
-                  &ldquo;Finally something that doesn&apos;t make my joints feel like broken glass every morning&rdquo;
+                  &ldquo;I can walk my daughter down the aisle without limping&rdquo;
                 </p>
               </div>
             </motion.div>
