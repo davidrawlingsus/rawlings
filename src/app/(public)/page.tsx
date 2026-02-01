@@ -387,7 +387,7 @@ export default function HomePage() {
                     href="#pricing"
                     className="h-14 px-8 rounded-lg font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors flex items-center justify-center gap-2 text-lg"
                   >
-                    Get Your Gap Map <ArrowRight className="w-5 h-5" />
+                    Show Me My Gap <ArrowRight className="w-5 h-5" />
                   </a>
                   <a 
                     href="#how-it-works"
@@ -1478,7 +1478,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="h-14 px-10 rounded-lg font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors flex items-center justify-center text-lg"
               >
-                Get Your Gap Map (Free Analysis) <ArrowRight className="w-5 h-5 ml-2" />
+                Show Me My Gap (Free Analysis) <ArrowRight className="w-5 h-5 ml-2" />
               </a>
               <a 
                 href="https://calendly.com/mapthegap/demo"
