@@ -95,6 +95,46 @@ const testimonials = [
   },
 ]
 
+// Gap examples for rotating hero comparison
+const gapExamples = [
+  {
+    category: 'Joint Pain Supplement',
+    marketing: 'Clinically-proven formula supports joint health and mobility',
+    customer: 'I can finally pick up my granddaughter without my knees screaming',
+    cost: '$29,419',
+  },
+  {
+    category: 'Premium Pet Food',
+    marketing: 'Grain-free, responsibly sourced nutrition your cat deserves',
+    customer: 'She actually runs to her bowl now instead of sniffing and walking away',
+    cost: '$18,340',
+  },
+  {
+    category: 'Sleep Supplement',
+    marketing: 'Natural sleep support with clinically-studied ingredients',
+    customer: "I don't wake up at 3am anymore with my brain spinning about work",
+    cost: '$22,180',
+  },
+  {
+    category: 'Hair Loss Treatment',
+    marketing: 'Advanced formula stimulates follicle growth and reduces shedding',
+    customer: 'I stopped avoiding mirrors and started booking dates again',
+    cost: '$34,920',
+  },
+  {
+    category: 'Gut Health Supplement',
+    marketing: 'Restore your microbiome with our proprietary probiotic blend',
+    customer: 'I can eat dinner with my family without planning my escape route to the bathroom',
+    cost: '$26,740',
+  },
+  {
+    category: 'Productivity Software',
+    marketing: 'Intelligent task management gives you as much, or as little, guidance as you need',
+    customer: 'I finally stopped having 47 tabs open and forgetting what I was supposed to do',
+    cost: '$31,260',
+  },
+]
+
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
   visible: { 
@@ -161,6 +201,83 @@ function TestimonialSlider() {
             key={i}
             onClick={() => setCurrentIndex(i)}
             className={`h-1 rounded-full transition-all ${i === currentIndex ? 'w-8 bg-[#B9F040]' : 'w-3 bg-neutral-600'}`}
+          />
+        ))}
+      </div>
+    </div>
+  )
+}
+
+// Rotating Gap Comparison for Hero
+function RotatingGapComparison() {
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [isPaused, setIsPaused] = useState(false)
+  const [isSliding, setIsSliding] = useState(false)
+  const [slideDirection, setSlideDirection] = useState<'left' | 'right'>('left')
+
+  const goToIndex = (newIndex: number) => {
+    if (newIndex === currentIndex) return
+    setSlideDirection(newIndex > currentIndex ? 'left' : 'right')
+    setIsSliding(true)
+    setTimeout(() => {
+      setCurrentIndex(newIndex)
+      setTimeout(() => setIsSliding(false), 50)
+    }, 300)
+  }
+
+  useEffect(() => {
+    if (isPaused) return
+    const interval = setInterval(() => {
+      const nextIndex = (currentIndex + 1) % gapExamples.length
+      goToIndex(nextIndex)
+    }, 9000)
+    return () => clearInterval(interval)
+  }, [isPaused, currentIndex])
+
+  const example = gapExamples[currentIndex]
+
+  return (
+    <div 
+      className="bg-neutral-900 rounded-2xl p-6 md:p-8 border border-neutral-800 relative z-10 max-w-md ml-auto mt-5 overflow-hidden"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
+      <div 
+        className={`transition-all duration-300 ease-in-out ${
+          isSliding 
+            ? `opacity-0 ${slideDirection === 'left' ? '-translate-x-4' : 'translate-x-4'}` 
+            : 'opacity-100 translate-x-0'
+        }`}
+      >
+        {/* Category label */}
+        <p className="text-sm uppercase tracking-wider text-white font-bold mb-4 text-center">{example.category}</p>
+        
+        {/* Split comparison */}
+        <div className="grid grid-cols-2 gap-4 mb-6">
+          <div className="p-4 rounded-lg bg-neutral-800/50">
+            <p className="text-xs uppercase tracking-wider text-neutral-500 mb-2">Marketing language</p>
+            <p className="text-sm text-neutral-400 italic">&ldquo;{example.marketing}&rdquo;</p>
+          </div>
+          <div className="p-4 rounded-lg bg-[#B9F040]/10 border border-[#B9F040]/30">
+            <p className="text-xs uppercase tracking-wider text-[#B9F040] mb-2">Customer language</p>
+            <p className="text-sm text-white italic">&ldquo;{example.customer}&rdquo;</p>
+          </div>
+        </div>
+        
+        {/* Gap indicator */}
+        <div className="text-center py-6 border-t border-neutral-800">
+          <p className="text-xs uppercase tracking-wider text-neutral-500 mb-2">Translation tax:</p>
+          <p className="text-5xl md:text-6xl font-bold text-[#B9F040]">{example.cost}<span className="text-2xl text-neutral-400">/mo</span></p>
+        </div>
+      </div>
+
+      {/* Dots indicator */}
+      <div className="flex justify-center gap-2">
+        {gapExamples.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => goToIndex(i)}
+            className={`h-1.5 rounded-full transition-all ${i === currentIndex ? 'w-6 bg-[#B9F040]' : 'w-1.5 bg-neutral-600'}`}
           />
         ))}
       </div>
@@ -265,7 +382,7 @@ export default function HomePage() {
                     href="#pricing"
                     className="h-14 px-8 rounded-lg font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors flex items-center justify-center gap-2 text-lg"
                   >
-                    Map The Gap <ArrowRight className="w-5 h-5" />
+                    Get Your Gap Map <ArrowRight className="w-5 h-5" />
                   </a>
                   <a 
                     href="#how-it-works"
@@ -288,36 +405,7 @@ export default function HomePage() {
                 className="relative"
                 variants={fadeInUp}
               >
-                {/* Hero image - hidden for now
-                <div className="absolute -top-12 -right-12 -bottom-12 -left-12 md:-top-20 md:-right-20 md:-bottom-20 md:-left-20 opacity-15 pointer-events-none">
-                  <Image
-                    src="https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/replacement%20hero%20girl%20v3.png"
-                    alt=""
-                    fill
-                    className="object-contain object-center"
-                  />
-                </div>
-                */}
-
-                <div className="bg-neutral-900 rounded-2xl p-6 md:p-8 border border-neutral-800 relative z-10 max-w-md ml-auto mt-5">
-                  {/* Split comparison */}
-                  <div className="grid grid-cols-2 gap-4 mb-6">
-                    <div className="p-4 rounded-lg bg-neutral-800/50">
-                      <p className="text-xs uppercase tracking-wider text-neutral-500 mb-2">Marketing language</p>
-                      <p className="text-sm text-neutral-400 italic">&ldquo;Intelligent markers gives you as much, or as little, guidance as you need&rdquo;</p>
-                    </div>
-                    <div className="p-4 rounded-lg bg-[#B9F040]/10 border border-[#B9F040]/30">
-                      <p className="text-xs uppercase tracking-wider text-[#B9F040] mb-2">Customer language</p>
-                      <p className="text-sm text-white italic">&ldquo;The mat literally shows you where your body should be.&rdquo;</p>
-                    </div>
-                  </div>
-                  
-                  {/* Gap indicator */}
-                  <div className="text-center py-6 border-t border-neutral-800">
-                    <p className="text-xs uppercase tracking-wider text-neutral-500 mb-2">This gap costs you:</p>
-                    <p className="text-5xl md:text-6xl font-bold text-[#B9F040]">$29,419<span className="text-2xl text-neutral-400">/mo</span></p>
-                  </div>
-                </div>
+                <RotatingGapComparison />
               </motion.div>
             </div>
           </motion.div>
@@ -333,7 +421,7 @@ export default function HomePage() {
       </section>
 
       {/* ============ THE PROBLEM SECTION ============ */}
-      <section className="py-20 md:py-32 bg-black">
+      <section className="pt-8 pb-20 md:pt-20 md:pb-32 bg-black">
         <div className="max-w-4xl mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
@@ -406,7 +494,7 @@ export default function HomePage() {
       </section>
 
       {/* ============ THE STAKES SECTION ============ */}
-      <section className="py-20 md:py-32 bg-neutral-900">
+      <section className="pt-20 pb-8 md:pt-32 md:pb-20 bg-neutral-900">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
@@ -479,7 +567,7 @@ export default function HomePage() {
       </section>
 
       {/* ============ PROOF / RESULTS SECTION ============ */}
-      <section id="results" className="py-20 md:py-32 bg-black scroll-mt-20">
+      <section id="results" className="pt-8 pb-20 md:pt-20 md:pb-32 bg-black scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
@@ -714,7 +802,7 @@ export default function HomePage() {
       </section>
 
       {/* ============ HOW IT WORKS SECTION ============ */}
-      <section id="how-it-works" className="py-20 md:py-32 bg-neutral-900 scroll-mt-20">
+      <section id="how-it-works" className="pt-8 pb-20 md:pt-20 md:pb-32 bg-neutral-900 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
@@ -801,7 +889,7 @@ export default function HomePage() {
       </section>
 
       {/* ============ THE FRAMEWORK SECTION ============ */}
-      <section className="py-20 md:py-32 bg-black">
+      <section className="pt-8 pb-20 md:pt-20 md:pb-32 bg-black">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
@@ -885,7 +973,7 @@ export default function HomePage() {
       </section>
 
       {/* ============ VS ALTERNATIVES SECTION ============ */}
-      <section className="py-20 md:py-32 bg-neutral-900">
+      <section className="pt-8 pb-20 md:pt-20 md:pb-32 bg-neutral-900">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
@@ -965,7 +1053,7 @@ export default function HomePage() {
       </section>
 
       {/* ============ WHO THIS IS FOR ============ */}
-      <section className="py-20 md:py-32 bg-black">
+      <section className="pt-8 pb-20 md:pt-20 md:pb-32 bg-black">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
@@ -1032,7 +1120,7 @@ export default function HomePage() {
       </section>
 
       {/* ============ PRICING SECTION ============ */}
-      <section id="pricing" className="py-20 md:py-32 bg-neutral-900 scroll-mt-20">
+      <section id="pricing" className="pt-8 pb-20 md:pt-20 md:pb-32 bg-neutral-900 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
@@ -1302,7 +1390,7 @@ export default function HomePage() {
       </section>
 
       {/* ============ FINAL CTA SECTION ============ */}
-      <section id="apply" className="py-20 md:py-32 bg-gradient-to-br from-[#1A2B3C] to-black scroll-mt-20">
+      <section id="apply" className="pt-8 pb-20 md:pt-20 md:pb-32 bg-gradient-to-br from-[#1A2B3C] to-black scroll-mt-20">
         <div className="max-w-4xl mx-auto px-6 md:px-8 text-center">
           <motion.div
             initial="hidden"
@@ -1311,18 +1399,11 @@ export default function HomePage() {
             variants={staggerContainer}
           >
             <motion.h2 
-              className="text-3xl md:text-5xl font-bold text-white mb-6"
+              className="text-3xl md:text-5xl font-bold text-white mb-8"
               variants={fadeInUp}
             >
               Most brands are sitting on a $15K-$50K/month language gap right now.
             </motion.h2>
-            
-            <motion.p 
-              className="text-xl text-neutral-300 mb-8"
-              variants={fadeInUp}
-            >
-              They just can&apos;t see it yet.
-            </motion.p>
 
             <motion.div 
               className="max-w-2xl mx-auto text-left mb-10 p-6 rounded-xl bg-black/30 border border-white/10"
@@ -1359,7 +1440,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="h-14 px-10 rounded-lg font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors flex items-center justify-center text-lg"
               >
-                See Your Gap (Free Analysis) <ArrowRight className="w-5 h-5 ml-2" />
+                Get Your Gap Map (Free Analysis) <ArrowRight className="w-5 h-5 ml-2" />
               </a>
               <a 
                 href="https://calendly.com/mapthegap/demo"
@@ -1375,7 +1456,7 @@ export default function HomePage() {
               className="mt-6 text-sm text-neutral-500"
               variants={fadeInUp}
             >
-              No credit card required. We measure your gap first. You decide if it&apos;s worth closing.
+              Pay nothing until our ads start winning
             </motion.p>
           </motion.div>
         </div>
