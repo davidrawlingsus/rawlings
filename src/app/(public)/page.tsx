@@ -369,12 +369,12 @@ export default function HomePage() {
             <div className="grid md:grid-cols-2 gap-12 items-start">
               {/* Left: Subhead and CTAs */}
               <div>
-                <motion.p 
-                  className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#B9F040] mb-6"
+                <motion.h1 
+                  className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#B9F040] leading-tight mb-6"
                   variants={fadeInUp}
                 >
                   The gap is measured in lost dollars.
-                </motion.p>
+                </motion.h1>
                 <motion.p 
                   className="text-xl md:text-2xl text-neutral-300 leading-relaxed"
                   variants={fadeInUp}
