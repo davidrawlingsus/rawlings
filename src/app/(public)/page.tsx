@@ -578,7 +578,7 @@ export default function HomePage() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.05 }}
             variants={staggerContainer}
           >
             <motion.p 
