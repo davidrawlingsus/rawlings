@@ -455,8 +455,9 @@ export default function HomePage() {
               <p>
                 Clean. Professional. On-message.
               </p>
-              <p className="text-white font-semibold">
-                And completely disconnected from how your customers actually think, speak, and buy.
+              <p className="text-white font-semibold relative inline-block">
+                <span className="relative z-10">And completely disconnected from how your customers actually think, speak, and buy.</span>
+                <span className="absolute inset-0 bg-[#B9F040]/20 -skew-x-2 rounded" aria-hidden="true"></span>
               </p>
             </motion.div>
 
