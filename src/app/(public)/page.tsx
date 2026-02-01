@@ -272,7 +272,7 @@ function RotatingGapComparison() {
         {/* Gap indicator */}
         <div className="text-center py-6 border-t border-neutral-800">
           <p className="text-xs uppercase tracking-wider text-neutral-500 mb-2">Translation tax:</p>
-          <p className="text-5xl md:text-6xl font-bold text-[#B9F040]">{example.cost}<span className="text-2xl text-neutral-400">/mo</span></p>
+          <p className="text-5xl md:text-6xl font-bold text-red-500">-{example.cost}<span className="text-2xl text-neutral-400">/mo</span></p>
         </div>
       </div>
 
