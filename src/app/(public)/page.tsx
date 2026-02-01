@@ -596,11 +596,11 @@ export default function HomePage() {
 
             {/* Chart and Video Row */}
             <motion.div 
-              className="grid md:grid-cols-2 gap-8 mb-16"
+              className="grid md:grid-cols-2 gap-6 md:gap-8 mb-16"
               variants={fadeInUp}
             >
               {/* Chart */}
-              <div className="p-8 rounded-2xl bg-neutral-900 border border-neutral-800">
+              <div className="p-4 md:p-8 rounded-2xl bg-neutral-900 border border-neutral-800 overflow-hidden">
                 <p className="text-sm text-neutral-400 mb-6">Average performance improvement after closing the gap</p>
                 <GapChart />
                 <div className="mt-4 flex items-center gap-4">
@@ -617,7 +617,7 @@ export default function HomePage() {
               </div>
 
               {/* Video Testimonial */}
-              <div className="p-8 rounded-2xl bg-neutral-900 border border-neutral-800">
+              <div className="p-4 md:p-8 rounded-2xl bg-neutral-900 border border-neutral-800 overflow-hidden">
                 <Dialog open={videoOpen} onOpenChange={setVideoOpen}>
                   <DialogTrigger asChild>
                     <div className="relative aspect-video rounded-xl overflow-hidden cursor-pointer group mb-6">
