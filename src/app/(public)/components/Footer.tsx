@@ -59,9 +59,17 @@ export default function Footer() {
 
         {/* Bottom legal */}
         <div className="mt-12 pt-8 border-t border-neutral-800">
-          <p className="text-neutral-500 text-sm text-center">
-            © {currentYear} MapTheGap.ai. All rights reserved.
-          </p>
+          <div className="text-neutral-500 text-xs text-center space-y-2">
+            <p>
+              The Rawlings Marketing Intel Co Limited t/a MapTheGap.ai
+            </p>
+            <p>
+              Landscape House, Dublin 22, Dublin D22 P3K7, Ireland
+            </p>
+            <p className="text-sm mt-4">
+              © {currentYear} MapTheGap.ai. All rights reserved.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
