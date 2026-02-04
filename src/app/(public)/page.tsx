@@ -271,7 +271,7 @@ function RotatingGapComparison() {
         
         {/* Gap indicator */}
         <div className="text-center py-6 border-t border-neutral-800">
-          <p className="text-xs uppercase tracking-wider text-neutral-500 mb-2">Translation tax:</p>
+          <p className="text-xs uppercase tracking-wider text-white mb-2">Translation tax:</p>
           <p className="text-5xl md:text-6xl font-bold text-red-500">-{example.cost}<span className="text-2xl text-neutral-400">/mo</span></p>
         </div>
       </div>
@@ -282,7 +282,7 @@ function RotatingGapComparison() {
           <button
             key={i}
             onClick={() => goToIndex(i)}
-            className={`h-1.5 rounded-full transition-all ${i === currentIndex ? 'w-6 bg-[#B9F040]' : 'w-1.5 bg-neutral-600'}`}
+            className={`h-1.5 rounded-full transition-all ${i === currentIndex ? 'w-6 bg-red-500' : 'w-1.5 bg-neutral-600'}`}
           />
         ))}
       </div>
