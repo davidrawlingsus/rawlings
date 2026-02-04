@@ -7,8 +7,8 @@ import { Menu } from 'lucide-react'
 
 // Navigation items configuration
 const NAV_ITEMS = [
-  { id: 'how-it-works', label: 'How It Works', hash: '#how-it-works' },
   { id: 'results', label: 'Results', hash: '#results' },
+  { id: 'how-it-works', label: 'How It Works', hash: '#how-it-works' },
   { id: 'pricing', label: 'Pricing', hash: '#pricing' },
   { id: 'about', label: 'About', hash: '#about' },
 ] as const
@@ -56,7 +56,7 @@ export default function Header() {
     const observer = new IntersectionObserver(observerCallback, observerOptions)
 
     // Observe all sections
-    const sections = ['how-it-works', 'results', 'pricing', 'about'].map(id => 
+    const sections = ['results', 'how-it-works', 'pricing', 'about'].map(id => 
       document.getElementById(id)
     ).filter(Boolean) as HTMLElement[]
 
