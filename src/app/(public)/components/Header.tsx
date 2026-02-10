@@ -112,7 +112,7 @@ export default function Header() {
           {/* CTA Buttons */}
           <div className="flex items-center gap-4 ml-8">
             <Link 
-              href={pathname === '/' ? '#apply' : '/#apply'}
+              href={pathname === '/' ? '#form' : '/#form'}
               className="bg-[#B9F040] text-black px-6 py-2 rounded-lg font-semibold text-sm uppercase hover:bg-[#a0d636] transition-colors"
             >
               SHOW ME MY GAP
@@ -160,7 +160,7 @@ export default function Header() {
             {/* Mobile CTA Buttons */}
             <div className="pt-4 flex flex-col gap-3">
               <Link 
-                href={pathname === '/' ? '#apply' : '/#apply'}
+                href={pathname === '/' ? '#form' : '/#form'}
                 onClick={closeMobileMenu}
                 className="bg-[#B9F040] text-black px-6 py-3 rounded-lg font-semibold text-sm uppercase hover:bg-[#a0d636] transition-colors block text-center w-full"
               >

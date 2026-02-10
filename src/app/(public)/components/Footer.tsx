@@ -32,7 +32,7 @@ export default function Footer() {
             <Link href="#faq" className="text-neutral-400 hover:text-[#B9F040] transition-colors text-sm">
               FAQ
             </Link>
-            <Link href="#apply" className="text-neutral-400 hover:text-[#B9F040] transition-colors text-sm">
+            <Link href="#form" className="text-neutral-400 hover:text-[#B9F040] transition-colors text-sm">
               Book Demo
             </Link>
           </div>

@@ -7,6 +7,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import LogoSlider from './components/LogoSlider'
 import RedirectGreeting from '@/components/RedirectGreeting'
+import ContactForm from './components/ContactForm'
 import { ArrowRight, ArrowDown, Check, X, Upload, BarChart3, Sparkles, TrendingUp, ChevronDown } from 'lucide-react'
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
 
@@ -1211,7 +1212,7 @@ export default function HomePage() {
 
                 <p className="text-sm text-neutral-400 mb-4">Typical gap recovery: <span className="text-[#B9F040] font-semibold">$8K-$20K/mo</span></p>
                 
-                <a href="#apply" className="block w-full py-3 rounded-lg border border-neutral-700 text-center text-white font-semibold hover:bg-neutral-800 transition-colors">
+                <a href="#form" className="block w-full py-3 rounded-lg border border-neutral-700 text-center text-white font-semibold hover:bg-neutral-800 transition-colors">
                   Start Free Analysis
                 </a>
               </motion.div>
@@ -1253,7 +1254,7 @@ export default function HomePage() {
 
                 <p className="text-sm text-neutral-400 mb-4">Typical gap recovery: <span className="text-[#B9F040] font-semibold">$20K-$60K/mo</span></p>
                 
-                <a href="#apply" className="block w-full py-3 rounded-lg bg-[#B9F040] text-center text-black font-semibold hover:bg-[#a0d636] transition-colors">
+                <a href="#form" className="block w-full py-3 rounded-lg bg-[#B9F040] text-center text-black font-semibold hover:bg-[#a0d636] transition-colors">
                   Start Free Analysis
                 </a>
               </motion.div>
@@ -1292,7 +1293,7 @@ export default function HomePage() {
 
                 <p className="text-sm text-neutral-400 mb-4">Typical gap recovery: <span className="text-[#B9F040] font-semibold">$60K-$200K/mo</span></p>
                 
-                <a href="#apply" className="block w-full py-3 rounded-lg border border-neutral-700 text-center text-white font-semibold hover:bg-neutral-800 transition-colors">
+                <a href="#form" className="block w-full py-3 rounded-lg border border-neutral-700 text-center text-white font-semibold hover:bg-neutral-800 transition-colors">
                   Start Free Analysis
                 </a>
               </motion.div>
@@ -1360,7 +1361,7 @@ export default function HomePage() {
               
               <div className="mt-8">
                 <a 
-                  href="#apply"
+                  href="#form"
                   className="inline-flex h-12 px-6 rounded-lg font-semibold bg-[#B9F040] text-black hover:bg-[#a0d636] transition-colors items-center justify-center"
                 >
                   See what it can do for your brand →
@@ -1500,6 +1501,17 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
+
+      {/* ============ LEAD GEN FORM ============ */}
+      <div id="form" className="scroll-mt-20">
+        <ContactForm 
+          headline="Show Me My Gap" 
+          step0Title="1. Your Brand"
+          step0Description="Tell us about your business"
+          showStep0Title={true}
+          websiteUrlLabel="Website URL"
+        />
+      </div>
 
       <Footer />
     </main>
