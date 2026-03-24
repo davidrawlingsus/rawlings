@@ -33,7 +33,7 @@ export default function SuccessPage() {
         dangerouslySetInnerHTML={{
           __html: `
             window.VizualizdSurvey = {
-              apiKey: "e1e0a3650b8b4e34a5a42b07db4ce033",
+              apiKey: "vzd_arU1F-vdRqUNo445O2t5weHGJ7zI1KUkmNjPozpvlWo",
               apiBaseUrl: "https://api.mapthegap.ai"
             };
           `,
