@@ -41,7 +41,7 @@ export default function SuccessPage() {
       />
       <Script
         id="vizualizd-survey"
-        src="https://api.mapthegap.ai/static/widget/vizualizd-survey.js"
+        src={`https://api.mapthegap.ai/static/widget/vizualizd-survey.js?v=${Date.now()}`}
         strategy="afterInteractive"
       />
     </div>
