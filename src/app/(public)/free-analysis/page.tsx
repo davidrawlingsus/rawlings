@@ -153,7 +153,7 @@ export default function FreeAnalysisPage() {
       {/* ── LOGO BAND ── */}
       <section className="border-y border-neutral-800 bg-neutral-900/50">
         <div className="max-w-7xl mx-auto px-6 md:px-8 py-4">
-          <p className="text-center text-sm text-neutral-500 mb-2">Trusted by brands who closed the gap</p>
+          <p className="text-center text-sm text-neutral-500 mb-2">Based on the conversion system used by these top brands</p>
         </div>
         <LogoSlider logos={clientLogos} speedMs={30000} title="" />
       </section>
