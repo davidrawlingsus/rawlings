@@ -2,26 +2,10 @@
 
 import { useEffect, useRef, useState, useCallback } from 'react'
 import Link from 'next/link'
-import LogoSlider from '../components/LogoSlider'
 import './free-analysis.css'
 
 const API_BASE = 'https://content-exploration-featurebranch.up.railway.app'
 const STATUS_PAGE = 'https://vizualizd.mapthegap.ai/free-analysis'
-
-const clientLogos = [
-  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/lloyds_bank_logo_square.png', alt: 'Lloyds Bank' },
-  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/Bupa_logo_square.png', alt: 'Bupa' },
-  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/conde_nast_logo_square.png', alt: 'Condé Nast' },
-  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/hotjar_logo_square.png', alt: 'Hotjar' },
-  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/katkin_logo_square.png', alt: 'KatKin' },
-  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/mous_logo_square.png', alt: 'Mous' },
-  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/wattbike_logo_rectangle.png', alt: 'Wattbike' },
-  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/mindful_chef_logo_square.png', alt: 'Mindful Chef' },
-  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/omlet_logo_square.png', alt: 'Omlet' },
-  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/elvie_logo_square.png', alt: 'Elvie' },
-  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/sally_beauty_logo_square.png', alt: 'Sally Beauty' },
-  { src: 'https://neeuv3c4wu4qzcdw.public.blob.vercel-storage.com/logos/monica_vinader_logo_square.png', alt: 'Monica Vinader' },
-]
 
 export default function FreeAnalysisPage() {
   const [currentUrl, setCurrentUrl] = useState<string | null>(null)
@@ -149,16 +133,6 @@ export default function FreeAnalysisPage() {
           <p className="mtg-hero__note">Works with Trustpilot, Google Reviews, Reviews.io, and Yotpo.</p>
         </div>
       </section>
-
-      {/* ── LOGO BAND ── */}
-      <div className="mtg-logo-band-wrap">
-        <section className="border-y border-neutral-800 bg-neutral-900/50">
-          <div className="max-w-7xl mx-auto px-6 md:px-8 py-4">
-            <p className="text-center text-sm text-neutral-500 mb-2">Based on the conversion system used by these top brands</p>
-          </div>
-          <LogoSlider logos={clientLogos} speedMs={30000} title="" />
-        </section>
-      </div>
 
       {/* ── THE GAP — VISUAL PROOF ── */}
       <section className="mtg-section mtg-wrap">

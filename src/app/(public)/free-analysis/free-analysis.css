@@ -21,8 +21,6 @@
 
 /* ── Reset (scoped) ── */
 .mtg-landing * { box-sizing: border-box; margin: 0; padding: 0; }
-.mtg-landing .mtg-logo-band-wrap,
-.mtg-landing .mtg-logo-band-wrap * { margin: revert; padding: revert; }
 .mtg-landing { scroll-behavior: smooth; }
 
 .mtg-landing {
