@@ -216,7 +216,7 @@
     padding: 1.125rem 1.25rem;
     font-size: 1.0625rem;
     background: rgba(255, 255, 255, 0.05);
-    border: 2px solid var(--border-dark);
+    border: 2px solid var(--lime);
     border-right: none;
     border-radius: 0.625rem 0 0 0.625rem;
     color: var(--fg);
@@ -773,7 +773,7 @@
     .mtg-stats-grid { grid-template-columns: 1fr 1fr; }
 
     .mtg-hero__input-row { flex-direction: column; gap: 0.75rem; }
-    .mtg-hero__input-row input { min-width: 0; border-right: 2px solid var(--border-dark); border-radius: 0.625rem; }
+    .mtg-hero__input-row input { min-width: 0; border-right: 2px solid var(--lime); border-radius: 0.625rem; }
     .mtg-hero__input-row input:focus { border-color: var(--lime); }
     .mtg-hero__input-row .mtg-btn-primary { width: 100%; border-radius: 0.625rem; }
 
