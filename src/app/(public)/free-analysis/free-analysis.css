@@ -727,18 +727,6 @@
     line-height: 1.5;
 }
 
-/* ── Logo Band ────────────────────────────── */
-.mtg-logo-band {
-    padding-top: 1rem;
-}
-
-.mtg-logo-band__label {
-    text-align: center;
-    font-size: 0.8125rem;
-    color: var(--fg-dim);
-    margin-bottom: 0.5rem;
-}
-
 /* ── Scroll Animations ─────────────────────── */
 .mtg-fade-up {
     opacity: 0;
