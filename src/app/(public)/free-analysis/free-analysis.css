@@ -19,9 +19,10 @@
     --destructive: #dc2626;
 }
 
-/* ── Reset (scoped — only target mtg elements, not third-party components) ── */
-.mtg-landing * { box-sizing: border-box; }
-.mtg-landing [class*="mtg-"] { margin: 0; padding: 0; }
+/* ── Reset (scoped) ── */
+.mtg-landing * { box-sizing: border-box; margin: 0; padding: 0; }
+.mtg-landing .mtg-logo-band-wrap,
+.mtg-landing .mtg-logo-band-wrap * { margin: revert; padding: revert; }
 .mtg-landing { scroll-behavior: smooth; }
 
 .mtg-landing {
