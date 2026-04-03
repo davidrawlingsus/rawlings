@@ -125,7 +125,7 @@ export default function FreeAnalysisPage() {
         </div>
         <div className="mtg-fade-up" style={{ transitionDelay: '0.3s' }}>
           <form className="mtg-hero__input-row" onSubmit={handleUrlSubmit}>
-            <input type="url" placeholder="yourstore.com" required />
+            <input type="text" placeholder="yourstore.com" required />
             <button type="submit" className="mtg-btn-primary">SHOW ME THE GAP</button>
           </form>
         </div>
@@ -488,7 +488,7 @@ export default function FreeAnalysisPage() {
         </div>
         <div className="mtg-fade-up" style={{ transitionDelay: '0.2s' }}>
           <form className="mtg-hero__input-row" onSubmit={handleUrlSubmit}>
-            <input type="url" placeholder="yourstore.com" required />
+            <input type="text" placeholder="yourstore.com" required />
             <button type="submit" className="mtg-btn-primary">SHOW ME THE GAP</button>
           </form>
         </div>
