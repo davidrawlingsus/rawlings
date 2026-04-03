@@ -153,7 +153,7 @@ export default function FreeAnalysisPage() {
       {/* ── LOGO BAND ── */}
       <div className="mtg-logo-band">
         <p className="mtg-logo-band__label">Trusted by brands who closed the gap</p>
-        <LogoSlider logos={clientLogos} speedMs={30000} title="" className="mtg-logo-band__slider" />
+        <LogoSlider logos={clientLogos} speedMs={30000} title="" />
       </div>
 
       {/* ── THE GAP — VISUAL PROOF ── */}

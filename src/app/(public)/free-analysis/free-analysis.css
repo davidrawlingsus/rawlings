@@ -727,10 +727,8 @@
     line-height: 1.5;
 }
 
-/* ── Logo Band (dark-theme overrides) ─────── */
+/* ── Logo Band ────────────────────────────── */
 .mtg-logo-band {
-    border-top: 1px solid var(--border-dark);
-    border-bottom: 1px solid var(--border-dark);
     padding-top: 1rem;
 }
 
@@ -739,37 +737,6 @@
     font-size: 0.8125rem;
     color: var(--fg-dim);
     margin-bottom: 0.5rem;
-}
-
-.mtg-logo-band__slider {
-    background: transparent !important;
-    border: none !important;
-    padding-top: 0.5rem !important;
-    padding-bottom: 1.5rem !important;
-}
-
-/* Override gradient masks to fade to black instead of neutral-50 */
-.mtg-logo-band__slider > div > div > .absolute {
-    background: none !important;
-}
-
-.mtg-logo-band__slider > div > div > .absolute:first-child {
-    background: linear-gradient(to right, var(--bg-dark), transparent) !important;
-}
-
-.mtg-logo-band__slider > div > div > .absolute:last-of-type {
-    background: linear-gradient(to left, var(--bg-dark), transparent) !important;
-}
-
-/* Invert / brighten logos for dark background */
-.mtg-logo-band__slider img {
-    filter: brightness(0) invert(1);
-    opacity: 0.4;
-    transition: opacity 0.3s ease;
-}
-
-.mtg-logo-band__slider img:hover {
-    opacity: 0.7;
 }
 
 /* ── Scroll Animations ─────────────────────── */
