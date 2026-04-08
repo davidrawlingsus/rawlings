@@ -897,7 +897,7 @@ export default function HomePage() {
               className="text-3xl md:text-5xl font-bold text-white mb-6"
               variants={fadeInUp}
             >
-              Measure the gap. Write better ads. ROAS goes up.
+              Measure the gap. Create better marketing. Profit goes up.
             </motion.h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
