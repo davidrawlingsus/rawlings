@@ -25,7 +25,7 @@ export default function LogoSlider({
   const tripled = [...logos, ...logos, ...logos];
 
   return (
-    <section className={`py-16 md:py-20 bg-neutral-50 border-t border-neutral-200 overflow-hidden ${className}`}>
+    <section className={`py-5 md:py-20 bg-neutral-50 border-t border-neutral-200 overflow-hidden ${className}`}>
       <div className="max-w-screen-xl mx-auto px-6 md:px-8">
         {/* Title */}
         {title && (
@@ -68,19 +68,6 @@ export default function LogoSlider({
         </div>
       </div>
 
-      {/* Animation keyframes */}
-      <style jsx global>{`
-        @keyframes scroll-horizontal {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-33.333%); }
-        }
-        
-        @media (prefers-reduced-motion: reduce) {
-          div[style*="scroll-horizontal"] {
-            animation: none !important;
-          }
-        }
-      `}</style>
     </section>
   );
 }
