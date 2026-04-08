@@ -117,10 +117,18 @@
   100% { transform: translateY(calc(-100% + 500px)); }
 }
 
+@keyframes scroll-horizontal {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-[move-up-down_7s_linear_infinite],
-  .animate-[move-up-down_21s_linear_infinite] { 
-    animation: none !important; 
+  .animate-[move-up-down_21s_linear_infinite] {
+    animation: none !important;
+  }
+  div[style*="scroll-horizontal"] {
+    animation: none !important;
   }
 }
 
