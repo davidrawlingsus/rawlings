@@ -10,6 +10,7 @@ import RedirectGreeting from '@/components/RedirectGreeting'
 import ContactForm from './components/ContactForm'
 import { ArrowRight, ArrowDown, Check, X, Upload, BarChart3, Sparkles, TrendingUp, ChevronDown } from 'lucide-react'
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
+import TypewriterWord from './components/TypewriterWord'
 import './free-analysis/free-analysis.css'
 
 const LEADGEN_API_BASE = 'https://content-exploration-featurebranch.up.railway.app'
@@ -500,14 +501,15 @@ export default function HomePage() {
           </div>
           <div className="mtg-fade-up" style={{ transitionDelay: '0.1s' }}>
             <h1>
-              Your customers already wrote your best ads.
-              <span className="mtg-accent" style={{ fontStyle: 'italic' }}> But nobody&apos;s listening.</span>
+              Your customers already wrote your best <TypewriterWord words={['content strategy.', 'CRO strategy.', 'Facebook Ads.', 'SEO strategy.']} />
+              <br />
+              <span className="mtg-accent" style={{ fontStyle: 'italic' }}>But nobody&apos;s listening.</span>
             </h1>
           </div>
           <div className="mtg-fade-up" style={{ transitionDelay: '0.2s' }}>
             <p className="mtg-subtitle">
               Enter your URL. We&apos;ll read every review. And show you the gap
-              between what your ads say and what your customers <em>need</em> to hear to convert.
+              between what your marketing says and what your customers <em>need</em> to hear to convert.
             </p>
           </div>
           <div className="mtg-fade-up" style={{ transitionDelay: '0.3s' }}>

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, useCallback } from 'react'
 import Link from 'next/link'
+import TypewriterWord from '../components/TypewriterWord'
 import './free-analysis.css'
 
 const API_BASE = 'https://content-exploration-featurebranch.up.railway.app'
@@ -113,8 +114,9 @@ export default function FreeAnalysisPage() {
         </div>
         <div className="mtg-fade-up" style={{ transitionDelay: '0.1s' }}>
           <h1>
-            Your customers already wrote your best ads.
-            <span className="mtg-accent" style={{ fontStyle: 'italic' }}> But nobody&apos;s listening.</span>
+            Your customers already wrote your best <TypewriterWord words={['content strategy.', 'CRO strategy.', 'Facebook Ads.', 'SEO strategy.']} />
+            <br />
+            <span className="mtg-accent" style={{ fontStyle: 'italic' }}>But nobody&apos;s listening.</span>
           </h1>
         </div>
         <div className="mtg-fade-up" style={{ transitionDelay: '0.2s' }}>

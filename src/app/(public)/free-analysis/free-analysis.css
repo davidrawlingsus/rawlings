@@ -727,6 +727,21 @@
     line-height: 1.5;
 }
 
+/* ── Typewriter ───────────────────────────── */
+.mtg-typewriter-cursor::after {
+    content: '|';
+    display: inline-block;
+    color: var(--lime);
+    animation: mtg-blink 0.7s step-end infinite;
+    margin-left: 2px;
+    font-style: normal;
+}
+
+@keyframes mtg-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
 /* ── Scroll Animations ─────────────────────── */
 .mtg-fade-up {
     opacity: 0;
