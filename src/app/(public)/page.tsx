@@ -433,7 +433,7 @@ export default function HomePage() {
           </div>
           <div className="mtg-fade-up" style={{ transitionDelay: '0.1s' }}>
             <h1>
-              Your customers already wrote your best <TypewriterWord words={['content strategy.', 'CRO strategy.', 'Facebook Ads.', 'SEO strategy.']} />
+              Your customers already wrote your <TypewriterWord words={['entire creative strategy.', 'best ever landing pages.', 'highest ROAS Facebook Ads.', 'best performing SEO pages.', 'highest open emails.']} />
               <br />
               <span className="mtg-accent" style={{ fontStyle: 'italic' }}>But nobody&apos;s listening.</span>
             </h1>
