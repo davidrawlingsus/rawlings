@@ -739,15 +739,21 @@
     line-height: 1.5;
 }
 
-/* ── Typewriter line (prevents layout shift on mobile) ── */
+/* ── Typewriter line ── */
 .mtg-typewriter-line {
-    display: block;
-    min-height: 2.4em;
+    display: none;
+}
+
+.mtg-typewriter-static {
+    display: inline;
 }
 
 @media (min-width: 769px) {
     .mtg-typewriter-line {
-        min-height: auto;
+        display: inline;
+    }
+    .mtg-typewriter-static {
+        display: none;
     }
 }
 
