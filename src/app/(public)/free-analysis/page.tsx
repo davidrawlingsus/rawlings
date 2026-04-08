@@ -119,8 +119,8 @@ export default function FreeAnalysisPage() {
         </div>
         <div className="mtg-fade-up" style={{ transitionDelay: '0.2s' }}>
           <p className="mtg-subtitle">
-            Enter your URL. We&apos;ll read every review. And show you the gap
-            between what your ads say and what your customers <em>need</em> to hear to convert.
+            Enter your URL. We&apos;ll instantly read your reviews and show you the gap
+            between what your marketing says and what your customers <em>need</em> to hear to convert.
           </p>
         </div>
         <div className="mtg-fade-up" style={{ transitionDelay: '0.3s' }}>
