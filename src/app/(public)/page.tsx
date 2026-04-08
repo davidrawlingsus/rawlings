@@ -425,7 +425,7 @@ export default function HomePage() {
       <Header />
 
       {/* ============ HERO SECTION ============ */}
-      <section className="pt-8 pb-10 md:pt-12 md:pb-16 relative overflow-hidden">
+      <section className="">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
