@@ -112,7 +112,7 @@ export default function FreeAnalysisPage() {
         <div className="mtg-fade-up" style={{ transitionDelay: '0.1s' }}>
           <h1>
             Your customers already wrote your<br />
-            <TypewriterWord words={['entire creative strategy.', 'best ever landing pages.', 'highest ROAS Facebook Ads.', 'best performing SEO pages.', 'highest open emails.']} />
+            <span className="mtg-typewriter-line"><TypewriterWord words={['entire creative strategy.', 'best ever landing pages.', 'highest ROAS Facebook Ads.', 'best performing SEO pages.', 'highest open emails.']} /></span>
             <br />
             <span className="mtg-accent" style={{ fontStyle: 'italic', fontSize: '0.65em', display: 'inline-block', marginTop: '1.25rem' }}>But your marketing&apos;s not listening,<br />and I&apos;ll prove it...</span>
           </h1>
