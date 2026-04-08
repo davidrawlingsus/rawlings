@@ -239,6 +239,18 @@
     margin-top: 1rem;
 }
 
+/* Small variant for inline use */
+.mtg-hero__input-row--sm { max-width: 100%; }
+.mtg-hero__input-row--sm input {
+    min-width: 0;
+    padding: 0.625rem 0.75rem;
+    font-size: 0.8125rem;
+}
+.mtg-hero__input-row--sm .mtg-btn-primary {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.75rem;
+}
+
 /* ── Logo Slider ───────────────────────────── */
 .mtg-logo-slider-section {
     padding: 3rem 0 4rem;

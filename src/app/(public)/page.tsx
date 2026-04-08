@@ -911,9 +911,13 @@ export default function HomePage() {
                   <Upload className="w-6 h-6 text-[#B9F040]" />
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2">Enter Your URL</h3>
-                <p className="text-neutral-400 text-sm">
+                <p className="text-neutral-400 text-sm mb-3">
                   We&apos;ll instantly analyze your reviews to extract actual customer language.
                 </p>
+                <form className="mtg-hero__input-row mtg-hero__input-row--sm" onSubmit={handleLeadgenUrlSubmit}>
+                  <input type="text" placeholder="yourstore.com" required />
+                  <button type="submit" className="mtg-btn-primary">GO</button>
+                </form>
               </motion.div>
 
               {/* Step 2 */}
