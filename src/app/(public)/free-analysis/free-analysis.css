@@ -816,6 +816,8 @@
     .mtg-hero__input-row input:focus { border-color: var(--lime); }
     .mtg-hero__input-row .mtg-btn-primary { width: 100%; border-radius: 0.625rem; }
 
+    .mtg-hero h1 .mtg-accent { margin-top: 0 !important; }
+
     .mtg-card { padding: 1.5rem; }
     .mtg-modal { padding: 1.5rem; }
     .mtg-featured-box { padding: 2rem 1.5rem; }
