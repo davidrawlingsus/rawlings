@@ -10,6 +10,10 @@ import RedirectGreeting from '@/components/RedirectGreeting'
 import ContactForm from './components/ContactForm'
 import { ArrowRight, ArrowDown, Check, X, Upload, BarChart3, Sparkles, TrendingUp, ChevronDown } from 'lucide-react'
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
+import './free-analysis/free-analysis.css'
+
+const LEADGEN_API_BASE = 'https://content-exploration-featurebranch.up.railway.app'
+const LEADGEN_STATUS_PAGE = 'https://vizualizd.mapthegap.ai/free-analysis'
 
 // Logo data for trust band
 const clientLogos = [
@@ -343,6 +347,76 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 export default function HomePage() {
   const [videoOpen, setVideoOpen] = useState(false)
 
+  // Leadgen form state
+  const [leadgenUrl, setLeadgenUrl] = useState<string | null>(null)
+  const [leadgenModalOpen, setLeadgenModalOpen] = useState(false)
+  const [leadgenDomain, setLeadgenDomain] = useState('')
+  const [leadgenEmail, setLeadgenEmail] = useState('')
+  const [leadgenSubmitting, setLeadgenSubmitting] = useState(false)
+  const [leadgenError, setLeadgenError] = useState('')
+  const leadgenModalRef = useRef<HTMLDivElement>(null)
+
+  const handleLeadgenUrlSubmit = useCallback((e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    const input = e.currentTarget.querySelector('input') as HTMLInputElement
+    let url = input.value.trim()
+    if (!url) return
+    if (url.indexOf('http') !== 0) url = 'https://' + url
+    setLeadgenUrl(url)
+    try {
+      const domain = new URL(url).hostname.replace(/^www\./, '')
+      setLeadgenDomain(domain)
+    } catch {
+      setLeadgenDomain(url)
+    }
+    setLeadgenError('')
+    setLeadgenModalOpen(true)
+  }, [])
+
+  const handleLeadgenEmailSubmit = useCallback(async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    if (!leadgenEmail.trim()) return
+    setLeadgenSubmitting(true)
+    setLeadgenError('')
+    try {
+      const res = await fetch(LEADGEN_API_BASE + '/api/public/leadgen/start', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ work_email: leadgenEmail, company_url: leadgenUrl }),
+      })
+      if (!res.ok) {
+        let detail = 'Request failed: ' + res.status
+        try { const d = await res.json(); if (d.detail) detail = d.detail } catch {}
+        throw new Error(detail)
+      }
+      const data = await res.json()
+      window.location.href = LEADGEN_STATUS_PAGE + '?run_id=' + encodeURIComponent(data.run_id) + '&email=' + encodeURIComponent(leadgenEmail)
+    } catch (err: unknown) {
+      setLeadgenError(err instanceof Error ? err.message : 'Something went wrong')
+    } finally {
+      setLeadgenSubmitting(false)
+    }
+  }, [leadgenEmail, leadgenUrl])
+
+  useEffect(() => {
+    document.body.style.overflow = leadgenModalOpen ? 'hidden' : ''
+    return () => { document.body.style.overflow = '' }
+  }, [leadgenModalOpen])
+
+  // Scroll-triggered fade-up animations for mtg section
+  useEffect(() => {
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target) }
+        })
+      },
+      { threshold: 0.1 }
+    )
+    document.querySelectorAll('.mtg-fade-up').forEach((el) => obs.observe(el))
+    return () => obs.disconnect()
+  }, [])
+
   return (
     <main className="min-h-screen bg-black">
       <Suspense fallback={null}>
@@ -417,6 +491,70 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
+
+      {/* ============ FREE ANALYSIS HERO ============ */}
+      <div className="mtg-landing">
+        <section className="mtg-hero mtg-wrap">
+          <div className="mtg-fade-up">
+            <span className="mtg-hero__pill">Free forever. No credit card. No catch.</span>
+          </div>
+          <div className="mtg-fade-up" style={{ transitionDelay: '0.1s' }}>
+            <h1>
+              Your customers already wrote your best ads.
+              <span className="mtg-accent" style={{ fontStyle: 'italic' }}> But nobody&apos;s listening.</span>
+            </h1>
+          </div>
+          <div className="mtg-fade-up" style={{ transitionDelay: '0.2s' }}>
+            <p className="mtg-subtitle">
+              Enter your URL. We&apos;ll read every review. And show you the gap
+              between what your ads say and what your customers <em>need</em> to hear to convert.
+            </p>
+          </div>
+          <div className="mtg-fade-up" style={{ transitionDelay: '0.3s' }}>
+            <form className="mtg-hero__input-row" onSubmit={handleLeadgenUrlSubmit}>
+              <input type="text" placeholder="yourstore.com" required />
+              <button type="submit" className="mtg-btn-primary">SHOW ME THE GAP</button>
+            </form>
+          </div>
+          <div className="mtg-fade-up" style={{ transitionDelay: '0.4s' }}>
+            <p className="mtg-hero__note">Works with Trustpilot, Google Reviews, Reviews.io, and Yotpo.</p>
+          </div>
+        </section>
+
+        {/* Email Modal */}
+        <div
+          ref={leadgenModalRef}
+          className={`mtg-modal-overlay${leadgenModalOpen ? ' active' : ''}`}
+          onClick={(e) => { if (e.target === leadgenModalRef.current) setLeadgenModalOpen(false) }}
+        >
+          <div className="mtg-modal">
+            <h2>Where should we send your analysis?</h2>
+            <div className="mtg-confirm-domain">
+              <span className="mtg-domain-badge">{leadgenDomain}</span>
+            </div>
+            <form className="mtg-form-group" onSubmit={handleLeadgenEmailSubmit}>
+              <label htmlFor="mtgEmailHome">Your work email</label>
+              <input
+                id="mtgEmailHome"
+                type="email"
+                placeholder="you@yourcompany.com"
+                required
+                autoComplete="email"
+                value={leadgenEmail}
+                onChange={(e) => setLeadgenEmail(e.target.value)}
+              />
+              <div className="mtg-btn-row">
+                <button type="button" className="mtg-btn-secondary" onClick={() => setLeadgenModalOpen(false)}>Back</button>
+                <button type="submit" className="mtg-btn-primary" disabled={leadgenSubmitting}>
+                  {leadgenSubmitting ? 'STARTING...' : 'START ANALYSIS'}
+                </button>
+              </div>
+            </form>
+            <p className="mtg-disclaimer">We&apos;ll find your public reviews and analyse them. No spam, ever.</p>
+            {leadgenError && <p className="mtg-error-text">{leadgenError}</p>}
+          </div>
+        </div>
+      </div>
 
       {/* ============ LOGO BAND ============ */}
       <section className="border-y border-neutral-800 bg-neutral-900/50">
