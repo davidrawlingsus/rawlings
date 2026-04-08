@@ -515,7 +515,7 @@ export default function HomePage() {
               className="text-3xl md:text-5xl font-bold text-white mb-8"
               variants={fadeInUp}
             >
-              Your customers speak English.<br />
+              Your customers speak one language.<br />
               Your marketing speaks... something else.
             </motion.h2>
             
