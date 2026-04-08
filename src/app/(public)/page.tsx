@@ -538,7 +538,7 @@ export default function HomePage() {
               variants={fadeInUp}
             >
               <div className="p-6 rounded-xl bg-gradient-to-br from-red-950/30 to-neutral-900 border border-red-900/30">
-                <p className="text-xs uppercase tracking-wider text-red-400 mb-3">Your ads say:</p>
+                <p className="text-xs uppercase tracking-wider text-red-400 mb-3">Your marketing says:</p>
                 <p className="text-xl text-neutral-400 italic">
                   &ldquo;Clinically-proven joint support formula&rdquo;
                 </p>
@@ -560,10 +560,10 @@ export default function HomePage() {
                 That gap—between customer language and marketing language—costs you <span className="text-[#B9F040] font-semibold">30-40% of your ad spend</span>.
               </p>
               <p className="mt-4 text-neutral-400">
-                For a brand spending $50K/month on ads, that&apos;s <span className="text-white font-semibold">$15K-$20K walking out the door</span>. Every month.
+                For a brand spending $50K/month on marketing, that&apos;s <span className="text-white font-semibold">$15K-$20K walking out the door</span>. Every month.
               </p>
               <p className="mt-4 text-lg text-white">
-                Not because your ads are bad. Because they sound like <em>you</em> instead of <em>them</em>.
+                Not because your marketing is bad. Because it sounds like <em>you</em> instead of <em>them</em>.
               </p>
             </motion.div>
           </motion.div>
@@ -603,7 +603,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">Wasted Budget</h3>
                 <p className="text-neutral-300">
-                  &ldquo;Brand voice&rdquo; ads force customers to translate what you&apos;re saying into what they actually care about.<br /><br /><span className="text-[#B9F040] font-semibold">That translation adds 30-40% to your CPA.</span>
+                  &ldquo;Brand voice&rdquo; marketing forces customers to translate what you&apos;re saying into what they actually care about.<br /><br /><span className="text-[#B9F040] font-semibold">That translation adds 30-40% to your CPA.</span>
                 </p>
               </motion.div>
 
@@ -617,7 +617,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">Lost Customers</h3>
                 <p className="text-neutral-300 mb-4">
-                  When your ads don&apos;t sound like your customers, their brain registers it as &ldquo;not for me&rdquo; in 1.3 seconds.
+                  When your marketing doesn&apos;t sound like your customers, their brain registers it as &ldquo;not for me&rdquo; in 1.3 seconds.
                 </p>
                 <p className="text-[#B9F040] font-semibold">You lose 2-5% of your market before they finish the headline.</p>
               </motion.div>
@@ -632,7 +632,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">Compounding Drift</h3>
                 <p className="text-neutral-300 mb-4">
-                  Every day you optimize &ldquo;brand voice&rdquo; ads, you drift further from customer voice.
+                  Every day you optimize &ldquo;brand voice&rdquo; marketing, you drift further from customer voice.
                 </p>
                 <p className="text-[#B9F040] font-semibold">
                   The gap doesn&apos;t shrink. It widens. And costs more.
@@ -1062,7 +1062,7 @@ export default function HomePage() {
               className="text-3xl md:text-4xl font-bold text-white mb-12 text-center"
               variants={fadeInUp}
             >
-              This works if you have customer feedback and run Facebook ads
+              This works if you have customer feedback and run Facebook marketing
             </motion.h2>
 
             <div className="grid md:grid-cols-3 gap-6">
@@ -1073,7 +1073,7 @@ export default function HomePage() {
                 <div className="w-16 h-16 rounded-full bg-[#B9F040]/10 flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">💰</span>
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2">$25K+/Month on Facebook Ads</h3>
+                <h3 className="text-lg font-bold text-white mb-2">$25K+/Month on Facebook Marketing</h3>
                 <p className="text-neutral-400 text-sm">
                   And you suspect you&apos;re leaving money on the table but can&apos;t pinpoint why
                 </p>
@@ -1099,9 +1099,9 @@ export default function HomePage() {
                 <div className="w-16 h-16 rounded-full bg-[#B9F040]/10 flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🎯</span>
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2">Marketers write your ads</h3>
+                <h3 className="text-lg font-bold text-white mb-2">Marketers write your marketing</h3>
                 <p className="text-neutral-400 text-sm">
-                  Your team insists ads stay &ldquo;on voice&rdquo; — but that voice was written in a conference room, not pulled from customers
+                  Your team insists marketing stays &ldquo;on voice&rdquo; — but that voice was written in a conference room, not pulled from customers
                 </p>
               </motion.div>
             </div>
@@ -1135,7 +1135,7 @@ export default function HomePage() {
               className="text-neutral-400 text-center mb-12"
               variants={fadeInUp}
             >
-              We hold the invoice until our ads start winning (and the dollars start flowing)
+              We hold the invoice until our marketing starts winning (and the dollars start flowing)
             </motion.p>
 
             <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -1263,7 +1263,7 @@ export default function HomePage() {
             >
               <h3 className="text-xl font-bold text-white mb-3">Our Guarantee</h3>
               <p className="text-neutral-300">
-                We&apos;ll analyze your VoC and get your first ads testing before the week is out. You don&apos;t pay a penny until our ads are getting a <span className="text-[#B9F040] font-semibold">20% cheaper CPA</span>.
+                We&apos;ll analyze your VoC and get your first marketing testing before the week is out. You don&apos;t pay a penny until our marketing is getting a <span className="text-[#B9F040] font-semibold">20% cheaper CPA</span>.
               </p>
             </motion.div>
           </motion.div>
@@ -1306,7 +1306,7 @@ export default function HomePage() {
                   I&apos;m David Rawlings, and I&apos;ve spent over a decade running growth for brands that actually had to make their numbers.
                 </p>
                 <p>
-                  The pattern was always the same: teams would run surveys, collect reviews, talk to customers, then turn around and ship ads that sounded nothing like what they&apos;d just learned.
+                  The pattern was always the same: teams would run surveys, collect reviews, talk to customers, then turn around and ship marketing that sounded nothing like what they&apos;d just learned.
                 </p>
                 <p>
                   The gap between <strong className="text-white">knowing</strong> and <strong className="text-white">doing</strong> was killing performance.
@@ -1359,19 +1359,19 @@ export default function HomePage() {
             <motion.div variants={fadeInUp}>
               <FAQItem 
                 question="How is this different from hiring a Facebook agency?"
-                answer="Agencies create ads based on creative instinct and 'what's working in the market.' We create ads based on what your specific customers already said. The difference shows up in CPA. Most agencies charge $10K-15K/month. We're $2.5K-7.5K. And we measure the exact gap we're closing, in dollars."
+                answer="Agencies create marketing based on creative instinct and 'what's working in the market.' We create marketing based on what your specific customers already said. The difference shows up in CPA. Most agencies charge $10K-15K/month. We're $2.5K-7.5K. And we measure the exact gap we're closing, in dollars."
               />
               <FAQItem 
                 question="How is this different from VoC analytics tools?"
-                answer="VoC tools (Qualtrics, Medallia, etc.) show you what customers said. We turn what they said into ads, test them, and measure the revenue impact. They give you insights. We give you ROI."
+                answer="VoC tools (Qualtrics, Medallia, etc.) show you what customers said. We turn what they said into marketing, test it, and measure the revenue impact. They give you insights. We give you ROI."
               />
               <FAQItem 
                 question="How fast do I see results?"
                 answer="48 hours: We measure your language gap. 7 days: First ad concepts pushed to Facebook. 14 days: Results from initial tests (this is your gap, measured in dollars). 30 days: Optimized concepts based on winning patterns."
               />
               <FAQItem 
-                question="What if the ads don't beat my controls?"
-                answer="You don't pay a penny until our ads beat your controls. Period."
+                question="What if the marketing doesn't beat my controls?"
+                answer="You don't pay a penny until our marketing beats your controls. Period."
               />
               <FAQItem 
                 question="Do I need to change my brand guidelines?"
@@ -1453,7 +1453,7 @@ export default function HomePage() {
               className="mt-6 text-sm text-neutral-500"
               variants={fadeInUp}
             >
-              Pay nothing until our ads start winning
+              Pay nothing until our marketing starts winning
             </motion.p>
           </motion.div>
         </div>
