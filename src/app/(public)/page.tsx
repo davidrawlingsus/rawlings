@@ -521,7 +521,7 @@ export default function HomePage() {
             
             <motion.div className="space-y-6 text-lg text-neutral-300" variants={fadeInUp}>
               <p>
-                Every month, your brand spends thousands on Facebook ads written in &ldquo;brand voice.&rdquo;
+                Every month, you spend (tens of) thousands on ads and marketing content.
               </p>
               <p>
                 Clean. Professional. On-message.
