@@ -114,7 +114,7 @@ export default function FreeAnalysisPage() {
             Your customers already wrote your<br />
             <TypewriterWord words={['entire creative strategy.', 'best ever landing pages.', 'highest ROAS Facebook Ads.', 'best performing SEO pages.', 'highest open emails.']} />
             <br />
-            <span className="mtg-accent" style={{ fontStyle: 'italic' }}>But nobody&apos;s listening, and we&apos;ll prove it...</span>
+            <span className="mtg-accent" style={{ fontStyle: 'italic' }}>But nobody&apos;s listening,<br />and we&apos;ll prove it...</span>
           </h1>
         </div>
         <div className="mtg-fade-up" style={{ transitionDelay: '0.2s' }}>
