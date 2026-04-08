@@ -199,7 +199,7 @@
     margin-bottom: 2rem;
 }
 
-.mtg-hero h1 { max-width: 800px; margin: 0 auto 1.75rem; }
+.mtg-hero h1 { max-width: 1000px; margin: 0 auto 1.75rem; }
 .mtg-hero .mtg-subtitle { max-width: 580px; margin: 0 auto 2.75rem; }
 
 .mtg-hero__input-row {
