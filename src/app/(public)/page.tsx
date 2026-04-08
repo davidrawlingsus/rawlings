@@ -1062,7 +1062,7 @@ export default function HomePage() {
               className="text-3xl md:text-4xl font-bold text-white mb-12 text-center"
               variants={fadeInUp}
             >
-              This works if you have customer feedback and run Facebook marketing
+              This works if you have customer feedback and spend money on marketing
             </motion.h2>
 
             <div className="grid md:grid-cols-3 gap-6">
@@ -1073,7 +1073,7 @@ export default function HomePage() {
                 <div className="w-16 h-16 rounded-full bg-[#B9F040]/10 flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">💰</span>
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2">$25K+/Month on Facebook Marketing</h3>
+                <h3 className="text-lg font-bold text-white mb-2">$25K+/Month Ad Budget</h3>
                 <p className="text-neutral-400 text-sm">
                   And you suspect you&apos;re leaving money on the table but can&apos;t pinpoint why
                 </p>
@@ -1101,7 +1101,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2">Marketers write your marketing</h3>
                 <p className="text-neutral-400 text-sm">
-                  Your team insists marketing stays &ldquo;on voice&rdquo; — but that voice was written in a conference room, not pulled from customers
+                  Your team insists marketing stays &ldquo;on voice&rdquo; - but that voice was written in a conference room, not pulled from customers
                 </p>
               </motion.div>
             </div>
@@ -1110,7 +1110,7 @@ export default function HomePage() {
               className="mt-12 text-center text-lg text-neutral-300"
               variants={fadeInUp}
             >
-              If you checked all three, you likely have a language gap worth <span className="text-[#B9F040] font-semibold">$10K-$50K/month</span>.
+              If you checked all three, you likely have a problem worth <span className="text-[#B9F040] font-semibold">$10K-$50K/month</span>.
             </motion.p>
           </motion.div>
         </div>
