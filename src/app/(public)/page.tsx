@@ -910,9 +910,9 @@ export default function HomePage() {
                 <div className="w-12 h-12 rounded-xl bg-[#B9F040]/10 flex items-center justify-center mb-4">
                   <Upload className="w-6 h-6 text-[#B9F040]" />
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2">Upload Your VoC</h3>
+                <h3 className="text-lg font-bold text-white mb-2">Enter Your URL</h3>
                 <p className="text-neutral-400 text-sm">
-                  We analyze your reviews, surveys, support tickets, and social comments to extract actual customer language.
+                  We&apos;ll instantly analyze your reviews to extract actual customer language.
                 </p>
               </motion.div>
 
@@ -927,7 +927,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2">See The Gap</h3>
                 <p className="text-neutral-400 text-sm">
-                  We compare your current ad language against customer language. The distance is always bigger than you think.
+                  Compare your current marketing language against customer language. The distance is always bigger than you think.
                 </p>
               </motion.div>
 
@@ -940,9 +940,9 @@ export default function HomePage() {
                 <div className="w-12 h-12 rounded-xl bg-[#B9F040]/10 flex items-center justify-center mb-4">
                   <Sparkles className="w-6 h-6 text-[#B9F040]" />
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2">Get Customer-Voice Ads</h3>
+                <h3 className="text-lg font-bold text-white mb-2">Close the gap</h3>
                 <p className="text-neutral-400 text-sm">
-                  We generate up to 40 ad concepts per month, written in customer language.
+                  We&apos;ll work with you on transformational marketing, enlarge your funnel and increase your conversion rate.
                 </p>
               </motion.div>
 
@@ -957,7 +957,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2">Test & Measure</h3>
                 <p className="text-neutral-400 text-sm">
-                  We push concepts straight to Facebook. You see the delta in 7-14 days. That delta = the cost of your gap.
+                  Test everything and see the delta, starting with your Facebook Ads. That delta = the cost of your gap.
                 </p>
               </motion.div>
             </div>
