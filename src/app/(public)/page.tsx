@@ -961,7 +961,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2">Test & Measure</h3>
                 <p className="text-neutral-400 text-sm">
-                  Test everything and see the delta, starting with your Facebook Ads. That delta = the cost of your gap.
+                  Test everything and see the delta across your marketing channels. That delta = the cost of your gap.
                 </p>
               </motion.div>
             </div>
@@ -1015,7 +1015,7 @@ export default function HomePage() {
                     <td className="text-center py-4 px-4"><Check className="w-5 h-5 text-[#B9F040] mx-auto" /></td>
                   </tr>
                   <tr className="border-b border-neutral-800">
-                    <td className="py-4 px-4 text-white">Tests concepts on Facebook</td>
+                    <td className="py-4 px-4 text-white">Tests concepts across channels</td>
                     <td className="text-center py-4 px-4"><Check className="w-5 h-5 text-neutral-400 mx-auto" /></td>
                     <td className="text-center py-4 px-4"><X className="w-5 h-5 text-red-400 mx-auto" /></td>
                     <td className="text-center py-4 px-4"><X className="w-5 h-5 text-red-400 mx-auto" /></td>
@@ -1147,7 +1147,7 @@ export default function HomePage() {
                 <p className="text-sm text-neutral-400 mb-2">For brands spending $25K-$50K/mo</p>
                 <h3 className="text-2xl font-bold text-white mb-1">Starter</h3>
                 <p className="text-4xl font-bold text-white mb-6">$2,500<span className="text-lg text-neutral-400 font-normal">/mo</span></p>
-                
+
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-start gap-2 text-sm text-neutral-300">
                     <Check className="w-4 h-4 text-[#B9F040] mt-0.5 flex-shrink-0" />
@@ -1155,11 +1155,11 @@ export default function HomePage() {
                   </li>
                   <li className="flex items-start gap-2 text-sm text-neutral-300">
                     <Check className="w-4 h-4 text-[#B9F040] mt-0.5 flex-shrink-0" />
-                    12 ad concept variations/month
+                    12 creative concepts/month (ads, landing pages, or emails)
                   </li>
                   <li className="flex items-start gap-2 text-sm text-neutral-300">
                     <Check className="w-4 h-4 text-[#B9F040] mt-0.5 flex-shrink-0" />
-                    Direct Facebook push & testing
+                    CRO recommendations
                   </li>
                   <li className="flex items-start gap-2 text-sm text-neutral-300">
                     <Check className="w-4 h-4 text-[#B9F040] mt-0.5 flex-shrink-0" />
@@ -1193,11 +1193,11 @@ export default function HomePage() {
                   </li>
                   <li className="flex items-start gap-2 text-sm text-neutral-300">
                     <Check className="w-4 h-4 text-[#B9F040] mt-0.5 flex-shrink-0" />
-                    24 ad concept variations/month
+                    24 creative concepts/month (ads, SEO content, landing pages)
                   </li>
                   <li className="flex items-start gap-2 text-sm text-neutral-300">
                     <Check className="w-4 h-4 text-[#B9F040] mt-0.5 flex-shrink-0" />
-                    Quarterly framework optimization
+                    CRO audit &amp; implementation
                   </li>
                   <li className="flex items-start gap-2 text-sm text-neutral-300">
                     <Check className="w-4 h-4 text-[#B9F040] mt-0.5 flex-shrink-0" />
@@ -1232,7 +1232,7 @@ export default function HomePage() {
                   </li>
                   <li className="flex items-start gap-2 text-sm text-neutral-300">
                     <Check className="w-4 h-4 text-[#B9F040] mt-0.5 flex-shrink-0" />
-                    36+ ad concept variations/month
+                    36+ concepts/month across ads, SEO, CRO &amp; email
                   </li>
                   <li className="flex items-start gap-2 text-sm text-neutral-300">
                     <Check className="w-4 h-4 text-[#B9F040] mt-0.5 flex-shrink-0" />
@@ -1244,7 +1244,7 @@ export default function HomePage() {
                   </li>
                   <li className="flex items-start gap-2 text-sm text-neutral-300">
                     <Check className="w-4 h-4 text-[#B9F040] mt-0.5 flex-shrink-0" />
-                    Custom integrations
+                    Full-funnel implementation
                   </li>
                 </ul>
 
@@ -1263,7 +1263,7 @@ export default function HomePage() {
             >
               <h3 className="text-xl font-bold text-white mb-3">Our Guarantee</h3>
               <p className="text-neutral-300">
-                We&apos;ll analyze your VoC and get your first marketing testing before the week is out. You don&apos;t pay a penny until our marketing is getting a <span className="text-[#B9F040] font-semibold">20% cheaper CPA</span>.
+                We&apos;ll analyze your VoC and get your first concepts testing before the week is out. You don&apos;t pay a penny until our marketing is delivering a <span className="text-[#B9F040] font-semibold">20% improvement</span>.
               </p>
             </motion.div>
           </motion.div>
@@ -1358,7 +1358,7 @@ export default function HomePage() {
 
             <motion.div variants={fadeInUp}>
               <FAQItem 
-                question="How is this different from hiring a Facebook agency?"
+                question="How is this different from hiring an agency?"
                 answer="Agencies create marketing based on creative instinct and 'what's working in the market.' We create marketing based on what your specific customers already said. The difference shows up in CPA. Most agencies charge $10K-15K/month. We're $2.5K-7.5K. And we measure the exact gap we're closing, in dollars."
               />
               <FAQItem 
@@ -1367,7 +1367,7 @@ export default function HomePage() {
               />
               <FAQItem 
                 question="How fast do I see results?"
-                answer="48 hours: We measure your language gap. 7 days: First ad concepts pushed to Facebook. 14 days: Results from initial tests (this is your gap, measured in dollars). 30 days: Optimized concepts based on winning patterns."
+                answer="48 hours: We measure your language gap. 7 days: First concepts deployed across your channels. 14 days: Results from initial tests (this is your gap, measured in dollars). 30 days: Optimized concepts based on winning patterns."
               />
               <FAQItem 
                 question="What if the marketing doesn't beat my controls?"
