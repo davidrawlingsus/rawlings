@@ -120,7 +120,7 @@ export default function FreeAnalysisPage() {
         </div>
         <div className="mtg-fade-up" style={{ transitionDelay: '0.2s' }}>
           <p className="mtg-subtitle">
-            Enter your URL. My AI brain will instantly read your reviews and show you the gap
+            Enter your URL. We&apos;ll instantly read your reviews and show you the gap
             between what your marketing says and what your prospects <em>need</em> to hear to convert.
           </p>
         </div>
