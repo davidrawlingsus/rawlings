@@ -971,7 +971,7 @@ export default function HomePage() {
       </section>
 
       {/* ============ VS ALTERNATIVES SECTION ============ */}
-      <section className="pt-8 pb-20 md:pt-20 md:pb-32 bg-neutral-900">
+      <section className="pt-8 pb-20 md:pt-20 md:pb-32 bg-black">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
@@ -1051,7 +1051,7 @@ export default function HomePage() {
       </section>
 
       {/* ============ WHO THIS IS FOR ============ */}
-      <section className="pt-8 pb-20 md:pt-20 md:pb-32 bg-black">
+      <section className="pt-8 pb-20 md:pt-20 md:pb-32 bg-neutral-900">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
@@ -1118,7 +1118,7 @@ export default function HomePage() {
       </section>
 
       {/* ============ PRICING SECTION ============ */}
-      <section id="pricing" className="pt-8 pb-20 md:pt-20 md:pb-32 bg-neutral-900 scroll-mt-20">
+      <section id="pricing" className="pt-8 pb-20 md:pt-20 md:pb-32 bg-black scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
@@ -1272,7 +1272,7 @@ export default function HomePage() {
       </section>
 
       {/* ============ FOUNDER STORY SECTION ============ */}
-      <section id="about" className="py-20 md:py-32 bg-black scroll-mt-20">
+      <section id="about" className="py-20 md:py-32 bg-neutral-900 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
