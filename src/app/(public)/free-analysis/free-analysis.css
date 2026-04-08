@@ -824,6 +824,7 @@
 
     .mtg-prove-it { font-size: 1.625rem !important; }
     .mtg-prove-it__br { display: none; }
+    .mtg-hero__note { font-size: 0.875rem; }
 
     .mtg-card { padding: 1.5rem; }
     .mtg-modal { padding: 1.5rem; }
