@@ -428,9 +428,6 @@ export default function HomePage() {
       {/* ============ FREE ANALYSIS HERO ============ */}
       <div className="mtg-landing">
         <section className="mtg-hero mtg-wrap">
-          <div className="mtg-fade-up">
-            <span className="mtg-hero__pill">Free forever. No credit card. No catch.</span>
-          </div>
           <div className="mtg-fade-up" style={{ transitionDelay: '0.1s' }}>
             <h1>
               Your customers already wrote your<br />
