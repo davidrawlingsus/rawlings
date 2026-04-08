@@ -822,6 +822,8 @@
     .mtg-hero__input-row input:focus { border-color: var(--lime); }
     .mtg-hero__input-row .mtg-btn-primary { width: 100%; border-radius: 0.625rem; }
 
+    .mtg-prove-it { font-size: 1.625rem !important; }
+    .mtg-prove-it__br { display: none; }
 
     .mtg-card { padding: 1.5rem; }
     .mtg-modal { padding: 1.5rem; }
