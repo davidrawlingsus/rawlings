@@ -516,7 +516,7 @@ export default function HomePage() {
               variants={fadeInUp}
             >
               Your customers speak one language.<br />
-              Your marketing speaks... something else.
+              Your marketing speaks...<br />something else.
             </motion.h2>
             
             <motion.div className="space-y-6 text-lg text-neutral-300" variants={fadeInUp}>
