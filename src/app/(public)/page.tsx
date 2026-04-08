@@ -433,7 +433,8 @@ export default function HomePage() {
           </div>
           <div className="mtg-fade-up" style={{ transitionDelay: '0.1s' }}>
             <h1>
-              Your customers already wrote your <TypewriterWord words={['entire creative strategy.', 'best ever landing pages.', 'highest ROAS Facebook Ads.', 'best performing SEO pages.', 'highest open emails.']} />
+              Your customers already wrote your<br />
+              <TypewriterWord words={['entire creative strategy.', 'best ever landing pages.', 'highest ROAS Facebook Ads.', 'best performing SEO pages.', 'highest open emails.']} />
               <br />
               <span className="mtg-accent" style={{ fontStyle: 'italic' }}>But nobody&apos;s listening.</span>
             </h1>
@@ -493,7 +494,7 @@ export default function HomePage() {
       {/* ============ LOGO BAND ============ */}
       <section className="border-y border-neutral-800 bg-neutral-900/50">
         <div className="max-w-7xl mx-auto px-6 md:px-8 py-4">
-          <p className="text-center text-sm text-neutral-500 mb-2">Trusted by brands who closed the gap</p>
+          <p className="text-center text-sm text-neutral-500 mb-2">Based on the conversion strategies deployed at...</p>
         </div>
         <LogoSlider logos={clientLogos} speedMs={30000} title="" />
       </section>
