@@ -614,13 +614,13 @@ export default function HomePage() {
               className="text-3xl md:text-5xl font-bold text-white mb-8 text-center"
               variants={fadeInUp}
             >
-              Your customers speak one language.<br />
+              <span className="block mb-2">Your customers speak one language.</span>
               Your marketing speaks another.
             </motion.h2>
 
             <motion.div className="space-y-6 text-lg text-neutral-300 text-center" variants={fadeInUp}>
               <p>
-                Every month, you spend (hundreds of) thousands on ads and marketing content.
+                Every month, you spend a small fortune on ads and marketing content.
               </p>
               <p>
                 Clean. Professional. On-message.
@@ -1105,7 +1105,7 @@ export default function HomePage() {
             {/* Story */}
             <motion.div variants={fadeInUp}>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-                I built this because I was tired of watching killer insights die in forgotten slide-decks.
+                I built this because I was tired of seeing brands waste millions on disconnected marketing
               </h2>
               
               <div className="space-y-6 text-lg text-neutral-300">
