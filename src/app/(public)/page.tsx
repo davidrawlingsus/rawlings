@@ -34,7 +34,7 @@ const copyComparisons = [
   },
   {
     marketing: "100% human-grade, whole food ingredients, gently cooked at low temperatures. FreshDry™ technology. 50% more digestible than store-bought kibble.",
-    customers: ["she used to clear a room with her gas", "I can stick my face in the bag and not feel like vomiting", "literally picked through her old food to pull out the Spot & Tango", "Now I can't not buy this product"],
+    customers: ["It must be improving her digestion because she used to clear a room with her gas.", "I can stick my face in the bag and not feel like vomiting. The smell is just rosemary.", "literally picked through her old food to pull out the Spot & Tango", "her breath no longer smells (which I can only assume is from balanced gut health)"],
     analysisUrl: "https://gamma.app/embed/dz58c37idkdjnrc",
   },
   {
@@ -392,11 +392,11 @@ function CopyComparisonExample() {
         {/* Left: Marketing says */}
         <div className="flex flex-col">
           <p className="text-sm uppercase tracking-wider text-white font-bold mb-4 text-center">Marketing says</p>
-          <div className="relative p-6 md:p-8 rounded-lg border-2 border-red-500 bg-neutral-950 flex items-center flex-1">
+          <div className="relative p-6 md:p-8 rounded-lg border-2 border-red-500 bg-neutral-950 flex items-center flex-1 mt-[5px]">
             <span className="absolute top-3 left-4 text-5xl md:text-6xl leading-none font-serif select-none text-red-500" aria-hidden="true">
               &ldquo;
             </span>
-            <p className="relative z-10 text-white text-base md:text-lg leading-relaxed">
+            <p className="relative z-10 text-white text-base md:text-lg leading-relaxed mt-[5px]">
               {item.marketing}
             </p>
             <span className="absolute bottom-2 right-4 text-5xl md:text-6xl leading-none font-serif select-none text-red-500" aria-hidden="true">
@@ -627,7 +627,7 @@ export default function HomePage() {
                 Clean. Professional. On-message.
               </p>
               <p className="text-[#B9F040] font-semibold text-xl">
-                Your customers ignore it.
+                45% of your addressable market ignore it.
               </p>
               <p className="text-neutral-400">
                 Here&apos;s what that looks like in the wild.
@@ -648,7 +648,7 @@ export default function HomePage() {
             variants={fadeInUp}
           >
             <p className="text-lg md:text-[19px] text-neutral-400 leading-relaxed text-center">
-              One side is a product spec. The other is a woman at 9pm scrolling her phone, remembering how bad the last food smelled, wondering if this one is any different. She doesn&apos;t care about FreshDry&trade; technology. She cares about not gagging when she opens the bag. That&apos;s the language your ads should be running. That&apos;s the hook that stops the scroll. And right now, it&apos;s sitting in your reviews doing nothing.
+              One side is a product spec. The other is a woman at 9pm scrolling her phone, desperate to fix her dog&apos;s aching bowels, remembering how bad the last food smelled. <span className="text-white font-semibold px-1 py-0.5 leading-loose" style={{ boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone', background: 'linear-gradient(104deg, rgba(185,240,64,0) 0.9%, rgba(185,240,64,0.32) 2.4%, rgba(185,240,64,0.28) 5.8%, rgba(185,240,64,0.35) 93%, rgba(185,240,64,0.30) 96%, rgba(185,240,64,0) 98%)', borderRadius: '7.5px 3px 4px 7px', boxShadow: 'inset 0 -1px 0 rgba(185,240,64,0.15), inset 0 -3px 0 rgba(185,240,64,0.08)' }}>She doesn&apos;t care about FreshDry&trade; technology. She cares about her house that smells of dog farts and why supposedly good dog food makes her gag when she opens it.</span> And right now, that language is sitting in your reviews doing nothing.
             </p>
           </motion.div>
         </div>
@@ -664,13 +664,15 @@ export default function HomePage() {
           >
             <p className="text-2xl md:text-3xl font-bold text-white mb-4">See the gap?</p>
             <p className="text-lg text-neutral-300">
-              Not because your marketing is bad. Because it sounds like <em>you</em> instead of <em>them</em>.
+              It&apos;s not because your marketing is bad. Because it sounds like <em>you</em> instead of <em>them</em>.
             </p>
           </motion.div>
         </div>
 
-        {/* Spacer */}
-        <div className="h-16 md:h-24" />
+        {/* Bridge */}
+        <div className="text-center py-12 md:py-16">
+          <p className="text-2xl md:text-3xl text-white font-[family-name:var(--font-caveat)]">But there&apos;s more...</p>
+        </div>
 
         {/* Three stacked insight cards */}
         <div className="max-w-4xl mx-auto px-6 md:px-8 space-y-5">
@@ -715,7 +717,7 @@ export default function HomePage() {
               Your messaging assumes the buyer is calm and informed. Comparing ingredients. Reading labels. Making a rational decision. Your buyers aren&apos;t calm. They&apos;re exhausted. They&apos;ve tried everything.
             </p>
             <div className="border-l-2 border-[#B9F040] pl-4 mb-6">
-              <p className="text-white italic">&ldquo;I went to the doctor. Nothing they gave me helped. I tried this. It solved the problem.&rdquo;</p>
+              <p className="text-white italic">&ldquo;I have suffered with ibs for a few years. I was at a stage where nothing was easing the symptoms.&rdquo;</p>
               <p className="text-xs text-neutral-500 mt-2">Rheal customer, Mar 2026</p>
             </div>
             <p className="text-white font-semibold">
@@ -742,6 +744,22 @@ export default function HomePage() {
             <p className="text-white font-semibold">
               Your mid-funnel ads should be running that story on repeat. Instead, they&apos;re running &ldquo;clinically proven results&rdquo; to a woman who doesn&apos;t trust the internet to diagnose her skin.
             </p>
+          </motion.div>
+        </div>
+
+        {/* Mid-page CTA */}
+        <div className="max-w-lg mx-auto px-6 md:px-8 mt-16 md:mt-20 text-center">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={fadeInUp}
+          >
+            <p className="text-lg md:text-xl text-white font-semibold mb-4">Discover the gap between you and your customers</p>
+            <form className="mtg-hero__input-row" style={{ fontSize: '0.9em' }} onSubmit={handleLeadgenUrlSubmit}>
+              <input type="text" placeholder="yourstore.com" required />
+              <button type="submit" className="mtg-btn-primary">SHOW ME THE GAP</button>
+            </form>
           </motion.div>
         </div>
       </section>
