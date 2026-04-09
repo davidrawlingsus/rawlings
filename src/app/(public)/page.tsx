@@ -492,7 +492,7 @@ export default function HomePage() {
       {/* ============ LOGO BAND ============ */}
       <section className="border-y border-neutral-800 bg-neutral-900/50">
         <div className="max-w-7xl mx-auto px-6 md:px-8 py-4">
-          <p className="text-center text-[13px] md:text-sm text-neutral-500 mb-2">Based on the conversion strategies deployed <a href="#about" className="text-neutral-500 underline hover:text-neutral-300 transition-colors">by David</a> at...</p>
+          <p className="text-center text-[13px] md:text-base text-neutral-500 mb-2">Based on the conversion strategies deployed <a href="#about" className="text-neutral-500 underline hover:text-neutral-300 transition-colors">by David</a> at...</p>
         </div>
         <LogoSlider logos={clientLogos} speedMs={30000} title="" />
       </section>
