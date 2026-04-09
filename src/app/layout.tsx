@@ -1,12 +1,18 @@
 import type { Metadata } from 'next'
-import { Lato } from 'next/font/google'
+import { Lato, Caveat } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
 
-const lato = Lato({ 
+const lato = Lato({
   weight: ['300', '400', '700', '900'],
   subsets: ['latin'],
   variable: '--font-lato'
+})
+
+const caveat = Caveat({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  variable: '--font-caveat'
 })
 
 export const metadata: Metadata = {
@@ -146,7 +152,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={lato.className}>
+      <body className={`${lato.className} ${caveat.variable}`}>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe 

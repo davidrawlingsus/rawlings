@@ -391,7 +391,7 @@ function CopyComparisonExample() {
       <div className="grid md:grid-cols-[1fr_auto_2fr] gap-6 md:gap-8 items-stretch">
         {/* Left: Marketing says */}
         <div className="flex flex-col">
-          <p className="text-sm uppercase tracking-wider text-white font-bold mb-4 text-center">Marketers say</p>
+          <p className="text-sm uppercase tracking-wider text-white font-bold mb-4 text-center">Marketing says</p>
           <div className="relative p-6 md:p-8 rounded-lg border-2 border-red-500 bg-neutral-950 flex items-center flex-1">
             <span className="absolute top-3 left-4 text-5xl md:text-6xl leading-none font-serif select-none text-red-500" aria-hidden="true">
               &ldquo;
@@ -415,9 +415,9 @@ function CopyComparisonExample() {
           <span className="text-lg font-bold text-white border border-neutral-600 rounded-full w-10 h-10 flex items-center justify-center">VS</span>
         </div>
 
-        {/* Right: Customers say */}
+        {/* Right: Actual customer verbatims */}
         <div className="flex flex-col">
-          <p className="text-sm uppercase tracking-wider text-white font-bold mb-4 text-center">Customers say</p>
+          <p className="text-sm uppercase tracking-wider text-white font-bold mb-4 text-center">Actual customer verbatims</p>
           <div className="grid grid-cols-2 gap-4 md:gap-5 flex-1">
             {item.customers.map((quote, i) => (
               <div
@@ -637,6 +637,7 @@ export default function HomePage() {
                   }}
                 >And completely disconnected from how your customers actually think, speak, and buy.</span>
               </p>
+              <p className="mt-10 text-3xl md:text-4xl text-white font-[family-name:var(--font-caveat)]">An extreme example:</p>
             </motion.div>
 
           </motion.div>
@@ -657,7 +658,7 @@ export default function HomePage() {
             <p className="text-lg text-neutral-300">
               That gap is why your top funnel traffic is so darn expensive. And why you&apos;re missing out on what customer-written hooks make possible.
             </p>
-            <p className="mt-4 text-neutral-400">
+            <p className="mt-4 text-lg text-neutral-400">
               For a brand spending $50K/month on marketing, that&apos;s <span className="text-white font-semibold">$15K-$20K walking out the door</span>. Every month.
             </p>
             <p className="mt-4 text-lg text-white">
