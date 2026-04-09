@@ -1,13 +1,13 @@
 'use client'
 
 import { Suspense, useState, useRef, useEffect, useCallback } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import LogoSlider from './components/LogoSlider'
 import RedirectGreeting from '@/components/RedirectGreeting'
-import { ArrowDown, Check, X, Upload, BarChart3, Sparkles, TrendingUp, ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react'
+import { Check, X, Upload, BarChart3, Sparkles, TrendingUp, ChevronDown } from 'lucide-react'
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
 import TypewriterWord from './components/TypewriterWord'
 import './free-analysis/free-analysis.css'
@@ -597,6 +597,7 @@ export default function HomePage() {
 
       {/* ============ THE PROBLEM SECTION ============ */}
       <section className="pt-8 pb-5 md:pt-20 md:pb-32 bg-black">
+        {/* Top copy */}
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <motion.div
             initial="hidden"
@@ -625,44 +626,121 @@ export default function HomePage() {
               <p>
                 Clean. Professional. On-message.
               </p>
-              <p className="text-white font-semibold">
-                <span
-                  className="px-1 py-0.5 leading-loose"
-                  style={{
-                    boxDecorationBreak: 'clone',
-                    WebkitBoxDecorationBreak: 'clone',
-                    background: 'linear-gradient(104deg, rgba(185,240,64,0) 0.9%, rgba(185,240,64,0.32) 2.4%, rgba(185,240,64,0.28) 5.8%, rgba(185,240,64,0.35) 93%, rgba(185,240,64,0.30) 96%, rgba(185,240,64,0) 98%)',
-                    borderRadius: '7.5px 3px 4px 7px',
-                    boxShadow: 'inset 0 -1px 0 rgba(185,240,64,0.15), inset 0 -3px 0 rgba(185,240,64,0.08)',
-                  }}
-                >And completely disconnected from how your customers actually think, speak, and buy.</span>
+              <p className="text-[#B9F040] font-semibold text-xl">
+                Your customers ignore it.
               </p>
-              <p className="mt-10 text-3xl md:text-4xl text-white font-[family-name:var(--font-caveat)]">An extreme example:</p>
+              <p className="text-neutral-400">
+                Here&apos;s what that looks like in the wild.
+              </p>
             </motion.div>
-
           </motion.div>
         </div>
 
-        {/* Dynamic copy comparison carousel */}
+        {/* VS comparison */}
         <CopyComparisonExample />
 
-        <div className="max-w-5xl mx-auto px-6 md:px-8 mt-12">
+        {/* Mind movie paragraph */}
+        <div className="max-w-2xl mx-auto px-6 md:px-8 mt-16 md:mt-20">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={fadeInUp}
-            className="p-8 rounded-2xl bg-neutral-900 border border-neutral-800"
+          >
+            <p className="text-lg md:text-[19px] text-neutral-400 leading-relaxed text-center">
+              One side is a product spec. The other is a woman at 9pm scrolling her phone, remembering how bad the last food smelled, wondering if this one is any different. She doesn&apos;t care about FreshDry&trade; technology. She cares about not gagging when she opens the bag. That&apos;s the language your ads should be running. That&apos;s the hook that stops the scroll. And right now, it&apos;s sitting in your reviews doing nothing.
+            </p>
+          </motion.div>
+        </div>
+
+        {/* See the gap card */}
+        <div className="max-w-5xl mx-auto px-6 md:px-8 mt-16 md:mt-20">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={fadeInUp}
+            className="p-10 md:p-14 rounded-2xl bg-neutral-900 border border-neutral-800 text-center"
           >
             <p className="text-2xl md:text-3xl font-bold text-white mb-4">See the gap?</p>
             <p className="text-lg text-neutral-300">
-              That gap is why your top funnel traffic is so darn expensive. And why you&apos;re missing out on what customer-written hooks make possible.
-            </p>
-            <p className="mt-4 text-lg text-neutral-400">
-              For a brand spending $50K/month on marketing, that&apos;s <span className="text-white font-semibold">$15K-$20K walking out the door</span>. Every month.
-            </p>
-            <p className="mt-4 text-lg text-white">
               Not because your marketing is bad. Because it sounds like <em>you</em> instead of <em>them</em>.
+            </p>
+          </motion.div>
+        </div>
+
+        {/* Spacer */}
+        <div className="h-16 md:h-24" />
+
+        {/* Three stacked insight cards */}
+        <div className="max-w-4xl mx-auto px-6 md:px-8 space-y-5">
+          {/* Card 1 */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={fadeInUp}
+            className="p-6 md:p-8 rounded-2xl bg-neutral-900 border border-neutral-800"
+          >
+            <h3 className="text-xl md:text-2xl font-bold text-[#B9F040] mb-4">You&apos;re underselling your real value.</h3>
+            <p className="text-neutral-300 mb-6">
+              Your ads lead with features and specs. Your customers lead with the relief of a problem that finally went away.
+            </p>
+            <div className="grid md:grid-cols-2 gap-4 mb-6">
+              <div className="border-l-2 border-red-500 pl-4">
+                <p className="text-xs uppercase tracking-wider text-neutral-500 mb-2">Brand language</p>
+                <p className="text-neutral-400 italic">&ldquo;Personalised formula. Results from 6 weeks.&rdquo;</p>
+              </div>
+              <div className="border-l-2 border-[#B9F040] pl-4">
+                <p className="text-xs uppercase tracking-wider text-neutral-500 mb-2">Customer language</p>
+                <p className="text-white italic">&ldquo;After 17 years of acne, this is the first thing that actually worked. I feel confident again after a long time of not wanting anyone to see me.&rdquo;</p>
+                <p className="text-xs text-neutral-500 mt-2">Dermatica customer, Jan 2026</p>
+              </div>
+            </div>
+            <p className="text-white font-semibold">
+              That&apos;s not a testimonial. That&apos;s a top-funnel ad that writes itself. And it&apos;s nowhere in the brand&apos;s creative.
+            </p>
+          </motion.div>
+
+          {/* Card 2 */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={fadeInUp}
+            className="p-6 md:p-8 rounded-2xl bg-neutral-900 border border-neutral-800"
+          >
+            <h3 className="text-xl md:text-2xl font-bold text-[#B9F040] mb-4">You&apos;re entering at the wrong moment.</h3>
+            <p className="text-neutral-300 mb-6">
+              Your messaging assumes the buyer is calm and informed. Comparing ingredients. Reading labels. Making a rational decision. Your buyers aren&apos;t calm. They&apos;re exhausted. They&apos;ve tried everything.
+            </p>
+            <div className="border-l-2 border-[#B9F040] pl-4 mb-6">
+              <p className="text-white italic">&ldquo;I went to the doctor. Nothing they gave me helped. I tried this. It solved the problem.&rdquo;</p>
+              <p className="text-xs text-neutral-500 mt-2">Rheal customer, Mar 2026</p>
+            </div>
+            <p className="text-white font-semibold">
+              She didn&apos;t buy a superfood blend. She bought the end of a search. Your ads are talking to a shopper. Your customer was drowning.
+            </p>
+          </motion.div>
+
+          {/* Card 3 */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={fadeInUp}
+            className="p-6 md:p-8 rounded-2xl bg-neutral-900 border border-neutral-800"
+          >
+            <h3 className="text-xl md:text-2xl font-bold text-[#B9F040] mb-4">You&apos;re invisible on the real objections.</h3>
+            <p className="text-neutral-300 mb-6">
+              The thing stopping people from buying isn&apos;t what you think it is. And the answer is already written.
+            </p>
+            <div className="border-l-2 border-[#B9F040] pl-4 mb-6">
+              <p className="text-white italic">&ldquo;At first, I wouldn&apos;t want to try dermatica as I thought the consultation was fake. But in the end I said to give this a try. I am absolutely pleased and happy I chose it.&rdquo;</p>
+              <p className="text-xs text-neutral-500 mt-2">Dermatica customer, Jan 2026</p>
+            </div>
+            <p className="text-white font-semibold">
+              Your mid-funnel ads should be running that story on repeat. Instead, they&apos;re running &ldquo;clinically proven results&rdquo; to a woman who doesn&apos;t trust the internet to diagnose her skin.
             </p>
           </motion.div>
         </div>
