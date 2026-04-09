@@ -627,7 +627,7 @@ export default function HomePage() {
                 Clean. Professional. On-message.
               </p>
               <p className="text-[#B9F040] font-semibold text-xl">
-                45% of your addressable market ignore it.
+                80% of your addressable market ignore it.
               </p>
               <p className="text-neutral-400">
                 Here&apos;s what that looks like in the wild.
