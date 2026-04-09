@@ -664,7 +664,7 @@ export default function HomePage() {
           >
             <p className="text-2xl md:text-3xl font-bold text-white mb-4">See the gap?</p>
             <p className="text-lg text-neutral-300">
-              It&apos;s not because your marketing is bad. Because it sounds like <em>you</em> instead of <em>them</em>.
+              It&apos;s not because your marketing is bad. It&apos;s because the people writing it have never lived in the problem your customers are trying to solve.
             </p>
           </motion.div>
         </div>
