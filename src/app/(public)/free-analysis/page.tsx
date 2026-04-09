@@ -115,7 +115,7 @@ export default function FreeAnalysisPage() {
             <span className="mtg-typewriter-line"><TypewriterWord words={['entire creative strategy.', 'best ever landing pages.', 'highest ROAS Facebook Ads.', 'best performing SEO pages.', 'highest open emails.']} /></span>
             <span className="mtg-typewriter-static">entire creative strategy.</span>
             <br />
-            <span className="mtg-accent mtg-prove-it" style={{ fontStyle: 'italic', fontSize: '0.65em', display: 'inline-block', marginTop: '1.25rem' }}>But your marketing&apos;s not listening,<br className="mtg-prove-it__br" /> and I&apos;ll prove it...</span>
+            <span className="mtg-accent mtg-prove-it" style={{ fontStyle: 'italic', fontSize: '0.65em', display: 'inline-block', marginTop: '1.25rem' }}>But nobody&apos;s listening,<br className="mtg-prove-it__br" /> and I&apos;ll prove it...</span>
           </h1>
         </div>
         <div className="mtg-fade-up" style={{ transitionDelay: '0.2s' }}>
