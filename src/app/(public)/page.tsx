@@ -34,7 +34,7 @@ const copyComparisons = [
   },
   {
     marketing: "100% human-grade, whole food ingredients, gently cooked at low temperatures. FreshDry™ technology. 50% more digestible than store-bought kibble.",
-    customers: ["she used to clear a room with her gas", "I can stick my face in the bag and not feel like vomiting", "no paw licking, no butt dragging", "literally picked through her old food to pull out the Spot & Tango"],
+    customers: ["she used to clear a room with her gas", "I can stick my face in the bag and not feel like vomiting", "literally picked through her old food to pull out the Spot & Tango", "Now I can't not buy this product"],
     analysisUrl: "https://gamma.app/embed/dz58c37idkdjnrc",
   },
   {
