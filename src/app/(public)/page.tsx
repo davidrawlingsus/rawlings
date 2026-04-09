@@ -655,7 +655,7 @@ export default function HomePage() {
           >
             <p className="text-2xl md:text-3xl font-bold text-white mb-4">See the gap?</p>
             <p className="text-lg text-neutral-300">
-              That gap—between customer language and marketing language—costs you <span className="text-[#B9F040] font-semibold">30-40% of your ad spend</span>.
+              That gap is why your top funnel traffic is so darn expensive. And why you&apos;re missing out on what customer-written hooks make possible.
             </p>
             <p className="mt-4 text-neutral-400">
               For a brand spending $50K/month on marketing, that&apos;s <span className="text-white font-semibold">$15K-$20K walking out the door</span>. Every month.
